@@ -1,0 +1,20 @@
+{
+  "locales": ["pt-BR", "en-US"],
+  "catalogs": [
+    {
+      path: "<rootDir>/content/i18n/{locale}/main",
+      include: ["<rootDir>/content/i18n/{locale}/main"],
+    },
+  ],
+  "fallbackLocales": {
+    "pt-BR": ["pt-BR", "pt"],
+    "en-US": ["en-US", "en-GB", "en"],
+    default: "pt-BR",
+  },
+  "extractBabelOptions": {
+    "presets": ["babel-preset-gatsby"],
+    "rootMode": "upward",
+  },
+  "format": "po",
+}
+

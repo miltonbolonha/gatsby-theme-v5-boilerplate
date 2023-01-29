@@ -1,0 +1,40 @@
+{
+  "name": "gatsby-plugin-schemajson-i18n",
+  "private": false,
+  "module": "index.js",
+  "version": "0.6.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "dev": "gatsby develop"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.12",
+    "@lingui/cli": "^3.16.0",
+    "@lingui/macro": "^3.16.0",
+    "babel-plugin-macros": "^3.1.0",
+    "gatsby-business-in-build": "^0.2.1",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-manifest": "^5.3.1",
+    "gatsby-plugin-offline": "^6.3.1",
+    "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-remark-external-links": "^0.0.4",
+    "gatsby-remark-images": "^7.5.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^5.3.1",
+    "gatsby-transformer-remark": "^6.5.0",
+    "gatsby-transformer-sharp": "^5.5.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^5.4.2",
+    "gatsby-plugin-sass": "^6.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.57.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
