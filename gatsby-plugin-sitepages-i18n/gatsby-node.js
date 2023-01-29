@@ -45,10 +45,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
 
       createPage({
         path: locales[i] + "/" + pageSite.path, // need to add language prefix
-        component: path.resolve(
-          rootDir,
-          "gatsby-theme-boilerplate-blog/src/templates/single-post.js"
-        ),
+        component: path.resolve(rootDir, pageSite.component),
         context: {
           slug: slug,
           thePost: post.node,
