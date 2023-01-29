@@ -7,7 +7,7 @@
 
 # Gatsby Layout Builder
 
-#### LAYOUT BUILDER _by [Edu4Dev](https://edu4.dev)_
+#### LAYOUT BUILDER _by [Milton Bolonha](https://edu4.dev)_
 
 **Engine Agent:** Gatsby - Javascript Framework
 
@@ -15,7 +15,7 @@
 
 **Gatsby Plugin Name:** Gatsby Layout Builder
 
-**Author:** Edu4Dev - Milton Bolonha
+**Author:** Milton Bolonha - Milton Bolonha
 
 **Description:** Gatsby Layout Builder is the platform
 web creators choose to build professional GatsbyJS HTML,

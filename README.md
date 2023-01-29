@@ -1,28 +1,22 @@
 - **`[v.0.6.x:next]`**: Not ready, don't use it yet. Have no ideia what version I'm going. :D
 - **`[v.0.x.0:warning]`**: The first grand finale release will be publish at v1.0.0.
 
-![Theme workflow](https://github.com/nuktpls/gatsby-theme-nuktpls-one/actions/workflows/master.yaml/badge.svg) [![Netlify Status](https://api.netlify.com/api/v1/badges/18254200-644c-4919-a835-b51efd328337/deploy-status)](https://app.netlify.com/sites/boilerplate-blog/deploys) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=bugs)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=nuktpls_gatsby-theme-nuktpls-one&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=nuktpls_gatsby-theme-nuktpls-one)
-
 ---
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nuktpls/gatsby-theme-nuktpls-one)
+# Gatsby Boilerplate Starter
 
----
+#### Gatsby Boilerplate Starter _by [Milton Bolonha](https://edu4.dev)_
 
-# Boilerplate Blog
-
-#### Boilerplate Blog _by [Edu4Dev](https://edu4.dev)_
-
-**Engine Agent:** GatsbyJS/ReactJS - Javascript Framework
+**Engine Agent:** GatsbyJS/ReactJS - Javascript Framework and NPM Workspaces
 
 **Engine SubAgent:** Gatsby Theme
 
-**Gatsby Theme Name:** Boilerplate Blog
+**Gatsby Theme Name:** Gatsby Boilerplate Starter
 
-**Author:** Edu4Dev - Milton Bolonha
+**Author:** Milton Bolonha - Milton Bolonha
 
-**Description:** Boilerplate Blog is a template for creating
-a [blog like the one here](htts//boilerplate-blog.netlify.app).
+**Description:** Gatsby Boilerplate Starter is a template for creating
+a Gatsby starter with my owm signature.
 
 It's also a platform web creators choose to build professional
 GatsbyJS HTML customized structures.
@@ -35,7 +29,7 @@ GatsbyJS HTML customized structures.
 
 **Plugin Install:** `npm i`
 
-**Theme Start Install:** `yarn workspace engine dev`
+**Theme Start Install:** `npm i && npm run dev -w room --trace-warnings --verbose`
 
 **Version:** 0.0.1
 

@@ -66,6 +66,6 @@
     "prettier.jsxSingleQuote": true,
     "prettier.arrowParens": "avoid",
     "window.zoomLevel": 2,
-    "workbench.colorTheme": "Edu4Dev Dark"
+    "workbench.colorTheme": "Milton Bolonha Dark"
   }
 }
