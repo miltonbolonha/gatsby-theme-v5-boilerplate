@@ -1,7 +1,7 @@
 // import { i18n } from "@lingui/core";
 // import { I18nProvider } from "@lingui/react";
 // import { ThemeProvider } from "./src/context/ThemeContext";
-const ptMessages = require("../content/i18n/pt-BR/main");
+// const ptMessages = require("../content/i18n/pt-BR/main");
 // import { messages as enMessages } from "../content/i18n/en-US/main";
 // const i18nConfig = require("../.linguirc");
 const path = require("path");
@@ -35,7 +35,9 @@ exports.createPages = ({ graphql, actions, reporter }) => {
     //linguagem sem primeiro item q é a linguagem default
     // sitePages defaults já foram criadas pelos seus arquivos
     // essa é a i18n deles
-
+    console.log(":::pageSite::::");
+    console.log(pageSite);
+    console.log(":::pageSite::::");
     for (var i = 1; i === locales.length; i++) {
       // create i18n not default page
       console.log("WTF???");
@@ -58,44 +60,4 @@ exports.createPages = ({ graphql, actions, reporter }) => {
 
     //  locales
   });
-};
-const { createFilePath } = require(`gatsby-source-filesystem`);
-
-function basePathFinder(nodeTopology) {
-  if (nodeTopology === "pages") {
-    return "pages";
-  }
-  if (nodeTopology === "posts") {
-    return "posts";
-  }
-  if (nodeTopology === "landings") {
-    return "landings";
-  }
-  return null;
-}
-// Adding slug field to each post
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions;
-
-  if (node.internal.type === "MarkdownRemark") {
-    const basePathLabel = basePathFinder(node.frontmatter.topology) || "posts";
-    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
-    const slug = createFilePath({
-      node,
-      getNode,
-      basePath: basePathLabel,
-    });
-    // Creates new query'able field with name of 'slug'
-
-    createNodeField({
-      node,
-      name: "slug",
-      value: `/${slug.slice(1)}`,
-    });
-    createNodeField({
-      node,
-      name: "i18n",
-      value: businessInfos.schema[0].card[0].brandIntl,
-    });
-  }
 };
