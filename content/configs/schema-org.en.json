@@ -5,7 +5,8 @@
       "card": [
         {
           "brandAppVersion": "0.6.0",
-          "cardLocale": "pt-BR",
+          "locales": ["pt-BR", "en-US"],
+          "cardLocale": "en-US",
           "brandIntl": "pt-BR",
           "brandPerson": "Priscilla Barbosa",
           "brandName": "As Casamenteiras",
