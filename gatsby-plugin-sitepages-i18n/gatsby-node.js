@@ -1,13 +1,12 @@
-// import { i18n } from "@lingui/core";
-// import { I18nProvider } from "@lingui/react";
-// import { ThemeProvider } from "./src/context/ThemeContext";
-// const ptMessages = require("../content/i18n/pt-BR/main");
-// import { messages as enMessages } from "../content/i18n/en-US/main";
-// const i18nConfig = require("../.linguirc");
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
-const businessInfos = require("../content/configs/schema-org.json");
-const locales = businessInfos.locales;
+
+const schemaOrg = require(path.resolve(
+  rootDir,
+  `content/configs/schema-org.json`
+));
+const card = schemaOrg.schema[0].card[0];
+const locales = card.locales;
 
 // exports.sourceNodes = async ({ actions }) => {
 //   const { createNodes } = actions;
@@ -24,20 +23,24 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: "i18n",
-      value: businessInfos.schema[0].card[0].brandIntl,
+      value: card.brandIntl,
     });
   }
 };
-
+console.log("sitePages");
+console.log(sitePages);
+console.log("sitePages");
 exports.createPages = ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
   Array.from(sitePages).forEach(pageSite => {
     //linguagem sem primeiro item q é a linguagem default
     // sitePages defaults já foram criadas pelos seus arquivos
     // essa é a i18n deles
-    console.log(":::pageSite::::");
+    console.log(":AQUIIIIIIIIIIIII PAGE SITE::");
     console.log(pageSite);
-    console.log(":::pageSite::::");
+    console.log(locales);
+    console.log(locales.length);
+    console.log(":AQUIIIIIIIIIIIII PAGE SITE::");
     for (var i = 1; i === locales.length; i++) {
       // create i18n not default page
       console.log("WTF???");

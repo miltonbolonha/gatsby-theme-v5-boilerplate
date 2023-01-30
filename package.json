@@ -29,9 +29,9 @@
     "test:unit": "jest --passWithNoTests",
     "test:unit:coverage": "npm run test:unit -- --coverage",
     "test:unit:watch": "npm run test:unit -- --watch",
-    "build": "npm run build -w gatsby-theme-nuktpls-one",
-    "clean": "npm run clean -w gatsby-plugin-schemajson-i18n",
-    "develop": "npm run dev --workspace=gatsby-plugin-schemajson-i18n",
+    "build": "npm run build -w room",
+    "clean": "npm run clean -w room",
+    "develop": "npx po-transformer po --input ./content/configs/schema-org.json --output ./content/i18n/pt-BR/schema-org.po && npx po-transformer po --input ./content/configs/schema-org.en.json --output ./content/i18n/en-US/schema-org.po && npm run dev --workspace=room",
     "extract": "lingui extract",
     "compile": "lingui compile",
     "version": "./build-docs && git add docs"

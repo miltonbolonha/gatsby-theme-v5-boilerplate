@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Trans } from "@lingui/macro";
-import ThemeContext from "@SchemaJSON/src/context/ThemeContext";
+import ThemeContext from "../../../gatsby-plugin-linguijs/src/context/ThemeContext";
 
 const pageStyles = {
   color: "#232129",
@@ -143,7 +142,7 @@ const IndexPage = () => {
             </button>
             <main style={pageStyles}>
               <h1 style={headingStyles}>
-                <Trans>IndexCongrats</Trans>
+                IndexCongrats
                 <br />
                 <span style={headingAccentStyles}>
                   — you just made a Gatsby site! 🎉🎉🎉
