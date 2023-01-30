@@ -1,5 +1,5 @@
 import * as React from "react";
-import ThemeContext from "../../../gatsby-plugin-linguijs/src/context/ThemeContext";
+import ThemeContext from "../../../gatsby-plugin-room-i18n/src/context/ThemeContext";
 
 const pageStyles = {
   color: "#232129",
@@ -135,7 +135,7 @@ const IndexPage = () => {
           e.preventDefault();
           funcChange;
         }
-        const card = theme.businessInfo.allSchemaJson.nodes[0].card[0];
+        // const card = theme.businessInfo.allSchemaJson.nodes[0].card[0];
         return (
           <>
             <button onClick={e => changeLocation(e, theme.localeI18nEn())}>
@@ -143,7 +143,7 @@ const IndexPage = () => {
             </button>
             <main style={pageStyles}>
               <h1 style={headingStyles}>
-                {card.cardLocale}
+                {/* {card.cardLocale} */}
                 <br />
                 <span style={headingAccentStyles}>
                   — you just made a Gatsby site! 🎉🎉🎉

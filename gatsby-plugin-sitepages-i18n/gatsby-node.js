@@ -1,27 +1,35 @@
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
+const fs = require("fs");
+const pageSiteFolder = path.resolve(
+  rootDir,
+  "gatsby-theme-nuktpls-one/src/pages"
+);
 
 const schemaOrg = require(path.resolve(
   rootDir,
   `content/configs/schema-org.json`
 ));
 const card = schemaOrg.schema[0].card[0];
-const locales = card.locales;
+const locales = schemaOrg.locales;
 
-// exports.sourceNodes = async ({ actions }) => {
-//   const { createNodes } = actions;
-// };
-let sitePages = new Set();
+// let files = []
+
+// fs.readdir(pageSiteFolder, (err, files) => {
+//   files.forEach(file => {
+//     console.log(file);
+//     const x = {
+//       path: file.split(".")[0],
+//       component: pageSiteFolder + "/" + file,
+//     };
+//     files.push(x)
+//   });
+// });
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNode, createNodeField, createNodeId } = actions;
   console.log(node.internal.type);
   if (node.internal.type === "SitePage") {
-    console.log("node SITEPAGE");
-    console.log(node);
-    // if (node.path === "/") {
-    sitePages.add({ node });
-
     createNodeField({
       node,
       name: "i18n",
@@ -29,38 +37,113 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
   }
 };
-console.log("sitePages");
-console.log(sitePages);
-console.log("sitePages");
-throw Error("errouuuu");
-exports.createPages = ({ graphql, actions, reporter }) => {
+
+exports.createPages = async function ({ graphql, actions, reporter }) {
   const { createPage, createRedirect } = actions;
-  Array.from(sitePages).forEach(pageSite => {
-    //linguagem sem primeiro item q é a linguagem default
-    // sitePages defaults já foram criadas pelos seus arquivos
-    // essa é a i18n deles
-    console.log(":AQUIIIIIIIIIIIII PAGE SITE::");
-    console.log(pageSite);
-    console.log(locales);
-    console.log(locales.length);
-    console.log(":AQUIIIIIIIIIIIII PAGE SITE::");
-    for (var i = 1; i === locales.length; i++) {
-      // create i18n not default page
-      console.log("WTF???");
-      console.log(i);
 
-      createPage({
-        path: locales[i] + "/" + pageSite.path, // need to add language prefix
-        component: path.resolve(rootDir, pageSite.component),
-        context: {
-          slug: slug,
-          thePost: post.node,
-          postQuestion: questions,
-        },
-      });
-      // more statements
+  await graphql(`
+    {
+      allSchemaJson {
+        nodes {
+          card {
+            brandAppName
+            brandAppRepo
+            brandAppVersion
+            brandCardImage
+            brandDescription
+            brandEmail
+            brandGithub
+            brandHexHelperColor
+            brandHexMainColor
+            brandHighlights
+            brandIntl
+            brandKeywords {
+              key
+            }
+            brandLinkTree {
+              deezer
+              facebook
+              github
+              instagram
+              itunes
+              spotify
+              twitter
+              website
+              youtube
+            }
+            brandLogo
+            brandLogoTransparent
+            brandName
+            brandPascalName
+            brandPerson
+            brandPersonBusinessBio
+            brandPersonBusinessHistory
+            brandPersonFamilyBio
+            brandPhone
+            brandPromoEmail
+            brandQuestions
+            brandSeoDivisor
+            brandSlugName
+            brandTopologyDivName
+            brandTopologyDivSlug
+            brandUrl
+            brandVideoText
+            brandVideoUrl
+            cardLocale
+            contentPath
+            datePublished
+            imageBreakPoints
+            imageFormats
+            imageQuality
+            imageMaxWidth
+            postPerPage
+            staticImagesPath
+            technicalOfficer
+            themePath
+            trailingSlash
+          }
+        }
+      }
+      allSitePage {
+        nodes {
+          path
+          component
+        }
+      }
     }
+  `).then(result => {
+    if (result.errors) {
+      reporter.panicOnBuild("Error loading MD result", result.errors);
+    }
+    const allSitePage = result?.data?.allSitePage?.nodes;
 
-    //  locales
+    fs.readdir(pageSiteFolder, (err, files) => {
+      console.log("files");
+      console.log(files);
+      files.forEach(async file => {
+        console.log(file);
+        const x = {
+          path: file.split(".")[0],
+          component: pageSiteFolder + "/" + file,
+        };
+        console.log({
+          path: "en" + "/" + x.path, // need to add language prefix
+          component: path.resolve(rootDir, x.component),
+        });
+        if (x.path === "index") {
+          await createPage({
+            path: "en" + "/", // need to add language prefix
+            component: path.resolve(rootDir, x.component),
+          });
+          console.log("PÁGINA EN INDEX CRIADA");
+        } else {
+          await createPage({
+            path: "en" + "/" + x.path, // need to add language prefix
+            component: path.resolve(rootDir, x.component),
+          });
+          console.log("PÁGINA EN CRIADA");
+        }
+      });
+    });
   });
 };
