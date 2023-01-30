@@ -1,35 +1,93 @@
 import React, { useState, useEffect } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import { i18n } from "@lingui/core";
+const path = require("path");
+const rootDir = path.join(__dirname, "../");
+const schemaOrg = require(path.resolve(
+  rootDir,
+  `content/configs/schema-org.json`
+));
+const card = schemaOrg.schema[0].card[0];
 
 const defaultState = {
   businessInfo: null,
   getBusinessInfo: () => {},
 };
+const cachedValue = await cache.get(`defaultLocale`);
 
 const ThemeContext = React.createContext(defaultState);
 
-// Getting businessInfo mode information from OS!
-// You need macOS Mojave + Safari Technology Preview Release 68 to test this currently.
-
-const ThemeProvider = ({ children }) => {
-  const [businessInfo, setBusinessInfo] = useState(null);
-  const defaultLocale = "pt-BR";
+const ThemeProvider = async ({ children }) => {
+  const [businessInfo, setBusinessInfo] = useState(cachedValue);
+  const defaultLocale = cachedValue || card.brandIntl;
   const [i18nLocale, setI18nLocale] = useState(defaultLocale);
 
-  async function dynamicActivate(locale) {
-    const { messages } = await import(`../../../content/i18n/${locale}/main`);
-    i18n.load(locale, messages);
-    i18n.activate(locale);
-    console.log(messages);
-  }
-
-  const biQuery = useStaticQuery(graphql`
+  const contextQueries = useStaticQuery(graphql`
     query bi {
       site {
         siteMetadata {
           title
+        }
+      }
+      allSchemaJson {
+        nodes {
+          card {
+            brandAppName
+            brandAppRepo
+            brandAppVersion
+            brandCardImage
+            brandDescription
+            brandEmail
+            brandGithub
+            brandHexHelperColor
+            brandHexMainColor
+            brandHighlights
+            brandIntl
+            brandKeywords {
+              key
+            }
+            brandLinkTree {
+              deezer
+              facebook
+              github
+              instagram
+              spotify
+              itunes
+              twitter
+              website
+              youtube
+            }
+            brandLogo
+            brandLogoTransparent
+            brandName
+            brandPascalName
+            brandPerson
+            brandPersonBusinessBio
+            brandPersonBusinessHistory
+            brandPersonFamilyBio
+            brandPhone
+            brandPromoEmail
+            brandQuestions
+            brandSeoDivisor
+            brandSlugName
+            brandTopologyDivName
+            brandTopologyDivSlug
+            brandUrl
+            brandVideoText
+            brandVideoUrl
+            cardLocale
+            contentPath
+            datePublished
+            imageBreakPoints
+            imageFormats
+            imageMaxWidth
+            imageQuality
+            postPerPage
+            staticImagesPath
+            technicalOfficer
+            themePath
+            trailingSlash
+          }
         }
       }
     }
@@ -39,17 +97,15 @@ const ThemeProvider = ({ children }) => {
   // }
 
   useEffect(() => {
-    setBusinessInfo(biQuery?.site?.siteMetadata);
-  }, [biQuery]);
+    setBusinessInfo(contextQueries);
+  }, [contextQueries]);
 
   function localeI18n(s) {
     setI18nLocale(s);
-    dynamicActivate(s);
   }
 
   function localeI18nEn() {
     setI18nLocale("en-US");
-    dynamicActivate("en-US");
   }
 
   return (
