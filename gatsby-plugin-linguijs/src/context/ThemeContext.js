@@ -1,25 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-const path = require("path");
-const rootDir = path.join(__dirname, "../");
-const schemaOrg = require(path.resolve(
-  rootDir,
-  `content/configs/schema-org.json`
-));
+import schemaOrg from "../../../content/configs/schema-org.json";
+
 const card = schemaOrg.schema[0].card[0];
 
 const defaultState = {
   businessInfo: null,
   getBusinessInfo: () => {},
 };
-const cachedValue = await cache.get(`defaultLocale`);
+// const cachedValue = cache.get(`defaultLocale`);
 
 const ThemeContext = React.createContext(defaultState);
 
-const ThemeProvider = async ({ children }) => {
-  const [businessInfo, setBusinessInfo] = useState(cachedValue);
-  const defaultLocale = cachedValue || card.brandIntl;
+const ThemeProvider = ({ children }) => {
+  const [businessInfo, setBusinessInfo] = useState(null);
+  const defaultLocale = card.brandIntl || "pt-BR";
   const [i18nLocale, setI18nLocale] = useState(defaultLocale);
 
   const contextQueries = useStaticQuery(graphql`

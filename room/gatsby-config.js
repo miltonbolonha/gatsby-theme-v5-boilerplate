@@ -21,10 +21,10 @@ const staticImagesPath = path.resolve(rootDir, staticImagesPathCard);
 
 //passsing directoryPath and callback function
 
-console.log("staticImagesPath:");
-console.log(staticImagesPath);
+// console.log("staticImagesPath:");
+// console.log(staticImagesPath);
 
-console.log("contentPath:");
+// console.log("contentPath:");
 // throw new Error("STOOOOOOOOOOP!222");
 
 let imagePathFolders = new Set();
@@ -35,22 +35,22 @@ const contentDir = srcPath =>
     .filter(file => fs.statSync(path.join(srcPath, file)).isDirectory());
 
 contentDir(contentPath).forEach(element => {
-  console.log(element);
+  // console.log(element);
 
   contentDir(contentPath + "/" + element).forEach(ele => {
-    console.log(ele);
+    // console.log(ele);
     if (ele === "images") {
       imagePathFolders.add(contentPath + "/" + element + "/" + ele);
     }
   });
 });
-console.log("foi");
+// console.log("foi");
 
 let resolveSrcFile = new Set();
 
 const imgsPathsResolve = Array.from(imagePathFolders).forEach(imgPath => {
-  console.log("imgPath");
-  console.log(imgPath);
+  // console.log("imgPath");
+  // console.log(imgPath);
   resolveSrcFile.add({
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -60,8 +60,8 @@ const imgsPathsResolve = Array.from(imagePathFolders).forEach(imgPath => {
   });
 });
 
-console.log("imgsPathsResolve");
-console.log(imgsPathsResolve);
+// console.log("imgsPathsResolve");
+// console.log(imgsPathsResolve);
 
 // throw new Error("Para para para!");
 
@@ -131,10 +131,11 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-linguijs`,
+    `gatsby-plugin-markdown-i18n`,
+    `gatsby-plugin-schemajson-i18n`,
+    `gatsby-plugin-sitepages-i18n`,
     `gatsby-theme-nuktpls-one`,
     `gatsby-theme-room-app`,
-    `gatsby-plugin-schemajson-i18n`,
-    `gatsby-plugin-markdown-i18n`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-alias-imports`,

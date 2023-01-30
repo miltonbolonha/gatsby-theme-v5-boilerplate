@@ -135,6 +135,7 @@ const IndexPage = () => {
           e.preventDefault();
           funcChange;
         }
+        const card = theme.businessInfo.allSchemaJson.nodes[0].card[0];
         return (
           <>
             <button onClick={e => changeLocation(e, theme.localeI18nEn())}>
@@ -142,7 +143,7 @@ const IndexPage = () => {
             </button>
             <main style={pageStyles}>
               <h1 style={headingStyles}>
-                IndexCongrats
+                {card.cardLocale}
                 <br />
                 <span style={headingAccentStyles}>
                   — you just made a Gatsby site! 🎉🎉🎉

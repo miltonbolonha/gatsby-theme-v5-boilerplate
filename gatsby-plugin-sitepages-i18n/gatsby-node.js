@@ -15,8 +15,10 @@ let sitePages = new Set();
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNode, createNodeField, createNodeId } = actions;
-
+  console.log(node.internal.type);
   if (node.internal.type === "SitePage") {
+    console.log("node SITEPAGE");
+    console.log(node);
     // if (node.path === "/") {
     sitePages.add({ node });
 
@@ -30,6 +32,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 console.log("sitePages");
 console.log(sitePages);
 console.log("sitePages");
+throw Error("errouuuu");
 exports.createPages = ({ graphql, actions, reporter }) => {
   const { createPage, createRedirect } = actions;
   Array.from(sitePages).forEach(pageSite => {

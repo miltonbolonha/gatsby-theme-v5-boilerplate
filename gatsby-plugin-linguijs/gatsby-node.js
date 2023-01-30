@@ -1,4 +1,4 @@
-exports.onPostBuild = async ({ cache }) => {
+exports.onPostBuild = async function ({ cache }) {
   await cache.set(`defaultLocale`, `pt-BR`);
   const cachedValue = await cache.get(`defaultLocale`);
   console.log("cachedValue");
