@@ -124,7 +124,9 @@ const links = [
   },
 ];
 
-const IndexPage = () => {
+const IndexPage = ({ pageContext }) => {
+  console.log("pageContext");
+  console.log(pageContext);
   return (
     <ThemeContext.Consumer>
       {theme => {
@@ -143,7 +145,7 @@ const IndexPage = () => {
             </button>
             <main style={pageStyles}>
               <h1 style={headingStyles}>
-                {/* {card.cardLocale} */}
+                {pageContext.schemaJSON.cardLocale}
                 <br />
                 <span style={headingAccentStyles}>
                   — you just made a Gatsby site! 🎉🎉🎉
