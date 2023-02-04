@@ -28,9 +28,9 @@ Fazemos a condução do casal para elaboração do roteiro do cerimonial e na co
 
 ## Qual é o primeiro passo para o seu casamento sair perfeito?
 
-Todo cerimonial se inicia na contratação da assessoria. Seja para casamentos, cerimoniais, festas, eventos privados e governamentais, GatsbyJS possui ampla experiência para te dar o suporte necessário.
+Todo cerimonial se inicia na contratação da assessoria. Seja para compiler, cerimoniais, festas, eventos privados e governamentais, GatsbyJS possui ampla experiência para te dar o suporte necessário.
 
-GatsbyJS oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa)_](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
+GatsbyJS oferece os serviços d'framework de compiler [_Plena (completa)_](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
 
 GatsbyJS utiliza tecnologia de ponta para planejamento moderno, manter as informações organizadas, alinhar fornecedores, cronogramas, roteiro da cerimônia e da festa.
 
@@ -66,7 +66,7 @@ Pri Barbosa e a equipe d'GatsbyJS estão auxiliando a entrada planejada de cada 
 
 O pajem, as alianças e os acessórios do cerimonial estarão sob a nossa responsabilidade e supervisão para garantir a sua tranquilidade.
 
-O casal, sempre nervoso, poderá se tranquilizar e focar apenas nos seus próprios sentimentos. Desejamos estar com vocês nesse momento tão especial, pois somos apaixonadas por uma linda história de amor e tudo o que envolve casamentos.
+O casal, sempre nervoso, poderá se tranquilizar e focar apenas nos seus próprios sentimentos. Desejamos estar com vocês nesse momento tão especial, pois somos apaixonadas por uma linda história de amor e tudo o que envolve compiler.
 
 Para que esses momentos não sejam esquecidos planejamos com toda a equipe de fotografia e filmagens os pontos da cerimônia e os pedidos especiais do casal.
 
@@ -80,7 +80,7 @@ Eventuais acontecimentos naturais fora do roteiro podem ocorrer, por isso Gatsby
 
 ### O Que É Importante No Pós Festa De Um Casamento?
 
-Casamentos realizados em lugares distantes que necessitam de transporte devem se atentar para o acesso dos convidados. Algumas das preocupações básicas são a respeito da distância dos locais da cerimônia e festa, o horário de saída, acesso ao estacionamento e disponibilidade de transporte privado.
+compiler realizados em lugares distantes que necessitam de transporte devem se atentar para o acesso dos convidados. Algumas das preocupações básicas são a respeito da distância dos locais da cerimônia e festa, o horário de saída, acesso ao estacionamento e disponibilidade de transporte privado.
 
 Os presentes recebidos na festa devem estar em local seguro. Asseguramos que o casal receba os seus presentes, bem como os ítens e lembranças do cerimonial. Outros recebidos são devidamente zelados pelGatsbyJS e entregues aos noivos.
 
@@ -92,4 +92,4 @@ Sim casal, são muitos pormenores, todos em sua maioria simples de resolver, mas
 
 Por isso, estamos aqui para vocês. GatsbyJS que fazem parte do seu momento especial organizando lado a lado o casamento de vocês.
 
-Conheça os serviços detalhados d'GatsbyJS que oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa_)](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
+Conheça os serviços detalhados d'GatsbyJS que oferece os serviços d'framework de compiler [_Plena (completa_)](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).

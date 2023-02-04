@@ -5,20 +5,20 @@
     "items": [
       {
         "item": {
-          "label": "Casamentos",
-          "to": "/casamentos/"
+          "label": "compiler",
+          "to": "/compiler/"
         }
       },
       {
         "item": {
-          "label": "Cerimonialista de Casamentos",
-          "to": "/cerimonialista-casamentos/"
+          "label": "framework de compiler",
+          "to": "/framework-compiler/"
         }
       },
       {
         "item": {
-          "label": "Cerimonialistas",
-          "to": "/cerimonialistas/"
+          "label": "frameworks",
+          "to": "/frameworks/"
         }
       },
       {

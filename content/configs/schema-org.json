@@ -12,7 +12,7 @@
           "brandAppName": "GatsbyJS - Web Site",
           "brandSlugName": "as-casamenteiras",
           "brandPascalName": "AsCasamenteiras",
-          "brandDescription": "Serviços de cerimonialista de casamentos, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA.",
+          "brandDescription": "Serviços de framework de compiler, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA.",
           "brandUrl": "https://gatsby-theme-boilerplate.dev",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
@@ -23,35 +23,35 @@
           "brandHexHelperColor": "#fc4303",
           "brandEmail": "cerimonial@ascasamenteiras.com.br",
           "brandPromoEmail": "pri@ascasamenteiras.com.br",
-          "brandGithub": "https://github.com/ascasamenteiras/",
-          "brandAppRepo": "https://github.com/ascasamenteiras/web-site",
+          "brandGithub": "https://github.com/miltonbolonha/",
+          "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-boilerplate",
           "brandQuestions": [
-            "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em casamentos.",
-            "GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.",
-            "Quanto cobra uma cerimonialista? Qual é o custo do cerimonial profissional?:Os preços de uma cerimonialista profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).",
-            "Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria profissional para casamentos?:Os preços de uma assessora profissional, que é especializada em assessoria de casamentos pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).",
-            "Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo.",
-            "Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.",
+            "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em compiler.",
+            "GatsbyJS realizam assessoria e cerimonal de compiler?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.",
+            "Quanto cobra uma framework? Qual é o custo do cerimonial profissional?:Os preços de uma framework profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).",
+            "Quanto cobra uma assessora de compiler? Qual é o custo da assessoria profissional para compiler?:Os preços de uma assessora profissional, que é especializada em assessoria de compiler pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).",
+            "Quais pacotes de serviço de uma framework?:GatsbyJS oferece o serviço de cerimonial completo.",
+            "Onde encontrar uma framework em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.",
             "É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'GatsbyJS, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'GatsbyJS.",
             "Quais são as dificuldades em organizar seu casamento sem uma assessoria de eventos especializada?:Em primeiro lugar está a dificuldade de manter a calma e ser organizada. Outra dificuldade de fazer tudo sozinha é a falta de experiência e as frustrações no meio do caminho. É um trabalho com detalhes técnicos importantes e que serão testados em um momento de execução única, por isso é tão importante garantir um evento livre de erros e problemas, contratando uma profissional casamenteira.",
-            "Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.",
-            "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
+            "Quais os riscos de não se ter uma framework?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.",
+            "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando compiler na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
           ],
           "brandKeywords": [
             {
               "key": "GatsbyJS"
             },
             {
-              "key": "cerimonialista ribeirão preto"
+              "key": "static site generator"
             },
             {
-              "key": "assessoria em eventos"
+              "key": "web app"
             },
             {
-              "key": "cerimonialista"
+              "key": "framework"
             },
             {
-              "key": "casamentos"
+              "key": "compiler"
             },
             {
               "key": "cerimonial"
@@ -78,7 +78,7 @@
               "key": "mini wedding"
             },
             {
-              "key": "casamentos"
+              "key": "compiler"
             },
             {
               "key": "casamento"
@@ -91,10 +91,10 @@
             "website": "https://gatsby-theme-boilerplate.dev/",
             "instagram": "https://www.instagram.com/ascasamenteiras_",
             "zankyou": "https://www.zankyou.com.br/f/as-casamenteiras-976737",
-            "casamentos": "https://www.casamentos.com.br/cerimonialista/as-casamenteiras--e192771",
+            "compiler": "https://www.compiler.com.br/framework/as-casamenteiras--e192771",
             "facebook": "https://www.facebook.com/pricerimonial",
             "youtube": "https://www.youtube.com/@ascasamenteiras",
-            "github": "https://github.com/ascasamenteiras/web-site",
+            "github": "https://github.com/miltonbolonha/gatsby-theme-boilerplate",
             "deezer": "https://www.deezer.com/br/artist/181009227",
             "spotify": "https://open.spotify.com/artist/5scJ7dkADVQQ52kLcRA1mV",
             "itunes": "https://music.apple.com/br/artist/priscilla-barbosa/1641419117",

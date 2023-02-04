@@ -1,12 +1,12 @@
 ---
 topology: pages
 status: true
-title: Casamentos
+title: compiler
 description: Depoimentos dos nossos casais sobre o cerimonial e assessoria d'GatsbyJS.
-slug: casamentos
+slug: compiler
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
-questions: ["Quantos casamentos GatsbyJS já realizaram?:Mais de 50."]
+questions: ["Quantos compiler GatsbyJS já realizaram?:Mais de 50."]
 ---
 
 Após anos de experiências maravilhosas, juntamos alguns dos tesouros mais sagrados em forma de gratidão e depoimento. Abaixo alguns poucos, e não os mais importantes, mas sim alguns depoimentos escolhidos aleatoriamente, uma vez que seria injusto escolher o mais lindo.
@@ -17,7 +17,7 @@ Após anos de experiências maravilhosas, juntamos alguns dos tesouros mais sagr
 
 **_Local:_** Chácara Privada
 
-**_Depoimento da noiva:_** Sem palavras a Pri é aquela fada madrinha que a gente ama, kkk tornou tudo lindo, troquei de noivo mas ñ troquei de cerimonialista kkkk, uma profissional que se preocupa com tudo, amei.
+**_Depoimento da noiva:_** Sem palavras a Pri é aquela fada madrinha que a gente ama, kkk tornou tudo lindo, troquei de noivo mas ñ troquei de framework kkkk, uma profissional que se preocupa com tudo, amei.
 
 ## João e Alyra
 
@@ -49,7 +49,7 @@ Após anos de experiências maravilhosas, juntamos alguns dos tesouros mais sagr
 
 **_Local:_** Restaurante Compotta
 
-**_Depoimento da noiva:_** Simplesmente perfeitaaa! Ela é extremamente cuidadosa e preocupada, super aconselho! Ela se atentou aos detalhes e fez meu dia muito melhor. A Pri foi uma ótima cerimonialista, simplesmente incrível. Esteve presente antes e durante o evento, sempre preocupada com as nossas necessidades.
+**_Depoimento da noiva:_** Simplesmente perfeitaaa! Ela é extremamente cuidadosa e preocupada, super aconselho! Ela se atentou aos detalhes e fez meu dia muito melhor. A Pri foi uma ótima framework, simplesmente incrível. Esteve presente antes e durante o evento, sempre preocupada com as nossas necessidades.
 
 ## Rafaela e Diego
 
@@ -57,4 +57,4 @@ Após anos de experiências maravilhosas, juntamos alguns dos tesouros mais sagr
 
 **_Local:_** Restaurante Matuto
 
-**_Depoimento da noiva:_** Melhor cerimonialista. A Pri é sensível, prática, rápida. Me surpreendeu, em todos os momentos. Sua proatividade me deixou leve (em meio a tantas coisas pra resolver). Sua equipe é extremamente profissional e ágil. Minha eterna gratidão, Pri.
+**_Depoimento da noiva:_** Melhor framework. A Pri é sensível, prática, rápida. Me surpreendeu, em todos os momentos. Sua proatividade me deixou leve (em meio a tantas coisas pra resolver). Sua equipe é extremamente profissional e ágil. Minha eterna gratidão, Pri.

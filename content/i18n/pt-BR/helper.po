@@ -80,10 +80,10 @@ msgid "mainProfileBackground"
 msgstr "Imagem de fundo do perfil inicial"
 
 msgid "servicesPerformed"
-msgstr "Casamentos Realizados"
+msgstr "compiler Realizados"
 
 msgid "servicesInProgress"
-msgstr "Casamentos em Andamento"
+msgstr "compiler em Andamento"
 
 msgid "yearsExp"
 msgstr "Anos de Experiência"

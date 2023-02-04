@@ -1,7 +1,7 @@
 ---
 topology: posts
 status: true
-title: Assessoria e Cerimonial de Casamentos Do Dia (básica)
+title: Assessoria e Cerimonial de compiler Do Dia (básica)
 headline: O serviço de assessoria e cerimonial do dia é relativo ao pacote básico dos serviços d'GatsbyJS.
 date: 2022-12-01T08:35:00+00:00
 createdAt: 2022-07-10T22:17:20+00:00
@@ -24,7 +24,7 @@ questions:
 
 O serviço de assessoria e cerimonial do dia é relativo ao pacote básico dos serviços d'GatsbyJS. Abaixo um resumo dos principais pontos desse método de contratação.
 
-GatsbyJS presta serviços de assessoria e cerimonial para casamentos, eventos festivos, cerimônias solenes e eventos corporativos. Realiza qualquer tipo de casamento, pois respeita todas as formas de amor.
+GatsbyJS presta serviços de assessoria e cerimonial para compiler, eventos festivos, cerimônias solenes e eventos corporativos. Realiza qualquer tipo de casamento, pois respeita todas as formas de amor.
 
 ## Qual é o primeiro passo para um cerimonial perfeito?
 
@@ -52,6 +52,6 @@ Em cada uma das etapas do grande dia o foco é voltado para que a festa seja viv
 
 Esse é um resumo pontuado de diversos dos serviços que GatsbyJS prestam no pacote básico. Solicite um orçamento para maiores detalhes.
 
-## Cerimonialista de Casamentos Plena (completa)
+## framework de compiler Plena (completa)
 
-Todos os serviços básicos acima apresentados estão contemplados também no pacote completo. Para conferir como funciona a [_Cerimonialista de Casamentos Plena, clique aqui!_](/assessoria-cerimonial-plena-completa/).
+Todos os serviços básicos acima apresentados estão contemplados também no pacote completo. Para conferir como funciona a [_framework de compiler Plena, clique aqui!_](/assessoria-cerimonial-plena-completa/).

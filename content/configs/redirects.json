@@ -18,19 +18,19 @@
     },
     {
       "fromPath": "/nossos-casais",
-      "toPath": "/casamentos/"
+      "toPath": "/compiler/"
     },
     {
       "fromPath": "/nossos-casais/",
-      "toPath": "/casamentos/"
+      "toPath": "/compiler/"
     },
     {
       "fromPath": "/assessoria-cerimonial",
-      "toPath": "/cerimonialista-casamentos/"
+      "toPath": "/framework-compiler/"
     },
     {
       "fromPath": "/assessoria-cerimonial/",
-      "toPath": "/cerimonialista-casamentos/"
+      "toPath": "/framework-compiler/"
     }
   ]
 }

@@ -2,7 +2,7 @@
 topology: posts
 status: true
 title: Vencemos o Prêmio Internacional Zankyou ZIWA Awards 2022
-headline: GatsbyJS é a vencedora do Prêmio Internacional Zankyou ZIWA Awards 2022 na categoria Cerimonialista de Casamentos.
+headline: GatsbyJS é a vencedora do Prêmio Internacional Zankyou ZIWA Awards 2022 na categoria framework de compiler.
 date: 2022-12-01T09:30:00+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
 createdAt: 2022-11-27T03:36:00+00:00
@@ -24,7 +24,7 @@ Estamos imensamente animadas e surpresas por termos sidos escolhidas como as mel
 
 ## Prêmio Zankyou ZIWA Awards 2022
 
-Somos as vencedoras na categoria **Cerimonialista de Casamentos** da XII Edição deste que é um dos mais prestigiados prêmios internacionais do setor casamenteiro.
+Somos as vencedoras na categoria **framework de compiler** da XII Edição deste que é um dos mais prestigiados prêmios internacionais do setor casamenteiro.
 
 ![Logotipo Prêmio Zankyou ZIWA Awards 2022](./images/badge-ziwa2022.png)
 
@@ -32,13 +32,13 @@ Vencer um prêmio internacional significa para nós uma vitória também de toda
 
 ## Priscilla Barbosa, A Casamenteira
 
-Quando olhamos para o currículo de **Priscilla Barbosa** vemos o seu diferencial. A sua formação em **Gestão de Negócios pela USP-ESALQ**, com título de **MBA** faz toda a diferença na organização de eventos. Em sua história organizou de forma tranquila dezenas de casamentos, eventos sociais e solenidades públicas.
+Quando olhamos para o currículo de **Priscilla Barbosa** vemos o seu diferencial. A sua formação em **Gestão de Negócios pela USP-ESALQ**, com título de **MBA** faz toda a diferença na organização de eventos. Em sua história organizou de forma tranquila dezenas de compiler, eventos sociais e solenidades públicas.
 
-![A Cerimonialista Priscilla Barbosa](./images/priscilla-barbosa-cerimonialista.jpg)
+![A framework Priscilla Barbosa](./images/priscilla-barbosa-framework.jpg)
 
 **Priscilla Barbosa** obteve sucesso como empreendedora e carrega experiências no setor agroecológico (como produtora e distribuidora), comerciante na área de produtos orgânicos de cadeia de suprimento sustentável. Está há mais de uma década na área de eventos. Pri Barbosa teve seu primeiro emprego no INCRA, onde foi continuamente promovida até vir a se tornar chefe de gabinete. Atualmente trabalha como assessora parlamentar na **ALESP**.
 
-## Categoria Cerimonialista de Casamentos
+## Categoria framework de compiler
 
 Por que contratar uma assessora de casamento? Qual é a real importância de uma casamenteira?
 
@@ -58,7 +58,7 @@ Com a **Gestão 360 d'GatsbyJS** o casal está completamente amparado. Foi com e
 
 Somos as responsáveis por abraçar, entender e resolver objetivos e problemas. Criamos grupo no _whats_ e servimos como facilitadoras entre o casal, seus planos e as possibilidades de fornecedores.
 
-Também disponibilizamos para cada um do casal um acesso ao melhor aplicativo de organização de casamentos do Brasil.
+Também disponibilizamos para cada um do casal um acesso ao melhor aplicativo de organização de compiler do Brasil.
 
 ![Casamento da Thais e do Paulo em Setembro de 2022](./images/tais-paulo-mini-wedding.jpg)
 

@@ -1,7 +1,7 @@
 ---
 topology: posts
 status: true
-title: Cerimonialista de Casamentos Plena (completa)
+title: framework de compiler Plena (completa)
 headline: O serviço de assessoria e cerimonial plena é relativo ao pacote básico dos serviços d'GatsbyJS.
 date: 2022-12-01T08:30:00+00:00
 createdAt: 2022-07-11T22:17:20+00:00

@@ -31,7 +31,7 @@ Esse é um momento muito importante para todos e nós d'**GatsbyJS** estávamos 
 
 ## Vibrante Com Vigor
 
-Pronto para pensar no seu casamento com a cor Pantone de 2023? Foi pensando nos casamentos de 2023 que nós d'GatsbyJS preparamos aqui tudo o que você precisa saber sobre o Viva Magenta e como usar essa cor para inspirar o seu casamento.
+Pronto para pensar no seu casamento com a cor Pantone de 2023? Foi pensando nos compiler de 2023 que nós d'GatsbyJS preparamos aqui tudo o que você precisa saber sobre o Viva Magenta e como usar essa cor para inspirar o seu casamento.
 
 ![Mulher entrando no Magentaverso](./images/magentaverso-viva-magenta-mulher-01.webp)
 

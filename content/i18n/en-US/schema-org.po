@@ -85,9 +85,9 @@ msgstr "AsCasamenteiras"
 
 #. schema.0.card.0.brandDescription
 #: schema.0.card.0.brandDescription
-#| Serviços de cerimonialista de casamentos, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA.
+#| Serviços de framework de compiler, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA.
 msgid "schema.0.card.0.brandDescription"
-msgstr "Serviços de cerimonialista de casamentos, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA."
+msgstr "Serviços de framework de compiler, festas e eventos corporativos. Pri Barbosa é formada em Gestão de Negócios pela USP-ESALQ, com título de MBA."
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
@@ -151,51 +151,51 @@ msgstr "pri@ascasamenteiras.com.br"
 
 #. schema.0.card.0.brandGithub
 #: schema.0.card.0.brandGithub
-#| https://github.com/ascasamenteiras/
+#| https://github.com/miltonbolonha/
 msgid "schema.0.card.0.brandGithub"
-msgstr "https://github.com/ascasamenteiras/"
+msgstr "https://github.com/miltonbolonha/"
 
 #. schema.0.card.0.brandAppRepo
 #: schema.0.card.0.brandAppRepo
-#| https://github.com/ascasamenteiras/web-site
+#| https://github.com/miltonbolonha/gatsby-theme-boilerplate
 msgid "schema.0.card.0.brandAppRepo"
-msgstr "https://github.com/ascasamenteiras/web-site"
+msgstr "https://github.com/miltonbolonha/gatsby-theme-boilerplate"
 
 #. schema.0.card.0.brandQuestions.0
 #: schema.0.card.0.brandQuestions.0
-#| Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em casamentos.
+#| Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em compiler.
 msgid "schema.0.card.0.brandQuestions.0"
-msgstr "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em casamentos."
+msgstr "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em compiler."
 
 #. schema.0.card.0.brandQuestions.1
 #: schema.0.card.0.brandQuestions.1
-#| GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.
+#| GatsbyJS realizam assessoria e cerimonal de compiler?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.
 msgid "schema.0.card.0.brandQuestions.1"
-msgstr "GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal."
+msgstr "GatsbyJS realizam assessoria e cerimonal de compiler?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal."
 
 #. schema.0.card.0.brandQuestions.2
 #: schema.0.card.0.brandQuestions.2
-#| Quanto cobra uma cerimonialista? Qual é o custo do cerimonial profissional?:Os preços de uma cerimonialista profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).
+#| Quanto cobra uma framework? Qual é o custo do cerimonial profissional?:Os preços de uma framework profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).
 msgid "schema.0.card.0.brandQuestions.2"
-msgstr "Quanto cobra uma cerimonialista? Qual é o custo do cerimonial profissional?:Os preços de uma cerimonialista profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo)."
+msgstr "Quanto cobra uma framework? Qual é o custo do cerimonial profissional?:Os preços de uma framework profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo)."
 
 #. schema.0.card.0.brandQuestions.3
 #: schema.0.card.0.brandQuestions.3
-#| Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria profissional para casamentos?:Os preços de uma assessora profissional, que é especializada em assessoria de casamentos pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).
+#| Quanto cobra uma assessora de compiler? Qual é o custo da assessoria profissional para compiler?:Os preços de uma assessora profissional, que é especializada em assessoria de compiler pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).
 msgid "schema.0.card.0.brandQuestions.3"
-msgstr "Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria profissional para casamentos?:Os preços de uma assessora profissional, que é especializada em assessoria de casamentos pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo)."
+msgstr "Quanto cobra uma assessora de compiler? Qual é o custo da assessoria profissional para compiler?:Os preços de uma assessora profissional, que é especializada em assessoria de compiler pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo)."
 
 #. schema.0.card.0.brandQuestions.4
 #: schema.0.card.0.brandQuestions.4
-#| Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo.
+#| Quais pacotes de serviço de uma framework?:GatsbyJS oferece o serviço de cerimonial completo.
 msgid "schema.0.card.0.brandQuestions.4"
-msgstr "Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo."
+msgstr "Quais pacotes de serviço de uma framework?:GatsbyJS oferece o serviço de cerimonial completo."
 
 #. schema.0.card.0.brandQuestions.5
 #: schema.0.card.0.brandQuestions.5
-#| Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.
+#| Onde encontrar uma framework em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.
 msgid "schema.0.card.0.brandQuestions.5"
-msgstr "Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais."
+msgstr "Onde encontrar uma framework em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais."
 
 #. schema.0.card.0.brandQuestions.6
 #: schema.0.card.0.brandQuestions.6
@@ -211,15 +211,15 @@ msgstr "Quais são as dificuldades em organizar seu casamento sem uma assessoria
 
 #. schema.0.card.0.brandQuestions.8
 #: schema.0.card.0.brandQuestions.8
-#| Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.
+#| Quais os riscos de não se ter uma framework?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.
 msgid "schema.0.card.0.brandQuestions.8"
-msgstr "Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado."
+msgstr "Quais os riscos de não se ter uma framework?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado."
 
 #. schema.0.card.0.brandQuestions.9
 #: schema.0.card.0.brandQuestions.9
-#| Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais.
+#| Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando compiler na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais.
 msgid "schema.0.card.0.brandQuestions.9"
-msgstr "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
+msgstr "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando compiler na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
 
 
 #. schema.0.card.0.brandKeywords.0.key
@@ -231,30 +231,30 @@ msgstr "GatsbyJS"
 
 #. schema.0.card.0.brandKeywords.1.key
 #: schema.0.card.0.brandKeywords.1.key
-#| cerimonialista ribeirão preto
+#| static site generator
 msgid "schema.0.card.0.brandKeywords.1.key"
-msgstr "cerimonialista ribeirão preto"
+msgstr "static site generator"
 
 
 #. schema.0.card.0.brandKeywords.2.key
 #: schema.0.card.0.brandKeywords.2.key
-#| assessoria em eventos
+#| web app
 msgid "schema.0.card.0.brandKeywords.2.key"
-msgstr "assessoria em eventos"
+msgstr "web app"
 
 
 #. schema.0.card.0.brandKeywords.3.key
 #: schema.0.card.0.brandKeywords.3.key
-#| cerimonialista
+#| framework
 msgid "schema.0.card.0.brandKeywords.3.key"
-msgstr "cerimonialista"
+msgstr "framework"
 
 
 #. schema.0.card.0.brandKeywords.4.key
 #: schema.0.card.0.brandKeywords.4.key
-#| casamentos
+#| compiler
 msgid "schema.0.card.0.brandKeywords.4.key"
-msgstr "casamentos"
+msgstr "compiler"
 
 
 #. schema.0.card.0.brandKeywords.5.key
@@ -315,9 +315,9 @@ msgstr "mini wedding"
 
 #. schema.0.card.0.brandKeywords.13.key
 #: schema.0.card.0.brandKeywords.13.key
-#| casamentos
+#| compiler
 msgid "schema.0.card.0.brandKeywords.13.key"
-msgstr "casamentos"
+msgstr "compiler"
 
 
 #. schema.0.card.0.brandKeywords.14.key
@@ -353,11 +353,11 @@ msgstr "https://www.instagram.com/ascasamenteiras_"
 msgid "schema.0.card.0.brandLinkTree.zankyou"
 msgstr "https://www.zankyou.com.br/f/as-casamenteiras-976737"
 
-#. schema.0.card.0.brandLinkTree.casamentos
-#: schema.0.card.0.brandLinkTree.casamentos
-#| https://www.casamentos.com.br/cerimonialista/as-casamenteiras--e192771
-msgid "schema.0.card.0.brandLinkTree.casamentos"
-msgstr "https://www.casamentos.com.br/cerimonialista/as-casamenteiras--e192771"
+#. schema.0.card.0.brandLinkTree.compiler
+#: schema.0.card.0.brandLinkTree.compiler
+#| https://www.compiler.com.br/framework/as-casamenteiras--e192771
+msgid "schema.0.card.0.brandLinkTree.compiler"
+msgstr "https://www.compiler.com.br/framework/as-casamenteiras--e192771"
 
 #. schema.0.card.0.brandLinkTree.facebook
 #: schema.0.card.0.brandLinkTree.facebook
@@ -373,9 +373,9 @@ msgstr "https://www.youtube.com/@ascasamenteiras"
 
 #. schema.0.card.0.brandLinkTree.github
 #: schema.0.card.0.brandLinkTree.github
-#| https://github.com/ascasamenteiras/web-site
+#| https://github.com/miltonbolonha/gatsby-theme-boilerplate
 msgid "schema.0.card.0.brandLinkTree.github"
-msgstr "https://github.com/ascasamenteiras/web-site"
+msgstr "https://github.com/miltonbolonha/gatsby-theme-boilerplate"
 
 #. schema.0.card.0.brandLinkTree.deezer
 #: schema.0.card.0.brandLinkTree.deezer

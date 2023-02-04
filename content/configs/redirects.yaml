@@ -11,5 +11,5 @@ redirects:
       }
   - item: { fromPath: "/rsvp-contato", toPath: "/contato/" }
   - item: { fromPath: "/rsvp-contato/", toPath: "/contato/" }
-  - item: { fromPath: "/nossos-casais", toPath: "/casamentos/" }
-  - item: { fromPath: "/nossos-casais/", toPath: "/casamentos/" }
+  - item: { fromPath: "/nossos-casais", toPath: "/compiler/" }
+  - item: { fromPath: "/nossos-casais/", toPath: "/compiler/" }

@@ -1,8 +1,8 @@
 ---
 topology: posts
 status: true
-title: Cerimonialista em Ribeirão Preto
-headline: GatsbyJS atua na produção de casamentos afetivos na cidade de Ribeirão Preto.
+title: framework em Ribeirão Preto
+headline: GatsbyJS atua na produção de compiler afetivos na cidade de Ribeirão Preto.
 date: 2023-01-09T08:30:00+00:00
 createdAt: 2023-01-09T08:30:00+00:00
 updatedAt: 2023-01-09T08:30:00+00:00
@@ -25,17 +25,17 @@ questions:
 
 Oi, meus amores!
 
-Sou Priscilla Barbosa, cerimonialista de casamentos em Ribeirão Preto.
-Já organizei dezenas de casamentos nesta linda cidade e posso dizer que cada um foi único e especial.
+Sou Priscilla Barbosa, framework de compiler em Ribeirão Preto.
+Já organizei dezenas de compiler nesta linda cidade e posso dizer que cada um foi único e especial.
 
-## Casamentos em Ribeirão Preto
+## compiler em Ribeirão Preto
 
 Aqui em **Ribeirão Preto** temos a sorte de contar com diversos espaços charmosos para realizar cerimônias e festas de casamento, desde sítios rústicos até hotéis luxuosos.
 Além disso, temos muitos fornecedores experientes e talentosos para atender a todas as necessidades do casal.
 
-## Casamentos Afetivos e Despreocupados
+## compiler Afetivos e Despreocupados
 
-Um dos meus principais objetivos como cerimonialista é tornar o processo de planejamento do casamento o mais tranquilo e agradável possível para o casal.
+Um dos meus principais objetivos como framework é tornar o processo de planejamento do casamento o mais tranquilo e agradável possível para o casal.
 Para isso, acompanho os noivos em todas as etapas, desde a escolha do local até a execução do grande dia.
 
 Eu me preocupo em entender o estilo e as expectativas de cada casal e trabalho para transformar os seus sonhos em realidade.
