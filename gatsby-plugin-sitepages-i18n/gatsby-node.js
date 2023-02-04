@@ -2,11 +2,8 @@ const path = require("path");
 const rootDir = path.join(__dirname, "../");
 const fs = require("fs");
 
-const pageSiteFolder = path.resolve(
-  rootDir,
-  "gatsby-theme-nuktpls-one/src/pages"
-);
-
+//requires for schemas
+const schemasPath = path.resolve(rootDir, `content/schemas/`);
 const schemaOrg = require(path.resolve(
   rootDir,
   `content/configs/schema-org.json`
@@ -15,88 +12,135 @@ const schemaOrgEN = require(path.resolve(
   rootDir,
   `content/configs/schema-org.en.json`
 ));
+const reqSchemaDefault = require(path.resolve(
+  rootDir,
+  "content/schemas/default.json"
+));
 
+// i18n default card
 const card = schemaOrg.schema[0].card[0];
-const cardEN = schemaOrgEN.schema[0].card[0];
-const filteredCard = null;
+// i18n array locales ['xx-XX','xx-XX']
 const locales = schemaOrg.locales;
-// console.log("locales");
-// console.log(locales.shift());
 
+//require theme pagesSite
+const pageSiteFolder = path.resolve(rootDir, `${card.themePath}/src/pages`);
+
+// const cardEN = schemaOrgEN.schema[0].card[0];
+// const filteredCard = null;
+
+// create Node Field in SitePage node type
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNode, createNodeField, createNodeId } = actions;
-  console.log(node.internal.type);
   if (node.internal.type === "SitePage") {
-    console.log("achheii aqui agora");
+    const x = [
+      {
+        node,
+        name: "i18n",
+        value: card.brandIntl,
+      },
+      {
+        node,
+        name: "schemaJSON",
+        value: card,
+      },
+    ];
 
-    createNodeField({
-      node,
-      name: "i18n",
-      value: card.brandIntl,
+    x.forEach(nodeField => {
+      createNodeField(nodeField);
     });
 
-    createNodeField({
-      node,
-      name: "schemaJSON",
-      value: card,
-    });
+    console.log("SitePage Node field has been created");
   }
 };
 
+// createPages i18n from SitePages
 exports.createPages = async function ({ graphql, actions, page, reporter }) {
   const { createPage, deletePage, createRedirect } = actions;
-  console.log(page);
-  // deletePage(page);
-  // createPage({
-  //   ...page,
-  //   context: {
-  //     schemaJSON: card,
-  //   },
-  // });
-  locales.shift();
-  return new Promise((resolve, reject) => {
-    resolve(
-      locales.forEach(async i18n => {
-        fs.readdir(pageSiteFolder, (err, files) => {
-          console.log("files");
-          console.log(files);
-          files.forEach(async file => {
-            // console.log(file);
-            const x = {
-              path: file.split(".")[0],
-              component: pageSiteFolder + "/" + file,
-              context: {
-                schemaJSON: filteredCard,
-              },
-            };
-            const prefix = i18n.split("-");
+  // first array locale position it's reserved to default locale
+  const defaultLocale = locales[0];
 
-            if (x.path === "index") {
-              await createPage({
-                path: prefix[0] + "/",
-                component: path.resolve(rootDir, x.component),
-                context: {
-                  schemaJSON: cardEN,
-                },
-              });
-              console.log(`PÁGINA i18n INDEX CRIADA`);
-            } else {
-              await createPage({
-                path: prefix[0] + "/" + x.path,
-                component: path.resolve(rootDir, x.component),
-                context: {
-                  schemaJSON: cardEN,
-                },
-              });
-              console.log(`PÁGINA i18n CRIADA`);
-            }
+  const pageSiteObj = (file, schema) => {
+    const x = file.split(".")[0];
+    return {
+      path: x,
+      component: pageSiteFolder + "/" + file,
+      context: {
+        schemaJSON: null,
+      },
+    };
+  };
 
-            // locales.shift().forEach(async i18n => {
+  const createPagesSitesI18n = async (
+    pageSiteObj,
+    pageSitename,
+    schemaJSON
+  ) => {
+    // console.log("iniciar create pages i18n index 404's and plus");
+    // index
+    // 404
+    // 404.html
+    for (let index = 0; index < schemaJSON.length; index++) {
+      let element = schemaJSON[index];
 
-            // });
-          });
-        });
-      })
-    );
+      const isDefaultI18n = schemaJSON[index] === "default.json" ? true : false;
+      const isIndex = pageSitename === "index.js" ? true : false;
+      const is404 = pageSitename === "404.js" ? true : false;
+      const localePathQuery = isDefaultI18n
+        ? ""
+        : schemaJSON[index].slice(0, 2);
+
+      const pathQuery = isIndex ? "" : pageSitename;
+      const pathExtended =
+        schemaJSON[index] === "default.json"
+          ? "/" + localePathQuery
+          : "/" + localePathQuery + "/" + pathQuery;
+      pageSiteObj.path = pathExtended;
+      pageSiteObj.context.schemaJSON = require(path.resolve(
+        rootDir,
+        `content/schemas/${element}`
+      ));
+
+      //if index 404 404.html
+      // await createPage(pageSiteObj);
+      if (is404) {
+        console.log("is 404 page");
+        console.log(pageSiteObj);
+        await createPage(pageSiteObj);
+      }
+      if (isDefaultI18n && isIndex) {
+        console.log("is index default page");
+        console.log(pageSiteObj);
+        await createPage(pageSiteObj);
+      } else {
+        console.log("todas as pagesSites aqui");
+        console.log(pageSiteObj);
+        await createPage(pageSiteObj);
+        // console.log("i18n pagesite created");
+      }
+    }
+  };
+
+  // grab all files in themePath/src/pages
+  const mapPageSites = async schemaJSON => {
+    fs.readdir(pageSiteFolder, (err, files) => {
+      // console.log("Folder readed: pagesiteFolder files");
+      // console.log(files.split(".")[0]);
+      files.map((pageSitename, ind) => {
+        // console.log("initialize create PagesSites I18n w/ ");
+        // console.log("pageSite for");
+        // console.log(pageSitename);
+        createPagesSitesI18n(
+          pageSiteObj(pageSitename),
+          pageSitename,
+          schemaJSON
+        );
+      });
+    });
+  };
+
+  let x = null;
+  fs.readdir(schemasPath, (err, schemasFiles) => {
+    // console.log("iniciar mapeamento e criação de sitePages com schemas ");
+    mapPageSites(schemasFiles);
   });
 };
