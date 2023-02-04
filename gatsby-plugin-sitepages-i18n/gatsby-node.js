@@ -95,10 +95,10 @@ exports.createPages = async function ({ graphql, actions, page, reporter }) {
           ? "/" + localePathQuery
           : "/" + localePathQuery + "/" + pathQuery;
       pageSiteObj.path = pathExtended;
-      pageSiteObj.context.schemaJSON = require(path.resolve(
-        rootDir,
-        `content/schemas/${element}`
-      ));
+      // pageSiteObj.context.schemaJSON = require(path.resolve(
+      //   rootDir,
+      //   `content/schemas/${element}`
+      // ));
 
       //if index 404 404.html
       // await createPage(pageSiteObj);

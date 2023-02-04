@@ -1,11 +1,10 @@
 {
-  "locales": ["pt-BR", "en-US"],
+  "locales": ["pt-BR", "en-US", "de-DE"],
   "schema": [
     {
       "card": [
         {
           "brandAppVersion": "0.6.0",
-          "locales": ["pt-BR", "en-US"],
           "cardLocale": "en-US",
           "brandIntl": "pt-BR",
           "brandPerson": "Priscilla Barbosa",
