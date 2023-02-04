@@ -130,7 +130,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-room-i18n`,
+    `gatsby-plugin-context-i18n`,
     `gatsby-plugin-markdown-i18n`,
     `gatsby-plugin-schemajson-i18n`,
     `gatsby-plugin-sitepages-i18n`,

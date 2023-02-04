@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-room-i18n",
+  "name": "gatsby-plugin-context-i18n",
   "private": false,
   "module": "index.js",
   "version": "0.6.0",

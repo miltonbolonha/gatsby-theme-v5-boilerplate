@@ -1,5 +1,5 @@
 import * as React from "react";
-import ThemeContext from "../../../gatsby-plugin-room-i18n/src/context/ThemeContext";
+import ThemeContext from "../../../gatsby-plugin-context-i18n/src/context/ThemeContext";
 
 const pageStyles = {
   color: "#232129",
