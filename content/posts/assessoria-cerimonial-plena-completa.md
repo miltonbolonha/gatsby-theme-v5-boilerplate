@@ -2,11 +2,11 @@
 topology: posts
 status: true
 title: Cerimonialista de Casamentos Plena (completa)
-headline: O serviço de assessoria e cerimonial plena é relativo ao pacote básico dos serviços d'As Casamenteiras.
+headline: O serviço de assessoria e cerimonial plena é relativo ao pacote básico dos serviços d'GatsbyJS.
 date: 2022-12-01T08:30:00+00:00
 createdAt: 2022-07-11T22:17:20+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - serviços
   - cerimonial
@@ -17,7 +17,7 @@ homeHighlight: false
 homeHighlightRelated: false
 homeHighlightRelatedList: true
 questions: [
-    "Como fazer a montagem do cerimonial e festa?:As Casamenteiras cria um grupo no WhatsApp com todos os fornecedores envolvidos para compartilhamento dos roteiros e cronograma. Além disso, estaremos em contato constante com cada fornecedor para construção do cronograma de chegada e montagem no local do casamento e festa.
+    "Como fazer a montagem do cerimonial e festa?:GatsbyJS cria um grupo no WhatsApp com todos os fornecedores envolvidos para compartilhamento dos roteiros e cronograma. Além disso, estaremos em contato constante com cada fornecedor para construção do cronograma de chegada e montagem no local do casamento e festa.
     ",
   ]
 ---
@@ -30,11 +30,11 @@ Em cada uma das etapas da _Assessoria e Cerimonial Plena (completa)_ o foco est�
 
 A reunião inicial e o briefing/roteiro norteiam a organização do evento. O atendimento virtual é realizado para elaboração do roteiro do cerimonial e sanar dúvidas.
 
-As Casamenteiras mantém contato frequente com todos os fornecedores envolvidos e faz o serviço de acompanhamento dos contratados de perto e alinhamento do cronograma de chegada no local do casamento.
+GatsbyJS mantém contato frequente com todos os fornecedores envolvidos e faz o serviço de acompanhamento dos contratados de perto e alinhamento do cronograma de chegada no local do casamento.
 
 Ainda fazemos o agendamento de degustação com buffet, visita técnica e a reunião final.
 
-## Diferenciais d'As Casamenteiras
+## Diferenciais d'GatsbyJS
 
 Organização financeira via app e assinatura de todos os contratos digitalmente.
 
@@ -44,9 +44,9 @@ Checagem experiente e moderna dos fornecedores contratados. Elaboração do rote
 
 ## O Cerimonial, A Festa e o Pós-Festa
 
-As Casamenteiras estarão uniformizadas e equipadas com rádios comunicadores (até 3 pessoas) acompanhando a montagem, o cerimonial e o pós-festa.
+GatsbyJS estarão uniformizadas e equipadas com rádios comunicadores (até 3 pessoas) acompanhando a montagem, o cerimonial e o pós-festa.
 
-Asseguramos que o casal receba os seus presentes, bem como os ítens e lembranças do cerimonial. Outros recebidos são devidamente zelados pelAs Casamenteiras e entregues aos noivos.
+Asseguramos que o casal receba os seus presentes, bem como os ítens e lembranças do cerimonial. Outros recebidos são devidamente zelados pelGatsbyJS e entregues aos noivos.
 
 Por fim, fazemos o relatório de convidados presentes, avaliação e o feedback junto ao casal no final do evento.
 

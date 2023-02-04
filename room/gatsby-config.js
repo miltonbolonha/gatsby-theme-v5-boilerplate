@@ -168,12 +168,12 @@ module.exports = {
     {
       resolve: `gatsby-business-in-build`,
       options: {
-        name: "As Casamenteiras",
+        name: "GatsbyJS",
         version: "0.6.0",
         developer: "Milton Bolonha",
         coauthorBusiness: "Instituto Organizacionista",
-        project: "As Casamenteiras - Web Site",
-        url: "https://ascasamenteiras.com.br",
+        project: "GatsbyJS - Web Site",
+        url: "https://gatsby-theme-boilerplate.dev",
         message: "Copy not comedy.",
       },
     },

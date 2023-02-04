@@ -6,7 +6,7 @@ headline: Encontre tudo o que você precisa saber sobre a cor Viva Magenta, a co
 date: 2022-12-12T02:30:00+00:00
 updatedAt: 2022-12-12T02:30:00+00:00
 createdAt: 2022-12-12T02:30:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - branding de casamento
 featuredPost: true
@@ -27,11 +27,11 @@ A **Cor Pantone do ano de 2023** foi revelada! Mas não foi somente a Pantone qu
 
 ![Aliança Cor Viva Magenta](./images/alianca-viva-magenta.jpg)
 
-Esse é um momento muito importante para todos e nós d'**As Casamenteiras** estávamos ansiosas por essa apresentação; O **Pantone Color Institute** (Instituto Cor Pantone) acaba de fazer o anúncio oficial de que a Cor Pantone do ano de 2023 será o **Viva Magenta**.
+Esse é um momento muito importante para todos e nós d'**GatsbyJS** estávamos ansiosas por essa apresentação; O **Pantone Color Institute** (Instituto Cor Pantone) acaba de fazer o anúncio oficial de que a Cor Pantone do ano de 2023 será o **Viva Magenta**.
 
 ## Vibrante Com Vigor
 
-Pronto para pensar no seu casamento com a cor Pantone de 2023? Foi pensando nos casamentos de 2023 que nós d'As Casamenteiras preparamos aqui tudo o que você precisa saber sobre o Viva Magenta e como usar essa cor para inspirar o seu casamento.
+Pronto para pensar no seu casamento com a cor Pantone de 2023? Foi pensando nos casamentos de 2023 que nós d'GatsbyJS preparamos aqui tudo o que você precisa saber sobre o Viva Magenta e como usar essa cor para inspirar o seu casamento.
 
 ![Mulher entrando no Magentaverso](./images/magentaverso-viva-magenta-mulher-01.webp)
 
@@ -131,7 +131,7 @@ A Coloro decodificou as cores de como o olho humano vê. Combinando 20 anos de p
 
 Para a empresa é importante que você selecione as cores certas, validadas com a experiência em tendências da WGSN, e obtenha-as com precisão a sua cor.
 
-## Como faço para saber mais sobre os serviços premiados d'As Casamenteiras?
+## Como faço para saber mais sobre os serviços premiados d'GatsbyJS?
 
 Para saber mais sobre todos os nossos serviços, sinta-se à vontade em nos enviar a sua pergunta. Entre em contato com a nossa equipe pelo _Whats_ 16 9 9245-2437 ou por [e-mail](mailto:cerimonial@ascasamenteiras.com.br).
 
@@ -141,6 +141,6 @@ Visita também a página do nosso **Prêmio Internacional ZIWA Awards 2022**, [c
 
 Desejamos só o melhor para vocês nesse momento tão especial.
 
-As Casamenteiras - Todo Amor Importa!
+GatsbyJS - Todo Amor Importa!
 
 **_#bóraCasarMeuPovo_** **_#asCasamenteiras_** **_#casamentoDosSonhos_**

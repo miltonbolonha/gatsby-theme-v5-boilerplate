@@ -1,7 +1,7 @@
 # MAIN TRANSLATION FILE.
-# Copyright (C) 2023 - As Casamenteiras
+# Copyright (C) 2023 - GatsbyJS
 # This file is distributed under the same license as the PACKAGE package.
-# As Casamenteiras <i18n@ascasamenteiras.com.br>, 2023.
+# GatsbyJS <i18n@ascasamenteiras.com.br>, 2023.
 #
 # , fuzzy
 msgid ""
@@ -12,11 +12,11 @@ msgstr ""
 "X-Generator: Gatsby Boilerplate Blog Intl 0.1 beta\n"
 "Project-Id-Version: AsCasamenteiras i18n 0.1.0\n"
 "Report-Msgid-Bugs-To: i18n@ascasamenteiras.com.br\n"
-"Last-Translator: As Casamenteiras <i18n@ascasamenteiras.com.br>\n"
+"Last-Translator: GatsbyJS <i18n@ascasamenteiras.com.br>\n"
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: en-US\n"
-"Language-Team: https://ascasamenteiras.com.br/\n"
+"Language-Team: https://gatsby-theme-boilerplate.dev/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/page/index.js:4, src/component/head.js:2
@@ -77,7 +77,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandHighlights"
-#~ msgstr "Destaques d'As Casamenteiras"
+#~ msgstr "Destaques d'GatsbyJS"
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
@@ -85,12 +85,12 @@ msgstr ""
 #~ msgstr "pt-BR\","
 
 #~ msgid "brandKeywords\":"
-#~ msgstr "As Casamenteiras; cerimonialista ribeirão preto; assessoria em eventos; cerimonialista; casamentos; cerimonial; como montar um cerimonial de casamento; mini-wedding; wedding planner service; planner; cerimonial de casamento; mini wedding ribeirão preto; mini wedding; casamentos; casamento; casamenteiras"
+#~ msgstr "GatsbyJS; cerimonialista ribeirão preto; assessoria em eventos; cerimonialista; casamentos; cerimonial; como montar um cerimonial de casamento; mini-wedding; wedding planner service; planner; cerimonial de casamento; mini wedding ribeirão preto; mini wedding; casamentos; casamento; casamenteiras"
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandLinkTree"
-#~ msgstr "website:https://ascasamenteiras.com.br/;instagram:https://www.instagram.com/ascasamenteiras_;zankyou:https://www.zankyou.com.br/f/as-casamenteiras-976737;casamentos:https://www.casamentos.com.br/cerimonialista/as-casamenteiras--e192771;facebook:https://www.facebook.com/pricerimonial;youtube:https://www.youtube.com/@ascasamenteiras;github:https://github.com/ascasamenteiras/web-site;deezer:https://www.deezer.com/br/artist/181009227;spotify:https://open.spotify.com/artist/5scJ7dkADVQQ52kLcRA1mV;itunes:https://music.apple.com/br/artist/priscilla-barbosa/1641419117\""
+#~ msgstr "website:https://gatsby-theme-boilerplate.dev/;instagram:https://www.instagram.com/ascasamenteiras_;zankyou:https://www.zankyou.com.br/f/as-casamenteiras-976737;casamentos:https://www.casamentos.com.br/cerimonialista/as-casamenteiras--e192771;facebook:https://www.facebook.com/pricerimonial;youtube:https://www.youtube.com/@ascasamenteiras;github:https://github.com/ascasamenteiras/web-site;deezer:https://www.deezer.com/br/artist/181009227;spotify:https://open.spotify.com/artist/5scJ7dkADVQQ52kLcRA1mV;itunes:https://music.apple.com/br/artist/priscilla-barbosa/1641419117\""
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
@@ -110,7 +110,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandName"
-#~ msgstr "As Casamenteiras\","
+#~ msgstr "GatsbyJS\","
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
@@ -165,7 +165,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandQuestions"
-#~ msgstr "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em casamentos.;As Casamenteiras realizam assessoria e cerimonal de casamentos?:Sim, As Casamenteiras oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.;Quanto cobra uma cerimonialista? Qual é o custo do cerimonial profissional?:Os preços de uma cerimonialista profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).;Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria profissional para casamentos?:Os preços de uma assessora profissional, que é especializada em assessoria de casamentos pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).;Quais pacotes de serviço de uma cerimonialista?:As Casamenteiras oferece o serviço de cerimonial completo.;Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.;É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'As Casamenteiras, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'As Casamenteiras.;Quais são as dificuldades em organizar seu casamento sem uma assessoria de eventos especializada?:Em primeiro lugar está a dificuldade de manter a calma e ser organizada. Outra dificuldade de fazer tudo sozinha é a falta de experiência e as frustrações no meio do caminho. É um trabalho com detalhes técnicos importantes e que serão testados em um momento de execução única, por isso é tão importante garantir um evento livre de erros e problemas, contratando uma profissional casamenteira.;Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que As Casamenteiras está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.;Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, As Casamenteiras se especializou em encantar seus clientes/casais.;"
+#~ msgstr "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma assessora de eventos, especializada em casamentos.;GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.;Quanto cobra uma cerimonialista? Qual é o custo do cerimonial profissional?:Os preços de uma cerimonialista profissional, que é especializada em cerimoniais pode variar entre R$1.200,00 a R$50.000,00 (levando em consideração mercado de luxo).;Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria profissional para casamentos?:Os preços de uma assessora profissional, que é especializada em assessoria de casamentos pode variar entre R$1.900,00 a R$70.000,00 (levando em consideração mercado de luxo).;Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo.;Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados em Ribeirão Preto e você pode entrar em contato conosco atravéz de nossos contatos, ferramentas ou mídias sociais.;É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'GatsbyJS, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'GatsbyJS.;Quais são as dificuldades em organizar seu casamento sem uma assessoria de eventos especializada?:Em primeiro lugar está a dificuldade de manter a calma e ser organizada. Outra dificuldade de fazer tudo sozinha é a falta de experiência e as frustrações no meio do caminho. É um trabalho com detalhes técnicos importantes e que serão testados em um momento de execução única, por isso é tão importante garantir um evento livre de erros e problemas, contratando uma profissional casamenteira.;Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.;Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais.;"
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
@@ -185,12 +185,12 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandUrl"
-#~ msgstr "https://ascasamenteiras.com.br\","
+#~ msgstr "https://gatsby-theme-boilerplate.dev\","
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandVideoText"
-#~ msgstr "Vídeo Promocional d'As Casamenteiras no YouTube"
+#~ msgstr "Vídeo Promocional d'GatsbyJS no YouTube"
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators

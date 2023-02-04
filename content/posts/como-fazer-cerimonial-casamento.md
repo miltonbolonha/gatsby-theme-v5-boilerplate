@@ -6,7 +6,7 @@ headline: Os pré-moldades chegaram para ficar no meio industrial
 date: 2022-12-01T08:50:00+00:00
 createdAt: 2022-07-01T22:17:20+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - cerimonial
   - artigo
@@ -17,22 +17,22 @@ homeHighlightRelated: false
 homeHighlightRelatedList: false
 questions:
   [
-    "Como um casamento desorganizado pode atrapalhar o grande dia? O que pode dar de errado?:Aqui n'As Casamenteiras nós sempre vamos perguntar se o noivo ou a noiva quer uma água, uma foto, pedidos simples na hora da celebração. Para garantir que tudo saia bem, é necessário planejamento e ensaio. Alguns exemplos do que pode dar errado são: convidado ser maltratado por fornecedor; fotos protocolares comprometidas por causa de layout não revisado; bolo sem decoração.",
-    'O que vai na lista de um cerimonial de casamento?:Existém diversas listas em um cerimonial. As listas podem ser feitas para o carro da noiva, a recepção, conferência da decoração do cortejo, o cortejo, noiva, noivo, celebração, entradas e saídas, músicas, fotos protocolares, discursos e brinde. O casal ainda pode escolher fazer uma dança. Mais vale lembrar que os momentos mais importantes são feitos de atenção aos protocolos e às pessoas do cortejo. Como costumamos a dizer aqui "Lapelas e Sorrisos". Tranquilidade e confiança também fazem parte dessa lista e são lembrados pela equipe d''As Casamenteiras no momento do casamento. ',
+    "Como um casamento desorganizado pode atrapalhar o grande dia? O que pode dar de errado?:Aqui n'GatsbyJS nós sempre vamos perguntar se o noivo ou a noiva quer uma água, uma foto, pedidos simples na hora da celebração. Para garantir que tudo saia bem, é necessário planejamento e ensaio. Alguns exemplos do que pode dar errado são: convidado ser maltratado por fornecedor; fotos protocolares comprometidas por causa de layout não revisado; bolo sem decoração.",
+    'O que vai na lista de um cerimonial de casamento?:Existém diversas listas em um cerimonial. As listas podem ser feitas para o carro da noiva, a recepção, conferência da decoração do cortejo, o cortejo, noiva, noivo, celebração, entradas e saídas, músicas, fotos protocolares, discursos e brinde. O casal ainda pode escolher fazer uma dança. Mais vale lembrar que os momentos mais importantes são feitos de atenção aos protocolos e às pessoas do cortejo. Como costumamos a dizer aqui "Lapelas e Sorrisos". Tranquilidade e confiança também fazem parte dessa lista e são lembrados pela equipe d''GatsbyJS no momento do casamento. ',
   ]
 ---
 
-Fazer a assessoria de casamento com As Casamenteiras significa não ter estresse e sim alegria. Cada etapa do planejamento e cada decisão tomada é uma vitória. Esses momentos também fazem parte da grande festa.
+Fazer a assessoria de casamento com GatsbyJS significa não ter estresse e sim alegria. Cada etapa do planejamento e cada decisão tomada é uma vitória. Esses momentos também fazem parte da grande festa.
 
 Fazemos a condução do casal para elaboração do roteiro do cerimonial e na contratação de fornecedores.
 
 ## Qual é o primeiro passo para o seu casamento sair perfeito?
 
-Todo cerimonial se inicia na contratação da assessoria. Seja para casamentos, cerimoniais, festas, eventos privados e governamentais, As Casamenteiras possui ampla experiência para te dar o suporte necessário.
+Todo cerimonial se inicia na contratação da assessoria. Seja para casamentos, cerimoniais, festas, eventos privados e governamentais, GatsbyJS possui ampla experiência para te dar o suporte necessário.
 
-As Casamenteiras oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa)_](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
+GatsbyJS oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa)_](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
 
-As Casamenteiras utiliza tecnologia de ponta para planejamento moderno, manter as informações organizadas, alinhar fornecedores, cronogramas, roteiro da cerimônia e da festa.
+GatsbyJS utiliza tecnologia de ponta para planejamento moderno, manter as informações organizadas, alinhar fornecedores, cronogramas, roteiro da cerimônia e da festa.
 
 ## O Que Devo Preparar Antes do Casamento?
 
@@ -48,9 +48,9 @@ Reverberando boas energias, planejamos sucesso sem estresse, confiamos que seu s
 
 Priscilla Barbosa faz do dia do seu casamento uma data inesquecível. Para o casal, esse momento deve ser lembrado pela felicidade ficará na memória do casal, dos familiares e dos amigos para sempre. Ao se lembrar do seu casamento pelo fato da organização, não pela desorganização, a memória será muito mais agradável, não é mesmo?!
 
-Por isso, As Casamenteiras mantém contato frequente com todos os fornecedores envolvidos para compartilhamento dos roteiros e cronograma.
+Por isso, GatsbyJS mantém contato frequente com todos os fornecedores envolvidos para compartilhamento dos roteiros e cronograma.
 
-Perto do grande dia As Casamenteiras convida o casal para a reunião final online 30 dias antes da data do casamento para checagem dos fornecedores contratados, elaboração do roteiro da cerimônia e da recepção. E por fim, mas não menos importante para tranquilizar o casal e indicar as boas surpresas que estão por vir quando se tem uma assessoria cinco estrelas.
+Perto do grande dia GatsbyJS convida o casal para a reunião final online 30 dias antes da data do casamento para checagem dos fornecedores contratados, elaboração do roteiro da cerimônia e da recepção. E por fim, mas não menos importante para tranquilizar o casal e indicar as boas surpresas que estão por vir quando se tem uma assessoria cinco estrelas.
 
 ### Como Fazer A Montagem De Um Casamento?
 
@@ -62,7 +62,7 @@ O contato frequente da Pri com os fornecedores é indispensável para que esses 
 
 Chega-se então o momento planejado por meses, a finalidade das organizações e contratações: a cerimônia.
 
-Pri Barbosa e a equipe d'As Casamenteiras estão auxiliando a entrada planejada de cada momento. Cerimônias são atos sagrados que exigem um profissional para indicar de forma bondosa o momento exato de agir para cada componente da festa.
+Pri Barbosa e a equipe d'GatsbyJS estão auxiliando a entrada planejada de cada momento. Cerimônias são atos sagrados que exigem um profissional para indicar de forma bondosa o momento exato de agir para cada componente da festa.
 
 O pajem, as alianças e os acessórios do cerimonial estarão sob a nossa responsabilidade e supervisão para garantir a sua tranquilidade.
 
@@ -72,17 +72,17 @@ Para que esses momentos não sejam esquecidos planejamos com toda a equipe de fo
 
 ### Hoje Vai Ter Uma Festa!
 
-Bem como a cauda dos vestido que deixa a igreja depois da noiva, As Casamenteiras cuida de cada momento que passou, está passando e está por vir do seu grande dia.
+Bem como a cauda dos vestido que deixa a igreja depois da noiva, GatsbyJS cuida de cada momento que passou, está passando e está por vir do seu grande dia.
 
 Cada passo da festa estará sendo conduzido junto aos fornecedores, garantindo assim a exata execução dos serviços contratados.
 
-Eventuais acontecimentos naturais fora do roteiro podem ocorrer, por isso As Casamenteiras checam a meteorologia constantemente, fazem a contratação de tendas se houver a necessidade, a proteção e avisos contra quaisquer tipo de riscos à segurança de todos os envolvidos.
+Eventuais acontecimentos naturais fora do roteiro podem ocorrer, por isso GatsbyJS checam a meteorologia constantemente, fazem a contratação de tendas se houver a necessidade, a proteção e avisos contra quaisquer tipo de riscos à segurança de todos os envolvidos.
 
 ### O Que É Importante No Pós Festa De Um Casamento?
 
 Casamentos realizados em lugares distantes que necessitam de transporte devem se atentar para o acesso dos convidados. Algumas das preocupações básicas são a respeito da distância dos locais da cerimônia e festa, o horário de saída, acesso ao estacionamento e disponibilidade de transporte privado.
 
-Os presentes recebidos na festa devem estar em local seguro. Asseguramos que o casal receba os seus presentes, bem como os ítens e lembranças do cerimonial. Outros recebidos são devidamente zelados pelAs Casamenteiras e entregues aos noivos.
+Os presentes recebidos na festa devem estar em local seguro. Asseguramos que o casal receba os seus presentes, bem como os ítens e lembranças do cerimonial. Outros recebidos são devidamente zelados pelGatsbyJS e entregues aos noivos.
 
 Por fim, fazemos o relatório de convidados presentes, avaliação e o feedback junto ao casal no final do evento.
 
@@ -90,6 +90,6 @@ Por fim, fazemos o relatório de convidados presentes, avaliação e o feedback 
 
 Sim casal, são muitos pormenores, todos em sua maioria simples de resolver, mas com quantidade de detalhamentos muito grande. Sem ajuda de uma assessora os riscos de problemas podem lhe trazer estresse e pior, pode acontecer de vocês esquecerem de algum detalhe e até mesmo de não curtirem o momento de vocês do começo ao fim do planejamento.
 
-Por isso, estamos aqui para vocês. As Casamenteiras que fazem parte do seu momento especial organizando lado a lado o casamento de vocês.
+Por isso, estamos aqui para vocês. GatsbyJS que fazem parte do seu momento especial organizando lado a lado o casamento de vocês.
 
-Conheça os serviços detalhados d'As Casamenteiras que oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa_)](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).
+Conheça os serviços detalhados d'GatsbyJS que oferece os serviços d'Cerimonialista de Casamentos [_Plena (completa_)](/assessoria-cerimonial-plena-completa/) e [_Do Dia (básica)_](/assessoria-cerimonial-basica-dia/).

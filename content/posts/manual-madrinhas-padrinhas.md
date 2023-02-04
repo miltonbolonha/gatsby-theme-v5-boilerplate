@@ -6,7 +6,7 @@ headline: Encontre tudo o que você precisa saber sobre a cor Viva Magenta, a co
 date: 2022-12-01T09:30:00+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
 createdAt: 2022-11-27T03:36:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - premio
 featuredPost: false

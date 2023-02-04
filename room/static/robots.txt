@@ -27,6 +27,6 @@ Disallow: /portifolio/
 Disallow: /category/pain/
 Disallow: /assessoria-cerimonial/
 
-Sitemap: https://ascasamenteiras.com.br/post-sitemap.xml
-Sitemap: https://ascasamenteiras.com.br/page-sitemap.xml
-Sitemap: https://ascasamenteiras.com.br/sitemaps.xml
+Sitemap: https://gatsby-theme-boilerplate.dev/post-sitemap.xml
+Sitemap: https://gatsby-theme-boilerplate.dev/page-sitemap.xml
+Sitemap: https://gatsby-theme-boilerplate.dev/sitemaps.xml

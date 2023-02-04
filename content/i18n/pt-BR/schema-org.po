@@ -48,15 +48,15 @@ msgstr "Priscilla Barbosa"
 
 #. schema.0.card.0.brandName
 #: schema.0.card.0.brandName
-#| As Casamenteiras
+#| GatsbyJS
 msgid "schema.0.card.0.brandName"
-msgstr "As Casamenteiras"
+msgstr "GatsbyJS"
 
 #. schema.0.card.0.brandAppName
 #: schema.0.card.0.brandAppName
-#| As Casamenteiras - Web Site
+#| GatsbyJS - Web Site
 msgid "schema.0.card.0.brandAppName"
-msgstr "As Casamenteiras - Web Site"
+msgstr "GatsbyJS - Web Site"
 
 #. schema.0.card.0.brandSlugName
 #: schema.0.card.0.brandSlugName
@@ -78,9 +78,9 @@ msgstr "Serviços de cerimonialista de casamentos, festas e eventos corporativos
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
-#| https://ascasamenteiras.com.br
+#| https://gatsby-theme-boilerplate.dev
 msgid "schema.0.card.0.brandUrl"
-msgstr "https://ascasamenteiras.com.br"
+msgstr "https://gatsby-theme-boilerplate.dev"
 
 #. schema.0.card.0.brandLogo
 #: schema.0.card.0.brandLogo
@@ -156,9 +156,9 @@ msgstr "Vai casar?:Você precisa tanto do cerimonial do casamento, quanto de uma
 
 #. schema.0.card.0.brandQuestions.1
 #: schema.0.card.0.brandQuestions.1
-#| As Casamenteiras realizam assessoria e cerimonal de casamentos?:Sim, As Casamenteiras oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.
+#| GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal.
 msgid "schema.0.card.0.brandQuestions.1"
-msgstr "As Casamenteiras realizam assessoria e cerimonal de casamentos?:Sim, As Casamenteiras oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal."
+msgstr "GatsbyJS realizam assessoria e cerimonal de casamentos?:Sim, GatsbyJS oferece assessoria completa, personalizada e consultorias avulsas. Oferecemos ainda a Gestão 360 do seu casamento ou somente os serviços do cerimonial protocolar. Também temos nosso pacote de mini-wedding, além de uma gama completa de serviços para o casal."
 
 #. schema.0.card.0.brandQuestions.2
 #: schema.0.card.0.brandQuestions.2
@@ -174,9 +174,9 @@ msgstr "Quanto cobra uma assessora de casamentos? Qual é o custo da assessoria 
 
 #. schema.0.card.0.brandQuestions.4
 #: schema.0.card.0.brandQuestions.4
-#| Quais pacotes de serviço de uma cerimonialista?:As Casamenteiras oferece o serviço de cerimonial completo.
+#| Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo.
 msgid "schema.0.card.0.brandQuestions.4"
-msgstr "Quais pacotes de serviço de uma cerimonialista?:As Casamenteiras oferece o serviço de cerimonial completo."
+msgstr "Quais pacotes de serviço de uma cerimonialista?:GatsbyJS oferece o serviço de cerimonial completo."
 
 #. schema.0.card.0.brandQuestions.5
 #: schema.0.card.0.brandQuestions.5
@@ -186,9 +186,9 @@ msgstr "Onde encontrar uma cerimonialista em Ribeirão Preto?:Estamos situados e
 
 #. schema.0.card.0.brandQuestions.6
 #: schema.0.card.0.brandQuestions.6
-#| É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'As Casamenteiras, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'As Casamenteiras.
+#| É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'GatsbyJS, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'GatsbyJS.
 msgid "schema.0.card.0.brandQuestions.6"
-msgstr "É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'As Casamenteiras, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'As Casamenteiras."
+msgstr "É estressante organizar um casamento sem ajuda?:Sim, é por isso que a Equipe d'GatsbyJS, sob a supervisão da Pri Barbosa, atua nos bastidores para que você tenha as melhores soluções ao contratar os serviços d'GatsbyJS."
 
 #. schema.0.card.0.brandQuestions.7
 #: schema.0.card.0.brandQuestions.7
@@ -198,22 +198,22 @@ msgstr "Quais são as dificuldades em organizar seu casamento sem uma assessoria
 
 #. schema.0.card.0.brandQuestions.8
 #: schema.0.card.0.brandQuestions.8
-#| Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que As Casamenteiras está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.
+#| Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado.
 msgid "schema.0.card.0.brandQuestions.8"
-msgstr "Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que As Casamenteiras está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado."
+msgstr "Quais os riscos de não se ter uma cerimonialista?:O maior risco é de se lembrar do seu grande dia com muito pesar, cheio de ênfase para os problemas. E certamente haverão, mas é para isso que GatsbyJS está aqui. Para te atender e abraçar as dificuldades, fazendo elas não chegarem ao casal e os deixando livres para começarem a curtir o noivado."
 
 #. schema.0.card.0.brandQuestions.9
 #: schema.0.card.0.brandQuestions.9
-#| Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, As Casamenteiras se especializou em encantar seus clientes/casais.
+#| Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais.
 msgid "schema.0.card.0.brandQuestions.9"
-msgstr "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, As Casamenteiras se especializou em encantar seus clientes/casais."
+msgstr "Contratar uma profissional que não possui experiência em organização de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando casamentos na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
 
 
 #. schema.0.card.0.brandKeywords.0.key
 #: schema.0.card.0.brandKeywords.0.key
-#| As Casamenteiras
+#| GatsbyJS
 msgid "schema.0.card.0.brandKeywords.0.key"
-msgstr "As Casamenteiras"
+msgstr "GatsbyJS"
 
 
 #. schema.0.card.0.brandKeywords.1.key
@@ -324,9 +324,9 @@ msgstr "casamenteiras"
 
 #. schema.0.card.0.brandLinkTree.website
 #: schema.0.card.0.brandLinkTree.website
-#| https://ascasamenteiras.com.br/
+#| https://gatsby-theme-boilerplate.dev/
 msgid "schema.0.card.0.brandLinkTree.website"
-msgstr "https://ascasamenteiras.com.br/"
+msgstr "https://gatsby-theme-boilerplate.dev/"
 
 #. schema.0.card.0.brandLinkTree.instagram
 #: schema.0.card.0.brandLinkTree.instagram
@@ -391,9 +391,9 @@ msgstr "https://twitter.com/casamenteiras_"
 
 #. schema.0.card.0.brandHighlights
 #: schema.0.card.0.brandHighlights
-#| Destaques d'As Casamenteiras
+#| Destaques d'GatsbyJS
 msgid "schema.0.card.0.brandHighlights"
-msgstr "Destaques d'As Casamenteiras"
+msgstr "Destaques d'GatsbyJS"
 
 #. schema.0.card.0.brandPersonFamilyBio
 #: schema.0.card.0.brandPersonFamilyBio
@@ -433,9 +433,9 @@ msgstr "https://www.youtube.com/watch?v=07COygyW6W0"
 
 #. schema.0.card.0.brandVideoText
 #: schema.0.card.0.brandVideoText
-#| Vídeo Promocional d'As Casamenteiras no YouTube
+#| Vídeo Promocional d'GatsbyJS no YouTube
 msgid "schema.0.card.0.brandVideoText"
-msgstr "Vídeo Promocional d'As Casamenteiras no YouTube"
+msgstr "Vídeo Promocional d'GatsbyJS no YouTube"
 
 #. schema.0.card.0.datePublished
 #: schema.0.card.0.datePublished

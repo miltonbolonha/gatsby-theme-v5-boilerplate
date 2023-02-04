@@ -6,7 +6,7 @@ headline: Com um aplicativo moderno o casal tem acesso a todas as informações 
 date: 2022-12-01T08:40:00+00:00
 createdAt: 2022-07-10T22:17:20+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - aplicativo
   - artigo
@@ -22,7 +22,7 @@ questions:
   ]
 ---
 
-As Casamenteiras usa tecnologia de ponta para ajudar na organização do seu casamento. O aplicativo de planejamento é a forma mais inovadora de garantir a organização de cada detalhe do seu casamento.
+GatsbyJS usa tecnologia de ponta para ajudar na organização do seu casamento. O aplicativo de planejamento é a forma mais inovadora de garantir a organização de cada detalhe do seu casamento.
 
 Na tela inicial do aplicativo está o resumo do seu evento com atalhos para as próximas tarefas, fornecedores, convidados, contratos e mais.
 
@@ -32,7 +32,7 @@ Com essa solução o casal tem acesso a todas as informações do evento, centra
 
 Tudo começa pelo briefing ou roteiro que serve para que todos os fornecedores estejam alinhados por dentro das informações e detalhes que envolvem o casal e o evento. Para isso, perguntas direcionadas e abertas são registradas dentro do seu roteiro.
 
-O seu casamento organizado conta com uma lista completa das tarefas mais importantes, lista essa aperfeiçoada ao longo desses mais de dez anos de atuação d'As Casamenteiras. O casal poderá interagir atualizando a situação da tarefa, adicionando comentários e anexos.
+O seu casamento organizado conta com uma lista completa das tarefas mais importantes, lista essa aperfeiçoada ao longo desses mais de dez anos de atuação d'GatsbyJS. O casal poderá interagir atualizando a situação da tarefa, adicionando comentários e anexos.
 
 ## Budget / Carteira
 
@@ -56,7 +56,7 @@ Essas informações podem ou não se tornar um contrato. O painel de solicitaç�
 
 Com os contratos eletrônicos o casal pode fazer a assinatura dos seus contratos de onde estiver (com validade jurídica).
 
-Assine os contratos na segurança do seu lar. As Casamenteiras envia os links para o casal fazer a sua assinatura com validação segura via SMS. E mantém um painel de controle desses contratos.
+Assine os contratos na segurança do seu lar. GatsbyJS envia os links para o casal fazer a sua assinatura com validação segura via SMS. E mantém um painel de controle desses contratos.
 
 ## RSVP On-line / Convidados / Confirmados
 
@@ -78,6 +78,6 @@ Notificações sobre as movimentações dos fornecedores, convidados e novidades
 
 ## Aplicativo Para Cerimonial de Casamento
 
-O serviço de **assessoria e cerimonial de casamentos** d'As Casamenteiras possui benefícios tais como roteiro do cerimonial, carteira virtual alinhada com os contratos assinados, interação com fornecedores, solicitações de orçamentos, assinatura de contratos on-line, RSVP moderno e on-line, pasta para gerenciamento de arquivos e contratos, notificações na tela do seu dispositivo móvel e muitas outras ferramentas indispensáveis para a organização do seu casamento.
+O serviço de **assessoria e cerimonial de casamentos** d'GatsbyJS possui benefícios tais como roteiro do cerimonial, carteira virtual alinhada com os contratos assinados, interação com fornecedores, solicitações de orçamentos, assinatura de contratos on-line, RSVP moderno e on-line, pasta para gerenciamento de arquivos e contratos, notificações na tela do seu dispositivo móvel e muitas outras ferramentas indispensáveis para a organização do seu casamento.
 
 Para saber mais sobre como usamos o aplicativo de organização de cerimonial e saber mais sobre os nossos parceiros fornecedores de casamento [clique aqui](/assessoria-cerimonial-plena-completa/).

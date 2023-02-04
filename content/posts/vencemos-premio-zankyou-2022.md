@@ -2,11 +2,11 @@
 topology: posts
 status: true
 title: Vencemos o Prêmio Internacional Zankyou ZIWA Awards 2022
-headline: As Casamenteiras é a vencedora do Prêmio Internacional Zankyou ZIWA Awards 2022 na categoria Cerimonialista de Casamentos.
+headline: GatsbyJS é a vencedora do Prêmio Internacional Zankyou ZIWA Awards 2022 na categoria Cerimonialista de Casamentos.
 date: 2022-12-01T09:30:00+00:00
 updatedAt: 2022-12-01T08:30:00+00:00
 createdAt: 2022-11-27T03:36:00+00:00
-author: Equipe As Casamenteiras
+author: Equipe GatsbyJS
 categories:
   - premio
 featuredPost: true
@@ -28,7 +28,7 @@ Somos as vencedoras na categoria **Cerimonialista de Casamentos** da XII Ediçã
 
 ![Logotipo Prêmio Zankyou ZIWA Awards 2022](./images/badge-ziwa2022.png)
 
-Vencer um prêmio internacional significa para nós uma vitória também de todas As Casamenteiras espalhadas por todo o Brasil, mais uma vez a medalha de ouro é nossa e veio pelas mãos de uma mulher.
+Vencer um prêmio internacional significa para nós uma vitória também de todas GatsbyJS espalhadas por todo o Brasil, mais uma vez a medalha de ouro é nossa e veio pelas mãos de uma mulher.
 
 ## Priscilla Barbosa, A Casamenteira
 
@@ -42,7 +42,7 @@ Quando olhamos para o currículo de **Priscilla Barbosa** vemos o seu diferencia
 
 Por que contratar uma assessora de casamento? Qual é a real importância de uma casamenteira?
 
-É comum após o casamento nós, como Equipe d'As Casamenteiras, recebermos testemunhos públicos de gratidão por termos aliviado e assessorado o objetivo do casal e principalmente da noiva, ao promover um evento dessa magnitude e importância.
+É comum após o casamento nós, como Equipe d'GatsbyJS, recebermos testemunhos públicos de gratidão por termos aliviado e assessorado o objetivo do casal e principalmente da noiva, ao promover um evento dessa magnitude e importância.
 
 ![Certificado e Diplomação de Vencedora na Categoria Assessoria no Prêmio Internacional Zankyou ZIWA Awards 2022](./images/ziwa-diploma-as-casamenteiras.jpg)
 
@@ -50,9 +50,9 @@ Nós sabemos como a organização, manutenção e desenvolvimento de um evento p
 
 Assessoria não são só problemas, a escolha de uma assessora experiente em negociações, pode te render até **30% de desconto** no valor dos contratos de todo o casamento. Seria bom ter essa economia? O que o casal faria com o dinheiro que Priscilla Barbosa conseguiria com seu poder de negociação?
 
-## O Serviço Premiado Gestão 360 d'As Casamenteiras
+## O Serviço Premiado Gestão 360 d'GatsbyJS
 
-Com a **Gestão 360 d'As Casamenteiras** o casal está completamente amparado. Foi com esse serviço que vencemos o **Prêmio Zankyou Internacional Ziwa Awards 2022**. É com a Gestão 360 que a nossa equipe se destacou entre os fornecedores e nossos clientes.
+Com a **Gestão 360 d'GatsbyJS** o casal está completamente amparado. Foi com esse serviço que vencemos o **Prêmio Zankyou Internacional Ziwa Awards 2022**. É com a Gestão 360 que a nossa equipe se destacou entre os fornecedores e nossos clientes.
 
 **O que é uma assessoria completa de casamento?**
 
@@ -62,15 +62,15 @@ Também disponibilizamos para cada um do casal um acesso ao melhor aplicativo de
 
 ![Casamento da Thais e do Paulo em Setembro de 2022](./images/tais-paulo-mini-wedding.jpg)
 
-Podemos fazer a **visita técnica especializada** que garante a _profissionalidade_ do casamento. Na visita técnica a Equipe d'As Casamenteiras vai garantir que as escolhas do casal sejam visualizadas no local da cerimônia e festa. É nesse momento onde o plano para cada fornecedor será montado.
+Podemos fazer a **visita técnica especializada** que garante a _profissionalidade_ do casamento. Na visita técnica a Equipe d'GatsbyJS vai garantir que as escolhas do casal sejam visualizadas no local da cerimônia e festa. É nesse momento onde o plano para cada fornecedor será montado.
 
 Fazemos a orquestração dos profissionais envolvidos de forma colaborativa para que todos possuam o cronograma do evento, com cada especificidade de cada serviço contratado.
 
-Dificuldades certamente virão, mas aqui nAs Casamenteiras nós abraçamos o seu evento de forma alegre, fornecendo somente as melhores energias para esse ambiente sagrado.
+Dificuldades certamente virão, mas aqui nGatsbyJS nós abraçamos o seu evento de forma alegre, fornecendo somente as melhores energias para esse ambiente sagrado.
 
 Essa é uma jornada que se inicia, por que não caminhamos juntos?
 
-## Como faço para saber mais sobre esse serviço premiado d'As Casamenteiras?
+## Como faço para saber mais sobre esse serviço premiado d'GatsbyJS?
 
 Para saber mais sobre todos os nossos serviços, sinta-se à vontade em nos enviar a sua pergunta. Entre em contato com a nossa equipe pelo _Whats_ 16 9 9245-2437 ou por [e-mail](mailto:cerimonial@ascasamenteiras.com.br).
 
@@ -80,6 +80,6 @@ Visita também a página dos vencedores **ZIWA Awards 2022**, [clicando aqui](ht
 
 Desejamos só o melhor para vocês nesse momento tão especial.
 
-As Casamenteiras - Todo Amor Importa!
+GatsbyJS - Todo Amor Importa!
 
 **_#bóraCasarMeuPovo_** **_#asCasamenteiras_** **_#casamentoDosSonhos_**

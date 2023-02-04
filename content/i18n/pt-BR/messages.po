@@ -1,7 +1,7 @@
 # PROMO MESSAGES TRANSLATION FILE.
-# Copyright (C) 2023 - As Casamenteiras
+# Copyright (C) 2023 - GatsbyJS
 # This file is distributed under the same license as the PACKAGE package.
-# As Casamenteiras <i18n@ascasamenteiras.com.br>, 2023.
+# GatsbyJS <i18n@ascasamenteiras.com.br>, 2023.
 #
 #, fuzzy
 msgid ""
@@ -12,11 +12,11 @@ msgstr ""
 "X-Generator: Gatsby Boilerplate Blog Intl 0.1 beta\n"
 "Project-Id-Version: AsCasamenteiras i18n 0.1.0\n"
 "Report-Msgid-Bugs-To: i18n@ascasamenteiras.com.br \n"
-"Last-Translator: As Casamenteiras <i18n@ascasamenteiras.com.br>\n"
+"Last-Translator: GatsbyJS <i18n@ascasamenteiras.com.br>\n"
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: pt-BR\n"
-"Language-Team: https://ascasamenteiras.com.br/\n"
+"Language-Team: https://gatsby-theme-boilerplate.dev/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "promoMessageText"
