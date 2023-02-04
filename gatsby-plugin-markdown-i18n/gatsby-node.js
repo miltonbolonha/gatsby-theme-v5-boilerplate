@@ -1,9 +1,3 @@
-// import { i18n } from "@lingui/core";
-// import { I18nProvider } from "@lingui/react";
-// import { ThemeProvider } from "./src/context/ThemeContext";
-// const ptMessages = require("../content/i18n/pt-BR/main");
-// import { messages as enMessages } from "../content/i18n/en-US/main";
-// const i18nConfig = require("../.linguirc");
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
 const businessInfos = require("../content/configs/schema-org.json");
@@ -23,8 +17,6 @@ function basePathFinder(nodeTopology) {
   return null;
 }
 // Adding slug field to each post
-// exports.= async ({
-
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
