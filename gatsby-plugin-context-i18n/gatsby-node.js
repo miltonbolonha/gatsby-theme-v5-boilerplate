@@ -8,17 +8,6 @@ const reqSchemaDefault = require(path.resolve(
   rootDir,
   `${schemasPath}/default.json`
 ));
-// const schemaOrg = require(path.resolve(
-//   rootDir,
-//   `content/configs/schema-org.json`
-// ));
-// const schemaOrgEN = require(path.resolve(
-//   rootDir,
-//   `content/configs/schema-org.en.json`
-// ));
-
-// const card = schemaOrg.schema[0].card[0];
-// const cardEN = schemaOrgEN.schema[0].card[0];
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -45,14 +34,6 @@ exports.onCreatePage = ({ page, actions }) => {
       const defaultLanguage = reqSchemaDefault.locales[0].split("-")[0];
       const isDefaultCard = defaultLanguage === cardLocale;
       const isDefaultSchema = schemaJSON === "default.json";
-      // console.log("isDefault");
-      // console.log(isDefault);
-      // console.log("defaultLanguage");
-      // console.log(defaultLanguage);
-      // console.log("cardLocale");
-      // console.log(cardLocale);
-      // console.log("defaultLanguage");
-      // console.log(defaultLanguage);
 
       if (isDefaultCard && isDefaultSchema && newPage.path === "/") {
         newPage.context = {
@@ -82,17 +63,6 @@ exports.onCreatePage = ({ page, actions }) => {
         return createPage(newPage);
       }
 
-      // if (isDefaultCard && isDefaultSchema) {
-      //   console.log("newPage.path");
-      //   console.log(newPage.path);
-      //   console.log("cardLocalePath");
-      //   console.log(cardLocalePath);
-      //   newPage.context = {
-      //     schemaJSON: cardElementDefault,
-      //   };
-      //   return createPage(newPage);
-      // }
-
       if (pathLocaleHasI18n) {
         if (!isDefaultCard) {
           newPage.context = {
@@ -103,9 +73,4 @@ exports.onCreatePage = ({ page, actions }) => {
       }
     });
   });
-
-  // newPage.context = {
-  //   schemaJSON: !page.path.includes("en") ? card : cardEN,
-  // };
-  // createPage(newPage);
 };
