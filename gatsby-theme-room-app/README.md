@@ -27,9 +27,9 @@ modals and simple stuffs.
 
 ---
 
-**Plugin URI:** https://www.npmjs.com/package/gatsby-theme-nuktpls-one
+**Plugin URI:** https://www.npmjs.com/package/gatsby-theme-boilerplate
 
-**Plugin Install:** `npm i gatsby-theme-nuktpls-one`
+**Plugin Install:** `npm i gatsby-theme-boilerplate`
 
 **Version:** 0.6.0
 
@@ -62,7 +62,7 @@ standard structure on your theme, you can follow these steps:
 1. Install Gatsby Layout Builder plugin with:
 
 ```shell
-npm i gatsby-theme-nuktpls-one
+npm i gatsby-theme-boilerplate
 ```
 
 If you already have customize your gatsby-config.js, you can use it.
@@ -72,7 +72,7 @@ Otherwise, you should [create a new gatsby-config.js file](https://www.gatsbyjs.
 
 ```javascript
 module.exports = {
-  plugins: [`gatsby-theme-nuktpls-one`],
+  plugins: [`gatsby-theme-boilerplate`],
 };
 // gatsby-config.js
 ```

@@ -1,7 +1,7 @@
 {
   "name": "room",
   "private": true,
-  "version": "0.6.0",
+  "version": "0.7.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -10,17 +10,19 @@
     "dev": "gatsby develop"
   },
   "dependencies": {
-    "gatsby": "^5.4.2",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-manifest": "^5.5.0",
+    "gatsby-source-filesystem": "^5.5.0",
     "gatsby-business-in-build": "^0.2.1",
     "gatsby-plugin-alias-imports": "^1.0.5",
-    "gatsby-plugin-manifest": "^5.3.1",
     "gatsby-plugin-offline": "^6.3.1",
     "gatsby-plugin-sharp": "^5.5.0",
+    "gatsby-plugin-sass": "^6.5.0",
+    "gatsby-plugin-image": "^3.5.0",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-remark-images": "^7.5.0",
-    "gatsby-remark-relative-images": "^2.0.2",
-    "gatsby-source-filesystem": "^5.3.1",
-    "gatsby-theme-nuktpls-one": "*",
+    "gatsby-remark-relative-images": "^2.1.3",
+    "gatsby-theme-boilerplate": "*",
     "gatsby-plugin-schemajson-i18n": "*",
     "gatsby-plugin-sitepages-i18n": "*",
     "gatsby-theme-room-app": "*",
@@ -29,7 +31,6 @@
     "gatsby-transformer-sharp": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.57.1",
-    "gatsby-plugin-sass": "^6.4.0"
+    "sass": "^1.58.0"
   }
 }
