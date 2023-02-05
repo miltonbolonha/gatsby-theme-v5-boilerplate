@@ -69,7 +69,28 @@
           "staticImagesPath": "room/static/images/",
           "themePath": "gatsby-theme-nuktpls-one",
           "postPerPage": 6,
-          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>"
+          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
+          "pagesHelper": {
+            "index": {
+              "mainTitle": "Congratulations",
+              "secondTitle": "— you just made a GatsbyJS system! 🎉🎉🎉",
+              "mainParagraph": "Visit our <code style='color: rgb(138, 101, 52); padding: 4px; background-color: rgb(255, 244, 219); font-size: 1.25rem; border-radius: 4px;'>docs/README.MD</code> to learn how to code. 😎",
+              "documentation": "Documentation",
+              "tutorialTitle": "Tutorial",
+              "tutorialParagraph": "A great place to start if you're new to web development. Designed to guide you through setting up your first website or application.",
+              "howToGuidesTitle": "Where to start?",
+              "howToGuidesParagraph": "Practical step-by-step guides to help you code your whole metaverse. Extremely useful to attract customers and friends.",
+              "referenceGuideTitle": "Glossary",
+              "referenceGuideParagraph": "Detailed technical descriptions of how the GatsbyJS Theme works. That way you'll always have your help environment in your hands.",
+              "conceptualGuidesTitle": "Study Material",
+              "conceptualGuidesParagraph": "General explanations of GatsbyJS Theme concepts. Here you can delve into specific topics.",
+              "pluginLibraryTitle": "Themes Library",
+              "pluginLibraryParagraph": "Add functionality and customize your website or application with thousands of tools created by our amazing developer community.",
+              "buildHostTitle": "High Standard Websites in 5 minutes",
+              "buildHostParagraph": "Now you're ready to change the world! Give your GatsbyJS Theme website superpowers. Get started for free!",
+              "buildHostBadge": "NEW!"
+            }
+          }
         }
       ]
     }

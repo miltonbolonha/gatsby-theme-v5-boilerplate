@@ -69,7 +69,28 @@
           "staticImagesPath": "room/static/images/",
           "themePath": "gatsby-theme-nuktpls-one",
           "postPerPage": 6,
-          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>"
+          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
+          "pagesHelper": {
+            "index": {
+              "mainTitle": "Parabéns",
+              "secondTitle": "— você fez um sistema GatsbyJS! 🎉🎉🎉",
+              "mainParagraph": "Visite nossa <code style='color: rgb(138, 101, 52); padding: 4px; background-color: rgb(255, 244, 219); font-size: 1.25rem; border-radius: 4px;'>docs/README.MD</code> para aprender a programar. 😎",
+              "documentation": "Documentation",
+              "tutorialTitle": "Tutorial",
+              "tutorialParagraph": "Um ótimo lugar para começar se você for novo no desenvolvimento web. Projetado para guiá-lo na configuração de seu primeiro site ou aplicativo.",
+              "howToGuidesTitle": "Por onde começo?",
+              "howToGuidesParagraph": "Guias práticos passo a passo para ajudá-lo a programar todo o seu metaverso. Extremamente útil para atrair clientes e amigos.",
+              "referenceGuideTitle": "Glossário",
+              "referenceGuideParagraph": "Descrições técnicas detalhadas de como o Tema Pré-Moldado em Gatsby funciona. Assim você terá sempre o seu ambiente de ajuda nas suas mãos.",
+              "conceptualGuidesTitle": "Material Diático",
+              "conceptualGuidesParagraph": "Explicações gerais dos conceitos do Pré-Moldado em Gatsby. Aqui você pode aprofundar em tópicos específicos.",
+              "pluginLibraryTitle": "Biblioteca de Pré-Moldados",
+              "pluginLibraryParagraph": "Adicione funcionalidade e personalize seu site ou aplicativo com milhares de ferramentas criadas por nossa incrível comunidade de desenvolvedores.",
+              "buildHostTitle": "Sites de Alto Padrão em 5 minutos",
+              "buildHostParagraph": "Agora você está pronta para mudar o mundo! Dê superpoderes ao seu site Pré-Moldado. Comece gratuitamente!",
+              "buildHostBadge": "NOVO!"
+            }
+          }
         }
       ]
     }

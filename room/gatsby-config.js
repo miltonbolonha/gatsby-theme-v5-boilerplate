@@ -1,10 +1,5 @@
-// gatsby-config.js
-//requiring path and fs modules
-// imports and configs
 const path = require("path");
 const fs = require("fs");
-// const readdirSync = require("fs");
-
 const rootDir = path.join(__dirname, "../");
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -20,13 +15,6 @@ const staticImagesPathCard = card.staticImagesPath;
 const staticImagesPath = path.resolve(rootDir, staticImagesPathCard);
 
 //passsing directoryPath and callback function
-
-// console.log("staticImagesPath:");
-// console.log(staticImagesPath);
-
-// console.log("contentPath:");
-// throw new Error("STOOOOOOOOOOP!222");
-
 let imagePathFolders = new Set();
 
 const contentDir = srcPath =>
@@ -35,35 +23,12 @@ const contentDir = srcPath =>
     .filter(file => fs.statSync(path.join(srcPath, file)).isDirectory());
 
 contentDir(contentPath).forEach(element => {
-  // console.log(element);
-
   contentDir(contentPath + "/" + element).forEach(ele => {
-    // console.log(ele);
     if (ele === "images") {
       imagePathFolders.add(contentPath + "/" + element + "/" + ele);
     }
   });
 });
-// console.log("foi");
-
-let resolveSrcFile = new Set();
-
-const imgsPathsResolve = Array.from(imagePathFolders).forEach(imgPath => {
-  // console.log("imgPath");
-  // console.log(imgPath);
-  resolveSrcFile.add({
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: imgPath,
-    },
-  });
-});
-
-// console.log("imgsPathsResolve");
-// console.log(imgsPathsResolve);
-
-// throw new Error("Para para para!");
 
 module.exports = {
   trailingSlash: card.trailingSlash,

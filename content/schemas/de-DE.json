@@ -69,7 +69,28 @@
           "staticImagesPath": "room/static/images/",
           "themePath": "gatsby-theme-nuktpls-one",
           "postPerPage": 6,
-          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>"
+          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
+          "pagesHelper": {
+            "index": {
+              "mainTitle": "Glückwünsche",
+              "secondTitle": "— Sie haben gerade eine Gatsby-Website erstellt! 🎉🎉🎉",
+              "mainParagraph": "Besuchen Sie unsere <code style='color: rgb(138, 101, 52); padding: 4px; background-color: rgb(255, 244, 219); font-size: 1.25rem; border-radius: 4px;'>docs/README.MD</code>, um zu lernen, wie man programmiert. 😎",
+              "documentation": "Dokumentation",
+              "tutorialTitle": "Anleitung",
+              "tutorialParagraph": "Ein großartiger Ort, um mit dem Webentwicklung zu beginnen, wenn Sie neu darin sind. Konzipiert, um Sie bei der Einrichtung Ihrer ersten Gatsby-Website zu führen.",
+              "howToGuidesTitle": "Wie beginne ich?",
+              "howToGuidesParagraph": "Praktische Schritt-für-Schritt-Anleitungen, um Ihnen bei der Programmierung Ihres Metaverses zu helfen. Extreme hilfreich, um Kunden und Freunde anzulocken.",
+              "referenceGuideTitle": "Glossar",
+              "referenceGuideParagraph": "Detaillierte technische Beschreibungen, wie das Gatsby-Theme funktioniert. So haben Sie immer Ihre Hilfeumgebung zur Hand.",
+              "conceptualGuidesTitle": "Diätmaterial",
+              "conceptualGuidesParagraph": "Allgemeine Erklärungen zu den Konzepten des Gatsby-Themes. Hier können Sie sich in bestimmte Themen vertiefen.",
+              "pluginLibraryTitle": "Theme-Bibliothek",
+              "pluginLibraryParagraph": "Fügen Sie Funktionalität hinzu und passen Sie Ihre Website oder Ihre App mit Tausenden von Werkzeugen an, die von unserer erstaunlichen Entwicklergemeinschaft erstellt wurden.",
+              "buildHostTitle": "Hochwertige Websites in 5 Minuten",
+              "buildHostParagraph": "Jetzt sind Sie bereit, die Welt zu verändern! Verleihen Sie Ihrer Gatsby-Website Superkräfte. Beginnen Sie jetzt kostenlos!",
+              "buildHostBadge": "NEU!"
+            }
+          }
         }
       ]
     }
