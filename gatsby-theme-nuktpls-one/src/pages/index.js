@@ -120,8 +120,8 @@ const IndexPage = ({ pageContext }) => {
       color: "#663399",
     },
   ];
-  console.log("indexSubs");
-  console.log(indexSubs);
+  console.log("pageContext");
+  console.log(pageContext);
   return (
     <>
       <main style={pageStyles}>

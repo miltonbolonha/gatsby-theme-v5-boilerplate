@@ -65,6 +65,7 @@ exports.onCreatePage = ({ page, actions }) => {
         if (!isDefaultCard) {
           newPage.context = {
             schemaJSON: cardElement,
+            prefixI18n: cardLocale,
           };
           return createPage(newPage);
         }
