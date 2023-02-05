@@ -245,7 +245,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "themePath"
-#~ msgstr "gatsby-theme-nuktpls-one"
+#~ msgstr "gatsby-theme-farming-revolution"
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators

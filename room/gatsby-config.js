@@ -99,7 +99,7 @@ module.exports = {
     `gatsby-plugin-markdown-i18n`,
     `gatsby-plugin-schemajson-i18n`,
     `gatsby-plugin-sitepages-i18n`,
-    `gatsby-theme-nuktpls-one`,
+    `gatsby-theme-farming-revolution`,
     `gatsby-theme-room-app`,
     `gatsby-plugin-offline`,
     {

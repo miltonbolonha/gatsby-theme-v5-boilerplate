@@ -495,9 +495,9 @@ msgstr "room/static/images/"
 
 #. schema.0.card.0.themePath
 #: schema.0.card.0.themePath
-#| gatsby-theme-nuktpls-one
+#| gatsby-theme-farming-revolution
 msgid "schema.0.card.0.themePath"
-msgstr "gatsby-theme-nuktpls-one"
+msgstr "gatsby-theme-farming-revolution"
 
 
 #. schema.0.card.0.technicalOfficer

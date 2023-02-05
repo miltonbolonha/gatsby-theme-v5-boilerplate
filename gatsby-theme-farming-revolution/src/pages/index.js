@@ -168,6 +168,7 @@ const IndexPage = ({ pageContext }) => {
           rel='nofollow'
           style={badgeStyle}
           aria-label='Github Star this repo'
+          target={"_blank"}
         >
           {indexSubs.starRepo}
         </a>

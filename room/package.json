@@ -20,7 +20,7 @@
     "gatsby-remark-images": "^7.5.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^5.3.1",
-    "gatsby-theme-nuktpls-one": "*",
+    "gatsby-theme-farming-revolution": "*",
     "gatsby-plugin-schemajson-i18n": "*",
     "gatsby-plugin-sitepages-i18n": "*",
     "gatsby-theme-room-app": "*",
