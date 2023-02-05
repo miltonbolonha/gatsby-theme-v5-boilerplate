@@ -45,8 +45,6 @@ exports.onCreatePage = ({ page, actions }) => {
       if (
         isDefaultCard &&
         isDefaultSchema &&
-        newPage.path === "404.js" &&
-        newPage.path === "/404.html" &&
         newPage.path === "/dev-404-page/" &&
         newPage.path === "/404/"
       ) {

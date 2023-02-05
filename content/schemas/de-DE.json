@@ -88,7 +88,8 @@
               "pluginLibraryParagraph": "Fügen Sie Funktionalität hinzu und passen Sie Ihre Website oder Ihre App mit Tausenden von Werkzeugen an, die von unserer erstaunlichen Entwicklergemeinschaft erstellt wurden.",
               "buildHostTitle": "Hochwertige Websites in 5 Minuten",
               "buildHostParagraph": "Jetzt sind Sie bereit, die Welt zu verändern! Verleihen Sie Ihrer Gatsby-Website Superkräfte. Beginnen Sie jetzt kostenlos!",
-              "buildHostBadge": "NEU!"
+              "buildHostBadge": "NEU!",
+              "starRepo": "Markieren Sie dieses Repo"
             }
           }
         }
