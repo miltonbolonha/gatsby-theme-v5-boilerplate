@@ -2,8 +2,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.1.0"
 "Report-Msgid-Bugs-To:"
+<<<<<<< HEAD
 "POT-Creation-Date: 2023-02-05T23:16:28.524Z"
 "PO-Revision-Date: 2023-02-05T23:16:28.524Z"
+=======
+"POT-Creation-Date: 2023-02-06T03:37:34.555Z"
+"PO-Revision-Date: 2023-02-06T03:37:34.555Z"
+>>>>>>> feature/sass
 "MIME-Version: 1.0"
 "Content-Type: text/plain; charset=UTF-8"
 "Content-Transfer-Encoding: 8bit"
@@ -495,9 +500,15 @@ msgstr "room/static/images/"
 
 #. schema.0.card.0.themePath
 #: schema.0.card.0.themePath
+<<<<<<< HEAD
 #| gatsby-theme-farming-revolution
 msgid "schema.0.card.0.themePath"
 msgstr "gatsby-theme-farming-revolution"
+=======
+#| gatsby-theme-boilerplate
+msgid "schema.0.card.0.themePath"
+msgstr "gatsby-theme-boilerplate"
+>>>>>>> feature/sass
 
 
 #. schema.0.card.0.technicalOfficer

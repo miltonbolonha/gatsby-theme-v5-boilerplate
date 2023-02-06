@@ -1,12 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "gatsby-theme-farming-revolution-workspace",
+=======
+  "name": "gatsby-theme-boilerplate-workspace",
+>>>>>>> feature/sass
   "version": "0.6.0",
   "workspaces": [
     "room",
     "gatsby-plugin-context-i18n",
     "gatsby-plugin-schemajson-i18n",
     "gatsby-plugin-sitepages-i18n",
+<<<<<<< HEAD
     "gatsby-theme-farming-revolution",
+=======
+    "gatsby-theme-boilerplate",
+>>>>>>> feature/sass
     "gatsby-theme-room-app",
     "gatsby-plugin-markdown-i18n"
   ],
@@ -19,7 +27,10 @@
     "gatsby-layout",
     "gatsby-builder",
     "gatsby-theme-boilerplate",
+<<<<<<< HEAD
     "gatsby-theme-farming-revolution",
+=======
+>>>>>>> feature/sass
     "layout-builder",
     "seo",
     "builder"

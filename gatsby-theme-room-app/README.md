@@ -62,7 +62,11 @@ standard structure on your theme, you can follow these steps:
 1. Install Gatsby Layout Builder plugin with:
 
 ```shell
+<<<<<<< HEAD
 npm i gatsby-theme-farming-revolution
+=======
+npm i gatsby-theme-boilerplate
+>>>>>>> feature/sass
 ```
 
 If you already have customize your gatsby-config.js, you can use it.
@@ -72,7 +76,11 @@ Otherwise, you should [create a new gatsby-config.js file](https://www.gatsbyjs.
 
 ```javascript
 module.exports = {
+<<<<<<< HEAD
   plugins: [`gatsby-theme-farming-revolution`],
+=======
+  plugins: [`gatsby-theme-boilerplate`],
+>>>>>>> feature/sass
 };
 // gatsby-config.js
 ```

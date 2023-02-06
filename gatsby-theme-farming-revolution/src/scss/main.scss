@@ -1,0 +1,73 @@
+.pageStyles {
+  color: #232129;
+  padding: 96px;
+  font-family: "-apple-system, Roboto, sans-serif, serif";
+}
+.headingStyles {
+  margin-top: 0;
+  margin-bottom: 64px;
+  max-width: 320px;
+}
+.headingAccentStyles {
+  color: #663399;
+}
+.paragraphStyles {
+  margin-bottom: 48px;
+}
+.codeStyles {
+  color: #8a6534;
+  padding: 4px;
+  background-color: #fff4db;
+  font-size: 1.25rem;
+  border-radius: 4px;
+}
+.listStyles {
+  margin-bottom: 96px;
+  padding-left: 0;
+}
+.listItemStyles {
+  font-weight: 300;
+  font-size: 24px;
+  max-width: 560px;
+  margin-bottom: 30px;
+}
+
+.linkStyle {
+  color: #8954a8;
+  font-weight: bold;
+  font-size: 16px;
+  vertical-align: 5%;
+}
+
+.docLinkStyle {
+  color: #8954a8;
+  font-weight: bold;
+  font-size: 16px;
+  vertical-align: 5%;
+  list-style-type: none;
+  margin-bottom: 24px;
+}
+
+.descriptionStyle {
+  color: #232129;
+  font-size: 14px;
+  margin-top: 10;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+.badgeStyle {
+  color: #fff;
+  background-color: #088413;
+  border: "1px solid #088413";
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  padding: "4px 6px";
+  display: "inline-block";
+  position: "relative";
+  top: -2;
+  margin-left: 10px;
+  line-height: 1px;
+}
