@@ -20,6 +20,9 @@
     "sass": "^1.58.0"
   },
   "peerDependencies": {
+    "gatsby-plugin-image": "^3.3.2",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

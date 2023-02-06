@@ -1,12 +1,13 @@
 // Colors
-$brand__color: #032741;
-$cta__color: #011624;
+$brand__color: #058b8c;
+$cta__color: #058b8c;
 $cta__colorLink: #ffcd2b;
 $hot__color: #032741;
 $hotDark__color: #0073c4;
 $cta__contrast_color: #df0000;
 $error_color: #df0000;
 $link__color: #fff;
+$brand_background__color: #fff;
 
 $heading__top-padding: 80px;
 $heading__bottom-padding: 60px;
@@ -102,3 +103,43 @@ $h2__fontSize: 24pt;
 $h3__fontSize: 22pt;
 $h4__fontSize: 20pt;
 $h5__fontSize: 18pt;
+
+/* Font Mixins */
+@mixin serif-font {
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Variables */
+// Restated Bootstrap Variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+//$secondary: #058b8c !default;
+//$primary-light: #058b8c !default;
+//$primary-dark: #058b8c !default;
+//$primary: #383e42	!default;
+
+$secondary: white !default;
+$primary-light: #058b8c !default;
+$primary-dark: #058b8c !default;
+$farmrev__primary-dark: #058b8c !default;
+$farmrev__primary-light: #50a8b0 !default;
+$farmrev__primary-gray: #f0f0f0 !default;
+$farmrev__primary-dark-gray: #383e42 !default;
+
+$primary: #383e42 !default;
+
+$accent: #058b8c !default;
+$white: white;
+$light-gray: #f0f0f0;
+$dark-gray: #373737;

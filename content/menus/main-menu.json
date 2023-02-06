@@ -5,38 +5,20 @@
     "items": [
       {
         "item": {
-          "label": "compiler",
-          "to": "/compiler/"
+          "label": "Farming GT",
+          "to": "/#farming-gt"
         }
       },
       {
         "item": {
-          "label": "framework de compiler",
-          "to": "/framework-compiler/"
+          "label": "Jobs",
+          "to": "/#jobs"
         }
       },
       {
         "item": {
-          "label": "frameworks",
-          "to": "/frameworks/"
-        }
-      },
-      {
-        "item": {
-          "label": "Contato",
-          "to": "/contato/"
-        }
-      },
-      {
-        "item": {
-          "icon": "bag"
-        }
-      },
-      {
-        "item": {
-          "search_widget": false,
-          "search_label": "Procure um curso",
-          "search_url_prefix": "/cursos?search="
+          "label": "Login",
+          "href": "https://app.farming-revolution.com/"
         }
       }
     ]

@@ -71,7 +71,12 @@ exports.createPages = async function ({ graphql, actions, page, reporter }) {
       const is404 = pageSitename === "404.js" ? true : false;
       const localePathQuery = isDefaultI18n ? "" : element.slice(0, 2);
 
-      const pathQuery = isIndex ? "" : pageSitename;
+      let pathQuery = isIndex
+        ? ""
+        : is404
+        ? pageSitename.split(".")[0]
+        : pageSitename;
+
       const pathExtended =
         element === "default.json"
           ? "/" + localePathQuery

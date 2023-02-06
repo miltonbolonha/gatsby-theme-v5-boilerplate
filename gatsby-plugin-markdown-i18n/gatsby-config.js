@@ -1,11 +1,12 @@
 // gatsby-config.js
 //requiring path and fs modules
 // imports and configs
+// xxxxxxxxxxxxxxxxxx
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
 const schemaOrg = require(path.resolve(
   rootDir,
-  `content/configs/schema-org.json`
+  `content/schemas/default.json`
 ));
 const card = schemaOrg.schema[0].card[0];
 const contentPath = path.resolve(rootDir, card.contentPath);
