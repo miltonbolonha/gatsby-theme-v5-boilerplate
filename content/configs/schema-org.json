@@ -116,11 +116,7 @@
           "imageBreakPoints": [28, 44, 200, 350, 450, 750, 1080, 1200, 1920],
           "contentPath": "content",
           "staticImagesPath": "room/static/images/",
-<<<<<<< HEAD
           "themePath": "gatsby-theme-farming-revolution",
-=======
-          "themePath": "gatsby-theme-boilerplate",
->>>>>>> feature/sass
           "postPerPage": 6,
           "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>"
         }
