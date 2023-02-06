@@ -94,7 +94,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sass`,
     `gatsby-plugin-context-i18n`,
     `gatsby-plugin-markdown-i18n`,
     `gatsby-plugin-schemajson-i18n`,

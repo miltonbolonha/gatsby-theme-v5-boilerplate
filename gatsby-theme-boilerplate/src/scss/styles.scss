@@ -1,0 +1,24 @@
+/*
+Theme Name: Gatsby Theme Boilerplate
+Theme URI: https://gatsby-theme-boilerplate.dev
+Description: 
+Author: Milton Bolonha
+Template: 
+Version: 0.7.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Basic global settings
+--------------------------------------------------------------*/
+
+@import "global/vars";
+@import "global/base";
+@import "global/generic";
+
+/*--------------------------------------------------------------
+2.0 Main Styles
+--------------------------------------------------------------*/
+
+@import "main";
