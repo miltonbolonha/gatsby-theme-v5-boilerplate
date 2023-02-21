@@ -210,7 +210,31 @@ footer {
 .m30auto {
 	margin: 30px auto;
 }
+.main-header {
+	padding: $heading__top-padding 0 $heading__bottom-padding;
 
+	z-index: 9;
+	margin: 0 auto;
+	// display: flex;
+	grid-template-columns: 1fr 0.45fr !important;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1240px;
+	.main-menu {
+		max-width: 1023px;
+		width: 100%;
+		display: flex;
+	}
+	.main-logo {
+		width: 250px;
+		height: 50px;
+		justify-self: right;
+	}
+	.main-ul-ul {
+		min-width: 150px;
+		line-height: 33px;
+	}
+}
 .main-header-not-visible {
 	.main-ul {
 		// display: none;
@@ -402,24 +426,30 @@ sup {
 
 .main-ul {
 	display: flex;
+	justify-content: space-between;
 	@media (max-width: $tabletHack__size) {
 		display: none;
 	}
-	height: 29px;
+	height: 18px;
 	font-size: 14px;
-	max-width: $widescreen__size;
-	width: 100%;
-	margin: 0 auto;
+	width: 500px;
 	li {
-		margin: 0 auto;
-		width: 100%;
-		text-align: center;
+		justify-content: space-around;
 		a {
 			color: $farmrev__primary-dark-gray;
-			font-family: $third__font;
-			line-height: 33px;
+			font-family: "Varela";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 17px;
+			text-transform: uppercase;
+			color: #373737 !important;
+			font-size: 17px;
+			letter-spacing: 1px;
+
 			&:hover {
 				color: $primary_light;
+				font-weight: 600;
 			}
 			&.active {
 				color: #1f98eb;
@@ -431,3 +461,80 @@ sup {
 		}
 	}
 }
+.section-div {
+	// display: flex !important;
+	// display: block !important;
+
+	display: flex;
+	&.img-wrapper {
+		.section-image {
+			max-width: 66%;
+			width: 100%;
+		}
+		.section-infos {
+			max-width: 44%;
+			width: 100%;
+		}
+	}
+	&.reverse {
+		flex-direction: row-reverse;
+	}
+}
+
+.main-slider {
+	.boxed-column-child {
+		overflow: hidden;
+		position: relative;
+		display: block !important;
+		border-radius: 25px;
+		width: 100%;
+		height: 430px;
+		.main-slider-img.gatsby-image-wrapper {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+.section-row {
+	h1 {
+		text-transform: uppercase; // all titles are uppercase
+	}
+	h1,
+	h2,
+	h3 {
+		font-family: "Varela";
+	}
+
+	h1,
+	h2 {
+		font-size: 40px;
+		color: $farmrev__primary-dark-gray;
+		text-align: center;
+	}
+	h3 {
+		color: #058b8c;
+		text-align: center;
+		font-size: 22px;
+	}
+	p {
+		font-size: 15px;
+		color: $farmrev__primary-dark-gray;
+		text-align: center;
+	}
+}
+
+// .partners {
+// 	display: flex;
+// 	.boxed-column-child {
+// 		display: flex !important;
+// 		// min-height: 500px;
+// 		.main-partners-img {
+// 			display: block;
+// 			min-width: 100px;
+// 		}
+// 	}
+// }

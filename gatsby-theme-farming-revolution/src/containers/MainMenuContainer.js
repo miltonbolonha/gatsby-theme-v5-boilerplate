@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import MainMenuList from "../components/MainMenuList";
 
 const MainMenuContainer = ({
@@ -33,6 +34,32 @@ const MainMenuContainer = ({
             isMobile={isMobile}
           />
         ))}
+        <li>
+          <Link to='/'>English</Link>
+        </li>
+        <ul className='main-ul-ul hidden'>
+          <li>
+            <Link to='/'>English</Link>
+          </li>
+          <li>
+            <Link to='/de/'>Deutsch</Link>
+          </li>
+          <li>
+            <Link to='/fr/'>Français</Link>
+          </li>
+          <li>
+            <Link to='/es/'>Español</Link>
+          </li>
+          <li>
+            <Link to='/ne/'>Nederlands</Link>
+          </li>
+          <li>
+            <Link to='/pt/'>Português</Link>
+          </li>
+          <li>
+            <Link to='/ru/'>Русский</Link>
+          </li>
+        </ul>
       </ul>
     </nav>
   );

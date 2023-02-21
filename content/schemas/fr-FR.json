@@ -1,0 +1,85 @@
+{
+  "locales": ["en-US", "de-DE", "fr-FR", "es-ES", "nl-NL", "pt-PT", "ru-RU"],
+  "schema": [
+    {
+      "card": [
+        {
+          "brandAppVersion": "0.6.0",
+          "cardLocale": "fr-FR",
+          "brandIntl": "en-US",
+          "brandPerson": "Milton Bolonha",
+          "brandName": "Farming Revolution GmbH",
+          "brandAppName": "Farming Revolution - Gatsby Theme",
+          "brandSlugName": "farming-revolution",
+          "brandPascalName": "FarmingRevolution",
+          "brandDescription": "Farm Revolution is offering the weeding by robots as a weeding-as-a-service.",
+          "brandUrl": "https://farming-revolution.com",
+          "brandLogo": "rectangular-logo.png",
+          "brandCardImage": "boilerplate-banner.jpg",
+          "brandLogoTransparent": "logo-fundo-transparent-900-w.png",
+          "brandPhone": "+49 714114152301",
+          "brandSeoDivisor": "-",
+          "brandHexMainColor": "#058b8c",
+          "brandHexHelperColor": "#373737",
+          "brandEmail": "info@farming-revolution.com",
+          "brandPromoEmail": "info@farming-revolution.com",
+          "brandGithub": "https://github.com/farming-revolution/",
+          "brandAppRepo": "https://github.com/farming-revolution/farming-revolution-gatsby/",
+          "brandKeywords": [
+            {
+              "key": "farming revolution"
+            },
+            {
+              "key": "farm"
+            },
+            {
+              "key": "wedding"
+            },
+            {
+              "key": "robots"
+            },
+            {
+              "key": "service"
+            }
+          ],
+          "brandLinkTree": {
+            "website": "https://farming-revolution.com/",
+            "github": "https://github.com/farming-revolution/farming-revolution-gatsby/"
+          },
+          "brandHighlights": null,
+          "brandPersonFamilyBio": null,
+          "brandPersonBusinessHistory": null,
+          "brandPersonBusinessBio": null,
+          "brandTopologyDivName": null,
+          "brandTopologyDivSlug": null,
+          "brandVideoUrl": null,
+          "brandVideoText": null,
+          "datePublished": "06 de fevereiro de 2023",
+          "trailingSlash": "always",
+          "imageMaxWidth": 2200,
+          "imageQuality": 86,
+          "imageFormats": ["webp"],
+          "imageBreakPoints": [28, 44, 200, 350, 450, 750, 1080, 1200, 1920],
+          "contentPath": "content",
+          "staticImagesPath": "room/static/images/",
+          "themePath": "gatsby-theme-farming-revolution",
+          "postPerPage": 6,
+          "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
+          "pagesHelper": {
+            "index": {
+              "sectionOneMainTitle": "Leistungsstark, Energiesparend Und Autonom",
+              "sectionOneTrackLegend": "Spurbreite",
+              "sectionOneSlopesLegend": "Hanglage",
+              "sectionOneSlopesParagraph": "Allradantrieb​, Hundegang bei Seitenhang​, geringes Gewicht",
+              "sectionOneConsumptionLegend": "Verbrauch",
+              "sectionOneConsumptionParagraph": "Voll-elektrisch, leicht, geringe CO2-Bilanz, keine Ölhydraulik",
+              "sectionOneAutonomousLegend": "Autonom",
+              "sectionOneAutonomousParagraph": "Voll-autonom​, Fernüberwachung über Internet​, 30h Autonomie (durch Range-Extender)",
+              "starRepo": "Star this repo"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

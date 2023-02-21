@@ -51,7 +51,8 @@ exports.onCreatePage = ({ page, actions }) => {
         newPage.context = {
           schemaJSON: cardElementDefault,
         };
-        return createPage(newPage);
+        return null;
+        // return createPage(newPage);
       }
 
       if (isDefaultCard && isDefaultSchema && newPage.path === "room") {

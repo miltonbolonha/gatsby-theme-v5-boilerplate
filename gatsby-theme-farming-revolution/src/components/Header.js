@@ -1,6 +1,8 @@
 import React from "react";
 import { Row } from "../components/InsertRow";
 import MainMenuContainer from "../containers/MainMenuContainer";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
+import ThemeContext from "@Context/ThemeContext";
 
 const Header = ({
   refState,
@@ -14,68 +16,73 @@ const Header = ({
   logo,
   handleRefState,
 }) => {
+  // console.log(logoImage);
   return (
-    <header>
-      <Row
-        opt={{
-          isBoxed: false,
-          bgColor: bgOne,
-          classes: "main-header",
-        }}
-      >
-        {/* mobile menu */}
-        {mainMenuStatus === true ? (
-          <>
-            <div className={"mobile-only main-header-" + menuActive}>
-              <div className='header-columns toggle-menu'>
-                <button
-                  type='button'
-                  id='check-toggle-icon'
-                  onClick={handleRefState}
-                  aria-haspopup='true'
-                  aria-controls='mainmenu'
-                  aria-expanded={refState}
-                  aria-label='Alternar visibilidade do menu'
-                  className={`menu-wrapper menu-bar-icon  ${
-                    refState ? "active" : "not-active"
-                  }`}
-                >
-                  ...
-                </button>
-              </div>
-            </div>
-            <div>
-              <MainMenuContainer
-                wrapperRef={wrapperRef}
-                refState={refState}
-                mainMenuStatus={mainMenuStatus}
-                isMobile={false}
-                mainMenuItems={mainMenu}
+    <ThemeContext.Consumer>
+      {theme => {
+        console.log("theme");
+        console.log(theme);
+        const logoImage = getImage(
+          theme.bigQuery.darkLogo.nodes[0].childImageSharp
+        );
+        console.log("oi");
+        return (
+          <header>
+            <Row
+              opt={{
+                isBoxed: false,
+                bgColor: bgOne,
+                classes: "main-header",
+                numColumns: 2,
+              }}
+            >
+              {/* mobile menu */}
+              {mainMenuStatus === true ? (
+                <>
+                  <div className={"mobile-only main-header-" + menuActive}>
+                    <div className='header-columns toggle-menu'>
+                      <button
+                        type='button'
+                        id='check-toggle-icon'
+                        onClick={handleRefState}
+                        aria-haspopup='true'
+                        aria-controls='mainmenu'
+                        aria-expanded={refState}
+                        aria-label='Alternar visibilidade do menu'
+                        className={`menu-wrapper menu-bar-icon  ${
+                          refState ? "active" : "not-active"
+                        }`}
+                      >
+                        ...
+                      </button>
+                    </div>
+                  </div>
+                  <div className='main-menu'>
+                    <MainMenuContainer
+                      wrapperRef={wrapperRef}
+                      refState={refState}
+                      mainMenuStatus={mainMenuStatus}
+                      isMobile={false}
+                      mainMenuItems={mainMenu}
+                    />
+                  </div>
+                </>
+              ) : null}
+              {/* desktop menu */}
+              <GatsbyImage
+                image={logoImage}
+                alt={"Logo"}
+                placeholder={"NONE"}
+                critical='true'
+                className={"main-logo"}
+                width={250}
+                height={50}
               />
-              <ul>
-                <li>English</li>
-                <li>Deutsch</li>
-                <li>Français</li>
-                <li>Español</li>
-                <li>Nederlands</li>
-                <li>Português</li>
-                <li>Русский</li>
-              </ul>
-            </div>
-          </>
-        ) : null}
-        {/* desktop menu */}
-      </Row>
-      <Row
-        opt={{
-          bgColor: bgTwo,
-          isBoxed: false,
-          classes: "header-logo-wrapper",
-        }}
-      >
-        <Row opt={{ isBoxed: true, classes: "header-logo" }}>{logo}</Row>
-      </Row>
-    </header>
+            </Row>
+          </header>
+        );
+      }}
+    </ThemeContext.Consumer>
   );
 };
 

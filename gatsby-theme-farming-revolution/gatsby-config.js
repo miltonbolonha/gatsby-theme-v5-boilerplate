@@ -48,7 +48,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pressImages`,
-        path: path.resolve(rootDir, contentPath + "/images/images_for_press"),
+        path: path.resolve(rootDir, contentPath + "/images/press"),
       },
     },
     {
@@ -65,6 +65,13 @@ module.exports = {
         path: path.resolve(rootDir, contentPath + "/images/treatment"),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `indexImages`,
+        path: path.resolve(rootDir, contentPath + "/images/index"),
+      },
+    },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-alias-imports`,
@@ -73,6 +80,7 @@ module.exports = {
           "@Slices": path.resolve(__dirname, "src/slices"),
           "@Components": path.resolve(__dirname, "src/components"),
           "@Content": path.resolve(rootDir, "content"),
+          "@Context": path.resolve(__dirname, "src/context"),
           "@Images": path.resolve(__dirname, "static/images"),
         },
         extensions: ["js", "scss"],

@@ -9,8 +9,8 @@ $error_color: #df0000;
 $link__color: #fff;
 $brand_background__color: #fff;
 
-$heading__top-padding: 80px;
-$heading__bottom-padding: 60px;
+$heading__top-padding: 20px;
+$heading__bottom-padding: 20px;
 
 $primary: $cta__color;
 $primary_background__color: #e5f4ff;
@@ -37,7 +37,7 @@ $logo__max-width: 450px;
 $post_page__size: 1020px;
 $page__size: 960px;
 $paragraph__size: 960px;
-$widescreen__size: 1165px;
+$widescreen__size: 1240px;
 $tablet__size: 768px;
 $tabletHack__size: 1023px;
 $tabletHackMinimal__size: 425px;
@@ -55,7 +55,7 @@ $s__space: 16pt;
 // typograph
 $alternative__font: "Arial";
 
-$main__font: "IBM Plex Serif", $alternative__font, sans-serif;
+$main__font: "Varela", $alternative__font, sans-serif;
 $main__fontSLUG: "IBM+Plex+Serif.woff2";
 
 $second__font: "Noto Serif", $alternative__font, sans-serif;

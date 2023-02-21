@@ -1,5 +1,5 @@
 {
-  "locales": ["en-US", "pt-BR", "de-DE"],
+  "locales": ["en-US", "de-DE", "fr-FR", "es-ES", "nl-NL", "pt-PT", "ru-RU"],
   "schema": [
     {
       "card": [
@@ -8,57 +8,52 @@
           "cardLocale": "de-DE",
           "brandIntl": "en-US",
           "brandPerson": "Milton Bolonha",
-          "brandName": "GatsbyJS",
-          "brandAppName": "GatsbyJS - Boilerplate Theme",
-          "brandSlugName": "gatsby-theme-boilerplate",
-          "brandPascalName": "GatsbyThemBoilerplate",
-          "brandDescription": "GatsbyJS Boilerplate helps you build fast, robust and adaptable apps or websites. Gatsby is a React-based open source framework with performance, scalability and security built-in. Collaborate, build and deploy 1000x faster with Gatsby. Start your project with the combined knowledge and effort of hundreds of thousands of dollars invested in development, all in one small package.",
-          "brandUrl": "https://gatsby-theme-boilerplate.dev",
+          "brandName": "Farming Revolution GmbH",
+          "brandAppName": "Farming Revolution - Gatsby Theme",
+          "brandSlugName": "farming-revolution",
+          "brandPascalName": "FarmingRevolution",
+          "brandDescription": "Farm Revolution is offering the weeding by robots as a weeding-as-a-service.",
+          "brandUrl": "https://farming-revolution.com",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
           "brandLogoTransparent": "logo-fundo-transparent-900-w.png",
-          "brandPhone": "+5516992452437",
+          "brandPhone": "+49 714114152301",
           "brandSeoDivisor": "-",
-          "brandHexMainColor": "#fc4303",
-          "brandHexHelperColor": "#fc4303",
-          "brandEmail": "miltonbolonha@gmail.com",
-          "brandPromoEmail": "miltonbolonha@gmail.com",
-          "brandGithub": "https://github.com/miltonbolonha/",
-          "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-boilerplate",
-          "brandQuestions": [
-            "Precisa de um web sítio?:Você precisa tanto do web-site do seviço de eventos dos mais diversos tipos, tamanhos e temáticas pode ser ruim? Por quê?:Existe uma infinidade de ideias que podem ser postas em práticas, mas existe uma limitação de fornecimento local e regional. Em um mundo onde tudo se compra pela internet, ainda necessitamos de profissionais treinados para realizar determinados desejos do casal. Ao mesmo tempo, com o conhecimento de mais de uma década realizando compiler na região de Ribeirão Preto, no litoral paulista e na cidade de São Paulo, GatsbyJS se especializou em encantar seus clientes/casais."
-          ],
+          "brandHexMainColor": "#058b8c",
+          "brandHexHelperColor": "#373737",
+          "brandEmail": "info@farming-revolution.com",
+          "brandPromoEmail": "info@farming-revolution.com",
+          "brandGithub": "https://github.com/farming-revolution/",
+          "brandAppRepo": "https://github.com/farming-revolution/farming-revolution-gatsby/",
           "brandKeywords": [
             {
-              "key": "GatsbyJS"
+              "key": "farming revolution"
             },
             {
-              "key": "static site generator"
+              "key": "farm"
             },
             {
-              "key": "web app"
+              "key": "wedding"
             },
             {
-              "key": "framework"
+              "key": "robots"
             },
             {
-              "key": "compiler"
+              "key": "service"
             }
           ],
           "brandLinkTree": {
-            "website": "https://gatsby-theme-boilerplate.dev/",
-            "instagram": "https://www.instagram.com/gatsby-theme-boilerplate",
-            "youtube": "https://www.youtube.com/@MiltonBolonha",
-            "github": "https://github.com/miltonbolonha/gatsby-theme-boilerplate"
+            "website": "https://farming-revolution.com/",
+            "github": "https://github.com/farming-revolution/farming-revolution-gatsby/"
           },
-          "brandHighlights": "The Best of Gatsby",
-          "brandPersonFamilyBio": "",
-          "brandPersonBusinessHistory": "",
-          "brandPersonBusinessBio": "",
-          "brandTopologyDivName": "Trends",
-          "brandTopologyDivSlug": "trends",
-          "brandVideoUrl": "https://www.youtube.com/watch?v=07COygyW6W0",
-          "brandVideoText": "GatsbyJS YouTube Promo Video",
+          "brandHighlights": null,
+          "brandPersonFamilyBio": null,
+          "brandPersonBusinessHistory": null,
+          "brandPersonBusinessBio": null,
+          "brandTopologyDivName": null,
+          "brandTopologyDivSlug": null,
+          "brandVideoUrl": null,
+          "brandVideoText": null,
           "datePublished": "06 de fevereiro de 2023",
           "trailingSlash": "always",
           "imageMaxWidth": 2200,
@@ -72,24 +67,15 @@
           "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
           "pagesHelper": {
             "index": {
-              "mainTitle": "Glückwünsche",
-              "secondTitle": "— Sie haben gerade eine Gatsby-Website erstellt! 🎉🎉🎉",
-              "mainParagraph": "Besuchen Sie unsere <code style='color: rgb(138, 101, 52); padding: 4px; background-color: rgb(255, 244, 219); font-size: 1.25rem; border-radius: 4px;'>docs/README.MD</code>, um zu lernen, wie man programmiert. 😎",
-              "documentation": "Dokumentation",
-              "tutorialTitle": "Anleitung",
-              "tutorialParagraph": "Ein großartiger Ort, um mit dem Webentwicklung zu beginnen, wenn Sie neu darin sind. Konzipiert, um Sie bei der Einrichtung Ihrer ersten Gatsby-Website zu führen.",
-              "howToGuidesTitle": "Wie beginne ich?",
-              "howToGuidesParagraph": "Praktische Schritt-für-Schritt-Anleitungen, um Ihnen bei der Programmierung Ihres Metaverses zu helfen. Extreme hilfreich, um Kunden und Freunde anzulocken.",
-              "referenceGuideTitle": "Glossar",
-              "referenceGuideParagraph": "Detaillierte technische Beschreibungen, wie das Gatsby-Theme funktioniert. So haben Sie immer Ihre Hilfeumgebung zur Hand.",
-              "conceptualGuidesTitle": "Diätmaterial",
-              "conceptualGuidesParagraph": "Allgemeine Erklärungen zu den Konzepten des Gatsby-Themes. Hier können Sie sich in bestimmte Themen vertiefen.",
-              "pluginLibraryTitle": "Theme-Bibliothek",
-              "pluginLibraryParagraph": "Fügen Sie Funktionalität hinzu und passen Sie Ihre Website oder Ihre App mit Tausenden von Werkzeugen an, die von unserer erstaunlichen Entwicklergemeinschaft erstellt wurden.",
-              "buildHostTitle": "Hochwertige Websites in 5 Minuten",
-              "buildHostParagraph": "Jetzt sind Sie bereit, die Welt zu verändern! Verleihen Sie Ihrer Gatsby-Website Superkräfte. Beginnen Sie jetzt kostenlos!",
-              "buildHostBadge": "NEU!",
-              "starRepo": "Markieren Sie dieses Repo"
+              "sectionOneMainTitle": "Leistungsstark, Energiesparend Und Autonom",
+              "sectionOneTrackLegend": "Spurbreite",
+              "sectionOneSlopesLegend": "Hanglage",
+              "sectionOneSlopesParagraph": "Allradantrieb​, Hundegang bei Seitenhang​, geringes Gewicht",
+              "sectionOneConsumptionLegend": "Verbrauch",
+              "sectionOneConsumptionParagraph": "Voll-elektrisch, leicht, geringe CO2-Bilanz, keine Ölhydraulik",
+              "sectionOneAutonomousLegend": "Autonom",
+              "sectionOneAutonomousParagraph": "Voll-autonom​, Fernüberwachung über Internet​, 30h Autonomie (durch Range-Extender)",
+              "starRepo": "Star this repo"
             }
           }
         }
