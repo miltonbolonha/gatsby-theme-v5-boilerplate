@@ -1,42 +1,131 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import schemaOrg from "../../../content/configs/schema-org.json";
-import schemaOrgEN from "../../../content/configs/schema-org.en.json";
+import schemaOrg from "@Content/schemas/default.json";
 
-const card = schemaOrg.schema[0].card[0];
-const cardEN = schemaOrgEN.schema[0].card[0];
+const locales = schemaOrg.locales;
 
 const defaultState = {
-  businessInfo: null,
-  i18nLocale: null,
-  localeI18n: null,
-  localeI18nEn: null,
-  localeI18nEnCard: null,
-  localeI18nPtCard: null,
-  queryState: null,
   bigQuery: null,
 };
-// const cachedValue = cache.get(`defaultLocale`);
 
 const ThemeContext = React.createContext(defaultState);
 
 const ThemeProvider = ({ children }) => {
-  const [businessInfo, setBusinessInfo] = useState(null);
-  const [queryState, setQueryState] = useState(null);
-  const defaultLocale = card.brandIntl || "pt-BR";
-  const [i18nLocale, setI18nLocale] = useState(defaultLocale);
-
   const bigQuery = useStaticQuery(graphql`
-    query {
-      treatmentImages: allFile(
-        filter: { sourceInstanceName: { eq: "treatmentImages" } }
-      ) {
+    {
+      schemasJSON: allSchemasJson {
         nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 890, height: 790, quality: 90)
+          locales
+          schema {
+            card {
+              brandAppVersion
+              cardLocale
+              brandIntl
+              brandPerson
+              brandName
+              brandAppName
+              brandSlugName
+              brandShortName
+              brandPascalName
+              brandDescription
+              brandUrl
+              brandLogo
+              brandCardImage
+              brandLogoTransparent
+              brandPhone
+              brandSeoDivisor
+              brandHexMainColor
+              brandHexHelperColor
+              brandEmail
+              brandPromoEmail
+              brandGithub
+              brandAppRepo
+              brandHighlights
+              brandPersonFamilyBio
+              brandPersonBusinessHistory
+              brandPersonBusinessBio
+              brandTopologyDivName
+              brandTopologyDivSlug
+              brandVideoUrl
+              brandVideoText
+              datePublished
+              trailingSlash
+              imageMaxWidth
+              imageQuality
+              contentPath
+              staticImagesPath
+              themePath
+              postPerPage
+              technicalOfficer
+              pagesHelper {
+                jobs {
+                  mainTitle
+                  tasksTitle
+                  qualificationsTitle
+                  firstName
+                  lastName
+                  email
+                  phoneNumber
+                  button
+                  privacyPolicy
+                  applyButton
+                  acceptMission
+                  acceptPrivacyPolicy
+                  sendApplicationButton
+                  applyPrintText
+                  inOtherLanguages
+                  formThankYou
+                  genders
+                }
+                globals {
+                  contactUs
+                  copyright
+                  footerLegend
+                  imprint
+                  notAvailableLocale
+                  notAvailableRedirectLocale
+                  openGerman
+                  privacyPolicy
+                  termsConditions
+                  datasheet
+                }
+                datasheet {
+                  status
+                  title
+                }
+                index {
+                  collaborations
+                  foundedHistory
+                  joinTeam
+                  openPosition
+                  sectionOneAutonomousLegend
+                  sectionOneAutonomousParagraph
+                  sectionOneConsumptionLegend
+                  sectionOneConsumptionParagraph
+                  sectionOneMainTitle
+                  sectionOneSlopesLegend
+                  sectionOneSlopesParagraph
+                  sectionOneTrackLegend
+                  starRepo
+                  sectionTwoTitle
+                  sectionTwoReabilityParagraph
+                  sectionTwoReabilityLegend
+                  sectionTwoPlantsTwoParagraph
+                  sectionTwoPlantsTwoLegend
+                  sectionTwoPlantsParagraph
+                  sectionTwoPlantsLegend
+                  sectionThreeWeedingParagraph
+                  sectionThreeWeedingLegend
+                  sectionThreeHerbicideParagraph
+                  sectionThreeTitle
+                  sectionThreeHerbicideLegend
+                  sectionThreeAccuracyParagraph
+                  sectionThreeAccuracyLegend
+                  sectionOneTrackParagraph
+                }
+              }
+            }
           }
         }
       }
@@ -52,7 +141,6 @@ const ThemeProvider = ({ children }) => {
           }
         }
       }
-
       generalImages: allFile(
         filter: { sourceInstanceName: { eq: "generalImages" } }
       ) {
@@ -64,24 +152,6 @@ const ThemeProvider = ({ children }) => {
           }
         }
       }
-
-      heroImages: allFile(
-        filter: { sourceInstanceName: { eq: "heroImages" } }
-      ) {
-        nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(
-              width: 1240
-              height: 430
-              quality: 100
-              layout: FULL_WIDTH
-            )
-          }
-        }
-      }
-
       pressImages: allFile(
         filter: { sourceInstanceName: { eq: "pressImages" } }
       ) {
@@ -93,25 +163,7 @@ const ThemeProvider = ({ children }) => {
           }
         }
       }
-
-      partnerImages: allFile(
-        filter: { sourceInstanceName: { eq: "partnerImages" } }
-      ) {
-        nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 100, quality: 80)
-          }
-        }
-      }
-
-      darkLogo: allFile(
-        filter: {
-          sourceInstanceName: { eq: "brandImages" }
-          relativePath: { eq: "F_Logo_Dark.png" }
-        }
-      ) {
+      darkLogo: allFile(filter: { relativePath: { eq: "F_Logo_Dark.png" } }) {
         nodes {
           relativePath
           publicURL
@@ -120,12 +172,8 @@ const ThemeProvider = ({ children }) => {
           }
         }
       }
-
       whiteLogoMark: allFile(
-        filter: {
-          sourceInstanceName: { eq: "brandImages" }
-          relativePath: { eq: "F_Logo_White.png" }
-        }
+        filter: { relativePath: { eq: "F_Logo_White.png" } }
       ) {
         nodes {
           relativePath
@@ -137,37 +185,11 @@ const ThemeProvider = ({ children }) => {
       }
     }
   `);
-  console.log("bigQuery");
-  // console.log(bigQuery);
-  // setQueryState(bigQuery);
-
-  function localeI18n(s) {
-    setI18nLocale(s);
-  }
-
-  function localeI18nEn() {
-    setI18nLocale("en-US");
-  }
-
-  function localeI18nPtCard() {
-    setBusinessInfo(card);
-  }
-
-  function localeI18nEnCard() {
-    setBusinessInfo(cardEN);
-  }
-
   return (
     <ThemeContext.Provider
       value={{
-        businessInfo,
-        i18nLocale,
-        localeI18n: localeI18n,
-        localeI18nEn: localeI18nEn,
-        localeI18nEnCard: localeI18nEnCard,
-        localeI18nPtCard: localeI18nPtCard,
-        queryState: queryState,
         bigQuery: bigQuery,
+        locales,
       }}
     >
       {children}

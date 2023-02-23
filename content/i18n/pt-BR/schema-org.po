@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.1.0"
 "Report-Msgid-Bugs-To:"
-"POT-Creation-Date: 2023-02-07T17:56:24.742Z"
-"PO-Revision-Date: 2023-02-07T17:56:24.742Z"
+"POT-Creation-Date: 2023-02-08T12:53:23.067Z"
+"PO-Revision-Date: 2023-02-08T12:53:23.067Z"
 "MIME-Version: 1.0"
 "Content-Type: text/plain; charset=UTF-8"
 "Content-Transfer-Encoding: 8bit"
@@ -78,9 +78,9 @@ msgstr "Serviços de framework de compiler, festas e eventos corporativos. Pri B
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
-#| https://gatsby-theme-boilerplate.dev
+#| https://farming-revolution.com
 msgid "schema.0.card.0.brandUrl"
-msgstr "https://gatsby-theme-boilerplate.dev"
+msgstr "https://farming-revolution.com"
 
 #. schema.0.card.0.brandLogo
 #: schema.0.card.0.brandLogo
@@ -324,9 +324,9 @@ msgstr "casamenteiras"
 
 #. schema.0.card.0.brandLinkTree.website
 #: schema.0.card.0.brandLinkTree.website
-#| https://gatsby-theme-boilerplate.dev/
+#| https://farming-revolution.com/
 msgid "schema.0.card.0.brandLinkTree.website"
-msgstr "https://gatsby-theme-boilerplate.dev/"
+msgstr "https://farming-revolution.com/"
 
 #. schema.0.card.0.brandLinkTree.instagram
 #: schema.0.card.0.brandLinkTree.instagram

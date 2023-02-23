@@ -1,5 +1,5 @@
 import React from "react";
-import { Row } from "../components/InsertRow";
+import { Row } from "@Components/InsertRow";
 import MainMenuContainer from "../containers/MainMenuContainer";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import ThemeContext from "@Context/ThemeContext";
@@ -16,16 +16,12 @@ const Header = ({
   logo,
   handleRefState,
 }) => {
-  // console.log(logoImage);
   return (
     <ThemeContext.Consumer>
       {theme => {
-        console.log("theme");
-        console.log(theme);
         const logoImage = getImage(
           theme.bigQuery.darkLogo.nodes[0].childImageSharp
         );
-        console.log("oi");
         return (
           <header>
             <Row

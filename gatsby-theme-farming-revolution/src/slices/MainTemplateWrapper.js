@@ -6,19 +6,22 @@ import FooterBlock from "@Slices/FooterBlock";
 
 const MainTemplateWrapper = ({
   children,
-  classes,
+  classes = "",
   logo,
   backgroundImage,
   opt,
 }) => {
   return (
     <BodyBlock
-      opt={{ classes: classes, bgImg: "backgroundImage.src", options: opt }}
-      topology={opt.topology}
+      opt={{
+        classes: classes,
+        bgImg: "backgroundImage.src",
+        options: opt,
+      }}
     >
       <HeaderBlock logotipoSvg={logo} />
       {children}
-      <FooterBlock logo={logo} />
+      <FooterBlock logo={logo} globalSubs={opt?.globalSubs || null} />
     </BodyBlock>
   );
 };

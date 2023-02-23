@@ -2,25 +2,62 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 const path = require("path");
+const fs = require("fs");
 const rootDir = path.join(__dirname, "../");
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 const schemaOrg = require(path.resolve(
   rootDir,
   `content/schemas/default.json`
 ));
+
 const card = schemaOrg.schema[0].card[0];
 const contentPath = path.resolve(rootDir, card.contentPath);
+const staticImagesPathCard = card.staticImagesPath;
+const staticThemePathCard = card.themePath;
+
+const staticImagesPath = path.resolve(
+  rootDir,
+  staticThemePathCard + "/" + staticImagesPathCard
+);
+
+//passsing directoryPath and callback function
+let imagePathFolders = new Set();
+
+const contentDir = srcPath =>
+  fs
+    .readdirSync(srcPath)
+    .filter(file => fs.statSync(path.join(srcPath, file)).isDirectory());
+
+contentDir(contentPath).forEach(element => {
+  contentDir(contentPath + "/" + element).forEach(ele => {
+    if (ele === "images") {
+      imagePathFolders.add(contentPath + "/" + element + "/" + ele);
+    }
+  });
+});
 
 module.exports = {
+  trailingSlash: card.trailingSlash,
   siteMetadata: {
     title: `My Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `xls`,
-        path: path.resolve(rootDir, "content/xls"),
+        name: `images`,
+        path: path.resolve(__dirname, staticImagesPath),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `schemaJSON`,
+        path: path.resolve(rootDir, contentPath + "/schemas"),
       },
     },
     {
@@ -72,19 +109,103 @@ module.exports = {
         path: path.resolve(rootDir, contentPath + "/images/index"),
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `xls`,
+        path: path.resolve(rootDir, "content/xls"),
+      },
+    },
+    {
+      resolve: `gatsby-transformer-excel`,
+      options: {
+        raw: false,
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: card.imageFormats,
+          quality: card.imageQuality,
+          breakpoints: card.imageBreakPoints,
+        },
+      },
+    },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: `images`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: card.imageMaxWidth,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow",
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-context-i18n`,
+    `gatsby-plugin-sitepages-i18n`,
+    `gatsby-plugin-markdown-i18n`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@Slices": path.resolve(__dirname, "src/slices"),
-          "@Components": path.resolve(__dirname, "src/components"),
+          "@Theme": path.resolve(rootDir, card.themePath),
+          "@Containers": path.resolve(
+            rootDir,
+            card.themePath + "/src/containers"
+          ),
+          "@Components": path.resolve(
+            rootDir,
+            card.themePath + "/src/components"
+          ),
+          "@Tools": path.resolve(rootDir, card.themePath + "/src/tools"),
+          "@Templates": path.resolve(
+            rootDir,
+            card.themePath + "/src/templates"
+          ),
+          "@Slices": path.resolve(rootDir, card.themePath + "/src/slices"),
+          "@Conteudo": path.resolve(rootDir, contentPath),
+          "@Posts": path.resolve(rootDir, contentPath + "/posts"),
+          "@I18n": path.resolve(rootDir, contentPath + "/i18n"),
           "@Content": path.resolve(rootDir, "content"),
           "@Context": path.resolve(__dirname, "src/context"),
-          "@Images": path.resolve(__dirname, "static/images"),
         },
         extensions: ["js", "scss"],
       },
     },
+    {
+      resolve: `gatsby-business-in-build`,
+      options: {
+        name: "Farming Revolution - Website",
+        version: "0.6.0",
+        developer: "Milton Bolonha",
+        coauthorBusiness: "Farming Revolution",
+        project: "Farming Revolution - Website",
+        url: "https://farming-revolution.com",
+        message: "Please, pay attention.",
+      },
+    },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
   ],
 };

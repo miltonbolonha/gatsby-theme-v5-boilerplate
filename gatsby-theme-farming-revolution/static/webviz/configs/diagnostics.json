@@ -1,0 +1,39 @@
+{
+  "layout": {
+    "direction": "row",
+    "first": "Plot!3kejmq8",
+    "second": "RawMessages!1vvwguv"
+  },
+  "savedProps": {
+    "Plot!3kejmq8": {
+      "paths": [
+        {
+          "value": "/diagnostics_toplevel_state.level",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "minYValue": "",
+      "maxYValue": "",
+      "showLegend": true,
+      "xAxisVal": "timestamp"
+    },
+    "RawMessages!1vvwguv": {
+      "topicPath": "/diagnostics_agg",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 1,
+    "messageOrder": "receiveTime",
+    "timeDisplayMethod": "TOD"
+  },
+  "version": 16,
+  "skipSettingLocalStorage": false
+}

@@ -1,0 +1,57 @@
+{
+  "layout": {
+    "first": "RawMessages!3ip0m84",
+    "second": {
+      "first": "Plot!33xn5ak",
+      "second": "Plot!4ktgbyb",
+      "direction": "column"
+    },
+    "direction": "column",
+    "splitPercentage": 39.09691629955947
+  },
+  "savedProps": {
+    "RawMessages!3ip0m84": {
+      "topicPath": "/motor_data",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    },
+    "Plot!33xn5ak": {
+      "paths": [
+        {
+          "value": "/motor_data.data[0:3]",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "minYValue": "",
+      "maxYValue": "",
+      "showLegend": true,
+      "xAxisVal": "timestamp"
+    },
+    "Plot!4ktgbyb": {
+      "paths": [
+        {
+          "value": "/motor_data.data[4:]",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "minYValue": "",
+      "maxYValue": "",
+      "showLegend": true,
+      "xAxisVal": "timestamp"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 5,
+    "messageOrder": "receiveTime",
+    "timeDisplayMethod": "TOD"
+  },
+  "version": 16,
+  "skipSettingLocalStorage": false
+}

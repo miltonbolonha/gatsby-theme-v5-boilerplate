@@ -16,24 +16,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: path.resolve(rootDir, contentPath + "/posts/"),
-        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `landings`,
-        path: path.resolve(rootDir, contentPath + "/landings/"),
-        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `pages`,
         path: path.resolve(rootDir, contentPath + "/pages/"),
+        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `careers`,
+        path: path.resolve(rootDir, contentPath + "/careers/"),
         ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
       },
     },

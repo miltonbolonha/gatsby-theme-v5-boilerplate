@@ -1,0 +1,55 @@
+{
+  "layout": "3D Panel!wfb3x1",
+  "savedProps": {
+    "3D Panel!wfb3x1": {
+      "checkedKeys": [
+        "name:Topics",
+        "t:/main/rviz_publisher/marker_array",
+        "t:/tf",
+        "ns:/tf:base_link",
+        "ns:/tf:map",
+        "ns:/tf:left_gps_link",
+        "ns:/tf:right_gps_link",
+        "ns:/tf:control_point_link",
+        "t:/main/track_visualizer/current_field_marker",
+        "t:/main/track_visualizer/current_track_marker"
+      ],
+      "expandedKeys": [
+        "name:Topics"
+      ],
+      "followTf": "base_link",
+      "cameraState": {
+        "distance": 22.568526073395734,
+        "perspective": true,
+        "phi": 1.070761238291018,
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "thetaOffset": 0.47648902821316663,
+        "fovy": 0.7853981633974483,
+        "near": 0.01,
+        "far": 5000
+      },
+      "modifiedNamespaceTopics": [
+        "/tf"
+      ],
+      "pinTopics": false,
+      "settingsByKey": {},
+      "autoSyncCameraState": false,
+      "autoTextBackgroundColor": true,
+      "followOrientation": false
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 1,
+    "messageOrder": "receiveTime",
+    "timeDisplayMethod": "TOD"
+  },
+  "version": 16,
+  "skipSettingLocalStorage": false
+}

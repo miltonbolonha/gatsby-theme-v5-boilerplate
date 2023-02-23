@@ -1,7 +1,7 @@
 [build]
-    command = "GATSBY_CONCURRENT_DOWNLOAD=25 yarn workspace gatsby-plugin-schemajson-i18n build"
-  	functions = "gatsby-plugin-schemajson-i18n/src/api"
-    publish = "gatsby-plugin-schemajson-i18n/public"
+    command = "GATSBY_CONCURRENT_DOWNLOAD=25 yarn workspace gatsby-theme-farming-revolution build"
+  	functions = "gatsby-theme-farming-revolution/src/api"
+    publish = "gatsby-theme-farming-revolution/public"
 
 [build.environment]
   NODE_VERSION = "18.12.1"

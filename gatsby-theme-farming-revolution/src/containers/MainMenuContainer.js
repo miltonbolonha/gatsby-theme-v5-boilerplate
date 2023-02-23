@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "gatsby";
 import MainMenuList from "../components/MainMenuList";
 
 const MainMenuContainer = ({
-  refState,
   isMobile,
   wrapperRef,
   mainMenuItems,
+  refState,
 }) => {
+  const [refStateLocale, setRefLocaleState] = useState(false);
+
   const isVisibleClass = refState ? "visible" : "not-visible";
   const navClasses = isMobile
     ? "main-nav menu-state-" + isVisibleClass
     : "main-nav  main-header main-header-" + isVisibleClass;
   const labelledby = isMobile ? "check-toggle-icon" : null;
+
+  function handleRefLocaleState(e) {
+    e.preventDefault();
+    setRefLocaleState(!refStateLocale);
+  }
+
   return (
     <nav
       className={navClasses}
@@ -35,9 +43,15 @@ const MainMenuContainer = ({
           />
         ))}
         <li>
-          <Link to='/'>English</Link>
+          <Link to='/' onClick={e => handleRefLocaleState(e)}>
+            English
+          </Link>
         </li>
-        <ul className='main-ul-ul hidden'>
+        <ul
+          className={`main-ul-ul menu-locale-${
+            refStateLocale ? "" : "not-"
+          }visible`}
+        >
           <li>
             <Link to='/'>English</Link>
           </li>
@@ -51,7 +65,7 @@ const MainMenuContainer = ({
             <Link to='/es/'>Español</Link>
           </li>
           <li>
-            <Link to='/ne/'>Nederlands</Link>
+            <Link to='/nl/'>Nederlands</Link>
           </li>
           <li>
             <Link to='/pt/'>Português</Link>

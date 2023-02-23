@@ -1,49 +1,61 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
+import { Row } from "@Components/InsertRow";
+import HeadingBlock from "@Slices/HeadingBlock";
+import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import ThemeContext from "@Context/ThemeContext";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
+const NotFoundPage = ({ pageContext }) => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <ThemeContext.Consumer>
+      {theme => {
+        const genImgsNodes = theme.bigQuery.generalImages.nodes;
+        const globalSubs = pageContext.schemaJSON.pagesHelper.globals;
+        return (
+          <MainTemplateWrapper
+            logo={"darkLogo.publicURL"}
+            opt={{
+              titleSeo: `Farming Revolution`,
+              pageQuestions: "defaultQuestions",
+              classes: "blog-list",
+              schemaType: "blog",
+              topology: "index",
+              blogListing: "posts?.slice(0, 9)",
+              articleUrl: "props.location.href",
+              mainLogo: "imgHolder",
+              cardImage:
+                "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
+              serverUrl: "props.location.href",
+              badgesWhats: "badgeWhats",
+              badgesQuestion: "badgeQuestion",
+              globalSubs: globalSubs,
+            }}
+          >
+            <main>
+              <h1>Page not found</h1>
+              <p>
+                Sorry 😔, we couldn’t find what you were looking for.
+                <br />
+                {process.env.NODE_ENV === "development" ? (
+                  <>
+                    <br />
+                    Try creating a page in <code>src/pages/</code>.
+                    <br />
+                  </>
+                ) : null}
+                <br />
+                <Link to='/'>Go home</Link>.
+              </p>
+            </main>
+          </MainTemplateWrapper>
+        );
+      }}
+    </ThemeContext.Consumer>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;

@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: pt-BR\n"
-"Language-Team: https://gatsby-theme-boilerplate.dev/\n"
+"Language-Team: https://farming-revolution.com/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #, Comment for translators
@@ -146,7 +146,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 msgid "brandLinkTree"
 msgstr "
-"website:https://gatsby-theme-boilerplate.dev/;"
+"website:https://farming-revolution.com/;"
 "instagram:https://www.instagram.com/ascasamenteiras_;"
 "zankyou:https://www.zankyou.com.br/f/as-casamenteiras-976737;"
 "compiler:https://www.compiler.com.br/framework/as-casamenteiras--e192771;"

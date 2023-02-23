@@ -4,7 +4,7 @@ const BodyBlock = ({ children, opt, killSEO, topology }) => {
   const { options } = opt;
   return (
     <div
-      className={options.classes}
+      className={options?.classes}
       style={{ background: `url(${opt.bgImg}) repeat` }}
     >
       {children}

@@ -1,0 +1,12 @@
+#
+# robots.txt
+#
+
+User-agent: *
+Allow: /
+
+Disallow: /example-disallow/
+
+Sitemap: https://farming-revolution.com/post-sitemap.xml
+Sitemap: https://farming-revolution.com/page-sitemap.xml
+Sitemap: https://farming-revolution.com/sitemaps.xml

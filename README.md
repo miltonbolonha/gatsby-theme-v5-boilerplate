@@ -1,22 +1,44 @@
-- **`[v.0.6.x:next]`**: Not ready, don't use it yet. Have no ideia what version I'm going. :D
-- **`[v.0.x.0:warning]`**: The first grand finale release will be publish at v1.0.0.
+- **`[v.0.8.x:next]`**: There's a bugfix needed into MD en (default) pages
 
 ---
 
-# Gatsby Boilerplate Starter
+# Farming Revolution GatsbyJS Theme
 
-#### Gatsby Boilerplate Starter _by [Milton Bolonha](https://edu4.dev)_
+## How to start?
+
+First run:
+
+```
+npm i && npm run develop --workspace=gatsby-theme-farming-revolution
+```
+
+Commands:
+
+```
+npm run COMMAND --workspace=gatsby-theme-farming-revolution
+
+npm run dev --workspace=gatsby-theme-farming-revolution
+npm run build --workspace=gatsby-theme-farming-revolution
+npm run clean --workspace=gatsby-theme-farming-revolution
+```
+
+Clean n' dev:
+
+```
+npm run clean && npm run dev --workspace=gatsby-theme-farming-revolution
+```
+
+#### Farming Revolution GatsbyJS Theme _by [Milton Bolonha](https://miltonbolonha.netlify.app/)_
 
 **Engine Agent:** GatsbyJS/ReactJS - Javascript Framework and NPM Workspaces
 
-**Engine SubAgent:** Gatsby Theme
+**Engine SubAgent:** RÖÖM Workspace
 
-**Gatsby Theme Name:** Gatsby Boilerplate Starter
+**Gatsby Theme Name:** Farming Revolution GatsbyJS Theme
 
-**Author:** Milton Bolonha - Milton Bolonha
+**Author:** Milton Bolonha
 
-**Description:** Gatsby Boilerplate Starter is a template for creating
-a Gatsby starter with my owm signature.
+**Description:** Farming Revolution GatsbyJS Theme it's the theme for GatsbyJS.
 
 It's also a platform web creators choose to build professional
 GatsbyJS HTML customized structures.
@@ -29,7 +51,7 @@ GatsbyJS HTML customized structures.
 
 **Plugin Install:** `npm i`
 
-**Theme Start Install:** `npm i && npm run dev -w room --trace-warnings --verbose`
+**Theme Start Install:** `npm i && npm run dev -w room-workspace --trace-warnings --verbose`
 
 **Version:** 0.0.1
 
