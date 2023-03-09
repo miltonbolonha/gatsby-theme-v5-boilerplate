@@ -1,5 +1,6 @@
 ---
 topology: pages
+template: one-column.js
 status: true
 title: Impressum
 description: Imprint page.

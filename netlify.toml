@@ -1,7 +1,7 @@
 [build]
-    command = "GATSBY_CONCURRENT_DOWNLOAD=25 yarn workspace gatsby-theme-farming-revolution build"
-  	functions = "gatsby-theme-farming-revolution/src/api"
-    publish = "gatsby-theme-farming-revolution/public"
+    command = "GATSBY_CONCURRENT_DOWNLOAD=25 yarn workspace gatsby-theme-v5-boilerplate build"
+  	functions = "gatsby-theme-v5-boilerplate/src/api"
+    publish = "gatsby-theme-v5-boilerplate/public"
 
 [build.environment]
   NODE_VERSION = "18.12.1"

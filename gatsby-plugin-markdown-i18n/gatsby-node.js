@@ -4,7 +4,7 @@
 // - i18n slug field
 // - Adding i18n slug field to each MD
 // createPages
-// - create i18n PAGES from content/pages, CAREERS PAGES, JOBS XLS DATA
+// - create i18n PAGES from content/pages, MDS PAGES, JOBS XLS DATA
 
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
@@ -25,8 +25,8 @@ function basePathFinder(nodeTopology) {
   if (nodeTopology === "landings") {
     return "landings";
   }
-  if (nodeTopology === "careers") {
-    return "careers";
+  if (nodeTopology === "mds") {
+    return "mds";
   }
   return null;
 }
@@ -39,7 +39,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: basePathLabel,
+      // basePath: basePathLabel,
     });
     const htmlSlug = slug.includes(".htm");
     const slashSlugfirst = slug.slice(0, 1) === "/" ? slug.slice(1) : slug;
@@ -94,8 +94,8 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           fileAbsolutePath
         }
       }
-      allCareers: allMarkdownRemark(
-        filter: { frontmatter: { topology: { eq: "careers" } } }
+      allMds: allMarkdownRemark(
+        filter: { frontmatter: { topology: { eq: "mds" } } }
       ) {
         nodes {
           fields {
@@ -151,9 +151,9 @@ exports.createPages = ({ graphql, actions, reporter }) => {
       ? results.data.allPages.nodes
       : console.log("Page Error");
 
-    const careers = results.data?.allCareers?.nodes
-      ? results.data.allCareers.nodes
-      : console.log("Career Error");
+    const mds = results.data?.allMds?.nodes
+      ? results.data.allMds.nodes
+      : console.log("Md Error");
 
     const jobs = results.data?.allJobs?.group
       ? results.data.allJobs.group
@@ -174,7 +174,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
         path: slug,
         component: path.resolve(
           rootDir,
-          `gatsby-theme-farming-revolution/src/templates/one-column.js`
+          `gatsby-theme-v5-boilerplate/src/templates/one-column.js`
         ),
         context: {
           title: title,
@@ -183,23 +183,23 @@ exports.createPages = ({ graphql, actions, reporter }) => {
         },
       });
     });
-    careers.forEach(career => {
-      if (!career) {
-        return console.log("career: deu erro muito");
+    mds.forEach(md => {
+      if (!md) {
+        return console.log("md: deu erro muito");
       }
-      if (career.node?.frontmatter === null) {
-        return console.log("career: deu erro");
+      if (md.node?.frontmatter === null) {
+        return console.log("md: deu erro");
       }
-      const { slug } = career.fields;
-      // Use the fields created in exports.onCreatecareer
+      const { slug } = md.fields;
+      // Use the fields created in exports.onCreatemd
       createPage({
         path: slug,
         component: path.resolve(
           rootDir,
-          `gatsby-theme-farming-revolution/src/templates/careers.js`
+          `gatsby-theme-v5-boilerplate/src/templates/md-example.js`
         ),
         context: {
-          frontmatter: career.frontmatter,
+          frontmatter: md.frontmatter,
           allJobs: jobs,
         },
       });

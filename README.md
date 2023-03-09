@@ -9,23 +9,23 @@
 First run:
 
 ```
-npm i && npm run develop --workspace=gatsby-theme-farming-revolution
+npm i && npm run develop --workspace=gatsby-theme-v5-boilerplate
 ```
 
 Commands:
 
 ```
-npm run COMMAND --workspace=gatsby-theme-farming-revolution
+npm run COMMAND --workspace=gatsby-theme-v5-boilerplate
 
-npm run dev --workspace=gatsby-theme-farming-revolution
-npm run build --workspace=gatsby-theme-farming-revolution
-npm run clean --workspace=gatsby-theme-farming-revolution
+npm run dev --workspace=gatsby-theme-v5-boilerplate
+npm run build --workspace=gatsby-theme-v5-boilerplate
+npm run clean --workspace=gatsby-theme-v5-boilerplate
 ```
 
 Clean n' dev:
 
 ```
-npm run clean && npm run dev --workspace=gatsby-theme-farming-revolution
+npm run clean && npm run dev --workspace=gatsby-theme-v5-boilerplate
 ```
 
 #### Farming Revolution GatsbyJS Theme _by [Milton Bolonha](https://miltonbolonha.netlify.app/)_

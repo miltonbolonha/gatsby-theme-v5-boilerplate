@@ -7,7 +7,7 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 
 import ThemeContext from "@Context/ThemeContext";
 
-const Careers = ({ location, pageContext }) => {
+const MDexample = ({ location, pageContext }) => {
   const [jobBox, setJobBox] = useState(null);
   const ref = useRef([]);
   function handleActiveBoxState(e, refS) {
@@ -172,4 +172,4 @@ const Careers = ({ location, pageContext }) => {
   );
 };
 
-export default Careers;
+export default MDexample;

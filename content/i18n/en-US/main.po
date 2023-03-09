@@ -246,7 +246,7 @@ msgstr ""
 #, Comment for translators
 #~ msgid "themePath"
 <<<<<<< HEAD
-#~ msgstr "gatsby-theme-farming-revolution"
+#~ msgstr "gatsby-theme-v5-boilerplate"
 =======
 #~ msgstr "gatsby-theme-boilerplate"
 >>>>>>> feature/sass

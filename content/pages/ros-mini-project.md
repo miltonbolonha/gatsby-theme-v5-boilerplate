@@ -1,5 +1,6 @@
 ---
 topology: pages
+template: one-column.js
 status: true
 title: ROS mini-project
 description: Foram MBA.

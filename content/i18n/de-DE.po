@@ -326,9 +326,9 @@ msgstr "room-workspace/static/images/"
 
 #. schema.0.card.0.themePath
 #: schema.0.card.0.themePath
-#| gatsby-theme-farming-revolution
+#| gatsby-theme-v5-boilerplate
 msgid "schema.0.card.0.themePath"
-msgstr "gatsby-theme-farming-revolution"
+msgstr "gatsby-theme-v5-boilerplate"
 
 
 #. schema.0.card.0.technicalOfficer

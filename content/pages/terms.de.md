@@ -1,5 +1,6 @@
 ---
 topology: pages
+template: one-column.js
 status: true
 title: Allgemeine Geschäftsbedingungen (AGB)
 description: Nosso tea.

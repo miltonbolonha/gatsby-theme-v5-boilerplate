@@ -1,5 +1,6 @@
 ---
 topology: pages
+template: one-column.js
 status: true
 title: Privacy Police
 description: GatsbyJS realizam assessoria e cerimonal de compiler, eventos corporativos e festas em geral.
