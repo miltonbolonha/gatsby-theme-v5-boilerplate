@@ -4,7 +4,7 @@
 // - i18n slug field
 // - Adding i18n slug field to each MD
 // createPages
-// - create i18n PAGES from content/pages, MDS PAGES, JOBS XLS DATA
+// - create i18n PAGES from content/pages, MDS PAGES
 
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
@@ -94,54 +94,6 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           fileAbsolutePath
         }
       }
-      allMds: allMarkdownRemark(
-        filter: { frontmatter: { topology: { eq: "mds" } } }
-      ) {
-        nodes {
-          fields {
-            slug
-          }
-          frontmatter {
-            mainTitle
-            tasksTitle
-            qualificationsTitle
-            firstName
-            lastName
-            email
-            phoneNumber
-            button
-            privacyPolicy
-            applyButton
-            acceptMission
-            acceptPrivacyPolicy
-            sendApplicationButton
-            applyPrintText
-            inOtherLanguages
-            formThankYou
-            genders
-          }
-        }
-      }
-      allJobs: allJobsXlsxPositions {
-        group(field: { Language: SELECT }) {
-          edges {
-            node {
-              Name
-              Active
-              Language
-              Location
-              Qualifications
-              Question_1
-              Question_2
-              Question_3
-              Start_Date
-              Tags
-              Tasks
-              Type
-            }
-          }
-        }
-      }
     }
   `).then(results => {
     if (results.errors) {
@@ -150,14 +102,6 @@ exports.createPages = ({ graphql, actions, reporter }) => {
     const pages = results.data?.allPages?.nodes
       ? results.data.allPages.nodes
       : console.log("Page Error");
-
-    const mds = results.data?.allMds?.nodes
-      ? results.data.allMds.nodes
-      : console.log("Md Error");
-
-    const jobs = results.data?.allJobs?.group
-      ? results.data.allJobs.group
-      : console.log("Jobs Error");
 
     pages.forEach(page => {
       if (!page) {
@@ -180,27 +124,6 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           title: title,
           content: page.html,
           description: description,
-        },
-      });
-    });
-    mds.forEach(md => {
-      if (!md) {
-        return console.log("md: deu erro muito");
-      }
-      if (md.node?.frontmatter === null) {
-        return console.log("md: deu erro");
-      }
-      const { slug } = md.fields;
-      // Use the fields created in exports.onCreatemd
-      createPage({
-        path: slug,
-        component: path.resolve(
-          rootDir,
-          `gatsby-theme-v5-boilerplate/src/templates/md-example.js`
-        ),
-        context: {
-          frontmatter: md.frontmatter,
-          allJobs: jobs,
         },
       });
     });

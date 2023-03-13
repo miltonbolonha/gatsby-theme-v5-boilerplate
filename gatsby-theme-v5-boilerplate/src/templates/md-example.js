@@ -23,11 +23,17 @@ const MDexample = ({ location, pageContext }) => {
           gImgs => gImgs.relativePath === "FR_Hero_Human_cropped.jpg"
         );
         const getSectionOneImg = getImage(sectionOneImg[0]);
-        const jobs = pageContext.allJobs;
-
+        const pattern = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
+        );
+        const bgPattern =
+          pattern[0].childImageSharp.gatsbyImageData.images.fallback.src;
         return (
           <MainTemplateWrapper
             logo={"darkLogo.publicURL"}
+            backgroundImage={{
+              src: bgPattern,
+            }}
             opt={{
               titleSeo: `Farming Revolution`,
               pageQuestions: "defaultQuestions",
@@ -58,113 +64,6 @@ const MDexample = ({ location, pageContext }) => {
                 />
               </Row>
             </Row>
-            {jobs.map((job, ind) => {
-              return (
-                <Row
-                  opt={{
-                    isBoxed: false,
-                    bgColor: "#fff",
-                    classes: "jobs-wrapper",
-                  }}
-                  key={ind}
-                >
-                  <Row
-                    opt={{
-                      isBoxed: true,
-                    }}
-                  >
-                    <h1>{pageContext.frontmatter.mainTitle}</h1>
-                    <p>In other languages: xx</p>
-                    {job?.edges?.map((element, index) => {
-                      if (element?.node?.Active === "TRUE") {
-                        const openIt =
-                          jobBox === `job-n${index}` ? true : false;
-                        return (
-                          <div
-                            key={index}
-                            className={`something job-n${index}`}
-                            onClick={e =>
-                              handleActiveBoxState(e, `job-n${index}`)
-                            }
-                            ref={ref.current[index]}
-                          >
-                            {element?.node?.Name ? (
-                              <h2>
-                                {element.node.Name}{" "}
-                                {pageContext.frontmatter.genders}
-                              </h2>
-                            ) : (
-                              ""
-                            )}
-                            <p className='span'>
-                              {element?.node?.Type ? (
-                                <span> {element.node.Type}</span>
-                              ) : (
-                                ""
-                              )}{" "}
-                              {element?.node?.Start_Date ? (
-                                <span>🕑 {element.node.Start_Date}</span>
-                              ) : (
-                                ""
-                              )}
-                            </p>
-                            {element?.node?.Location ? (
-                              <p className='location'>
-                                {" "}
-                                {element.node.Location}{" "}
-                              </p>
-                            ) : (
-                              ""
-                            )}
-                            {element?.node?.Tags
-                              ? element.node.Tags.split(",").map((tag, it) => (
-                                  <p key={it} className='tag'>
-                                    {tag}
-                                  </p>
-                                ))
-                              : ""}
-                            <ul className={`${openIt ? "" : "hidden"} `}>
-                              <hr />
-                              <h4>Farming Revolution</h4>
-                              <p className='inner'>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Doloribus soluta doloremque
-                                quam nisi maiores, assumenda ipsa blanditiis
-                                incidunt voluptate aperiam reiciendis libero.
-                              </p>
-                              <h3>{pageContext.frontmatter.tasksTitle}</h3>
-                              {element?.node?.Qualifications ? (
-                                <li>{element.node.Qualifications}</li>
-                              ) : (
-                                ""
-                              )}
-                              <h3>
-                                {pageContext.frontmatter.qualificationsTitle}
-                              </h3>
-                              {element?.node?.Question_1 ? (
-                                <li>{element.node.Question_1}</li>
-                              ) : (
-                                ""
-                              )}
-                              {element?.node?.Question_2 ? (
-                                <li>{element.node.Question_2}</li>
-                              ) : (
-                                ""
-                              )}
-                              {element?.node?.Question_3 ? (
-                                <li>{element.node.Question_3}</li>
-                              ) : (
-                                ""
-                              )}
-                            </ul>
-                          </div>
-                        );
-                      }
-                    })}
-                  </Row>
-                </Row>
-              );
-            })}
           </MainTemplateWrapper>
         );
       }}

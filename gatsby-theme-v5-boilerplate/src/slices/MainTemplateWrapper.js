@@ -15,7 +15,7 @@ const MainTemplateWrapper = ({
     <BodyBlock
       opt={{
         classes: classes,
-        bgImg: "backgroundImage.src",
+        bgImg: backgroundImage?.src || null,
         options: opt,
       }}
     >

@@ -5,7 +5,7 @@
       "card": [
         {
           "brandAppVersion": "0.6.0",
-          "cardLocale": "pt-BR",
+          "cardLocale": "en-US",
           "brandIntl": "pt-BR",
           "brandPerson": "Milton Bolonha",
           "brandName": "Farming Revolution GmbH",
@@ -68,15 +68,15 @@
           "technicalOfficer": "Milton Bolonha 34328930869<miltonbolonha@gmail.com>",
           "pagesHelper": {
             "globals": {
-              "footerLegend": "DECOLONIZE JÁ!",
-              "copyright": "Copyright © Todos Direitos Reservados - Milton Bolonha",
+              "footerLegend": "Simplify sustainable agriculture and make it affordable for every farmer",
+              "copyright": "Copyright © farming revolution GmbH",
               "privacyPolicy": "Privacy Policy",
               "imprint": "Imprint",
               "termsConditions": "Terms and conditions",
-              "contactUs": "Contatos",
-              "notAvailableRedirectLocale": "pt",
-              "notAvailableLocale": "Not all content is available.",
-              "openGerman": "Open site in Portuguese",
+              "contactUs": "Contact Us",
+              "notAvailableRedirectLocale": "de",
+              "notAvailableLocale": "Not all content is available in English.",
+              "openGerman": "Open site in German",
               "datasheet": "Datasheet"
             },
             "jobs": {
@@ -99,37 +99,37 @@
               "genders": "m/f/d"
             },
             "datasheet": {
-              "status": false,
+              "status": true,
               "title": "Datasheet - Farming GT"
             },
             "index": {
-              "sectionOneMainTitle": "Agenda",
-              "sectionOneTrackLegend": "Indefinido",
-              "sectionOneTrackParagraph": "Ribeirão Preto",
+              "sectionOneMainTitle": "Powerful, Energy-efficient And Autonomous",
+              "sectionOneTrackLegend": "Track width",
+              "sectionOneTrackParagraph": "Easily adaptable to your crops",
               "sectionOneSlopesLegend": "Slopes",
               "sectionOneSlopesParagraph": "4-wheel drive, crab steering in slopes, low weight",
               "sectionOneConsumptionLegend": "Consumption",
               "sectionOneConsumptionParagraph": "Fully electrical, light-weight, low CO2 footprint, no hydraulics",
               "sectionOneAutonomousLegend": "Autonomous",
               "sectionOneAutonomousParagraph": "Fully autonomous, optional remote supervision over internet, 30h autonomy (through range extender).",
-              "sectionTwoTitle": "Lojinha",
-              "sectionTwoPlantsLegend": "Em Breve",
-              "sectionTwoPlantsParagraph": "Produtos incríveis, autênticos e raros.",
+              "sectionTwoTitle": "Precise And Reliable Plant Recognition",
+              "sectionTwoPlantsLegend": "Plants",
+              "sectionTwoPlantsParagraph": "Cabbage, lettuce varieties, onions, corn, sugar beet, pumpkin, field bean, potato, canola, soybean, wheat...",
               "sectionTwoPlantsTwoLegend": "Plant size",
               "sectionTwoPlantsTwoParagraph": "Distinguishes small plants (starting from cotyledon stage), day and night",
               "sectionTwoReabilityLegend": "Reliability",
               "sectionTwoReabilityParagraph": "Largest annotated plant image database in the world",
-              "sectionThreeTitle": "Aconteceu",
-              "sectionThreeHerbicideLegend": "Indefinido",
-              "sectionThreeHerbicideParagraph": "Ribeirão Preto",
+              "sectionThreeTitle": "Robust And Effective Weeding",
+              "sectionThreeHerbicideLegend": "Herbicide",
+              "sectionThreeHerbicideParagraph": "Fully mechanical treatment with rotating chopper for harshest conditions",
               "sectionThreeAccuracyLegend": "Accuracy",
               "sectionThreeAccuracyParagraph": "Removal of weeds close to the crop, even when crops and weeds overlap",
               "sectionThreeWeedingLegend": "Weeding",
               "sectionThreeWeedingParagraph": "In-row and inter-row weeding, large and small weeds, hard and sandy soils",
-              "collaborations": "Parceiros",
-              "joinTeam": "Quer saber mais?",
-              "foundedHistory": "Sem nenhum tipo de acesso e incentivo, Milton Bolonha se tornou compositor aos 11 anos de idade e agora aos 35 anos está lançando o seu espetáculo DECOLONIZE JÁ!, que é uma expressão artística nativa Brasileira. Milton Bolonha passou a vida inteira sentindo os efeitos das engrenagens imperialistas engendradas dentro da nossa sociedade. Passou as piores dificuldades humanas, mas foi valente como poucos. E agora ergue sua voz única para fazer essa denúncia contra o pensamento “eurocêntrico”.",
-              "openPosition": "Siga @miltonbolonha_",
+              "collaborations": "Collaborations",
+              "joinTeam": "Want To Join Our Team?",
+              "foundedHistory": "Founded in 2020, farming revolution has embraced a remote work culture from the very beginning. With flexible working hours and no central office, much of the development work can be done from your home or preferred location, without the hassle and costs of commuting. For everything that cannot be done remotely, we do have a varying number of testing locations in Germany, Spain and other parts of Europe. We are a young team of enthusiasts on a mission to make plant cultivation more sustainable.",
+              "openPosition": "See open position",
               "starRepo": "Star this repo"
             }
           }

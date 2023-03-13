@@ -4,7 +4,6 @@ import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import ThemeContext from "@Context/ThemeContext";
 
-import HeadingBlock from "@Slices/HeadingBlock";
 const FooterBlock = ({ logo, globalSubs }) => {
   return (
     <ThemeContext.Consumer>
@@ -14,7 +13,7 @@ const FooterBlock = ({ logo, globalSubs }) => {
           el => el.relativePath === "F_Logo_White.png"
         )[0].childImageSharp;
         const whiteFooterMark = brandNodes.filter(
-          el => el.relativePath === "FR_Logo_Mark-White.png"
+          el => el.relativePath === "flag-deco.png"
         )[0].childImageSharp;
 
         return (
@@ -43,16 +42,16 @@ const FooterBlock = ({ logo, globalSubs }) => {
               >
                 <section className='footer-contacts contacts'>
                   <h3>{globalSubs?.contactUs}</h3>
-                  <h1>FARMING REVOLUTION GMBH</h1>
-                  <p>Grönerstr. 9</p>
-                  <p>71636 Ludwigsburg</p>
+                  <h1>Milton Bolonha</h1>
+                  <p>DECOLONIZE JÁ!</p>
+                  <p>@DECOLONIZEJA</p>
                   <a href='mailto:info@farming-revolution.com'>
-                    info@farming-revolution.com
+                    contato@miltonbolonha.com.br
                   </a>
-                  <a href='tel:+49 714114152301'>+49 714114152301</a>
+                  <a href='tel:+12 98106-2959'>+12 98106-2959</a>
                 </section>
                 <div className='footer-languages'>
-                  <h3>Languages</h3>
+                  <h3>Idiomas</h3>
                   <ul>
                     <li>
                       <Link to='/en/'>English</Link>
@@ -81,7 +80,7 @@ const FooterBlock = ({ logo, globalSubs }) => {
 
               <Row
                 opt={{
-                  classes: "bg-primary-dark footer-copyright",
+                  classes: "footer-copyright",
                   isBoxed: true,
                 }}
               >
@@ -96,9 +95,11 @@ const FooterBlock = ({ logo, globalSubs }) => {
                 />
                 <h3>{globalSubs?.footerLegend}</h3>
                 <div className='footer-links'>
-                  <a href='/en/privacy-policy'>{globalSubs?.privacyPolicy}</a>
-                  <a href='/en/imprint'>{globalSubs?.imprint}</a>
-                  <a href='/en/terms'>{globalSubs?.termsConditions}</a>
+                  <a href='/politica-privacidade'>
+                    {globalSubs?.privacyPolicy}
+                  </a>
+                  <a href='/responsavel-tecnico'>{globalSubs?.imprint}</a>
+                  <a href='/termos'>{globalSubs?.termsConditions}</a>
                 </div>
                 <p>
                   © {new Date().getFullYear()} - {globalSubs?.copyright}

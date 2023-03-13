@@ -32,10 +32,19 @@ const Header = ({
                 numColumns: 2,
               }}
             >
+              <GatsbyImage
+                image={logoImage}
+                alt={"Logo"}
+                placeholder={"NONE"}
+                critical='true'
+                className={"main-logo"}
+                width={250}
+                // height={50}
+              />
               {/* mobile menu */}
               {mainMenuStatus === true ? (
                 <>
-                  <div className={"mobile-only main-header-" + menuActive}>
+                  <div className={"main-header-" + menuActive}>
                     <div className='header-columns toggle-menu'>
                       <button
                         type='button'
@@ -65,15 +74,6 @@ const Header = ({
                 </>
               ) : null}
               {/* desktop menu */}
-              <GatsbyImage
-                image={logoImage}
-                alt={"Logo"}
-                placeholder={"NONE"}
-                critical='true'
-                className={"main-logo"}
-                width={250}
-                height={50}
-              />
             </Row>
           </header>
         );

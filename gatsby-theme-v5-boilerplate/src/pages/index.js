@@ -56,18 +56,72 @@ const IndexPage = ({ pageContext }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
+        console.log("theme.bigQuery");
+        console.log(theme.bigQuery.brandImages);
+        const pattern = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
+        );
+        const bgPattern =
+          pattern[0].childImageSharp.gatsbyImageData.images.fallback.src;
+        const patternDark = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg-dark.png"
+        );
+        const bgPatternDark =
+          patternDark[0].childImageSharp.gatsbyImageData.images.fallback.src;
+        // const bgPatternDark = getImage(patternDark[0]);
+
+        const patternFooterGrafism = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
+        );
+        const patternFooterGrafismImg =
+          patternFooterGrafism[0].childImageSharp.gatsbyImageData.images
+            .fallback.src;
+
+        const patternFooterGrafismDark =
+          theme.bigQuery.brandImages.nodes.filter(
+            brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
+          );
+        console.log(patternFooterGrafismDark[0]);
+        const patternFooterGrafismImgDark =
+          patternFooterGrafismDark[0].childImageSharp.gatsbyImageData;
+        const patternBrown = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg-3.png"
+        );
+        // const bgPatternBrown =
+        //   patternBrown[0].childImageSharp.gatsbyImageData.images.fallback.src;
+
+        // const patternDark2 = theme.bigQuery.brandImages.nodes.filter(
+        //   brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
+        // );
+        // const bgPatterndark2 =
+        //   patternDark2[0].childImageSharp.gatsbyImageData.images.fallback.src;
+
+        const toproof = theme.bigQuery.brandImages.nodes.filter(
+          brandImgs => brandImgs.relativePath === "toproof-rio.jpg"
+        );
+        // const toproofImg =
+        //   toproof[0].childImageSharp.gatsbyImageData.images.fallback.src;
+
         const treatmentNodes = data.treatmentImages.nodes;
         const partnersNodes = data.partnerImages.nodes;
-        const heroNodes = data.heroImages.nodes;
+        // const heroNodes = data.heroImages.nodes;
         const genImgsNodes = theme.bigQuery.generalImages.nodes;
-        const sectionOneImg = genImgsNodes.filter(
-          gImgs => gImgs.relativePath === "FR_Hero_Human_cropped.jpg"
-        );
-        const getSectionOneImg = getImage(sectionOneImg[0]);
+        // const sectionOneImg = genImgsNodes.filter(
+        //   gImgs => gImgs.relativePath === "FR_Hero_Human_cropped.jpg"
+        // );
+        const getSectionOneImg = toproof[0].childImageSharp.gatsbyImageData;
+
+        // console.log("getSrc(pattern[0].childrenImageSharpbgPattern)");
+        // console.log(
+        //   pattern[0].childImageSharp.gatsbyImageData.images.fallback.src
+        // );
         return (
           <>
             <MainTemplateWrapper
               logo={"darkLogo.publicURL"}
+              backgroundImage={{
+                src: bgPattern,
+              }}
               opt={{
                 titleSeo: `Farming Revolution`,
                 pageQuestions: "defaultQuestions",
@@ -85,8 +139,12 @@ const IndexPage = ({ pageContext }) => {
                 globalSubs: globalSubs,
               }}
             >
-              <Row
-                opt={{ classes: "main-slider", isBoxed: true, bgColor: "#fff" }}
+              {/* <Row
+                opt={{
+                  classes: "main-slider",
+                  isBoxed: true,
+                  bgColor: "#E2725B",
+                }}
               >
                 <div className='main-slide-inner'>
                   {heroNodes.map((hero, i) => {
@@ -105,18 +163,28 @@ const IndexPage = ({ pageContext }) => {
                     );
                   })}
                 </div>
-              </Row>
+              </Row> */}
               <main className='main-container' id='site-content' role='list'>
                 <Row
                   opt={{
                     classes: "section-row",
                     isBoxed: false,
-                    bgColor: "#f0f0f0",
                   }}
                 >
                   <section className='section-wrapper'>
                     <div className='section-row section-columns section-div img-wrapper'>
                       <div className='section-image'>
+                        <GatsbyImage
+                          image={getSectionOneImg}
+                          alt={"Logo"}
+                          placeholder={"NONE"}
+                          critical='true'
+                          className={"first-section-img"}
+                          width={890}
+                        />
+                      </div>
+
+                      <div className='section-infos'>
                         <HeadingBlock
                           classes='m30auto hack'
                           importance={10}
@@ -125,41 +193,14 @@ const IndexPage = ({ pageContext }) => {
                         >
                           {indexSubs.sectionOneMainTitle}
                         </HeadingBlock>
-                        <GatsbyImage
-                          image={getSectionOneImg}
-                          alt={"Logo"}
-                          placeholder={"NONE"}
-                          critical='true'
-                          className={"main-logo"}
-                          width={890}
-                          height={790}
-                        />
-                      </div>
-
-                      <div className='section-infos'>
                         <div className='inner-infos'>
-                          <h2>1,35 - 2,25 M</h2>
+                          <h2>2023</h2>
                           <h3>{indexSubs.sectionOneTrackLegend}</h3>
                           <p>{indexSubs.sectionOneTrackParagraph}</p>
                         </div>
-                        <div className='inner-infos'>
-                          <h2>20%</h2>
-                          <h3>{indexSubs.sectionOneSlopesLegend}</h3>
-                          <p>{indexSubs.sectionOneSlopesParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>1,5 KW</h2>
-                          <h3>{indexSubs.sectionOneConsumptionLegend}</h3>
-                          <p>{indexSubs.sectionOneConsumptionParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>24 / 7</h2>
-                          <h3>{indexSubs.sectionOneAutonomousLegend}</h3>
-                          <p>{indexSubs.sectionOneAutonomousParagraph}</p>
-                        </div>
-                        <Link to='datasheet' className='main-btn'>
+                        {/* <Link to='datasheet' className='main-btn'>
                           {globalSubs.datasheet}
-                        </Link>
+                        </Link> */}
                         <br />
                       </div>
                     </div>
@@ -169,7 +210,6 @@ const IndexPage = ({ pageContext }) => {
                   opt={{
                     classes: "section-row",
                     isBoxed: false,
-                    bgColor: "#fff",
                   }}
                 >
                   <section className='section-wrapper'>
@@ -179,14 +219,6 @@ const IndexPage = ({ pageContext }) => {
                       }
                     >
                       <div className='section-image'>
-                        <HeadingBlock
-                          classes='m30auto hack'
-                          importance={10}
-                          width={350}
-                          ribbon={false}
-                        >
-                          {indexSubs.sectionTwoTitle}
-                        </HeadingBlock>
                         <div className='treatment-wrapper'>
                           <div className='treatment-inner-wrapper'>
                             {treatmentNodes.map((hero, i) => {
@@ -209,65 +241,58 @@ const IndexPage = ({ pageContext }) => {
                       </div>
 
                       <div className='section-infos'>
+                        <HeadingBlock
+                          classes='m30auto hack'
+                          importance={10}
+                          width={350}
+                          ribbon={false}
+                        >
+                          {indexSubs.sectionTwoTitle}
+                        </HeadingBlock>
                         <div className='inner-infos'>
-                          <h2>80</h2>
+                          <h2>R$--,--</h2>
                           <h3>{indexSubs.sectionTwoPlantsLegend}</h3>
                           <p>{indexSubs.sectionTwoPlantsParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>1 CM</h2>
-                          <h3>{indexSubs.sectionTwoPlantsTwoLegend}</h3>
-                          <p>{indexSubs.sectionTwoPlantsTwoParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>99 %</h2>
-                          <h3>{indexSubs.sectionTwoReabilityLegend}</h3>
-                          <p>{indexSubs.sectionTwoReabilityParagraph}</p>
                         </div>
                       </div>
                     </div>
                   </section>
                 </Row>
 
-                <Row opt={{ classes: "section-row", isBoxed: false }}>
+                <Row
+                  opt={{
+                    classes: "section-row dark",
+                    isBoxed: false,
+                    bgImg: bgPatternDark,
+                  }}
+                >
                   <section className='section-wrapper'>
-                    <HeadingBlock
-                      classes='m30auto hack'
-                      importance={10}
-                      width={350}
-                      ribbon={false}
-                    >
-                      {indexSubs.sectionThreeTitle}
-                    </HeadingBlock>
-
                     <div className='section-row section-columns section-div img-wrapper'>
                       <div className='section-image'>
                         <GatsbyImage
-                          image={getSectionOneImg}
-                          alt={"Logo"}
+                          image={patternFooterGrafismImgDark}
+                          alt={""}
                           placeholder={"NONE"}
                           critical='true'
-                          className={"main-logo"}
+                          className={""}
                           width={890}
                           height={790}
                         />
                       </div>
 
                       <div className='section-infos'>
+                        <HeadingBlock
+                          classes='m30auto hack'
+                          importance={10}
+                          width={350}
+                          ribbon={false}
+                        >
+                          {indexSubs.sectionThreeTitle}
+                        </HeadingBlock>
                         <div className='inner-infos'>
-                          <h2>0 %</h2>
+                          <h2>2023</h2>
                           <h3>{indexSubs.sectionThreeHerbicideLegend}</h3>
                           <p>{indexSubs.sectionThreeHerbicideParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>5 MM</h2>
-                          <h3>{indexSubs.sectionThreeAccuracyLegend}</h3>
-                          <p>{indexSubs.sectionThreeAccuracyParagraph}</p>
-                        </div>
-                        <div className='inner-infos'>
-                          <h2>100 %</h2>
-                          <h3>{indexSubs.sectionThreeWeedingLegend}</h3>
-                          <p>{indexSubs.sectionThreeWeedingParagraph}</p>
                         </div>
                       </div>
                     </div>
@@ -278,7 +303,7 @@ const IndexPage = ({ pageContext }) => {
                   opt={{
                     classes: "section-row section-padding",
                     isBoxed: false,
-                    bgColor: "#fff",
+                    bgImg: patternFooterGrafismImg,
                   }}
                 >
                   <section className='section-wrapper'>
@@ -327,8 +352,10 @@ const IndexPage = ({ pageContext }) => {
                     <Row
                       opt={{
                         classes:
-                          "section-row section-columns bg-primary-gray pre-footer-section",
+                          "section-row section-columns bg-primary-gray dark",
+                        isBoxed: false,
                         numColumns: 1,
+                        bgImg: patternFooterGrafismImgDark.images.fallback.src,
                       }}
                     >
                       <HeadingBlock

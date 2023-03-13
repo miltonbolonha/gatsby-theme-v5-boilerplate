@@ -67,15 +67,6 @@ exports.onCreatePage = ({ page, actions }) => {
         return createPage(newPage);
       }
 
-      if (isDefaultCard && isDefaultSchema && newPage.path === "/room/") {
-        newPage.context = {
-          ...context,
-          schemaJSON: cardElementDefault,
-          prefixI18n: cardLocale,
-        };
-        return createPage(newPage);
-      }
-
       fs.readdir(pageSiteFolder, (err, files) => {
         files.map((file, ind) => {
           if (

@@ -86,21 +86,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `mds`,
-        path: path.resolve(rootDir, contentPath + "/pages/mds/"),
-        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.resolve(rootDir, contentPath + "/pages/mds/images"),
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "components",

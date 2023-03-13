@@ -163,12 +163,12 @@ const ThemeProvider = ({ children }) => {
           }
         }
       }
-      darkLogo: allFile(filter: { relativePath: { eq: "F_Logo_Dark.png" } }) {
+      darkLogo: allFile(filter: { relativePath: { eq: "logotipo.png" } }) {
         nodes {
           relativePath
           publicURL
           childImageSharp {
-            gatsbyImageData(width: 250, height: 50, quality: 100)
+            gatsbyImageData(width: 250, quality: 100)
           }
         }
       }

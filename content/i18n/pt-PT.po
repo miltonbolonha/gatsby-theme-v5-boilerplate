@@ -43,7 +43,7 @@ msgstr "nl-NL"
 #: locales.5
 #| pt-PT
 msgid "locales.5"
-msgstr "pt-PT"
+msgstr "pt-BR"
 
 #. locales.6
 #: locales.6
@@ -62,7 +62,7 @@ msgstr "0.6.0"
 #: schema.0.card.0.cardLocale
 #| pt-PT
 msgid "schema.0.card.0.cardLocale"
-msgstr "pt-PT"
+msgstr "pt-BR"
 
 #. schema.0.card.0.brandIntl
 #: schema.0.card.0.brandIntl

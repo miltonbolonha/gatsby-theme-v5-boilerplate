@@ -43,7 +43,7 @@ msgstr "nl-NL"
 #: locales.5
 #| pt-PT
 msgid "locales.5"
-msgstr "pt-PT"
+msgstr "pt-BR"
 
 #. locales.6
 #: locales.6

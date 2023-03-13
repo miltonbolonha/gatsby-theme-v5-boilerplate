@@ -8,7 +8,7 @@ const HeaderBlock = ({ logotipoSvg }) => {
         opt={{
           mainMenuStatus: MainMenuData.menu.status,
           logoSvg: logotipoSvg,
-          bgOne: "#fff",
+          bgOne: "transparent",
           bgTwo: "transparent",
           classes: "header-block",
         }}

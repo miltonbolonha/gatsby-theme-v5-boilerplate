@@ -110,13 +110,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `xls`,
-        path: path.resolve(rootDir, "content/xls"),
-      },
-    },
-    {
       resolve: `gatsby-transformer-excel`,
       options: {
         raw: false,

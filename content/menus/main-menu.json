@@ -5,20 +5,20 @@
     "items": [
       {
         "item": {
-          "label": "Farming GT",
-          "to": "/#farming-gt"
+          "label": "Milton Bolonha",
+          "to": "/milton-bolonha/"
         }
       },
       {
         "item": {
-          "label": "Jobs",
-          "to": "/careers/"
+          "label": "Decolonialidade",
+          "to": "/decolonialidade/"
         }
       },
       {
         "item": {
-          "label": "Login",
-          "href": "https://app.farming-revolution.com/"
+          "label": "Contato",
+          "href": "/contato/"
         }
       }
     ]

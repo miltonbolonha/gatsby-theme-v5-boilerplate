@@ -1,12 +1,12 @@
 {
-  "locales": ["en-US", "de-DE", "fr-FR", "es-ES", "nl-NL", "pt-PT", "ru-RU"],
+  "locales": ["pt-BR", "en-US", "de-DE", "fr-FR", "es-ES", "nl-NL", "ru-RU"],
   "schema": [
     {
       "card": [
         {
           "brandAppVersion": "0.6.0",
           "cardLocale": "es-ES",
-          "brandIntl": "en-US",
+          "brandIntl": "pt-BR",
           "brandPerson": "Milton Bolonha",
           "brandName": "Farming Revolution GmbH",
           "brandAppName": "Farming Revolution - Gatsby Theme",

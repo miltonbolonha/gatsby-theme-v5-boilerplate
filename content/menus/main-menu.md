@@ -8,8 +8,8 @@ items: [
     to: "/#farming-gt"
     ],
   item: [
-    label: "Jobs",
-    to: "/careers/"
+    label: "Jobsssss",
+    to: "/mds/"
     ],
   item: [
     label: "Login",

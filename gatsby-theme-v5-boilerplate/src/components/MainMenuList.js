@@ -35,7 +35,7 @@ const MainMenuList = ({
           title={list.item.label}
           aria-label={`Acesso a página: ${list.item.label}, no websítio da EMPRESA`}
           activeClassName='active'
-          className='uzum'
+          className='none'
         >
           {list.item.label}
         </Link>

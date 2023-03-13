@@ -3,10 +3,12 @@ import React from "react";
 export const Row = ({ opt, children }) => {
   const rowWidth = opt.isBoxed ? "boxed-column" : "full-width-row";
   const alignTo = opt.alignTo ? `align-to-${opt.alignTo}` : "";
-  const templateColumns = `repeat(${opt.numColumns ||
-    "1"}, ${opt.widthColumns || "1fr"})`;
+  const templateColumns = `repeat(${opt.numColumns || "1"}, ${
+    opt.widthColumns || "1fr"
+  })`;
   const bgParent = opt.bgColor && opt.isBoxed === false ? opt.bgColor : null;
   const bgChild = opt.bgColor && opt.isBoxed === true ? opt.bgColor : null;
+
   return (
     <div
       className={`${rowWidth} ${opt.classes} ${alignTo} responsive-padding`}
@@ -18,9 +20,10 @@ export const Row = ({ opt, children }) => {
         className={rowWidth + "-child " + opt.classes}
         role={opt.role || null}
         style={{
-          backgroundColor: bgChild,
+          backgroundColor: !opt.bgImg && bgChild ? bgChild : null,
           display: "grid",
           gridTemplateColumns: templateColumns,
+          background: opt.bgImg ? `url(${opt.bgImg}) repeat` : null,
         }}
       >
         {children}
