@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: pt-BR\n"
-"Language-Team: https://farming-revolution.com/\n"
+"Language-Team: https://miltonbolonha.com.br/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "docsCommunityApplicationPolicyLabel"

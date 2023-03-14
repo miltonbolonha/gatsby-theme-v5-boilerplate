@@ -1,5 +1,14 @@
 {
-  "locales": ["pt-BR", "en-US", "de-DE", "fr-FR", "es-ES", "nl-NL", "ru-RU"],
+  "locales": [
+    "pt-BR",
+    "en-US",
+    "de-DE",
+    "fr-FR",
+    "es-ES",
+    "nl-NL",
+    "ru-RU",
+    "jp-JP"
+  ],
   "schema": [
     {
       "card": [
@@ -14,7 +23,7 @@
           "brandShortName": "Farming GT",
           "brandPascalName": "FarmingRevolution",
           "brandDescription": "Farming revolution GmbH is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is farming revolution's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. ",
-          "brandUrl": "https://farming-revolution.com",
+          "brandUrl": "https://miltonbolonha.com.br",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
           "brandLogoTransparent": "logo-fundo-transparent-900-w.png",
@@ -24,8 +33,8 @@
           "brandHexHelperColor": "#373737",
           "brandEmail": "info@farming-revolution.com",
           "brandPromoEmail": "info@farming-revolution.com",
-          "brandGithub": "https://github.com/farming-revolution/",
-          "brandAppRepo": "https://github.com/farming-revolution/farming-revolution-gatsby/",
+          "brandGithub": "https://github.com/miltonbolonha/",
+          "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/",
           "brandKeywords": [
             {
               "key": "farming revolution"
@@ -44,8 +53,8 @@
             }
           ],
           "brandLinkTree": {
-            "website": "https://farming-revolution.com/",
-            "github": "https://github.com/farming-revolution/farming-revolution-gatsby/"
+            "website": "https://miltonbolonha.com.br/",
+            "github": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/"
           },
           "brandHighlights": "null",
           "brandPersonFamilyBio": "null",
@@ -93,7 +102,7 @@
               "acceptMission": "I adhere to the mission of farming revolution to simplify ,sustainable agriculture and make it available for every farmer",
               "acceptPrivacyPolicy": "I accept the privacy policy",
               "sendApplicationButton": "Send application",
-              "applyPrintText": "Please apply online at <a href='https://farming-revolution.com/en/careers'>farming-revolution.com/en/careers</a>.",
+              "applyPrintText": "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.",
               "inOtherLanguages": "In other languages",
               "formThankYou": "Thank you for submitting the form!",
               "genders": "m/f/d"

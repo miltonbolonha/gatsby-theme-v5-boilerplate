@@ -114,9 +114,9 @@ msgstr "Farming revolution GmbH is a company from Ludwigsburg in Germany. The go
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
-#| https://farming-revolution.com
+#| https://miltonbolonha.com.br
 msgid "schema.0.card.0.brandUrl"
-msgstr "https://farming-revolution.com"
+msgstr "https://miltonbolonha.com.br"
 
 #. schema.0.card.0.brandLogo
 #: schema.0.card.0.brandLogo
@@ -174,15 +174,15 @@ msgstr "info@farming-revolution.com"
 
 #. schema.0.card.0.brandGithub
 #: schema.0.card.0.brandGithub
-#| https://github.com/farming-revolution/
+#| https://github.com/miltonbolonha/
 msgid "schema.0.card.0.brandGithub"
-msgstr "https://github.com/farming-revolution/"
+msgstr "https://github.com/miltonbolonha/"
 
 #. schema.0.card.0.brandAppRepo
 #: schema.0.card.0.brandAppRepo
-#| https://github.com/farming-revolution/farming-revolution-gatsby/
+#| https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/
 msgid "schema.0.card.0.brandAppRepo"
-msgstr "https://github.com/farming-revolution/farming-revolution-gatsby/"
+msgstr "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/"
 
 #. schema.0.card.0.brandKeywords.0.key
 #: schema.0.card.0.brandKeywords.0.key
@@ -222,15 +222,15 @@ msgstr "service"
 
 #. schema.0.card.0.brandLinkTree.website
 #: schema.0.card.0.brandLinkTree.website
-#| https://farming-revolution.com/
+#| https://miltonbolonha.com.br/
 msgid "schema.0.card.0.brandLinkTree.website"
-msgstr "https://farming-revolution.com/"
+msgstr "https://miltonbolonha.com.br/"
 
 #. schema.0.card.0.brandLinkTree.github
 #: schema.0.card.0.brandLinkTree.github
-#| https://github.com/farming-revolution/farming-revolution-gatsby/
+#| https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/
 msgid "schema.0.card.0.brandLinkTree.github"
-msgstr "https://github.com/farming-revolution/farming-revolution-gatsby/"
+msgstr "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/"
 
 
 #. schema.0.card.0.brandHighlights
@@ -478,9 +478,9 @@ msgstr "Send application"
 
 #. schema.0.card.0.pagesHelper.jobs.applyPrintText
 #: schema.0.card.0.pagesHelper.jobs.applyPrintText
-#| Please apply online at <a href='https://farming-revolution.com/en/careers'>farming-revolution.com/en/careers</a>.
+#| Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.
 msgid "schema.0.card.0.pagesHelper.jobs.applyPrintText"
-msgstr "Please apply online at <a href='https://farming-revolution.com/en/careers'>farming-revolution.com/en/careers</a>."
+msgstr "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>."
 
 #. schema.0.card.0.pagesHelper.jobs.inOtherLanguages
 #: schema.0.card.0.pagesHelper.jobs.inOtherLanguages

@@ -8,15 +8,25 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 import ThemeContext from "@Context/ThemeContext";
 
 const OneColumn = ({ location, pageContext }) => {
+  console.log(pageContext);
   const { title, description, content } = pageContext;
   return (
     <ThemeContext.Consumer>
       {theme => {
+        const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
+          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
+        );
+        const bgPattern = pattern
+          ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+          : null;
         const genImgsNodes = theme?.bigQuery?.generalImages?.nodes;
         const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
         return (
           <MainTemplateWrapper
             logo={"darkLogo.publicURL"}
+            backgroundImage={{
+              src: bgPattern,
+            }}
             opt={{
               titleSeo: `Farming Revolution`,
               pageQuestions: "defaultQuestions",
@@ -35,14 +45,16 @@ const OneColumn = ({ location, pageContext }) => {
             }}
           >
             <Row
-              opt={{ bgColor: "#fff", isBoxed: false, classes: "one-column" }}
+              opt={{
+                isBoxed: false,
+                classes: "one-column",
+                bgColor: "#FFF8EC",
+              }}
             >
-              <Row opt={{ isBoxed: true }}>
-                <main>
-                  <h1>{title}</h1>
-                  <div dangerouslySetInnerHTML={{ __html: content }}></div>
-                </main>
-              </Row>
+              <main>
+                <h1>{title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: content }}></div>
+              </main>
             </Row>
           </MainTemplateWrapper>
         );

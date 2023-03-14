@@ -78,9 +78,9 @@ msgstr "Serviços de framework de compiler, festas e eventos corporativos. Pri B
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
-#| https://farming-revolution.com
+#| https://miltonbolonha.com.br
 msgid "schema.0.card.0.brandUrl"
-msgstr "https://farming-revolution.com"
+msgstr "https://miltonbolonha.com.br"
 
 #. schema.0.card.0.brandLogo
 #: schema.0.card.0.brandLogo
@@ -324,9 +324,9 @@ msgstr "casamenteiras"
 
 #. schema.0.card.0.brandLinkTree.website
 #: schema.0.card.0.brandLinkTree.website
-#| https://farming-revolution.com/
+#| https://miltonbolonha.com.br/
 msgid "schema.0.card.0.brandLinkTree.website"
-msgstr "https://farming-revolution.com/"
+msgstr "https://miltonbolonha.com.br/"
 
 #. schema.0.card.0.brandLinkTree.instagram
 #: schema.0.card.0.brandLinkTree.instagram

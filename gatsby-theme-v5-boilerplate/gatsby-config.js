@@ -194,7 +194,7 @@ module.exports = {
         developer: "Milton Bolonha",
         coauthorBusiness: "Farming Revolution",
         project: "Farming Revolution - Website",
-        url: "https://farming-revolution.com",
+        url: "https://miltonbolonha.com.br",
         message: "Please, pay attention.",
       },
     },

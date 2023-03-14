@@ -900,8 +900,13 @@ h1.inner-section-heading {
 }
 .one-column {
 	main {
-		max-width: 1140px !important;
-		margin: 20px auto 30px;
+		margin: 91px auto 30px;
+		padding: 0 140px 30px;
+	}
+	&.full-width-row {
+		margin: 0 0 0 auto;
+		max-width: 920px;
+		border-radius: 3px 0 0 3px;
 	}
 	h1,
 	h2,
@@ -913,7 +918,7 @@ h1.inner-section-heading {
 	ul,
 	li,
 	ol {
-		color: $farmrev__primary-dark-gray;
+		color: $farmrev__primary-dark;
 	}
 	li {
 		margin: 10px 0;
@@ -928,7 +933,9 @@ h1.inner-section-heading {
 	}
 	h1 {
 		font-size: 40px;
-		margin-bottom: 10px;
+		font-family: $second__font;
+		font-weight: 900;
+		margin-bottom: 30px;
 		line-height: 50px;
 	}
 	h2 {
@@ -945,6 +952,7 @@ h1.inner-section-heading {
 		line-height: 1.75;
 		margin-bottom: 16px;
 		margin-top: 0;
+		font-family: $third__font;
 	}
 }
 
@@ -974,7 +982,9 @@ header {
 		color: #fff;
 	}
 }
-.full-width-row-child {
+.one-column > .full-width-row-child {
 	min-height: 400px;
 	align-content: space-evenly;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }

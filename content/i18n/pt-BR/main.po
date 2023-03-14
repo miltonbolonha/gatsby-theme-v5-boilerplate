@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: pt-BR\n"
-"Language-Team: https://farming-revolution.com/\n"
+"Language-Team: https://miltonbolonha.com.br/\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/page/index.js:4, src/component/head.js:2
@@ -90,7 +90,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandLinkTree"
-#~ msgstr "website:https://farming-revolution.com/;instagram:https://www.instagram.com/ascasamenteiras_;zankyou:https://www.zankyou.com.br/f/as-casamenteiras-976737;compiler:https://www.compiler.com.br/framework/as-casamenteiras--e192771;facebook:https://www.facebook.com/pricerimonial;youtube:https://www.youtube.com/@ascasamenteiras;github:https://github.com/miltonbolonha/gatsby-theme-boilerplate;deezer:https://www.deezer.com/br/artist/181009227;spotify:https://open.spotify.com/artist/5scJ7dkADVQQ52kLcRA1mV;itunes:https://music.apple.com/br/artist/priscilla-barbosa/1641419117\""
+#~ msgstr "website:https://miltonbolonha.com.br/;instagram:https://www.instagram.com/ascasamenteiras_;zankyou:https://www.zankyou.com.br/f/as-casamenteiras-976737;compiler:https://www.compiler.com.br/framework/as-casamenteiras--e192771;facebook:https://www.facebook.com/pricerimonial;youtube:https://www.youtube.com/@ascasamenteiras;github:https://github.com/miltonbolonha/gatsby-theme-boilerplate;deezer:https://www.deezer.com/br/artist/181009227;spotify:https://open.spotify.com/artist/5scJ7dkADVQQ52kLcRA1mV;itunes:https://music.apple.com/br/artist/priscilla-barbosa/1641419117\""
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
@@ -185,7 +185,7 @@ msgstr ""
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
 #~ msgid "brandUrl"
-#~ msgstr "https://farming-revolution.com\","
+#~ msgstr "https://miltonbolonha.com.br\","
 
 #: src/page/index.js:4, src/component/head.js:2
 #, Comment for translators
