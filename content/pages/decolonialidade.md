@@ -21,7 +21,7 @@ Entre as principais características da decolonialidade estão a busca pela just
 
 ## Como surgiu a decolonialidade?
 
-Quando as forças coloniais impuseram sua vontade, eles usaram força militar, tortura e outras formas de violência. Eles também estabeleceram hierarquias sociais e ideologias que centralizaram seus próprios interesses enquanto denegriam os outros. Isso incluiu proibir línguas nativas, religiões e práticas culturais, além de negar a educação a todos exceto a alguns poucos selecionados.
+Quando as forças coloniais impuseram sua vontade, eles usaram força militar, tortura e outras formas de violência. Eles também estabeleceram hierarquias sociais e ideologias que centralizaram seus próprios interesses enquanto detrimento dos outros. Isso incluiu proibir línguas nativas, religiões e práticas culturais, além de negar a educação a todos exceto a alguns poucos selecionados.
 
 A decolonialidade reconhece que os efeitos dessas formas de imperialismo cultural devem ser desfeitos para que aqueles que descendentes da opressão colonial possam prosperar.
 
