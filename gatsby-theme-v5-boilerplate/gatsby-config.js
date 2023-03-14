@@ -1,19 +1,28 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
-const path = require("path");
-const fs = require("fs");
-const rootDir = path.join(__dirname, "../");
+
+// gatsby-config.js
+// requiring path and fs modules
+// imports and configs
+// xxxxxxxxxxxxxxxxxx
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+
+const { readdir, readFile } = require("fs/promises");
+
+const path = require("path");
+const fs = require("fs");
+
+const rootDir = path.join(__dirname, "../");
 const schemaOrg = require(path.resolve(
   rootDir,
   `content/schemas/default.json`
 ));
-
 const card = schemaOrg.schema[0].card[0];
 const contentPath = path.resolve(rootDir, card.contentPath);
+
 const staticImagesPathCard = card.staticImagesPath;
 const staticThemePathCard = card.themePath;
 
@@ -107,6 +116,28 @@ module.exports = {
       options: {
         name: `indexImages`,
         path: path.resolve(rootDir, contentPath + "/images/index"),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: path.resolve(rootDir, contentPath + "/pages/"),
+        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "components",
+        path: path.resolve(rootDir, contentPath + "/slices/components"),
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "sections",
+        path: path.resolve(rootDir, contentPath + "/slices/components"),
       },
     },
     {
