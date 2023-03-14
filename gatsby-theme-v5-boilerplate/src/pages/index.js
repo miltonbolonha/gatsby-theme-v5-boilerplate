@@ -51,70 +51,48 @@ const IndexPage = ({ pageContext }) => {
       }
     }
   `);
-  const indexSubs = pageContext.schemaJSON.pagesHelper.index;
-  const globalSubs = pageContext.schemaJSON.pagesHelper.globals;
+  const indexSubs = pageContext?.schemaJSON?.pagesHelper?.index;
+  const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
   return (
     <ThemeContext.Consumer>
       {theme => {
-        console.log("theme.bigQuery");
-        console.log(theme.bigQuery.brandImages);
-        const pattern = theme.bigQuery.brandImages.nodes.filter(
+        const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
           brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
         );
-        const bgPattern =
-          pattern[0].childImageSharp.gatsbyImageData.images.fallback.src;
-        const patternDark = theme.bigQuery.brandImages.nodes.filter(
+        const bgPattern = pattern
+          ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+          : null;
+        const patternDark = theme?.bigQuery?.brandImages?.nodes?.filter(
           brandImgs => brandImgs.relativePath === "PATTERN-bg-dark.png"
         );
-        const bgPatternDark =
-          patternDark[0].childImageSharp.gatsbyImageData.images.fallback.src;
-        // const bgPatternDark = getImage(patternDark[0]);
-
-        const patternFooterGrafism = theme.bigQuery.brandImages.nodes.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
-        );
-        const patternFooterGrafismImg =
-          patternFooterGrafism[0].childImageSharp.gatsbyImageData.images
-            .fallback.src;
+        const bgPatternDark = patternDark
+          ? patternDark[0]?.childImageSharp?.gatsbyImageData?.images?.fallback
+              ?.src
+          : null;
+        const patternFooterGrafism =
+          theme?.bigQuery?.brandImages?.nodes?.filter(
+            brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
+          );
+        const patternFooterGrafismImg = patternFooterGrafism
+          ? patternFooterGrafism[0]?.childImageSharp?.gatsbyImageData?.images
+              ?.fallback?.src
+          : null;
 
         const patternFooterGrafismDark =
-          theme.bigQuery.brandImages.nodes.filter(
+          theme?.bigQuery?.brandImages?.nodes?.filter(
             brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
           );
-        console.log(patternFooterGrafismDark[0]);
-        const patternFooterGrafismImgDark =
-          patternFooterGrafismDark[0].childImageSharp.gatsbyImageData;
-        const patternBrown = theme.bigQuery.brandImages.nodes.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg-3.png"
+        const patternFooterGrafismImgDark = patternFooterGrafismDark
+          ? patternFooterGrafismDark[0]?.childImageSharp?.gatsbyImageData
+          : null;
+        const toproof = theme?.bigQuery?.brandImages?.nodes?.filter(
+          brandImgs => brandImgs?.relativePath === "toproof-rio.jpg"
         );
-        // const bgPatternBrown =
-        //   patternBrown[0].childImageSharp.gatsbyImageData.images.fallback.src;
-
-        // const patternDark2 = theme.bigQuery.brandImages.nodes.filter(
-        //   brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
-        // );
-        // const bgPatterndark2 =
-        //   patternDark2[0].childImageSharp.gatsbyImageData.images.fallback.src;
-
-        const toproof = theme.bigQuery.brandImages.nodes.filter(
-          brandImgs => brandImgs.relativePath === "toproof-rio.jpg"
-        );
-        // const toproofImg =
-        //   toproof[0].childImageSharp.gatsbyImageData.images.fallback.src;
-
-        const treatmentNodes = data.treatmentImages.nodes;
-        const partnersNodes = data.partnerImages.nodes;
-        // const heroNodes = data.heroImages.nodes;
-        const genImgsNodes = theme.bigQuery.generalImages.nodes;
-        // const sectionOneImg = genImgsNodes.filter(
-        //   gImgs => gImgs.relativePath === "FR_Hero_Human_cropped.jpg"
-        // );
-        const getSectionOneImg = toproof[0].childImageSharp.gatsbyImageData;
-
-        // console.log("getSrc(pattern[0].childrenImageSharpbgPattern)");
-        // console.log(
-        //   pattern[0].childImageSharp.gatsbyImageData.images.fallback.src
-        // );
+        const treatmentNodes = data?.treatmentImages?.nodes;
+        const partnersNodes = data?.partnerImages?.nodes;
+        const getSectionOneImg = toproof
+          ? toproof[0]?.childImageSharp?.gatsbyImageData
+          : null;
         return (
           <>
             <MainTemplateWrapper
@@ -191,12 +169,12 @@ const IndexPage = ({ pageContext }) => {
                           width={350}
                           ribbon={false}
                         >
-                          {indexSubs.sectionOneMainTitle}
+                          {indexSubs?.sectionOneMainTitle}
                         </HeadingBlock>
                         <div className='inner-infos'>
                           <h2>2023</h2>
-                          <h3>{indexSubs.sectionOneTrackLegend}</h3>
-                          <p>{indexSubs.sectionOneTrackParagraph}</p>
+                          <h3>{indexSubs?.sectionOneTrackLegend}</h3>
+                          <p>{indexSubs?.sectionOneTrackParagraph}</p>
                         </div>
                         {/* <Link to='datasheet' className='main-btn'>
                           {globalSubs.datasheet}
@@ -247,12 +225,12 @@ const IndexPage = ({ pageContext }) => {
                           width={350}
                           ribbon={false}
                         >
-                          {indexSubs.sectionTwoTitle}
+                          {indexSubs?.sectionTwoTitle}
                         </HeadingBlock>
                         <div className='inner-infos'>
                           <h2>R$--,--</h2>
-                          <h3>{indexSubs.sectionTwoPlantsLegend}</h3>
-                          <p>{indexSubs.sectionTwoPlantsParagraph}</p>
+                          <h3>{indexSubs?.sectionTwoPlantsLegend}</h3>
+                          <p>{indexSubs?.sectionTwoPlantsParagraph}</p>
                         </div>
                       </div>
                     </div>
@@ -287,12 +265,12 @@ const IndexPage = ({ pageContext }) => {
                           width={350}
                           ribbon={false}
                         >
-                          {indexSubs.sectionThreeTitle}
+                          {indexSubs?.sectionThreeTitle}
                         </HeadingBlock>
                         <div className='inner-infos'>
                           <h2>2023</h2>
-                          <h3>{indexSubs.sectionThreeHerbicideLegend}</h3>
-                          <p>{indexSubs.sectionThreeHerbicideParagraph}</p>
+                          <h3>{indexSubs?.sectionThreeHerbicideLegend}</h3>
+                          <p>{indexSubs?.sectionThreeHerbicideParagraph}</p>
                         </div>
                       </div>
                     </div>
@@ -313,7 +291,7 @@ const IndexPage = ({ pageContext }) => {
                       width={350}
                       ribbon={false}
                     >
-                      {indexSubs.collaborations}
+                      {indexSubs?.collaborations}
                     </HeadingBlock>
 
                     <Row
@@ -355,7 +333,8 @@ const IndexPage = ({ pageContext }) => {
                           "section-row section-columns bg-primary-gray dark",
                         isBoxed: false,
                         numColumns: 1,
-                        bgImg: patternFooterGrafismImgDark.images.fallback.src,
+                        bgImg:
+                          patternFooterGrafismImgDark?.images?.fallback?.src,
                       }}
                     >
                       <HeadingBlock
@@ -364,14 +343,14 @@ const IndexPage = ({ pageContext }) => {
                         ribbon={false}
                         width={350}
                       >
-                        {indexSubs.joinTeam}
+                        {indexSubs?.joinTeam}
                       </HeadingBlock>
-                      <p>{indexSubs.foundedHistory}</p>
+                      <p>{indexSubs?.foundedHistory}</p>
                       <Link href={`careers`} className='main-btn'>
-                        {indexSubs.openPosition}
+                        {indexSubs?.openPosition}
                       </Link>
-                      <h2>{indexSubs.notAvailableLocale}</h2>
-                      <h3>{indexSubs.openGerman}</h3>
+                      <h2>{indexSubs?.notAvailableLocale}</h2>
+                      <h3>{indexSubs?.openGerman}</h3>
                     </Row>
                   </section>
                 </Row>

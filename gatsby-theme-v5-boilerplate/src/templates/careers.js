@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Row } from "@Components/InsertRow";
@@ -7,12 +7,10 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 
 import ThemeContext from "@Context/ThemeContext";
 
-const OneColumn = ({ location, pageContext }) => {
-  const { title, description, content } = pageContext;
+const Careers = ({ location, pageContext }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
-        const genImgsNodes = theme?.bigQuery?.generalImages?.nodes;
         const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
         return (
           <MainTemplateWrapper
@@ -34,16 +32,30 @@ const OneColumn = ({ location, pageContext }) => {
               globalSubs: globalSubs,
             }}
           >
-            <Row
-              opt={{ bgColor: "#fff", isBoxed: false, classes: "one-column" }}
-            >
-              <Row opt={{ isBoxed: true }}>
-                <main>
-                  <h1>{title}</h1>
-                  <div dangerouslySetInnerHTML={{ __html: content }}></div>
-                </main>
-              </Row>
+            <Row opt={{ isBoxed: false, bgColor: "#fff" }}>
+              <Row opt={{ classes: "datasheet-header", isBoxed: true }}></Row>
             </Row>
+            {jobs.map((job, ind) => {
+              return (
+                <Row
+                  opt={{
+                    isBoxed: false,
+                    bgColor: "#fff",
+                    classes: "jobs-wrapper",
+                  }}
+                  key={ind}
+                >
+                  <Row
+                    opt={{
+                      isBoxed: true,
+                    }}
+                  >
+                    <h1>{pageContext.frontmatter.mainTitle}</h1>
+                    <p>In other languages: xx</p>
+                  </Row>
+                </Row>
+              );
+            })}
           </MainTemplateWrapper>
         );
       }}
@@ -51,4 +63,4 @@ const OneColumn = ({ location, pageContext }) => {
   );
 };
 
-export default OneColumn;
+export default Careers;

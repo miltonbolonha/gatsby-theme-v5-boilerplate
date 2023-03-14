@@ -8,13 +8,13 @@ const FooterBlock = ({ logo, globalSubs }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
-        const brandNodes = theme.bigQuery.brandImages.nodes;
-        const whiteFooterLogo = brandNodes.filter(
-          el => el.relativePath === "F_Logo_White.png"
-        )[0].childImageSharp;
-        const whiteFooterMark = brandNodes.filter(
-          el => el.relativePath === "flag-deco.png"
-        )[0].childImageSharp;
+        const brandNodes = theme?.bigQuery?.brandImages?.nodes;
+        const whiteFooterLogo = brandNodes?.filter(
+          el => el?.relativePath === "F_Logo_White.png"
+        )[0]?.childImageSharp;
+        const whiteFooterMark = brandNodes?.filter(
+          el => el?.relativePath === "flag-deco.png"
+        )[0]?.childImageSharp;
 
         return (
           <>

@@ -20,7 +20,7 @@ const Header = ({
     <ThemeContext.Consumer>
       {theme => {
         const logoImage = getImage(
-          theme.bigQuery.darkLogo.nodes[0].childImageSharp
+          theme?.bigQuery?.darkLogo?.nodes[0]?.childImageSharp
         );
         return (
           <header>

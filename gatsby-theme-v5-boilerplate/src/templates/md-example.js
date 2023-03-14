@@ -8,26 +8,16 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 import ThemeContext from "@Context/ThemeContext";
 
 const MDexample = ({ location, pageContext }) => {
-  const [jobBox, setJobBox] = useState(null);
-  const ref = useRef([]);
-  function handleActiveBoxState(e, refS) {
-    e.preventDefault();
-    setJobBox(refS);
-  }
   return (
     <ThemeContext.Consumer>
       {theme => {
-        const genImgsNodes = theme.bigQuery.generalImages.nodes;
-        const globalSubs = pageContext.schemaJSON.pagesHelper.globals;
-        const sectionOneImg = genImgsNodes.filter(
-          gImgs => gImgs.relativePath === "FR_Hero_Human_cropped.jpg"
+        const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
+        const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
+          brandImgs => brandImgs?.relativePath === "PATTERN-bg.png"
         );
-        const getSectionOneImg = getImage(sectionOneImg[0]);
-        const pattern = theme.bigQuery.brandImages.nodes.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
-        );
-        const bgPattern =
-          pattern[0].childImageSharp.gatsbyImageData.images.fallback.src;
+        const bgPattern = pattern
+          ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+          : null;
         return (
           <MainTemplateWrapper
             logo={"darkLogo.publicURL"}
@@ -52,17 +42,7 @@ const MDexample = ({ location, pageContext }) => {
             }}
           >
             <Row opt={{ isBoxed: false, bgColor: "#fff" }}>
-              <Row opt={{ classes: "datasheet-header", isBoxed: true }}>
-                <GatsbyImage
-                  image={getSectionOneImg}
-                  alt={"Logo"}
-                  placeholder={"NONE"}
-                  critical='true'
-                  className={"mx-auto circle round-corners"}
-                  width={890}
-                  height={790}
-                />
-              </Row>
+              <Row opt={{ classes: "datasheet-header", isBoxed: true }}></Row>
             </Row>
           </MainTemplateWrapper>
         );

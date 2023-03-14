@@ -1,5 +1,5 @@
 // gatsby-config.js
-//requiring path and fs modules
+// requiring path and fs modules
 // imports and configs
 // xxxxxxxxxxxxxxxxxx
 const path = require("path");
@@ -43,12 +43,7 @@ async function uniqueValues(dir) {
     })
   );
   const arr = files.reduce((acc, data, currentIndex) => {
-    console.log("data");
-    console.log(data);
-    console.log(sourcesResolve(data, "slices", data));
-
     acc.push(sourcesResolve(data, "slices", data));
-
     return acc;
   }, []);
 
@@ -60,10 +55,6 @@ const hs = uniqueValues(slicesPath).then(values => {
     return h;
   });
 });
-console.log("maoi");
-console.log("hs");
-console.log(hs);
-console.log("hs");
 // sourcesResolve("sections", "slices", "sections"),
 const sourcesResolve = (instanceName, folder, subFolder) => {
   return {
