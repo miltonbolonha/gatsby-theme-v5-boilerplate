@@ -196,9 +196,10 @@ exports.createPages = ({ graphql, actions, reporter }) => {
       }
 
       if (isDefaultI18n) {
-        console.log(pageSiteObj.path);
         await createPage(pageSiteObj);
       } else {
+        console.log(pageSiteObj.pageContext);
+
         await createPage(pageSiteObj);
       }
     }

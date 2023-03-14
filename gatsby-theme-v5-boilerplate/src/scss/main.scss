@@ -120,15 +120,15 @@ blockquote {
 
 // Highlight color customization
 ::-moz-selection {
-  background: $accent;
+  background: $farmrev__primary-dark;
   text-shadow: none;
-  color: white;
+  color: $farmrev__primary-gray;
 }
 
 ::selection {
-  background: $accent;
+  background: $farmrev__primary-dark;
   text-shadow: none;
-  color: white;
+  color: $farmrev__primary-gray;
 }
 
 img::selection {

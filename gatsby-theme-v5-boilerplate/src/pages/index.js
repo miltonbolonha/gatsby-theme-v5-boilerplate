@@ -53,6 +53,8 @@ const IndexPage = ({ pageContext }) => {
   `);
   const indexSubs = pageContext?.schemaJSON?.pagesHelper?.index;
   const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
+  console.log("pageContext");
+  console.log(pageContext);
   return (
     <ThemeContext.Consumer>
       {theme => {
@@ -93,6 +95,7 @@ const IndexPage = ({ pageContext }) => {
         const getSectionOneImg = toproof
           ? toproof[0]?.childImageSharp?.gatsbyImageData
           : null;
+        console.log(data);
         return (
           <>
             <MainTemplateWrapper

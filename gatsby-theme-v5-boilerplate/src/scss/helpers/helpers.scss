@@ -279,12 +279,10 @@ footer {
 .main-header-not-visible {
 	.main-ul {
 		// display: none;
-		position: absolute;
+		position: fixed;
 		top: 45px;
 		display: flex;
 		flex-direction: column;
-		// padding-top: 10px;
-		padding-bottom: 10px;
 		font-size: 16px;
 		background: #fff;
 		border-radius: 10px;
@@ -295,7 +293,8 @@ footer {
 		height: auto;
 		overflow: auto;
 		z-index: 999;
-		border-bottom: 1px solid $cta__colorLink;
+		border: 1px solid $farmrev__primary-gray;
+		border-bottom: 3px solid $farmrev__primary-gray;
 		a {
 			color: $farmrev__primary-dark-gray;
 		}
@@ -388,31 +387,58 @@ sup {
 .highlight-img {
 	margin-bottom: 20px;
 }
+.line {
+	fill: none;
+	stroke: $farmrev__primary-gray;
+	stroke-width: 6;
+	transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.line2 {
+	stroke-dasharray: 60 60;
+	stroke-width: 6;
+}
+.line3 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.opened .line1 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
+.opened .line2 {
+	stroke-dasharray: 1 60;
+	stroke-dashoffset: -30;
+	stroke-width: 6;
+}
+.opened .line3 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
 
 .menu-bar-icon {
-	font-family: $main__font;
-	background-color: $cta__color;
 	margin: 5px;
-	color: $cta__colorLink;
 	border-radius: 50%;
-	width: 35px;
+	width: 57px;
 	line-height: 16px;
 	text-align: center;
-	height: 35px;
-	border: 0;
+	height: 57px;
 	font-size: 29px;
 	display: flex;
 	margin-left: 10px;
-	cursor: pointer;
 	position: relative;
-	&::before {
-		content: "Menu";
-		display: block;
-		font-size: 24px;
-		position: absolute;
-		top: 10px;
-		right: -70px;
-		font-family: $fifth__font;
+	background-color: transparent;
+	border: 3px solid $farmrev__primary-gray;
+	cursor: pointer;
+	padding: 8px;
+	background-color: $farmrev__primary-dark;
+	svg {
+		height: auto;
 	}
 	// &:hover{
 	// 	color: white
@@ -442,15 +468,18 @@ sup {
 	width: 500px;
 	li {
 		justify-content: space-around;
+		text-align: center;
+		padding: 10px 0;
+
 		a {
 			color: $farmrev__primary-dark-gray;
 			font-family: "Varela";
 			font-style: normal;
-			font-weight: 500;
+			font-weight: 900;
 			font-size: 15px;
 			line-height: 17px;
 			text-transform: uppercase;
-			color: #373737 !important;
+			color: $farmrev__primary-dark;
 			font-size: 17px;
 			letter-spacing: 1px;
 
@@ -459,11 +488,13 @@ sup {
 				font-weight: 600;
 			}
 			&.active {
-				color: #1f98eb;
-
-				@media (min-width: $boxedDesktop__maxWidth) {
-					color: $primary_light;
-				}
+				color: $farmrev__primary-gray;
+			}
+		}
+		&:hover {
+			background-color: $farmrev__primary-dark;
+			a {
+				color: white;
 			}
 		}
 	}
@@ -932,14 +963,17 @@ h1.inner-section-heading {
 		text-transform: uppercase;
 	}
 	h1 {
-		font-size: 40px;
+		font-size: 34px;
 		font-family: $second__font;
 		font-weight: 900;
 		margin-bottom: 30px;
 		line-height: 50px;
 	}
 	h2 {
-		font-size: 25px;
+		font-family: $second__font;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-size: 22px;
 	}
 	h3 {
 		font-size: 15px;
@@ -948,8 +982,8 @@ h1.inner-section-heading {
 		font-size: 20px;
 	}
 	p {
-		font-size: 15px;
-		line-height: 1.75;
+		font-size: 17px;
+		line-height: 1.8;
 		margin-bottom: 16px;
 		margin-top: 0;
 		font-family: $third__font;
@@ -967,9 +1001,9 @@ header {
 }
 
 .header-columns {
-	position: absolute;
+	position: fixed;
 	right: 85px;
-	top: 15px;
+	top: 25px;
 }
 
 .dark {

@@ -21,6 +21,8 @@ const OneColumn = ({ location, pageContext }) => {
           : null;
         const genImgsNodes = theme?.bigQuery?.generalImages?.nodes;
         const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
+        console.log("pageContext");
+        console.log(pageContext);
         return (
           <MainTemplateWrapper
             logo={"darkLogo.publicURL"}
