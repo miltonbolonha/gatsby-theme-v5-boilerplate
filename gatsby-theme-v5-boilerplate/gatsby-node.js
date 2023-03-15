@@ -146,6 +146,14 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           : "/" + localePathQuery + "/" + pathQuery;
       pageSiteObj.path = pathExtended;
 
+      const schemaLocaleContent = await require(`${schemasPath}/${schemaFile}`);
+      pageSiteObj.context = {
+        ...pageSiteObj.context,
+        schemaJSON: schemaLocaleContent
+          ? schemaLocaleContent.schema[0].card[0]
+          : card,
+      };
+
       if (is404) {
         await createPage(pageSiteObj);
 
@@ -214,7 +222,6 @@ exports.createPages = ({ graphql, actions, reporter }) => {
     });
   };
 
-  let x = null;
   fs.readdir(schemasPath, (err, schemasFiles) => {
     mapPageSites(schemasFiles);
   });
@@ -332,6 +339,14 @@ exports.onCreatePage = ({ page, actions }) => {
       fs.readdir(pageSiteFolder, (err, files) => {
         files.map((file, ind) => {
           if (isDefaultLanguage && isDefaultSchema) {
+            newPage.context = {
+              ...context,
+              schemaJSON: cardElementDefault,
+              prefixI18n: cardLocale,
+            };
+            createPage(newPage);
+          }
+          if (newPage.path === "/" + file.split(".")[0] + "/") {
             newPage.context = {
               ...context,
               schemaJSON: cardElementDefault,
