@@ -138,11 +138,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
       const is404 = pageSitename === "404.js" ? true : false;
       const localePathQuery = isDefaultI18n ? "" : schemaFile.slice(0, 2);
 
-      let pathQuery = isIndex
-        ? ""
-        : is404
-        ? pageSitename.split(".")[0]
-        : pageSitename.split(".")[0];
+      let pathQuery = isIndex ? "" : pageSitename.split(".")[0];
 
       const pathExtended =
         schemaFile === "default.json"
@@ -185,7 +181,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
           context: { schemaJSON: card },
         });
 
-        await createPage({
+        return await createPage({
           path: "/" + "404" + ".html",
           component: path.resolve(
             rootDir,
@@ -195,11 +191,11 @@ exports.createPages = ({ graphql, actions, reporter }) => {
         });
       }
 
-      if (isDefaultI18n) {
+      if (isDefaultI18n && isIndex) {
+        console.log(pageSiteObj.path);
+        console.log(pageSiteObj.context);
         await createPage(pageSiteObj);
       } else {
-        console.log(pageSiteObj.pageContext);
-
         await createPage(pageSiteObj);
       }
     }
@@ -315,7 +311,7 @@ exports.onCreatePage = ({ page, actions }) => {
           ...context,
           schemaJSON: cardElementDefault,
         };
-        return createPage(newPage);
+        createPage(newPage);
       }
 
       if (
@@ -330,7 +326,7 @@ exports.onCreatePage = ({ page, actions }) => {
           schemaJSON: cardElementDefault,
           prefixI18n: cardLocale,
         };
-        return createPage(newPage);
+        createPage(newPage);
       }
 
       fs.readdir(pageSiteFolder, (err, files) => {
@@ -341,7 +337,7 @@ exports.onCreatePage = ({ page, actions }) => {
               schemaJSON: cardElementDefault,
               prefixI18n: cardLocale,
             };
-            return createPage(newPage);
+            createPage(newPage);
           }
         });
       });
