@@ -58,6 +58,13 @@ const IndexPage = ({ pageContext }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
+        const whipala = theme?.bigQuery?.brandImages?.nodes?.filter(
+          brandImgs => brandImgs.relativePath === "whipala.png"
+        );
+        const bgWhipala = whipala
+          ? whipala[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+          : null;
+
         const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
           brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
         );
@@ -118,6 +125,7 @@ const IndexPage = ({ pageContext }) => {
                 badgesWhats: "badgeWhats",
                 badgesQuestion: "badgeQuestion",
                 globalSubs: globalSubs,
+                topRibbonImg: bgWhipala,
               }}
             >
               {/* <Row

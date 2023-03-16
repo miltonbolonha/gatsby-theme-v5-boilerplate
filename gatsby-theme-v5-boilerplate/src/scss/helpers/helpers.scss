@@ -278,23 +278,23 @@ footer {
 }
 .main-header-not-visible {
 	.main-ul {
-		// display: none;
 		position: fixed;
-		top: 45px;
+		top: 67px;
 		display: flex;
 		flex-direction: column;
 		font-size: 16px;
 		background: #fff;
-		border-radius: 10px;
+		border-radius: 0;
 		max-width: 400px;
-		left: 0;
 		right: 0;
 		margin: 0 auto;
-		height: auto;
+		height: 100vh;
 		overflow: auto;
+		line-height: 40px;
 		z-index: 999;
-		border: 1px solid $farmrev__primary-gray;
-		border-bottom: 3px solid $farmrev__primary-gray;
+
+		border: 0px solid $farmrev__primary-dark;
+		border-left: 3px solid $farmrev__primary-dark;
 		a {
 			color: $farmrev__primary-dark-gray;
 		}
@@ -459,7 +459,7 @@ sup {
 .main-ul {
 	position: relative;
 	display: none;
-	justify-content: space-between;
+	justify-content: start;
 	@media (max-width: $tabletHack__size) {
 		display: none;
 	}
@@ -1002,8 +1002,9 @@ header {
 
 .header-columns {
 	position: fixed;
-	right: 85px;
-	top: 25px;
+	right: 5px;
+	top: 65px;
+	z-index: 9999;
 }
 
 .dark {
@@ -1021,4 +1022,11 @@ header {
 	align-content: space-evenly;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+.topRibbonImg {
+	height: 67px;
+	width: 100vw;
+	z-index: 9999999999;
+	position: sticky;
+	top: 0;
 }
