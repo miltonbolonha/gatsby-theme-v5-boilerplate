@@ -1,10 +1,9 @@
-// gatsby-plugin-markdown-i18n
-//
-// onCreateNode
-// - i18n slug field
-// - Adding i18n slug field to each MD
-// createPages
-// - create i18n PAGES from content/pages, MDS PAGES
+// Esse é um arquivo de configuração para um projeto Gatsby.
+// O arquivo está dividido em três partes que usam diferentes plugins do Gatsby:
+
+//   - context-i18n
+//   - sitepages-i18n
+//   - markdown-i18n
 
 // gatsby-plugin-sitepages-i18n
 //
@@ -36,23 +35,11 @@ console.log("pageSiteFolder");
 console.log(pageSiteFolder);
 console.log("pageSiteFolder");
 
-function basePathFinder(nodeTopology) {
-  if (nodeTopology === "pages") {
-    return "pages";
-  }
-  if (nodeTopology === "posts") {
-    return "posts";
-  }
-  if (nodeTopology === "landings") {
-    return "landings";
-  }
-  if (nodeTopology === "mds") {
-    return "mds";
-  }
-  return null;
-}
-
 // Adding slug field to each post
+// Adiciona um campo slug a cada nó do tipo MarkdownRemark
+// E um campo i18n a cada nó do tipo SitePage
+// Facilita o tratamento de localização (tradução) no projeto.
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
@@ -76,12 +63,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 
   if (node.internal.type === "MarkdownRemark") {
-    const basePathLabel = basePathFinder(node.frontmatter.topology) || "pages";
     // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
     const slug = createFilePath({
       node,
       getNode,
-      // basePath: basePathLabel,
     });
     const htmlSlug = slug.includes(".htm");
     const slashSlugfirst = slug.slice(0, 1) === "/" ? slug.slice(1) : slug;
@@ -120,30 +105,22 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 // - delete n create pages w i18n SCHEMA JSON context n i18n url prefix
 // - insert i18n schemaJSON context
 // delete n create pages w i18n SCHEMA JSON context n i18n url prefix
+// adiciona contexto de localização a cada página do projeto
+// (a partir da pasta src/pages)
+// e cria novas páginas para cada idioma do projeto.
 exports.onCreatePage = async ({ page, actions }) => {
   const schemasFiles = await fs.readdir(schemasPath);
   const pageFiles = await fs.readdir(pageSiteFolder);
-  console.log("INCIOU AQUI O BAGULHO LOKO");
-  console.log("pageFiles");
-  console.log(pageFiles);
-  console.log("schemasFiles");
-  console.log(schemasFiles);
   const { createPage, deletePage } = actions;
   const newPage = Object.assign({}, page);
   deletePage(page);
-  console.log("schemasPath");
-  console.log(schemasPath);
   const i18nContextPageSite = async (page, schemasLoaded) => {
-    console.log("INCIOU AQUI O BAGULHO LOKO 2");
     for (const schemaFile of schemasLoaded) {
-      console.log("INCIOU AQUI O BAGULHO LOKO 3");
-
       const schema = require(path.resolve(
         rootDir,
         `content/schemas/${schemaFile}`
       ));
-      console.log(`content/schemas/{schemaFile}`);
-      console.log(`content/schemas/${schemaFile}`);
+
       const cardElement = schema.schema[0].card[0];
       const cardElementDefault = reqSchemaDefault.schema[0].card[0];
 
@@ -154,10 +131,7 @@ exports.onCreatePage = async ({ page, actions }) => {
       const defaultLanguage = reqSchemaDefault.locales[0].split("-")[0];
       const isDefaultLanguage = defaultLanguage === cardLocale;
       const isDefaultSchema = schemaFile === "default.json";
-      console.log("cardLocale");
-      console.log(cardLocale);
-      console.log("defaultLanguage");
-      console.log(defaultLanguage);
+
       if (isDefaultLanguage && isDefaultSchema && newPage.path === "/") {
         newPage.context = {
           ...newPage.context,
@@ -220,132 +194,16 @@ exports.onCreatePage = async ({ page, actions }) => {
   } catch (err) {
     console.error(err);
   }
-
-  // await fs.readdir(schemasPath, async (err, schemasFiles) => {
-  //   console.log("INCIOU AQUI O BAGULHO LOKO 2");
-
-  //   await schemasFiles.forEach(async schemaJSON => {});
-  // });
 };
 
+// modifica o contexto de cada página do projeto
+// adicionar informações de localização
+// cria novas páginas para cada idioma do projeto
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const schemasFiles = await fs.readdir(schemasPath);
   const pageFiles = await fs.readdir(pageSiteFolder);
   const { createPage } = actions;
   // first array locale position it's reserved to default locale
-
-  // const pageSiteObj = (file, schema) => {
-  //   const x = file.split(".")[0];
-  //   return {
-  //     path: x,
-  //     component: pageSiteFolder + "/" + file,
-  //     context: {
-  //       schemaJSON: null,
-  //     },
-  //   };
-  // };
-
-  // const createPagesSitesI18n = async (
-  //   pageSiteObj,
-  //   pageSitename,
-  //   schemaJSON
-  // ) => {
-  //   for (const schemaFile of schemaJSON) {
-
-  //     const isDefaultI18n = schemaFile === "default.json" ? true : false;
-  //     const isIndex = pageSitename === "index.js" ? true : false;
-  //     const is404 = pageSitename === "404.js" ? true : false;
-  //     const localePathQuery = isDefaultI18n ? "" : schemaFile.slice(0, 2);
-
-  //     let pathQuery = isIndex ? "" : pageSitename.split(".")[0];
-
-  //     const pathExtended =
-  //       schemaFile === "default.json"
-  //         ? "/" + localePathQuery
-  //         : "/" + localePathQuery + "/" + pathQuery;
-  //     pageSiteObj.path = pathExtended;
-
-  //     const schemaLocaleContent = await require(`${schemasPath}/${schemaFile}`);
-  //     pageSiteObj.context = {
-  //       ...pageSiteObj.context,
-  //       schemaJSON: schemaLocaleContent
-  //         ? schemaLocaleContent.schema[0].card[0]
-  //         : card,
-  //     };
-
-  //     if (is404) {
-  //       await createPage(pageSiteObj);
-
-  //       for (let index = 1; index < locales.length; index++) {
-  //         const element = locales[index];
-
-  //         // locales.forEach(async locale => {
-  //         await createPage({
-  //           path: "/" + element.split("-")[0] + "/" + "dev-404-page" + "/",
-  //           component: path.resolve(
-  //             rootDir,
-  //             `${card.themePath}/src/pages/404.js`
-  //           ),
-  //           context: { schemaJSON: card },
-  //         });
-
-  //         await createPage({
-  //           path: "/" + element.split("-")[0] + "/" + "404" + ".html",
-  //           component: path.resolve(
-  //             rootDir,
-  //             `${card.themePath}/src/pages/404.js`
-  //           ),
-  //           context: { schemaJSON: card },
-  //         });
-  //       }
-
-  //       await createPage({
-  //         path: "/" + "dev-404-page" + "/",
-  //         component: path.resolve(
-  //           rootDir,
-  //           `${card.themePath}/src/pages/404.js`
-  //         ),
-  //         context: { schemaJSON: card },
-  //       });
-
-  //       return await createPage({
-  //         path: "/" + "404" + ".html",
-  //         component: path.resolve(
-  //           rootDir,
-  //           `${card.themePath}/src/pages/404.js`
-  //         ),
-  //         context: { schemaJSON: card },
-  //       });
-  //     }
-
-  //     if (isDefaultI18n && isIndex) {
-  //       console.log(pageSiteObj.path);
-  //       console.log(pageSiteObj.context);
-  //       await createPage(pageSiteObj);
-  //     } else {
-  //       await createPage(pageSiteObj);
-  //     }
-
-  //   }
-  // };
-
-  // // grab all files in themePath/src/pages
-  // const mapPageSites = async schemaJSON => {
-  //   fs.readdir(pageSiteFolder, (err, files) => {
-  //     files.map((pageSitename, ind) => {
-  //       createPagesSitesI18n(
-  //         pageSiteObj(pageSitename),
-  //         pageSitename,
-  //         schemaJSON
-  //       );
-  //     });
-  //   });
-  // };
-
-  // fs.readdir(schemasPath, (err, schemasFiles) => {
-  //   mapPageSites(schemasFiles);
-  // });
-
   // dealing with allSitePages: theme/src/pages
   const createPageSite = async (page, schemasLoaded) => {
     const fileName = page.split(".")[0];
@@ -432,6 +290,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   } catch (err) {
     console.error(err);
   }
+
+  // markdown-i18n
+  //
+  // onCreateNode
+  // - i18n slug field
+  // - Adding i18n slug field to each MD
+  // createPages
+  // - create i18n PAGES from content/pages, MDS PAGES
 
   // dealing with allPages: allMarkdownRemark
   return graphql(`
