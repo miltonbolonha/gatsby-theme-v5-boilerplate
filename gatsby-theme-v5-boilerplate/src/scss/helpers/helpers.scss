@@ -472,11 +472,11 @@ sup {
 	width: 500px;
 	li {
 		justify-content: space-around;
-		text-align: center;
 		padding: 10px 0;
 		position: relative;
 		z-index: 999999999999;
-
+		text-align: left;
+		text-indent: 35px;
 		a {
 			color: $farmrev__primary-dark-gray;
 			font-family: "Varela";
@@ -678,7 +678,7 @@ h1.inner-section-heading {
 .footer-contacts {
 	background: #e2725b;
 	align-self: center;
-	border-radius: 35px;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -1009,7 +1009,7 @@ header {
 .header-columns {
 	position: fixed;
 	right: 5px;
-	top: 65px;
+	top: 61px;
 	z-index: 9999;
 }
 

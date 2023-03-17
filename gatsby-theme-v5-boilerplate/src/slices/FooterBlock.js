@@ -15,7 +15,10 @@ const FooterBlock = ({ logo, globalSubs }) => {
         const whiteFooterMark = brandNodes?.filter(
           el => el?.relativePath === "flag-deco.png"
         )[0]?.childImageSharp;
-
+        console.log("globalSubs");
+        console.log(globalSubs);
+        console.log("theme");
+        console.log(theme);
         return (
           <>
             <Row

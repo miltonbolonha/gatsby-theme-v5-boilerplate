@@ -40,7 +40,7 @@ console.log("pageSiteFolder");
 // E um campo i18n a cada nó do tipo SitePage
 // Facilita o tratamento de localização (tradução) no projeto.
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = async ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === "SitePage") {
@@ -75,25 +75,55 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         ? slashSlugfirst.slice(0, -1)
         : slashSlugfirst;
     const slugTrim =
-      slashSlug.includes(".") && !htmlSlug
+      slashSlug.includes(".md") && !htmlSlug
         ? slashSlug.split(".md")[0]
         : slashSlug;
+    const slugTitle = slugTrim.includes(".")
+      ? slugTrim.split(".")[0]
+      : slugTrim;
     const frontmatterSlug = node?.frontmatter?.slug
       ? node.frontmatter.slug
-      : slashSlug.split(".md")[0].split(".")[0];
-    const finalSlug = slugTrim.includes(".")
-      ? slugTrim.split(".")[1] + "/" + frontmatterSlug
-      : slugTrim;
+      : slugTitle;
+    const slugLocale = slugTrim.split(".")[1];
+    const isI18n = slugTrim.includes(".");
+    const notLocale = isI18n && slugLocale !== "";
+    const finalSlug = notLocale ? slugLocale + "/" + frontmatterSlug : slugTrim;
+    // const cond = slugLocale === ''
+    const schemasFiles = await fs.readdir(schemasPath);
+    for (const schemaFile of schemasFiles) {
+      const requireJSON =
+        slugLocale === schemaFile.split("-")[0] || slugLocale !== ""
+          ? await require(`${schemasPath}/${schemaFile}`)
+          : await require(`${schemasPath}/default.json`);
+
+      console.log("requireJSON");
+      console.log("requireJSON");
+      console.log("requireJSON");
+
+      // com variável accumuladora para novo node i18nAvailable
+
+      createNodeField({
+        node,
+        name: "i18n",
+        value: requireJSON.schema[0].card[0].cardLocale,
+      });
+
+      createNodeField({
+        node,
+        name: "AllI18n",
+        value: requireJSON.locales,
+      });
+
+      // const cardElement = schema.schema[0].card[0].cardLocale;
+
+      // criar node field
+      // com variáveis comuns
+    }
 
     createNodeField({
       node,
       name: "slug",
       value: `/${finalSlug}/`,
-    });
-    createNodeField({
-      node,
-      name: "i18n",
-      value: reqSchemaDefault.schema[0].card[0].brandIntl,
     });
   }
 };
@@ -132,58 +162,34 @@ exports.onCreatePage = async ({ page, actions }) => {
       const isDefaultLanguage = defaultLanguage === cardLocale;
       const isDefaultSchema = schemaFile === "default.json";
 
-      if (isDefaultLanguage && isDefaultSchema && newPage.path === "/") {
-        newPage.context = {
-          ...newPage.context,
-          schemaJSON: cardElementDefault,
-        };
-        createPage(newPage);
-      }
+      newPage.context = {
+        ...newPage.context,
+        schemaJSON: pathLocaleHasI18n ? cardElement : cardElementDefault,
+        prefixI18n: cardLocale,
+      };
 
       if (
-        isDefaultLanguage &&
-        isDefaultSchema &&
-        newPage.path === "/dev-404-page/" &&
-        newPage.path === "/404/" &&
-        newPage.path === "404.html"
+        (isDefaultLanguage &&
+          isDefaultSchema &&
+          newPage.path === "/dev-404-page/" &&
+          newPage.path === "/404/" &&
+          newPage.path === "404.html") ||
+        (isDefaultLanguage && isDefaultSchema && newPage.path === "/")
       ) {
-        newPage.context = {
-          ...newPage.context,
-          schemaJSON: cardElementDefault,
-          prefixI18n: cardLocale,
-        };
         createPage(newPage);
       }
 
       await fs.readdir(pageSiteFolder, (err, files) => {
         files.map((file, ind) => {
-          if (isDefaultLanguage && isDefaultSchema) {
-            newPage.context = {
-              ...newPage.context,
-              schemaJSON: cardElementDefault,
-              prefixI18n: cardLocale,
-            };
-            createPage(newPage);
-          }
-          if (newPage.path === "/" + file.split(".")[0] + "/") {
-            newPage.context = {
-              ...newPage.context,
-              schemaJSON: cardElementDefault,
-              prefixI18n: cardLocale,
-            };
+          if (
+            (isDefaultLanguage && isDefaultSchema) ||
+            newPage.path === "/" + file.split(".")[0] + "/" ||
+            pathLocaleHasI18n
+          ) {
             createPage(newPage);
           }
         });
       });
-
-      if (pathLocaleHasI18n) {
-        newPage.context = {
-          ...newPage.context,
-          schemaJSON: cardElement,
-          prefixI18n: cardLocale,
-        };
-        return createPage(newPage);
-      }
     }
   };
 
@@ -225,60 +231,49 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         ? schemaLocaleContent?.schema[0]?.card[0]
         : card;
 
-      const pageSiteObj = {
-        path: pathExtended,
-        component: pageSiteFolder + "/" + page,
-        context: {
-          schemaJSON: cardUse,
-        },
+      const pageSiteObj = (path, component) => {
+        return {
+          path: path,
+          component: component,
+          context: {
+            schemaJSON: cardUse,
+          },
+        };
       };
-      if (is404) {
-        await createPage(pageSiteObj);
 
+      if (is404) {
+        // await createPage(pageSiteObj);
+        const errorComponent = path.resolve(
+          rootDir,
+          `${card.themePath}/src/pages/404.js`
+        );
         for (let index = 1; index < locales.length; index++) {
           const element = locales[index];
-
           // locales.forEach(async locale => {
-          await createPage({
-            path: "/" + element.split("-")[0] + "/" + "dev-404-page" + "/",
-            component: path.resolve(
-              rootDir,
-              `${card.themePath}/src/pages/404.js`
-            ),
-            context: { schemaJSON: cardUse },
-          });
-
-          await createPage({
-            path: "/" + element.split("-")[0] + "/" + "404" + ".html",
-            component: path.resolve(
-              rootDir,
-              `${card.themePath}/src/pages/404.js`
-            ),
-            context: { schemaJSON: cardUse },
-          });
+          await createPage(
+            pageSiteObj(
+              "/" + element.split("-")[0] + "/" + "dev-404-page" + "/",
+              errorComponent
+            )
+          );
+          await createPage(
+            pageSiteObj(
+              "/" + element.split("-")[0] + "/" + "404" + ".html",
+              errorComponent
+            )
+          );
+          console.log("ZUMBA 2");
+          await createPage(
+            pageSiteObj("/" + "dev-404-page" + "/", errorComponent)
+          );
+          await createPage(pageSiteObj("/" + "404" + ".html", errorComponent));
         }
-
-        await createPage({
-          path: "/" + "dev-404-page" + "/",
-          component: path.resolve(
-            rootDir,
-            `${card.themePath}/src/pages/404.js`
-          ),
-          context: { schemaJSON: cardUse },
-        });
-
-        return await createPage({
-          path: "/" + "404" + ".html",
-          component: path.resolve(
-            rootDir,
-            `${card.themePath}/src/pages/404.js`
-          ),
-          context: { schemaJSON: cardUse },
-        });
       }
 
       if (isDefaultI18n || isIndex) {
-        await createPage(pageSiteObj);
+        await createPage(
+          pageSiteObj(pathExtended, pageSiteFolder + "/" + page)
+        );
       }
     }
   };
@@ -348,6 +343,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           `gatsby-theme-v5-boilerplate/src/templates/one-column.js`
         ),
         context: {
+          ...page.pageContext,
           title: title,
           content: page.html,
           description: description,
