@@ -71,6 +71,50 @@ const Header = ({
           </>
         ) : null}
         {/* desktop menu */}
+        {/* available locales menu */}
+        <ul className='locales-menu'>
+          <li>
+            <a href='#' className='locales available active' title='pt-BR'>
+              🇧🇷
+            </a>
+          </li>
+          <span className='plus-locales'>+</span>
+          <li>
+            <a href='#' className='locales available' title='en-US'>
+              🇺🇸
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='de-DE'>
+              🇩🇪
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='jp-JP'>
+              🇯🇵
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='ru-RU'>
+              🇷🇺
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='fr-FR'>
+              🇫🇷
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='nl-NL'>
+              🇳🇱
+            </a>
+          </li>
+          <li>
+            <a href='#' className='locales available' title='es-ES'>
+              🇪🇸
+            </a>
+          </li>
+        </ul>
       </Row>
     </header>
   );

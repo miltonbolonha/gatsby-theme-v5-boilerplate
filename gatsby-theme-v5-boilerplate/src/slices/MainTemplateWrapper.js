@@ -11,12 +11,10 @@ const MainTemplateWrapper = ({
   backgroundImage,
   opt,
 }) => {
-  console.log("opt?.topRibbonImg");
-  console.log(opt?.topRibbonImg);
   return (
     <BodyBlock
       opt={{
-        classes: classes,
+        classes: classes + " MainTemplateWrapper",
         bgImg: backgroundImage?.src || null,
         topRibbonImg: opt?.topRibbonImg || null,
         options: opt,

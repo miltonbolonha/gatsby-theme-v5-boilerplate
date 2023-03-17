@@ -102,7 +102,7 @@ const IndexPage = ({ pageContext }) => {
         const getSectionOneImg = toproof
           ? toproof[0]?.childImageSharp?.gatsbyImageData
           : null;
-        console.log(data);
+        console.log(theme);
         return (
           <>
             <MainTemplateWrapper
@@ -128,31 +128,6 @@ const IndexPage = ({ pageContext }) => {
                 topRibbonImg: bgWhipala,
               }}
             >
-              {/* <Row
-                opt={{
-                  classes: "main-slider",
-                  isBoxed: true,
-                  bgColor: "#E2725B",
-                }}
-              >
-                <div className='main-slide-inner'>
-                  {heroNodes.map((hero, i) => {
-                    return (
-                      <GatsbyImage
-                        image={getImage(hero)}
-                        alt={"Farming Revolutions Image"}
-                        placeholder={"NONE"}
-                        critical='true'
-                        objectFit='cover'
-                        className={"main-slider-img"}
-                        width={1240}
-                        height={430}
-                        key={i}
-                      />
-                    );
-                  })}
-                </div>
-              </Row> */}
               <main className='main-container' id='site-content' role='list'>
                 <Row
                   opt={{
@@ -357,7 +332,7 @@ const IndexPage = ({ pageContext }) => {
                         {indexSubs?.joinTeam}
                       </HeadingBlock>
                       <p>{indexSubs?.foundedHistory}</p>
-                      <Link href={`careers`} className='main-btn'>
+                      <Link to={`decolonialidade`} className='main-btn'>
                         {indexSubs?.openPosition}
                       </Link>
                       <h2>{indexSubs?.notAvailableLocale}</h2>

@@ -1,3 +1,7 @@
+#gatsby-focus-wrapper {
+	position: relative;
+	top: 65px;
+}
 .no-pdd-mrg-first-last-child {
 	& > :first-of-type {
 		padding-left: 0 !important;
@@ -279,7 +283,7 @@ footer {
 .main-header-not-visible {
 	.main-ul {
 		position: fixed;
-		top: 67px;
+		top: 65px;
 		display: flex;
 		flex-direction: column;
 		font-size: 16px;
@@ -470,6 +474,8 @@ sup {
 		justify-content: space-around;
 		text-align: center;
 		padding: 10px 0;
+		position: relative;
+		z-index: 999999999999;
 
 		a {
 			color: $farmrev__primary-dark-gray;
@@ -1027,6 +1033,57 @@ header {
 	height: 67px;
 	width: 100vw;
 	z-index: 9999999999;
-	position: sticky;
-	top: 0;
+	position: fixed;
+	top: -1px;
+}
+.locales-menu {
+	background-color: $farmrev__primary-dark;
+	padding: 8px 6px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: fixed;
+	right: 15px;
+	top: 150px;
+	z-index: 8;
+	font-size: 18px;
+	opacity: 0.5;
+	height: 35px;
+	overflow: hidden;
+	cursor: pointer;
+	&:hover {
+		opacity: 1;
+	}
+	li:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	a.locales {
+		padding: 3px 5px;
+		border-radius: 3px;
+		&:hover {
+			background-color: $farmrev__primary-gray;
+		}
+	}
+	& :first-child a.locales {
+		background-color: transparent;
+		border: 1px solid transparent;
+		filter: grayscale(100%);
+	}
+	.plus-locales {
+		color: white;
+		font-weight: 900;
+		text-align: center;
+		margin-top: -22px;
+	}
+	&:hover {
+		& :first-child a.locales {
+			filter: unset;
+		}
+		height: auto;
+		.plus-locales {
+			display: none;
+		}
+	}
 }
