@@ -58,7 +58,7 @@ const OneColumn = ({ location, pageContext }) => {
               opt={{
                 isBoxed: false,
                 classes: "one-column",
-                bgColor: "#FFF8EC",
+                bgColor: "rgba(255, 248, 236, 0.9)",
               }}
             >
               <main>
