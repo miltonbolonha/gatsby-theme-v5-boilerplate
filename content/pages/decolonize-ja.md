@@ -2,22 +2,22 @@
 topology: pages
 template: one-column.js
 status: true
-title: Clipe Decolonize Já! - ABRIL INDÍGENA - Chamada para a Gravação do Clipe
+title: Decolonize Já
 description: Nosso tea.
 slug: decolonize-ja
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
 helperI18n:
-[
-"pt-BR:/decolonize-ja/",
-"jp-JP:/jp/dekoronaizu-ima-sugu/",
-"ru-RU:/ru/dekolonizirovat-sejchas/",
-"nl-NL:/nl/dekoloniseer-nu/",
-"es-ES:/es/descolonize-ahora/",
-"fr-FR:/fr/decolonise-maintenant/",
-"de-DE:/de/dekolonisieren-jetzt/",
-"en-US:/en/decolonize-now/",
-]
+  [
+    "pt-BR:/decolonize-ja/",
+    "jp-JP:/jp/dekoronaizu-ima-sugu/",
+    "ru-RU:/ru/dekolonizirovat-sejchas/",
+    "nl-NL:/nl/dekoloniseer-nu/",
+    "es-ES:/es/decolonize-ahora/",
+    "fr-FR:/fr/decolonise-maintenant/",
+    "de-DE:/de/dekolonisieren-jetzt/",
+    "en-US:/en/decolonize-now/",
+  ]
 ---
 
 Vamos decolonizar toda história
@@ -74,3 +74,5 @@ Eu não me comunico com o meu arredor
 Eu não me comunico com o meu arredor
 Eu não me comunico com o meu arredor
 Eu não me comunico
+
+Letra: Milton Bolonha e Jorge Linhaça Jr

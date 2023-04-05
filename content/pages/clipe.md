@@ -1,5 +1,4 @@
 ---
-
 topology: pages
 template: one-column.js
 status: true
@@ -9,16 +8,17 @@ slug: clipe
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
 helperI18n:
-[
-"pt-BR:/clipe/",
-"jp-JP:/jp/decolonize-music-video/",
-"ru-RU:/ru/decolonize-muzyka-video/",
-"nl-NL:/nl/decolonize-muziekvideo/",
-"es-ES:/es/decoloniza-video-musical/",
-"fr-FR:/fr/decolonize-video-musical/",
-"de-DE:/de/decolonize-musik-video/",
-"en-US:/en/decolonize-music-video/",
-]---
+  [
+    "pt-BR:/clipe/",
+    "jp-JP:/jp/decolonize-music-video/",
+    "ru-RU:/ru/decolonize-muzyka-video/",
+    "nl-NL:/nl/decolonize-muziekvideo/",
+    "es-ES:/es/decoloniza-video-musical/",
+    "fr-FR:/fr/decolonize-video-musical/",
+    "de-DE:/de/decolonize-musik-video/",
+    "en-US:/en/decolonize-music-video/",
+  ]
+---
 
 Olá a todxs!
 
@@ -36,6 +36,6 @@ Junte-se a nós nessa história de amor pela valorização e respeito aos povos 
 
 #AbrilIndígena #DecolonizeJá #CulturaIndígena #ValorizeOsPovosOriginários #ParticipeDoClipe #MiltonBolonha
 
-[Áudio da Música (MP3)](https://miltonbolonha.com.br)
-[Inspiração no YouTube](https://miltonbolonha.com.br)
-[Siga no Instagram](https://miltonbolonha.com.br)
+- [Áudio da Música (MP3)](https://miltonbolonha.com.br)
+- [Inspiração no YouTube](https://miltonbolonha.com.br)
+- [Siga no Instagram](https://miltonbolonha.com.br)

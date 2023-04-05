@@ -8,16 +8,16 @@ slug: decolonise-maintenant
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
 helperI18n:
-[
-"pt-BR:/decolonize-ja/",
-"jp-JP:/jp/dekoronaizu-ima-sugu/",
-"ru-RU:/ru/dekolonizirovat-sejchas/",
-"nl-NL:/nl/dekoloniseer-nu/",
-"es-ES:/es/descolonize-ahora/",
-"fr-FR:/fr/decolonise-maintenant/",
-"de-DE:/de/dekolonisieren-jetzt/",
-"en-US:/en/decolonize-now/",
-]
+  [
+    "pt-BR:/decolonize-ja/",
+    "jp-JP:/jp/dekoronaizu-ima-sugu/",
+    "ru-RU:/ru/dekolonizirovat-sejchas/",
+    "nl-NL:/nl/dekoloniseer-nu/",
+    "es-ES:/es/decolonize-ahora/",
+    "fr-FR:/fr/decolonise-maintenant/",
+    "de-DE:/de/dekolonisieren-jetzt/",
+    "en-US:/en/decolonize-now/",
+  ]
 ---
 
 Nous allons décoloniser toute l'histoire
