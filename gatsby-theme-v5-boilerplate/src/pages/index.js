@@ -7,7 +7,49 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 
 import ThemeContext from "@Context/ThemeContext";
 
-const IndexPage = ({ pageContext }) => {
+const IndexPage = ({ pageContext, location }) => {
+  const regex = /\/(\w{2})\//;
+  const locationUrl = location.pathname.match(regex);
+  const logoLocationUrl = locationUrl ? locationUrl[1] : "";
+  const flags = [
+    {
+      i18n: "pt-BR",
+      slug: "/",
+    },
+    {
+      i18n: "en-US",
+      slug: "/en/",
+    },
+    {
+      i18n: "de-DE",
+      slug: "/de/",
+    },
+    {
+      i18n: "fr-FR",
+      slug: "/fr/",
+    },
+    {
+      i18n: "es-ES",
+      slug: "/es/",
+    },
+    {
+      i18n: "pt-BR",
+      slug: "/",
+    },
+    {
+      i18n: "nl-NL",
+      slug: "/nl/",
+    },
+    {
+      i18n: "ru-RU",
+      slug: "/ru/",
+    },
+    {
+      i18n: "jp-JP",
+      slug: "/jp/",
+    },
+  ];
+  console.log(flags);
   const data = useStaticQuery(graphql`
     {
       treatmentImages: allFile(
@@ -53,8 +95,6 @@ const IndexPage = ({ pageContext }) => {
   `);
   const indexSubs = pageContext?.schemaJSON?.pagesHelper?.index;
   const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
-  console.log("pageContext");
-  console.log(pageContext);
   return (
     <ThemeContext.Consumer>
       {theme => {
@@ -102,7 +142,6 @@ const IndexPage = ({ pageContext }) => {
         const getSectionOneImg = toproof
           ? toproof[0]?.childImageSharp?.gatsbyImageData
           : null;
-        console.log(theme);
         return (
           <>
             <MainTemplateWrapper
@@ -126,6 +165,8 @@ const IndexPage = ({ pageContext }) => {
                 badgesQuestion: "badgeQuestion",
                 globalSubs: globalSubs,
                 topRibbonImg: bgWhipala,
+                flags: flags,
+                urlLocale: logoLocationUrl,
               }}
             >
               <main className='main-container' id='site-content' role='list'>
@@ -158,7 +199,7 @@ const IndexPage = ({ pageContext }) => {
                           {indexSubs?.sectionOneMainTitle}
                         </HeadingBlock>
                         <div className='inner-infos'>
-                          <h2>2023</h2>
+                          <h2>22/abr</h2>
                           <h3>{indexSubs?.sectionOneTrackLegend}</h3>
                           <p>{indexSubs?.sectionOneTrackParagraph}</p>
                         </div>
@@ -170,7 +211,7 @@ const IndexPage = ({ pageContext }) => {
                     </div>
                   </section>
                 </Row>
-                <Row
+                {/* <Row
                   opt={{
                     classes: "section-row",
                     isBoxed: false,
@@ -221,9 +262,9 @@ const IndexPage = ({ pageContext }) => {
                       </div>
                     </div>
                   </section>
-                </Row>
+                </Row> */}
 
-                <Row
+                {/* <Row
                   opt={{
                     classes: "section-row dark",
                     isBoxed: false,
@@ -261,8 +302,8 @@ const IndexPage = ({ pageContext }) => {
                       </div>
                     </div>
                   </section>
-                </Row>
-
+                </Row> */}
+                {/* 
                 <Row
                   opt={{
                     classes: "section-row section-padding",
@@ -303,8 +344,9 @@ const IndexPage = ({ pageContext }) => {
                         );
                       })}
                     </Row>
+
                   </section>
-                </Row>
+                </Row> */}
 
                 <Row
                   opt={{
@@ -316,7 +358,7 @@ const IndexPage = ({ pageContext }) => {
                     <Row
                       opt={{
                         classes:
-                          "section-row section-columns bg-primary-gray dark",
+                          "section-row section-columns bg-primary-gray dark bio-section",
                         isBoxed: false,
                         numColumns: 1,
                         bgImg:

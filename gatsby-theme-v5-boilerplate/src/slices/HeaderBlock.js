@@ -1,7 +1,7 @@
 import React from "react";
 import MainMenuData from "@Content/menus/main-menu.json";
 import HeaderContainer from "@Containers/HeaderContainer";
-const HeaderBlock = ({ logotipoSvg }) => {
+const HeaderBlock = ({ logotipoSvg, opt }) => {
   return (
     <>
       <HeaderContainer
@@ -11,6 +11,8 @@ const HeaderBlock = ({ logotipoSvg }) => {
           bgOne: "transparent",
           bgTwo: "transparent",
           classes: "header-block",
+          flags: opt.flags,
+          urlLocale: opt.urlLocale,
         }}
         mainMenu={MainMenuData.menu.items}
       />

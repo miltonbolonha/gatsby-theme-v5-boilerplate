@@ -7,6 +7,7 @@ description: Nosso tea.
 slug: allgemeine-geschaftsbedingungen
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
+helperI18n: ["pt-BR:/termos/", "de-DE:/de/allgemeine-geschaftsbedingungen/"]
 ---
 
 Es gelten die Allgemeinen Lieferbedingungen für Erzeugnisse und Leistungen der Elektroindustrie („Grüne Lieferbedingungen“ – GL) zur Verwendung im Geschäftsverkehr gegenüber Unternehmern entsprechend der Empfehlung des ZVEI - Zentralverband Elektrotechnik- und Elektronikindustrie e. V, Stand 2018.

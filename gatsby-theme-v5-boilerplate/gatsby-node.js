@@ -37,8 +37,9 @@ const pageSiteFolder = path.resolve(rootDir, `${card.themePath}/src/pages`);
 // E um campo i18n a cada nó do tipo SitePage
 // Facilita o tratamento de localização (tradução) no projeto.
 
-exports.onCreateNode = async ({ node, getNode, actions }) => {
+exports.onCreateNode = async ({ node, getNode, getNodesByType, actions }) => {
   const { createNodeField } = actions;
+  // const markdownNodes = getNodesByType(`MarkdownRemark`);
 
   if (node.internal.type === "SitePage") {
     const x = [
@@ -123,10 +124,17 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
               e.split(".")[0] === slugTitle
           );
           const arrayI18n = [];
-          mdLocale.forEach(async el =>
-            arrayI18n.push(
-              `${locales.filter(d => d.split("-")[0] === el.split(".")[1])[0]}`
-            )
+          mdLocale.forEach(
+            async el =>
+              arrayI18n.push(
+                `${
+                  locales.filter(d => d.split("-")[0] === el.split(".")[1])[0]
+                }`
+              )
+            // console.log("markdownNodes.filter(nod=>nod.fileAbsolutePath===el)"),
+            // console.log(
+            //   markdownNodes.filter(nod => nod.fileAbsolutePath === el)
+            // )
           );
           arrayI18n.push(locales[0]);
           await createNodeField({
@@ -388,6 +396,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             topology
             description
             date
+            helperI18n
           }
           fields {
             slug
@@ -408,19 +417,21 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       ? results.data.allPages.nodes
       : console.log("Page Error");
 
-    // const createPagesMD = async (MD) => {
+    const npages = results.data.allPages.nodes.reduce((acc, node) => {
+      const { slug, i18n } = node.fields;
+      if (!acc[slug]) {
+        acc[slug] = [];
+      }
+      acc[slug].push(`${i18n}:${slug}`);
+      return acc;
+    }, {});
 
-    // }
-
-    //     const MDFiles = await fs.readdir(MDPagesFolder);
-
-    //     try {
-    //       await Promise.all(
-    //         MDFiles.map(file => createPagesMD(file))
-    //       );
-    //     } catch (err) {
-    //       console.error(err);
-    //     }
+    Object.entries(npages).forEach(([slug, translations]) => {
+      console.log({
+        path: slug,
+        context: translations,
+      });
+    });
 
     pages.forEach(async page => {
       if (!page) {
@@ -431,28 +442,31 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
       const { fileAbsolutePath } = page;
       const { slug, availableI18n, i18n } = page.fields;
-      const { title, date, description } = page.frontmatter;
+      const { title, date, description, helperI18n } = page.frontmatter;
       // Use the fields created in exports.onCreatepage
       const regex = /\/([^/]+)\.md$/;
       const localesSlugs = [];
 
       if (availableI18n && availableI18n.length > 1) {
-        console.log("");
-        console.log("INÍCIO");
-        console.log(
-          `Estamos na página: ${title} que está escrito na linguagem ${i18n} e com o slug ${slug}`
-        );
-        console.log(`A página acima têm as seguintes traduções:`);
+        // console.log("");
+        // console.log("INÍCIO");
+        // console.log(
+        //   `Estamos na página: ${title} que está escrito na linguagem ${i18n} e com o slug ${slug}`
+        // );
+        // console.log(`A página acima têm as seguintes traduções:`);
         const arrayObjForEachPage = availableI18n.forEach(async lang => {
           // if (e === lang) {
           //   return null;
           // }
+          // achar default
+          // achar translations certos
+          // achar e montar current
           const loc = lang === locales[0] ? "" : lang.split("-")[0];
-          return console.log({
-            current: { i18n: lang, slug: `${loc}/slugxxxx/` },
-            default: { i18n: locales[0], slug: `${loc}/slugxxxx/` },
-            translations: [{ i18n: lang, slug: `${loc}/slugxxxx/` }],
-          });
+          // return console.log({
+          //   current: { i18n: lang, slug: slug },
+          //   default: { i18n: locales[0], slug: `${loc}/slugxxxx/` },
+          //   translations: [{ i18n: lang, slug: `${loc}/slugxxxx/` }],
+          // });
         });
         pages.filter(async currPage => {
           const slugTitleTwo = currPage.fileAbsolutePath
@@ -518,16 +532,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 const arrayI18n = [];
                 mdLocale.forEach(async el =>
                   arrayI18n.push(
-                    `${
-                      locales.filter(
-                        d => d.split("-")[0] === el.split(".")[1]
-                      )[0]
-                    }`
+                    // locales.filter(
+                    //   d => d.split("-")[0] === el.split(".")[1]
+                    // )[0]
+                    el
                   )
                 );
-                arrayI18n.push(locales[0]);
+                // arrayI18n.push(locales[0]);
                 // availableI18n
-                console.log(arrayI18n);
+                // console.log(arrayI18n);
               }
             });
           }
@@ -545,18 +558,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     e.split(".")[0] === slugTitleTwo
                 );
                 const arrayI18n = [];
-                mdLocale.forEach(async el =>
-                  arrayI18n.push(
-                    `${
-                      locales.filter(
-                        d => d.split("-")[0] === el.split(".")[1]
-                      )[0]
-                    }`
-                  )
-                );
-                arrayI18n.push(locales[0]);
+                mdLocale.forEach(async el => arrayI18n.push(el));
                 // availableI18n
-                console.log(arrayI18n);
+                // console.log(arrayI18n);
               }
             });
           }
@@ -576,42 +580,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               : locales[0];
 
           // i18n
-          console.log(finalI18n || reqSchemaDefault.locales[0]);
+          // console.log(finalI18n || reqSchemaDefault.locales[0]);
 
-          console.log({
-            name: "slug",
-            value: finalSlug,
-          });
+          // console.log({
+          //   name: "slug",
+          //   value: finalSlug,
+          // });
         });
       }
 
-      // console.log("localesSlugs");
-      console.log("FIM");
-      console.log("");
-
-      // if (!slashSlug.includes(".") && translations.length > 0) {
-      //   defaultsMds.forEach(async md => {
-      //     if (md.split(".").length > 1 && md.split(".")[0] === slugTitleTwo) {
-      //       const mdLocale = MDFiles.filter(
-      //         e =>
-      //           e.match(regexTranslation) &&
-      //           e.split(".").length > 1 &&
-      //           e.split(".")[0] === slugTitleTwo
-      //       );
-      //       const arrayI18n = [];
-      //       mdLocale.forEach(async el =>
-      //         arrayI18n.push(
-      //           `${locales.filter(d => d.split("-")[0] === el.split(".")[1])[0]}`
-      //         )
-      //       );
-      //       arrayI18n.push(locales[0]);
-      //           // availableI18n
-      //       console.log(arrayI18n);
-      //     }
-      //   });
-      // }
-
-      // console.log(localesSlugs);
       createPage({
         path: slug,
         component: path.resolve(
@@ -626,6 +603,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           availableI18n,
           i18n,
           theLocales: localesSlugs,
+          helperI18n,
         },
       });
     });

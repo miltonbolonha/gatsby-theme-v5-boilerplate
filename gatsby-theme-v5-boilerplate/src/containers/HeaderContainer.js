@@ -15,7 +15,8 @@ const HeaderContainer = ({ mainMenu, opt }) => {
   const logoHeader = opt ? opt.logoHeader : null;
 
   const menuActive = refState ? "visible" : "not-visible";
-
+  console.log("urlLocale");
+  console.log(opt.urlLocale);
   return (
     <ThemeContext.Consumer>
       {theme => {
@@ -27,7 +28,7 @@ const HeaderContainer = ({ mainMenu, opt }) => {
             {opt.logoSvg}
           </a>
         ) : (
-          <Link to='/' className='logo-link'>
+          <Link to={"/" + opt.urlLocale + "/"} className='logo-link'>
             <GatsbyImage
               image={logoImage}
               alt={"Logo"}
@@ -54,6 +55,7 @@ const HeaderContainer = ({ mainMenu, opt }) => {
             bgOne={opt.bgOne || "#e9e9ed"}
             bgTwo={opt.bgTwo || "#f6f7fa"}
             mainMenuStatus={opt.mainMenuStatus}
+            flags={opt.flags}
           />
         );
       }}

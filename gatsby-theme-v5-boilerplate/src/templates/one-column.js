@@ -8,7 +8,22 @@ import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 import ThemeContext from "@Context/ThemeContext";
 
 const OneColumn = ({ location, pageContext }) => {
-  console.log(pageContext);
+  const regex = /\/(\w{2})\//;
+  const locationUrl = location.pathname.match(regex);
+  const logoLocationUrl = locationUrl ? locationUrl[1] : "";
+
+  const flags = [];
+  Object.entries(pageContext.helperI18n).forEach(transl => {
+    console.log("transl");
+    console.log(transl);
+    flags.push({
+      i18n: transl[1].split(":")[0],
+      slug: transl[1].split(":")[1],
+    });
+  });
+  console.log("flags");
+  console.log(flags);
+
   const { title, description, content } = pageContext;
   return (
     <ThemeContext.Consumer>
@@ -52,6 +67,8 @@ const OneColumn = ({ location, pageContext }) => {
               badgesQuestion: "badgeQuestion",
               globalSubs: globalSubs,
               topRibbonImg: bgWhipala,
+              flags: flags,
+              urlLocale: logoLocationUrl,
             }}
           >
             <Row

@@ -1,5 +1,6 @@
 import React from "react";
 import { Row } from "@Components/InsertRow";
+import { Link } from "gatsby";
 import MainMenuContainer from "../containers/MainMenuContainer";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 
@@ -16,7 +17,32 @@ const Header = ({
   logotype,
   logoImage,
   handleRefState,
+  flags,
 }) => {
+  console.log("AQUIII opt");
+  console.log(flags || null);
+  function getFlag(i18n) {
+    switch (i18n) {
+      case "pt-BR":
+        return "🇧🇷";
+      case "en-US":
+        return "🇺🇸";
+      case "de-DE":
+        return "🇩🇪";
+      case "jp-JP":
+        return "🇯🇵";
+      case "ru-RU":
+        return "🇷🇺";
+      case "fr-FR":
+        return "🇫🇷";
+      case "nl-NL":
+        return "🇳🇱";
+      case "es-ES":
+        return "🇪🇸";
+      default:
+        return "🇧🇷";
+    }
+  }
   return (
     <header>
       <Row
@@ -73,47 +99,24 @@ const Header = ({
         {/* desktop menu */}
         {/* available locales menu */}
         <ul className='locales-menu'>
-          <li>
-            <a href='#' className='locales available active' title='pt-BR'>
-              🇧🇷
-            </a>
-          </li>
-          <span className='plus-locales'>+</span>
-          <li>
-            <a href='#' className='locales available' title='en-US'>
-              🇺🇸
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='de-DE'>
-              🇩🇪
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='jp-JP'>
-              🇯🇵
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='ru-RU'>
-              🇷🇺
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='fr-FR'>
-              🇫🇷
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='nl-NL'>
-              🇳🇱
-            </a>
-          </li>
-          <li>
-            <a href='#' className='locales available' title='es-ES'>
-              🇪🇸
-            </a>
-          </li>
+          {flags?.map((e, i) => {
+            const x = i === 0;
+            const plus = x ? <span className='plus-locales'>+</span> : null;
+            return (
+              <>
+                <li>
+                  <Link
+                    to={e.slug}
+                    className='locales available active'
+                    title={e.i18n}
+                  >
+                    {getFlag(e.i18n)}
+                  </Link>
+                </li>
+                {plus}
+              </>
+            );
+          })}
         </ul>
       </Row>
     </header>
