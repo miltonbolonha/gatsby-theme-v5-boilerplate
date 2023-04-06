@@ -36,6 +36,7 @@ Junte-se a nós nessa história de amor pela valorização e respeito aos povos 
 
 #AbrilIndígena #DecolonizeJá #CulturaIndígena #ValorizeOsPovosOriginários #ParticipeDoClipe #MiltonBolonha
 
+- [Letra da Música](/decolonize-ja/)
 - [Áudio da Música (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
 - [Inspiração no YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
 - [Siga no Instagram](https://instagram.com/miltonbolonha_)

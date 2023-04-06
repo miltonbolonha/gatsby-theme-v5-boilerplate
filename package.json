@@ -2,13 +2,10 @@
   "name": "gatsby-theme-v5-boilerplate-workspace",
   "version": "0.8.0",
   "workspaces": [
-    "gatsby-theme-v5-boilerplate",
-    "gatsby-plugin-context-i18n",
-    "gatsby-plugin-sitepages-i18n",
-    "gatsby-plugin-markdown-i18n"
+    "gatsby-theme-v5-boilerplate"
   ],
   "private": false,
-  "description": "Farming Revolutions GatsbyJS Theme",
+  "description": "Milton Bolonha GatsbyJS Theme",
   "author": "Milton Bolonha <miltonbolonha@gmail.com>",
   "keywords": [
     "gatsby workspace",

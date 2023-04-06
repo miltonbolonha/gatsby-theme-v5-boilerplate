@@ -227,16 +227,17 @@ module.exports = {
     {
       resolve: `gatsby-business-in-build`,
       options: {
-        name: "Farming Revolution - Website",
-        version: "0.6.0",
+        name: "Milton Bolonha - Website",
+        version: "0.1.0",
         developer: "Milton Bolonha",
-        coauthorBusiness: "Farming Revolution",
-        project: "Farming Revolution - Website",
+        coauthorBusiness: "MB Corp",
+        project: "Milton Bolonha - Website",
         url: "https://miltonbolonha.com.br",
         message: "Please, pay attention.",
       },
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-netlify`,
   ],
 };

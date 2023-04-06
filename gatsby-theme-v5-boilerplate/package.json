@@ -47,5 +47,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.58.0"
+  },
+  "devDependencies": {
+    "gatsby-plugin-netlify": "^5.1.0"
   }
 }
