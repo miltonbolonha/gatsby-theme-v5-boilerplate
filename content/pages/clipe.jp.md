@@ -36,6 +36,6 @@ helperI18n:
 
 #インディアンの 4 月 #デコロナイズジャ #先住民族の文化 #先住民族を尊重しよう #ミュージックビデオに参加しよう #ミルトンボロニャ
 
-[音楽のオーディオ (MP3)](https://miltonbolonha.com.br)
-[YouTube でのインスピレーション](https://miltonbolonha.com.br)
-[Instagram でフォローする](https://miltonbolonha.com.br)
+[音楽のオーディオ (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[YouTube でのインスピレーション](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Instagram でフォローする](https://instagram.com/miltonbolonha_)

@@ -20,11 +20,16 @@ const HeaderContainer = ({ mainMenu, opt }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
+        console.log("opt.logoUrl");
+        console.log(opt.logoUrl);
         const logoImage = getImage(
           theme?.bigQuery?.darkLogo?.nodes[0]?.childImageSharp
         );
         const logotype = opt.logoUrl ? (
-          <a href={opt.logoUrl} className='logo-link'>
+          <a
+            href={opt.logoUrl && opt.logoUrl === "//" ? "/" : opt.logoUrl}
+            className='logo-link'
+          >
             {opt.logoSvg}
           </a>
         ) : (

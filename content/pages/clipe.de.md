@@ -36,6 +36,6 @@ Schließt euch uns an in dieser Liebesgeschichte für die Wertschätzung und den
 
 #AprilIndígena #DecolonizeJá #IndigeneKultur #WertschätzungIndigenerVölker #NimmAmVideoTeil #MiltonBolonha
 
-[Áudio da Música (MP3)](https://miltonbolonha.com.br)
-[Inspiração no YouTube](https://miltonbolonha.com.br)
-[Siga no Instagram](https://miltonbolonha.com.br)
+[Áudio da Música (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Inspiração no YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Siga no Instagram](https://instagram.com/miltonbolonha_)

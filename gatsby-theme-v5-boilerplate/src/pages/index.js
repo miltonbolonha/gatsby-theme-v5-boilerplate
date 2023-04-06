@@ -118,6 +118,7 @@ const IndexPage = ({ pageContext, location }) => {
           ? patternDark[0]?.childImageSharp?.gatsbyImageData?.images?.fallback
               ?.src
           : null;
+
         const patternFooterGrafism =
           theme?.bigQuery?.brandImages?.nodes?.filter(
             brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
@@ -134,8 +135,8 @@ const IndexPage = ({ pageContext, location }) => {
         const patternFooterGrafismImgDark = patternFooterGrafismDark
           ? patternFooterGrafismDark[0]?.childImageSharp?.gatsbyImageData
           : null;
-        const toproof = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs?.relativePath === "toproof-rio.jpg"
+        const toproof = theme?.bigQuery?.generalImages?.nodes?.filter(
+          generalImgs => generalImgs?.relativePath === "mb-left-mic-guitar.jpg"
         );
         const treatmentNodes = data?.treatmentImages?.nodes;
         const partnersNodes = data?.partnerImages?.nodes;

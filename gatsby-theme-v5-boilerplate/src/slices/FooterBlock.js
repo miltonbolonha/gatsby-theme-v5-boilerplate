@@ -44,14 +44,16 @@ const FooterBlock = ({ logo, globalSubs }) => {
                 }}
               >
                 <section className='footer-contacts contacts'>
-                  <h3>{globalSubs?.contactUs}</h3>
-                  <h1>Milton Bolonha</h1>
-                  <p>DECOLONIZE JÁ!</p>
-                  <p>@DECOLONIZEJA</p>
-                  <a href='mailto:info@farming-revolution.com'>
-                    contato@miltonbolonha.com.br
-                  </a>
-                  <a href='tel:+12 98106-2959'>+12 98106-2959</a>
+                  <div>
+                    <h3>{globalSubs?.contactUs}</h3>
+                    <h1>Milton Bolonha</h1>
+                    <p>DECOLONIZE JÁ!</p>
+                    <p>@DECOLONIZEJA</p>
+                    <a href='mailto:info@farming-revolution.com'>
+                      contato@miltonbolonha.com.br
+                    </a>
+                    <a href='tel:+12 98106-2959'>+12 98106-2959</a>
+                  </div>
                 </section>
                 <div className='footer-languages'>
                   <h3>Idiomas</h3>

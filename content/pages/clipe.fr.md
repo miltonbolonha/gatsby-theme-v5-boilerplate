@@ -36,6 +36,6 @@ Rejoignez-nous dans cette histoire d'amour pour la valorisation et le respect de
 
 #MoisDeLIndigène #DecolonizeJá #CultureAutochtone #ValorisezLesPeuplesAutochtones #ParticipezAuClip #MiltonBolonha
 
-[Audio de la musique (MP3)](https://miltonbolonha.com.br)
-[Inspiration sur YouTube](https://miltonbolonha.com.br)
-[Suivre sur Instagram](https://miltonbolonha.com.br)
+[Audio de la musique (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Inspiration sur YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Suivre sur Instagram](https://instagram.com/miltonbolonha_)

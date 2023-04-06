@@ -36,6 +36,6 @@ La fecha prevista para el lanzamiento del videoclip es el 22/04/2023. ¡Así que
 
 #AbrilIndígena #DecolonizeYa #CulturaIndígena #ValorizaALosPueblosOriginarios #ParticipaEnElVideoclip #MiltonBolonha
 
-[Audio de la música (MP3)](https://miltonbolonha.com.br)
-[Inspiración en YouTube](https://miltonbolonha.com.br)
-[Síguenos en Instagram](https://miltonbolonha.com.br)
+[Audio de la música (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Inspiración en YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Síguenos en Instagram](https://instagram.com/miltonbolonha_)

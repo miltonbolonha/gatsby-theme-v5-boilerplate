@@ -65,6 +65,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: path.resolve(rootDir, contentPath + "/pages/images"),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `schemaJSON`,
         path: path.resolve(rootDir, contentPath + "/schemas"),
       },

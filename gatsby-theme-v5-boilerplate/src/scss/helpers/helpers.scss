@@ -515,6 +515,9 @@ sup {
 	.first-section-img {
 		max-height: 100vh;
 		min-height: 600px;
+		img {
+			object-position: 0 -68px;
+		}
 	}
 
 	&.img-wrapper {
@@ -682,9 +685,14 @@ h1.inner-section-heading {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
-	padding: 15px 25px 20px;
-	width: 500px;
-	margin: 20px 0;
+
+	max-width: 500px;
+	min-width: 250px;
+	width: 80%;
+	margin: 20px auto;
+	div {
+		padding: 15px 25px 20px;
+	}
 	h3 {
 		margin: 5px 0;
 		font-size: 25px;
@@ -1127,5 +1135,8 @@ header {
 		margin: 0 auto;
 		left: 0;
 		right: 0;
+	}
+	.one-column main {
+		padding: 0 46px 30px;
 	}
 }

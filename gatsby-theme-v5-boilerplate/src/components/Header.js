@@ -19,8 +19,6 @@ const Header = ({
   handleRefState,
   flags,
 }) => {
-  console.log("AQUIII opt");
-  console.log(flags || null);
   function getFlag(i18n) {
     switch (i18n) {
       case "pt-BR":

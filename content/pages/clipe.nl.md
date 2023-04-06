@@ -36,6 +36,6 @@ Sluit je aan bij ons in dit liefdesverhaal voor de waardering en het respect voo
 
 #InheemseApril #DecolonizeJá #InheemseCultuur #WaardeerInheemseVolkeren #DoeMeeAanDeVideoclip #MiltonBolonha
 
-[Muziek Audio (MP3)](https://miltonbolonha.com.br)
-[Inspiratie op YouTube](https://miltonbolonha.com.br)
-[Volg op Instagram](https://miltonbolonha.com.br)
+[Muziek Audio (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Inspiratie op YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Volg op Instagram](https://instagram.com/miltonbolonha_)

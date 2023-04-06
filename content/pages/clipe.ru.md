@@ -36,6 +36,6 @@ helperI18n:
 
 #АпрельИндейцев #ДеколонизацияСейчас #КультураИндейцев #ОценимКоренныхНародов #ПримитеУчастиеВКлипе #MiltonBolonha
 
-[Аудио музыки (MP3)](https://miltonbolonha.com.br)
-[Вдохновение на YouTube](https://miltonbolonha.com.br)
-[Подписаться в Instagram](https://miltonbolonha.com.br)
+[Аудио музыки (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Вдохновение на YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Подписаться в Instagram](https://instagram.com/miltonbolonha_)

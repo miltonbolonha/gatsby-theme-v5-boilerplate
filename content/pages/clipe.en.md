@@ -34,6 +34,6 @@ The planned release date for the music video is 22/04/2023. So don't waste time 
 
 #IndigenousApril #DecolonizeNow #IndigenousCulture #ValueIndigenousPeoples #JoinTheMusicVideo #MiltonBolonha
 
-[Music Audio (MP3)](https://miltonbolonha.com.br)
-[Inspiration on YouTube](https://miltonbolonha.com.br)
-[Follow on Instagram](https://miltonbolonha.com.br)
+[Music Audio (MP3)](https://miltonbolonha.com.br/decolonize-ja.mp3)
+[Inspiration on YouTube](https://www.youtube.com/watch?v=2oPCV6kCNE0)
+[Follow on Instagram](https://instagram.com/miltonbolonha_)

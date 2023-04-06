@@ -42,21 +42,15 @@ exports.onCreateNode = async ({ node, getNode, getNodesByType, actions }) => {
   // const markdownNodes = getNodesByType(`MarkdownRemark`);
 
   if (node.internal.type === "SitePage") {
-    const x = [
-      {
-        node,
-        name: "i18n",
-        value: card.brandIntl,
-      },
-      {
-        node,
-        name: "schemaJSON",
-        value: card,
-      },
-    ];
-
-    x.forEach(nodeField => {
-      createNodeField(nodeField);
+    createNodeField({
+      node,
+      name: "i18n",
+      value: card.brandIntl,
+    });
+    createNodeField({
+      node,
+      name: "schemaJSON",
+      value: card,
     });
   }
 
@@ -86,6 +80,7 @@ exports.onCreateNode = async ({ node, getNode, getNodesByType, actions }) => {
     const slugLocale = slugTrim.split(".")[1];
     const isI18n = slugTrim.includes(".");
     const isLocale = isI18n && slugLocale !== "";
+
     const finalSlug = isLocale
       ? "/" + slugLocale + "/" + frontmatterSlug + "/"
       : slugTrim;
@@ -208,11 +203,11 @@ exports.onCreateNode = async ({ node, getNode, getNodesByType, actions }) => {
       name: "AllI18n",
       value: reqSchemaDefault.locales,
     });
-
+    const indexLocale = finalSlug.match(/^\/([a-z]{2})(?!index)\/$/);
     await createNodeField({
       node,
       name: "slug",
-      value: finalSlug,
+      value: finalSlug === indexLocale ? indexLocale[0] : finalSlug,
     });
   }
 };
@@ -233,7 +228,8 @@ exports.onCreatePage = async ({ page, actions }) => {
   const { createPage, deletePage } = actions;
   const newPage = Object.assign({}, page);
   deletePage(page);
-  const i18nContextPageSite = async (page, schemasLoaded) => {
+  const i18nContextPageSite = async (page, file, schemasLoaded) => {
+    console.log("começouuu");
     for (const schemaFile of schemasLoaded) {
       const schema = require(path.resolve(
         rootDir,
@@ -245,7 +241,7 @@ exports.onCreatePage = async ({ page, actions }) => {
 
       const cardLocale = cardElement.cardLocale.split("-")[0];
       const cardLocalePath = "/" + cardLocale + "/";
-      const pathLocale = newPage.path;
+      const pathLocale = page.path;
       const pathLocaleHasI18n = pathLocale.includes(cardLocalePath);
       const defaultLanguage = reqSchemaDefault.locales[0].split("-")[0];
       const isDefaultLanguage = defaultLanguage === cardLocale;
@@ -258,33 +254,33 @@ exports.onCreatePage = async ({ page, actions }) => {
       };
 
       if (
-        (isDefaultLanguage &&
-          isDefaultSchema &&
-          newPage.path === "/dev-404-page/" &&
-          newPage.path === "/404/" &&
-          newPage.path === "404.html") ||
-        (isDefaultLanguage && isDefaultSchema && newPage.path === "/")
+        newPage.path === "/" ||
+        (isDefaultLanguage && isDefaultSchema && newPage.path === "/") ||
+        newPage.path.includes("404")
       ) {
         createPage(newPage);
       }
+      // await fs.readdir(pageSiteFolder, (err, files) => {
+      //   files.map((file, ind) => {
 
-      await fs.readdir(pageSiteFolder, (err, files) => {
-        files.map((file, ind) => {
-          if (
-            (isDefaultLanguage && isDefaultSchema) ||
-            newPage.path === "/" + file.split(".")[0] + "/" ||
-            pathLocaleHasI18n
-          ) {
-            createPage(newPage);
-          }
-        });
-      });
+      //   });
+      // });
+
+      // if (
+      //   isDefaultLanguage &&
+      //   isDefaultSchema &&
+      //   newPage.path === "/dev-404-page/" &&
+      //   newPage.path === "/404/" &&
+      //   newPage.path === "404.html"
+      // ) {
+      //   createPage(newPage);
+      // }
     }
   };
 
   try {
     await Promise.all(
-      pageFiles.map(file => i18nContextPageSite(file, schemasFiles))
+      pageFiles.map(file => i18nContextPageSite(newPage, file, schemasFiles))
     );
   } catch (err) {
     console.error(err);
@@ -305,15 +301,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     for (const schemaFile of schemasLoaded) {
       const isDefaultI18n = schemaFile === "default.json" ? true : false;
-      const isIndex = fileName === "index" ? true : false;
-      const is404 = fileName === "404" ? true : false;
+      const isIndex = page === "index.js" ? true : false;
+      const is404 = page === "404.js" ? true : false;
       const localePathQuery = isDefaultI18n ? "" : schemaFile.slice(0, 2);
-
-      let pathQuery = isIndex ? "" : fileName;
+      // console.log("fileName");
+      // console.log(fileName);
+      let pathQuery = isIndex && !is404 ? "" : fileName + "/";
 
       const pathExtended = isDefaultI18n
-        ? "/" + localePathQuery
-        : "/" + localePathQuery + "/" + pathQuery;
+        ? "/" + pathQuery
+        : "/" + schemaFile.slice(0, 2) + "/" + pathQuery;
 
       const schemaLocaleContent = await require(`${schemasPath}/${schemaFile}`);
       const cardUse = !isDefaultI18n
@@ -355,13 +352,34 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             pageSiteObj("/" + "dev-404-page" + "/", errorComponent)
           );
           await createPage(pageSiteObj("/" + "404" + ".html", errorComponent));
+          // console.log("");
+          // console.log("404 criada");
+          // console.log(element.split("-")[0]);
+          // console.log("");
         }
       }
-
-      if (isDefaultI18n || isIndex) {
-        await createPage(
-          pageSiteObj(pathExtended, pageSiteFolder + "/" + page)
-        );
+      if (isDefaultI18n || (isIndex && isDefaultI18n)) {
+        // console.log("");
+        // console.log("criada pagina isDefaultI18n || isIndex");
+        // console.log("");
+        await createPage({
+          path: pathExtended,
+          component: pageSiteFolder + "/" + page,
+          context: {
+            schemaJSON: cardUse,
+          },
+        });
+      } else {
+        // console.log("");
+        // console.log("criada pagina contraria a isDefaultI18n || isIndex");
+        // console.log("");
+        await createPage({
+          path: pathExtended,
+          component: pageSiteFolder + "/" + page,
+          context: {
+            schemaJSON: cardUse,
+          },
+        });
       }
     }
   };

@@ -2,7 +2,7 @@
 topology: pages
 template: one-column.js
 status: true
-title: Decolonize Já
+title: Decolonize Já! - Uma História de Amor
 description: Nosso tea.
 slug: decolonize-ja
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg

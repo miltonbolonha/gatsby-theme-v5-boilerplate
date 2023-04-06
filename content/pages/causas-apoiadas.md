@@ -1,0 +1,27 @@
+---
+topology: pages
+template: one-column.js
+status: true
+title: Causas Que Apoiamos
+description: Nosso tea.
+slug: causas-apoiadas
+featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
+date: 2022-12-14T08:30:00+00:00
+helperI18n: ["pt-BR:/causas-apoiadas/"]
+---
+
+Além da Decolonialidade, existem outros compromissos que assumimos publicamente.
+
+## Decolonialidade e Hacktivismo
+
+O pensamento decolonial é uma busca por libertar a produção de conhecimento da mente eurocêntrica, algo que Milton Bolonha abraça em sua atuação como ativista. Além disso, ele pratica o hacktivismo educacional e trabalha com códigos livres, sempre buscando promover a democratização da informação. Seu sonho é ensinar programação em aldeias.
+
+## Neurodivergente
+
+Outro aspecto importante da vida e do trabalho do Bolonha é sua identificação como neurodivergente.
+
+## Vidas Negras Importam
+
+O artista faz questão de deixar claro seu compromisso com a luta antirracista e com a defesa das **Vidas Negras Importam**. Para tanto, ele se comprometeu a excluir da sua lista de indicações todos os fornecedores que não apoiam esse princípio.
+
+Para Milton Bolonha, esses são alguns dos pilares fundamentais para uma atuação ética e comprometida com um mundo mais justo e igualitário.
