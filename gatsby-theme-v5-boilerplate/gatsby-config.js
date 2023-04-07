@@ -192,9 +192,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-context-i18n`,
-    `gatsby-plugin-sitepages-i18n`,
-    `gatsby-plugin-markdown-i18n`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-alias-imports`,
