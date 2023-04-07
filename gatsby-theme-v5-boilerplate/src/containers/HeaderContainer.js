@@ -19,6 +19,8 @@ const HeaderContainer = ({ mainMenu, opt }) => {
   return (
     <ThemeContext.Consumer>
       {theme => {
+        console.log("urlLocale");
+        console.log(opt.urlLocale);
         const logoImage = getImage(
           theme?.bigQuery?.darkLogo?.nodes[0]?.childImageSharp
         );
@@ -28,7 +30,7 @@ const HeaderContainer = ({ mainMenu, opt }) => {
           </a>
         ) : (
           <Link
-            to={opt.urlLocale === "/" ? "" : "/" + opt.urlLocale + "/"}
+            to={opt.urlLocale === "" ? "/" : "/" + opt.urlLocale + "/"}
             className='logo-link'
           >
             <GatsbyImage
