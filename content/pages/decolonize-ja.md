@@ -20,65 +20,63 @@ helperI18n:
   ]
 ---
 
-
 **Música**: Decolonize Já - Uma História de Amor
 **Autor**: Milton Bolonha
 **Letra**: Milton Bolonha e Jorge Linhaça Jr
 
-Vamos decolonizar toda história 
-Vamos desbranquiçar a nossa nação 
-Resgatar nativa memória 
-Desempoderar nosso patrão 
+Vamos decolonizar toda história <br />
+Vamos desbranquiçar a nossa nação <br />
+Resgatar nativa memória <br />
+Desempoderar nosso patrão <br />
 
-A luz que ilumina 
-O Deus que chacoalha ao Sol 
-É feito de matéria escura 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
+A luz que ilumina <br />
+O Deus que chacoalha ao Sol <br />
+É feito de matéria escura <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
 
-Mais um menino de fé 
-Que andava a pé 
-Por entre becos e vielas 
-Sonhava com a vida de luxo 
-Longe do tumulto 
-E também das esparrelas 
-Desde menor pontuava 
-Com a mente blindada 
-Da rapaziada 
-Batia de frente 
-Com toda serpente 
-Que ligeira 
-Se esgueira na quebrada 
+Mais um menino de fé <br />
+Que andava a pé <br />
+Por entre becos e vielas <br />
+Sonhava com a vida de luxo <br />
+Longe do tumulto <br />
+E também das esparrelas <br />
+Desde menor pontuava <br />
+Com a mente blindada <br />
+Da rapaziada <br />
+Batia de frente <br />
+Com toda serpente <br />
+Que ligeira <br />
+Se esgueira na quebrada <br />
 
-Era requisitado 
-Moleque bolado 
-Para resolver as confusão 
-Não era envolvido 
-Porém conceituado 
-E querido pela população 
-Sempre lutando, confidenciando 
-No seu peito a cruz 
-Escudo na camisa 
-Na mão o celular 
-Outro devoto do romano Jesus 
+Era requisitado <br />
+Moleque bolado <br />
+Para resolver as confusão <br />
+Não era envolvido <br />
+Porém conceituado <br />
+E querido pela população <br />
+Sempre lutando, confidenciando <br />
+No seu peito a cruz <br />
+Escudo na camisa <br />
+Na mão o celular <br />
+Outro devoto do romano Jesus <br />
 
-Vamos decolonizar toda história 
-Vamos desbranquiçar a nossa nação 
-Resgatar nativa memória 
-Desempoderar nosso patrão 
+Vamos decolonizar toda história <br />
+Vamos desbranquiçar a nossa nação <br />
+Resgatar nativa memória <br />
+Desempoderar nosso patrão <br />
 
-A luz que ilumina 
-O Deus que chacoalha ao Sol 
-É feito de matéria escura 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
+A luz que ilumina <br />
+O Deus que chacoalha ao Sol <br />
+É feito de matéria escura <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
-Eu não me comunico com o meu arredor 
-Eu não me comunico 
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico com o meu arredor <br />
+Eu não me comunico
 
 Letra: Milton Bolonha e Jorge Linhaça Jr
-
