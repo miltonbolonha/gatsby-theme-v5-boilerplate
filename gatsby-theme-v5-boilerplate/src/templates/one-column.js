@@ -13,7 +13,7 @@ const OneColumn = ({ location, pageContext }) => {
   const logoLocationUrl = locationUrl ? locationUrl[1] : "";
 
   const flags = [];
-  awaitObject.entries(pageContext.helperI18n).forEach(transl => {
+  Object.entries(pageContext.helperI18n).forEach(transl => {
     flags.push({
       i18n: transl[1].split(":")[0],
       slug: transl[1].split(":")[1],
