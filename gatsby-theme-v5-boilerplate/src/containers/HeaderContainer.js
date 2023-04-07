@@ -28,7 +28,7 @@ const HeaderContainer = ({ mainMenu, opt }) => {
           </a>
         ) : (
           <Link
-            to={opt.urlLocale === "/" ? "/" : "/" + opt.urlLocale + "/"}
+            to={opt.urlLocale === "/" ? "" : "/" + opt.urlLocale + "/"}
             className='logo-link'
           >
             <GatsbyImage
