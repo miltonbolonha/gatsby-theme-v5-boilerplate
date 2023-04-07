@@ -20,57 +20,57 @@ helperI18n:
   ]
 ---
 
-Vamos decolonizar toda la historia
-Vamos despoblar nuestra nación
-Recuperar la memoria nativa
-Desempoderar a nuestro patrón
+Vamos decolonizar toda la historia <br />
+Vamos despoblar nuestra nación <br />
+Recuperar la memoria nativa <br />
+Desempoderar a nuestro patrón <br />
 
-La luz que ilumina
-El Dios que sacude al Sol
-Está hecho de materia oscura
-No me comunico con mi entorno
-No me comunico con mi entorno
+La luz que ilumina <br />
+El Dios que sacude al Sol <br />
+Está hecho de materia oscura <br />
+No me comunico con mi entorno <br />
+No me comunico con mi entorno <br />
 
-Otro niño de fe
-Que andaba a pie
-Por entre callejones y callejuelas
-Soñaba con la vida de lujo
-Lejos del tumulto
-Y también de las trampas
-Desde pequeño destacaba
-Con la mente blindada
-De la chavalería
-Se enfrentaba
-A todas las serpientes
-Que rápidas
+Otro niño de fe <br />
+Que andaba a pie <br />
+Por entre callejones y callejuelas <br />
+Soñaba con la vida de lujo <br />
+Lejos del tumulto <br />
+Y también de las trampas <br />
+Desde pequeño destacaba <br />
+Con la mente blindada <br />
+De la chavalería <br />
+Se enfrentaba <br />
+A todas las serpientes <br />
+Que rápidas <br />
 Se escabullen en el barrio
 
-Era solicitado
-Chico astuto
-Para resolver los conflictos
-No estaba involucrado
-Pero era respetado
-Y querido por la población
-Siempre luchando, confiando
-Con la cruz en su pecho
-Escudo en la camisa
-Con el celular en la mano
+Era solicitado <br />
+Chico astuto <br />
+Para resolver los conflictos <br />
+No estaba involucrado <br />
+Pero era respetado <br />
+Y querido por la población <br />
+Siempre luchando, confiando <br />
+Con la cruz en su pecho <br />
+Escudo en la camisa <br />
+Con el celular en la mano <br />
 Otro devoto del Jesús romano
 
-Vamos decolonizar toda la historia
-Vamos despoblar nuestra nación
-Recuperar la memoria nativa
+Vamos decolonizar toda la historia <br />
+Vamos despoblar nuestra nación <br />
+Recuperar la memoria nativa <br />
 Desempoderar a nuestro patrón
 
-La luz que ilumina
-El Dios que sacude al Sol
-Está hecho de materia oscura
-No me comunico con mi entorno
+La luz que ilumina <br />
+El Dios que sacude al Sol <br />
+Está hecho de materia oscura <br />
+No me comunico con mi entorno <br />
 No me comunico con mi entorno
 
-No me comunico con mi entorno
-No me comunico con mi entorno
-No me comunico con mi entorno
-No me comunico con mi entorno
-No me comunico con mi entorno
+No me comunico con mi entorno <br />
+No me comunico con mi entorno <br />
+No me comunico con mi entorno <br />
+No me comunico con mi entorno <br />
+No me comunico con mi entorno <br />
 No me comunico

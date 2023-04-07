@@ -32,9 +32,9 @@ Convido a todxs que se identificam com a causa dos povos originários a particip
 
 ## Como Gravar Esse Clipe?
 
-Tenha em mãos a letra da música e um celular gravando você. O celular deve estar na horizontal (deitado). O enquadramento da câmera deve estar em close no seu rosto. Seja expressivo(a), fique bravo cantando, sorriam!
+Tenha em mãos a letra da música (_link abaixo_), um aparelho de áudio tocando a música (_arquivo mp3 abaixo_) e um celular gravando você. O celular deve estar na horizontal (deitado). O enquadramento da câmera deve estar em close no seu rosto. Seja expressivo(a), fique bravo cantando, sorriam!
 
-Você pode pedir ajuda, ou fazer você mesma. Chame as suas amigas e gravem juntas. Ou se preferir, grave o seu vídeo no meio da aldeia, usando pinturas faciais ou adereços diversos. Sejam criativos!
+Você pode pedir ajuda, ou fazer você mesma(x). Chame as suas amigas e gravem juntas. Ou se preferir, grave o seu vídeo no meio da aldeia, usando pinturas faciais ou adereços diversos. Sejam criativos!
 
 ## Até Quando Posso Enviar?
 

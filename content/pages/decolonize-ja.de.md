@@ -20,56 +20,56 @@ helperI18n:
   ]
 ---
 
-Wir werden die gesamte Geschichte dekolonisieren
-Wir werden unsere Nation entweißen
-Die indigene Erinnerung wiederherstellen
+Wir werden die gesamte Geschichte dekolonisieren <br />
+Wir werden unsere Nation entweißen <br />
+Die indigene Erinnerung wiederherstellen <br />
 Unseren Arbeitgeber entmachten
 
-Das Licht, das erhellt
-Der Gott, der die Sonne schüttelt
-Besteht aus dunkler Materie
-Ich kommuniziere nicht mit meiner Umgebung
+Das Licht, das erhellt <br />
+Der Gott, der die Sonne schüttelt <br />
+Besteht aus dunkler Materie <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
 Ich kommuniziere nicht mit meiner Umgebung
 
-Noch ein gläubiger Junge
-Der zu Fuß ging
-Durch Gassen und Straßen
-Träumte von einem luxuriösen Leben
-Fern von Tumult
-Und auch von den Täuschungen
-Schon als Kind zeigte er Flagge
-Mit einem gepanzerten Geist
-Von den Jungs anerkannt
-Stellte er sich den Schlangen
-Die sich geschickt
+Noch ein gläubiger Junge <br />
+Der zu Fuß ging <br />
+Durch Gassen und Straßen <br />
+Träumte von einem luxuriösen Leben <br />
+Fern von Tumult <br />
+Und auch von den Täuschungen <br />
+Schon als Kind zeigte er Flagge <br />
+Mit einem gepanzerten Geist <br />
+Von den Jungs anerkannt <br />
+Stellte er sich den Schlangen <br />
+Die sich geschickt <br />
 Durch die Nachbarschaft schlängeln
 
-Er war gefragt
-Ein verwegenes Kerlchen
-Um die Verwirrung zu lösen
-Er war nicht verwickelt
-Aber angesehen
-Und von der Bevölkerung geliebt
-Immer kämpfend, vertraulich
-Mit dem Kreuz auf seiner Brust
-Schild auf seinem Hemd
-Und dem Handy in der Hand
+Er war gefragt <br />
+Ein verwegenes Kerlchen <br />
+Um die Verwirrung zu lösen <br />
+Er war nicht verwickelt <br />
+Aber angesehen <br />
+Und von der Bevölkerung geliebt <br />
+Immer kämpfend, vertraulich <br />
+Mit dem Kreuz auf seiner Brust <br />
+Schild auf seinem Hemd <br />
+Und dem Handy in der Hand <br />
 Ein weiterer Anhänger von Jesus dem Römer
 
-Wir werden die gesamte Geschichte dekolonisieren
-Wir werden unsere Nation entweißen
-Die indigene Erinnerung wiederherstellen
+Wir werden die gesamte Geschichte dekolonisieren <br />
+Wir werden unsere Nation entweißen <br />
+Die indigene Erinnerung wiederherstellen <br />
 Unseren Arbeitgeber entmachten
 
-Das Licht, das erhellt
-Der Gott, der die Sonne schüttelt
-Besteht aus dunkler Materie
-Ich kommuniziere nicht mit meiner Umgebung
+Das Licht, das erhellt <br />
+Der Gott, der die Sonne schüttelt <br />
+Besteht aus dunkler Materie <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
 Ich kommuniziere nicht mit meiner Umgebung
 
-Ich kommuniziere nicht mit meiner Umgebung
-Ich kommuniziere nicht mit meiner Umgebung
-Ich kommuniziere nicht mit meiner Umgebung
-Ich kommuniziere nicht mit meiner Umgebung
-Ich kommuniziere nicht mit meiner Umgebung
+Ich kommuniziere nicht mit meiner Umgebung <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
+Ich kommuniziere nicht mit meiner Umgebung <br />
 Ich kommuniziere nicht
