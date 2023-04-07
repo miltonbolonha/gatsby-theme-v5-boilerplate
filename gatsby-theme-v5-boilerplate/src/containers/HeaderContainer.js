@@ -15,25 +15,22 @@ const HeaderContainer = ({ mainMenu, opt }) => {
   const logoHeader = opt ? opt.logoHeader : null;
 
   const menuActive = refState ? "visible" : "not-visible";
-  console.log("urlLocale");
-  console.log(opt.urlLocale);
+
   return (
     <ThemeContext.Consumer>
       {theme => {
-        console.log("opt.logoUrl");
-        console.log(opt.logoUrl);
         const logoImage = getImage(
           theme?.bigQuery?.darkLogo?.nodes[0]?.childImageSharp
         );
         const logotype = opt.logoUrl ? (
-          <a
-            href={opt.logoUrl && opt.logoUrl === "//" ? "/" : opt.logoUrl}
-            className='logo-link'
-          >
+          <a href={opt.logoUrl} className='logo-link'>
             {opt.logoSvg}
           </a>
         ) : (
-          <Link to={"/" + opt.urlLocale + "/"} className='logo-link'>
+          <Link
+            to={opt.urlLocale === "/" ? "/" : "/" + opt.urlLocale + "/"}
+            className='logo-link'
+          >
             <GatsbyImage
               image={logoImage}
               alt={"Logo"}
