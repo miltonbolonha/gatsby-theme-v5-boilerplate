@@ -22,23 +22,23 @@ const Header = ({
   function getFlag(i18n) {
     switch (i18n) {
       case "pt-BR":
-        return "🇧🇷";
+        return "BR";
       case "en-US":
-        return "🇺🇸";
+        return "US";
       case "de-DE":
-        return "🇩🇪";
+        return "DE";
       case "jp-JP":
-        return "🇯🇵";
+        return "JP";
       case "ru-RU":
-        return "🇷🇺";
+        return "RU";
       case "fr-FR":
-        return "🇫🇷";
+        return "FR";
       case "nl-NL":
-        return "🇳🇱";
+        return "NL";
       case "es-ES":
-        return "🇪🇸";
+        return "ES";
       default:
-        return "🇧🇷";
+        return "BR";
     }
   }
   return (
