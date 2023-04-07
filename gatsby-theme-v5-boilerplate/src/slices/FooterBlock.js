@@ -106,9 +106,7 @@ const FooterBlock = ({ logo, globalSubs }) => {
                   <a href='/responsavel-tecnico'>{globalSubs?.imprint}</a>
                   <a href='/termos'>{globalSubs?.termsConditions}</a>
                 </div>
-                <p>
-                  © {new Date().getFullYear()} - {globalSubs?.copyright}
-                </p>
+                <p>© 2023 - {globalSubs?.copyright}</p>
               </Row>
             </Row>
           </>

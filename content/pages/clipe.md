@@ -22,13 +22,21 @@ helperI18n:
 
 Olá a todxs!
 
-Está o mês de abril é conhecido como **Abril Indígena**, uma época especial para celebrar e valorizar a cultura e a história dos povos originários (indígenas, nativos). E eu tenho uma proposta incrível para vocês!
+O mês de abril é conhecido para os povos nativos como **Abril Indígena**. É uma época especial nós, onde além de nossos movimentos de resistência, celebramos e valorizamos a cultura e a história dos povos originários (indígenas, nativos). E eu tenho uma proposta incrível para vocês!
 
-Convido a todxs que se identificam com a causa dos povos originários e toda sua descendência cativa nas cidades a participarem da gravação do clipe da minha música de trabalho: **DECOLONIZE JÁ! - Uma História de Amor**.
+## Participe da Gravação do Clipe
 
-É fácil participar! Basta gravar um vídeo dublando a música Decolonize Já!, que está disponível no link abaixo. Depois, envie sua gravação para o e-mail **clipe@miltonbolonha.com.br** e divulgue muito essa postagem!
+Convido a todxs que se identificam com a causa dos povos originários a participarem da gravação do clipe da música: **DECOLONIZE JÁ! - Uma História de Amor**.
 
-Chame as suas amigas e gravem juntas. Ou se preferir, grave o seu vídeo no meio da floresta, usando pinturas faciais ou adereços diversos. Seja criativo!
+É fácil participar! Basta gravar um vídeo dublando a música **Decolonize Já!**, que está disponível nos links abaixo. Depois, envie a sua gravação para o e-mail **clipe@miltonbolonha.com.br**, por fim, para ter mais chances de aparecer no clipe, vá até o instagram e divulgue muito a postagem da gravação do clipe/Abril Indígena!
+
+## Como Gravar Esse Clipe?
+
+Tenha em mãos a letra da música e um celular gravando você. O celular deve estar na horizontal (deitado). O enquadramento da câmera deve estar em close no seu rosto. Seja expressivo(a), fique bravo cantando, sorriam!
+
+Você pode pedir ajuda, ou fazer você mesma. Chame as suas amigas e gravem juntas. Ou se preferir, grave o seu vídeo no meio da aldeia, usando pinturas faciais ou adereços diversos. Sejam criativos!
+
+## Até Quando Posso Enviar?
 
 A data prevista para o lançamento do clipe é 22/04/2023. Então, não perca tempo e participe!
 
