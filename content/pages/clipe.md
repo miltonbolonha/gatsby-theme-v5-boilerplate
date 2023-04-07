@@ -22,7 +22,7 @@ helperI18n:
 
 Olá a todxs!
 
-O mês de abril é conhecido para os povos nativos como **Abril Indígena**. É uma época especial nós, onde além de nossos movimentos de resistência, celebramos e valorizamos a cultura e a história dos povos originários (indígenas, nativos). E eu tenho uma proposta incrível para vocês!
+O mês de abril é conhecido para os povos nativos como **Abril Indígena**. É uma época especial para nós, onde além de nossos movimentos de resistência, celebramos e valorizamos a cultura e a história dos povos originários (indígenas, nativos). E eu tenho uma proposta incrível para vocês!
 
 ## Participe da Gravação do Clipe
 

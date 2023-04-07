@@ -7,7 +7,7 @@ description: Nosso tea.
 slug: biografia
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
-helperI18n: ["pt-BR:/bio/"]
+helperI18n: ["pt-BR:/biografia/"]
 ---
 
 ## Biografia
