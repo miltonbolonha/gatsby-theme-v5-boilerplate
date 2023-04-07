@@ -20,8 +20,8 @@ helperI18n:
   ]
 ---
 
-**Música**: Decolonize Já - Uma História de Amor
-**Autor**: Milton Bolonha
+**Música**: Decolonize Já - Uma História de Amor <br />
+**Autor**: Milton Bolonha <br />
 **Letra**: Milton Bolonha e Jorge Linhaça Jr
 
 Vamos decolonizar toda história <br />
