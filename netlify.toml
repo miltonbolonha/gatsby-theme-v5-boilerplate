@@ -1,6 +1,5 @@
 [build]
     command = "GATSBY_CONCURRENT_DOWNLOAD=25 npm run build --workspace=gatsby-theme-v5-boilerplate"
-  	functions = "gatsby-theme-v5-boilerplate/src/api"
     publish = "gatsby-theme-v5-boilerplate/public"
 
 [build.environment]

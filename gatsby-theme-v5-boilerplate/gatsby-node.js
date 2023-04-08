@@ -451,7 +451,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
 
-    pages.forEach(async page => {
+    await pages.forEach(async page => {
       if (!page) {
         return console.log("page: deu erro muito");
       }
