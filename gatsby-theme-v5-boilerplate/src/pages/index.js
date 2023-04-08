@@ -365,4 +365,6 @@ const IndexPage = ({ pageContext, location }) => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <title>Decolonize Já! - Milton Bolonha - Compositor e Vocalista</title>
+);
