@@ -12,7 +12,7 @@ helperI18n: ["pt-BR:/politica-privacidade/", "nl-NL:/nl/privacyverklaring/"]
 
 ## Que nós somos?
 
-We are farming revolution, a GmbH from Ludwigsburg, Germany.
+We are Milton Bolonha, a GmbH from Ludwigsburg, Germany.
 Our website address is: http://farming-revolution.com
 
 ## Which data do we collect about you?
@@ -43,7 +43,7 @@ Your data is reviewed by our employees or contractors in order to handle the req
 
 We will ask you for an authorization (double opt-in) before contacting for special offers.
 
-After anonymization of your data, the bulk of form data will be analyzed by farming revolution employees or third parties, e.g. to evaluate interest by region or by crop.
+After anonymization of your data, the bulk of form data will be analyzed by Milton Bolonha employees or third parties, e.g. to evaluate interest by region or by crop.
 
 ### Cookies
 

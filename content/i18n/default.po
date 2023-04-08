@@ -78,15 +78,15 @@ msgstr "Milton Bolonha"
 
 #. schema.0.card.0.brandName
 #: schema.0.card.0.brandName
-#| Farming Revolution GmbH
+#| Milton Bolonha
 msgid "schema.0.card.0.brandName"
-msgstr "Farming Revolution GmbH"
+msgstr "Milton Bolonha"
 
 #. schema.0.card.0.brandAppName
 #: schema.0.card.0.brandAppName
-#| Farming Revolution - Gatsby Theme
+#| Milton Bolonha - Gatsby Theme
 msgid "schema.0.card.0.brandAppName"
-msgstr "Farming Revolution - Gatsby Theme"
+msgstr "Milton Bolonha - Gatsby Theme"
 
 #. schema.0.card.0.brandSlugName
 #: schema.0.card.0.brandSlugName
@@ -108,9 +108,9 @@ msgstr "FarmingRevolution"
 
 #. schema.0.card.0.brandDescription
 #: schema.0.card.0.brandDescription
-#| Farming revolution GmbH is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is farming revolution's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. 
+#| Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. 
 msgid "schema.0.card.0.brandDescription"
-msgstr "Farming revolution GmbH is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is farming revolution's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. "
+msgstr "Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. "
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
@@ -186,9 +186,9 @@ msgstr "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/"
 
 #. schema.0.card.0.brandKeywords.0.key
 #: schema.0.card.0.brandKeywords.0.key
-#| farming revolution
+#| Milton Bolonha
 msgid "schema.0.card.0.brandKeywords.0.key"
-msgstr "farming revolution"
+msgstr "Milton Bolonha"
 
 
 #. schema.0.card.0.brandKeywords.1.key
@@ -345,9 +345,9 @@ msgstr "Simplify sustainable agriculture and make it affordable for every farmer
 
 #. schema.0.card.0.pagesHelper.globals.copyright
 #: schema.0.card.0.pagesHelper.globals.copyright
-#| Copyright © farming revolution GmbH
+#| Copyright © Milton Bolonha
 msgid "schema.0.card.0.pagesHelper.globals.copyright"
-msgstr "Copyright © farming revolution GmbH"
+msgstr "Copyright © Milton Bolonha"
 
 #. schema.0.card.0.pagesHelper.globals.privacyPolicy
 #: schema.0.card.0.pagesHelper.globals.privacyPolicy
@@ -460,9 +460,9 @@ msgstr "Apply"
 
 #. schema.0.card.0.pagesHelper.jobs.acceptMission
 #: schema.0.card.0.pagesHelper.jobs.acceptMission
-#| I adhere to the mission of farming revolution to simplify ,sustainable agriculture and make it available for every farmer
+#| I adhere to the mission of Milton Bolonha to simplify ,sustainable agriculture and make it available for every farmer
 msgid "schema.0.card.0.pagesHelper.jobs.acceptMission"
-msgstr "I adhere to the mission of farming revolution to simplify ,sustainable agriculture and make it available for every farmer"
+msgstr "I adhere to the mission of Milton Bolonha to simplify ,sustainable agriculture and make it available for every farmer"
 
 #. schema.0.card.0.pagesHelper.jobs.acceptPrivacyPolicy
 #: schema.0.card.0.pagesHelper.jobs.acceptPrivacyPolicy
@@ -661,9 +661,9 @@ msgstr "Want To Join Our Team?"
 
 #. schema.0.card.0.pagesHelper.index.foundedHistory
 #: schema.0.card.0.pagesHelper.index.foundedHistory
-#| Founded in 2020, farming revolution has embraced a remote work culture from the very beginning. With flexible working hours and no central office, much of the development work can be done from your home or preferred location, without the hassle and costs of commuting. For everything that cannot be done remotely, we do have a varying number of testing locations in Germany, Spain and other parts of Europe. We are a young team of enthusiasts on a mission to make plant cultivation more sustainable.
+#| Founded in 2020, Milton Bolonha has embraced a remote work culture from the very beginning. With flexible working hours and no central office, much of the development work can be done from your home or preferred location, without the hassle and costs of commuting. For everything that cannot be done remotely, we do have a varying number of testing locations in Germany, Spain and other parts of Europe. We are a young team of enthusiasts on a mission to make plant cultivation more sustainable.
 msgid "schema.0.card.0.pagesHelper.index.foundedHistory"
-msgstr "Founded in 2020, farming revolution has embraced a remote work culture from the very beginning. With flexible working hours and no central office, much of the development work can be done from your home or preferred location, without the hassle and costs of commuting. For everything that cannot be done remotely, we do have a varying number of testing locations in Germany, Spain and other parts of Europe. We are a young team of enthusiasts on a mission to make plant cultivation more sustainable."
+msgstr "Founded in 2020, Milton Bolonha has embraced a remote work culture from the very beginning. With flexible working hours and no central office, much of the development work can be done from your home or preferred location, without the hassle and costs of commuting. For everything that cannot be done remotely, we do have a varying number of testing locations in Germany, Spain and other parts of Europe. We are a young team of enthusiasts on a mission to make plant cultivation more sustainable."
 
 #. schema.0.card.0.pagesHelper.index.openPosition
 #: schema.0.card.0.pagesHelper.index.openPosition

@@ -17,12 +17,12 @@
           "cardLocale": "de-DE",
           "brandIntl": "pt-BR",
           "brandPerson": "Milton Bolonha",
-          "brandName": "Farming Revolution GmbH",
-          "brandAppName": "Farming Revolution - Gatsby Theme",
+          "brandName": "Milton Bolonha",
+          "brandAppName": "Milton Bolonha - Gatsby Theme",
           "brandSlugName": "farming-revolution",
           "brandShortName": "Farming GT",
           "brandPascalName": "FarmingRevolution",
-          "brandDescription": "Die Farming revolution GmbH ist ein Unternehmen aus Ludwigsburg in Baden-Württemberg. Das Ziel ist es, den Landwirten - eine nachhaltige und gleichzeitig wirtschaftliche Alternative zur heutigen Unkrautbekämpfung zu eröffnen. Die Kernkompetenz des jungen Unternehmens besteht in einer robusten KI-basierten Pflanzenerkennung und effizienten elektromechanischen Hackaggregaten. Der Farming GT ist das erste Produkt der Ludwigsburger - ein vollelektrischer Hackroboter mit Allradantrieb, der sicher und autonom die Bestände von Unkraut befreit.",
+          "brandDescription": "Die Milton Bolonha ist ein Unternehmen aus Ludwigsburg in Baden-Württemberg. Das Ziel ist es, den Landwirten - eine nachhaltige und gleichzeitig wirtschaftliche Alternative zur heutigen Unkrautbekämpfung zu eröffnen. Die Kernkompetenz des jungen Unternehmens besteht in einer robusten KI-basierten Pflanzenerkennung und effizienten elektromechanischen Hackaggregaten. Der Farming GT ist das erste Produkt der Ludwigsburger - ein vollelektrischer Hackroboter mit Allradantrieb, der sicher und autonom die Bestände von Unkraut befreit.",
           "brandUrl": "https://miltonbolonha.com.br",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
@@ -37,7 +37,7 @@
           "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/",
           "brandKeywords": [
             {
-              "key": "farming revolution"
+              "key": "Milton Bolonha"
             },
             {
               "key": "farm"
@@ -79,7 +79,7 @@
             "globals": {
               "footerLegend": "DEKOLONISIERE JETZT",
               "copyright": "DEKOLONISIERE JETZT",
-              "privacyPolicy": "Copyright © farming revolution GmbH",
+              "privacyPolicy": "Copyright © Milton Bolonha",
               "imprint": "Imprint",
               "termsConditions": "Terms and conditions",
               "contactUs": "Contact Us",
@@ -99,7 +99,7 @@
               "button": "View Openings",
               "privacyPolicy": "farming-revolution.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.",
               "applyButton": "Apply",
-              "acceptMission": "I adhere to the mission of farming revolution to simplify ,sustainable agriculture and make it available for every farmer",
+              "acceptMission": "I adhere to the mission of Milton Bolonha to simplify ,sustainable agriculture and make it available for every farmer",
               "acceptPrivacyPolicy": "I accept the privacy policy",
               "sendApplicationButton": "Send application",
               "applyPrintText": "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.",

@@ -15,7 +15,7 @@ helperI18n:
   ]
 ---
 
-farming revolution GmbH  
+Milton Bolonha  
 Groenerstr. 9 | 71636 Ludwigsburg | Germany  
 info@farming-revolution.com | Phone +49 1520 777 2850  
 Legally responsible for the editorial content of the website

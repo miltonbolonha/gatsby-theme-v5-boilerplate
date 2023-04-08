@@ -4,10 +4,10 @@ import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Row } from "@Components/InsertRow";
 import HeadingBlock from "@Slices/HeadingBlock";
 import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
-
-import ThemeContext from "@Context/ThemeContext";
+import { useSiteMetadatas } from "../tools/useSiteMetadatas";
 
 const OneColumn = ({ location, pageContext }) => {
+  const { schemasJSON, brandImages, generalImages } = useSiteMetadatas();
   const regex = /\/(\w{2})\//;
   const locationUrl = location.pathname.match(regex);
   const logoLocationUrl = locationUrl ? locationUrl[1] : "";
@@ -19,69 +19,62 @@ const OneColumn = ({ location, pageContext }) => {
       slug: transl[1].split(":")[1],
     });
   });
+  console.log("flags");
+  console.log(flags);
   const { title, description, content } = pageContext;
-  return (
-    <ThemeContext.Consumer>
-      {theme => {
-        const whipala = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs.relativePath === "whipala.png"
-        );
-        const bgWhipala = whipala
-          ? whipala[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
-          : null;
+  const whipala = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "whipala.png"
+  );
+  const bgWhipala = whipala
+    ? whipala[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    : null;
 
-        const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
-        );
-        const bgPattern = pattern
-          ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
-          : null;
-        const genImgsNodes = theme?.bigQuery?.generalImages?.nodes;
-        const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
-        console.log("pageContext");
-        console.log(pageContext);
-        return (
-          <MainTemplateWrapper
-            logo={"darkLogo.publicURL"}
-            backgroundImage={{
-              src: bgPattern,
-            }}
-            opt={{
-              titleSeo: `Farming Revolution`,
-              pageQuestions: "defaultQuestions",
-              classes: "blog-list",
-              schemaType: "blog",
-              topology: "index",
-              blogListing: "posts?.slice(0, 9)",
-              articleUrl: "props.location.href",
-              mainLogo: "imgHolder",
-              cardImage:
-                "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
-              serverUrl: "props.location.href",
-              badgesWhats: "badgeWhats",
-              badgesQuestion: "badgeQuestion",
-              globalSubs: globalSubs,
-              topRibbonImg: bgWhipala,
-              flags: flags,
-              urlLocale: logoLocationUrl,
-            }}
-          >
-            <Row
-              opt={{
-                isBoxed: false,
-                classes: "one-column",
-                bgColor: "rgba(255, 248, 236, 0.9)",
-              }}
-            >
-              <main>
-                <h1>{title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: content }}></div>
-              </main>
-            </Row>
-          </MainTemplateWrapper>
-        );
+  const pattern = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
+  );
+  const bgPattern = pattern
+    ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    : null;
+  const genImgsNodes = generalImages?.nodes;
+  const globalSubs = schemasJSON?.pagesHelper?.globals;
+  return (
+    <MainTemplateWrapper
+      logo={"darkLogo.publicURL"}
+      backgroundImage={{
+        src: bgPattern,
       }}
-    </ThemeContext.Consumer>
+      opt={{
+        titleSeo: `Milton Bolonha`,
+        pageQuestions: "defaultQuestions",
+        classes: "blog-list",
+        schemaType: "blog",
+        topology: "index",
+        blogListing: "posts?.slice(0, 9)",
+        articleUrl: "props.location.href",
+        mainLogo: "imgHolder",
+        cardImage: "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
+        serverUrl: "props.location.href",
+        badgesWhats: "badgeWhats",
+        badgesQuestion: "badgeQuestion",
+        globalSubs: globalSubs,
+        topRibbonImg: bgWhipala,
+        flags: flags,
+        urlLocale: logoLocationUrl,
+      }}
+    >
+      <Row
+        opt={{
+          isBoxed: false,
+          classes: "one-column",
+          bgColor: "rgba(255, 248, 236, 0.9)",
+        }}
+      >
+        <main>
+          <h1>{title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        </main>
+      </Row>
+    </MainTemplateWrapper>
   );
 };
 

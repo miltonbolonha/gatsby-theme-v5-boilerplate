@@ -11,8 +11,8 @@ const HeaderBlock = ({ logotipoSvg, opt }) => {
           bgOne: "transparent",
           bgTwo: "transparent",
           classes: "header-block",
-          flags: opt.flags,
-          urlLocale: opt.urlLocale,
+          flags: opt.options.flags,
+          urlLocale: opt.options.urlLocale,
         }}
         mainMenu={MainMenuData.menu.items}
       />

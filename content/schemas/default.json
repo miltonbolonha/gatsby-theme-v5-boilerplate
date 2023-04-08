@@ -17,12 +17,12 @@
           "cardLocale": "pt-BR",
           "brandIntl": "pt-BR",
           "brandPerson": "Milton Bolonha",
-          "brandName": "Farming Revolution GmbH",
-          "brandAppName": "Farming Revolution - Gatsby Theme",
+          "brandName": "Milton Bolonha",
+          "brandAppName": "Milton Bolonha - Gatsby Theme",
           "brandSlugName": "farming-revolution",
           "brandShortName": "Farming GT",
           "brandPascalName": "FarmingRevolution",
-          "brandDescription": "Farming revolution GmbH is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is farming revolution's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. ",
+          "brandDescription": "Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. ",
           "brandUrl": "https://miltonbolonha.com.br",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
@@ -37,7 +37,7 @@
           "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/",
           "brandKeywords": [
             {
-              "key": "farming revolution"
+              "key": "Milton Bolonha"
             },
             {
               "key": "farm"
@@ -99,7 +99,7 @@
               "button": "View Openings",
               "privacyPolicy": "farming-revolution.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.",
               "applyButton": "Apply",
-              "acceptMission": "I adhere to the mission of farming revolution to simplify ,sustainable agriculture and make it available for every farmer",
+              "acceptMission": "I adhere to the mission of Milton Bolonha to simplify ,sustainable agriculture and make it available for every farmer",
               "acceptPrivacyPolicy": "I accept the privacy policy",
               "sendApplicationButton": "Send application",
               "applyPrintText": "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.",

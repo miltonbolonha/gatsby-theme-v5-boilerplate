@@ -15,7 +15,7 @@ helperI18n:
   ]
 ---
 
-farming revolution GmbH  
+Milton Bolonha  
 Grönerstr. 9 | 71636 Ludwigsburg  
 info@farming-revolution.com | Telefon +49 1520 777 2850  
 Geschäftsführer: Maurice Gohlke, Dr. Roland Leidenfrost  

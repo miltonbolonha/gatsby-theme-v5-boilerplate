@@ -224,6 +224,7 @@ footer {
 	justify-content: space-between;
 	width: 100%;
 	max-width: 1240px;
+	height: 0px;
 	.main-menu {
 		max-width: 1023px;
 		width: 100%;
@@ -234,7 +235,8 @@ footer {
 		margin-top: -6px;
 		// height: 50px;
 		justify-self: left;
-		position: absolute;
+		// position: absolute !important;
+		z-index: 9;
 	}
 	.main-ul-ul {
 		width: 200px;
@@ -1101,16 +1103,23 @@ header {
 	padding: 30px 0;
 }
 @media (max-width: 768px) {
+	.section-div.img-wrapper .section-infos {
+		padding-top: 200px;
+	}
 	.main-container .full-width-row-child.section-row .section-row.img-wrapper {
 		flex-direction: column-reverse;
 		& .section-image {
 			max-width: 100%;
 		}
 	}
+	.full-width-row-child.main-header {
+		height: 180px;
+	}
 	header {
 		height: auto;
 		.full-width-row-child.main-header {
 			grid-template-columns: repeat(1, 1fr) !important;
+			height: 180px;
 			.logo-link {
 				margin: 0 auto;
 			}

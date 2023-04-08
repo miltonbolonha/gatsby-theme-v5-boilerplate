@@ -2,7 +2,7 @@
 
 ---
 
-# Farming Revolution GatsbyJS Theme
+# Milton Bolonha GatsbyJS Theme
 
 ## How to start?
 
@@ -28,17 +28,17 @@ Clean n' dev:
 npm run clean && npm run dev --workspace=gatsby-theme-v5-boilerplate
 ```
 
-#### Farming Revolution GatsbyJS Theme _by [Milton Bolonha](https://miltonbolonha.netlify.app/)_
+#### Milton Bolonha GatsbyJS Theme _by [Milton Bolonha](https://miltonbolonha.netlify.app/)_
 
 **Engine Agent:** GatsbyJS/ReactJS - Javascript Framework and NPM Workspaces
 
 **Engine SubAgent:** RÖÖM Workspace
 
-**Gatsby Theme Name:** Farming Revolution GatsbyJS Theme
+**Gatsby Theme Name:** Milton Bolonha GatsbyJS Theme
 
 **Author:** Milton Bolonha
 
-**Description:** Farming Revolution GatsbyJS Theme it's the theme for GatsbyJS.
+**Description:** Milton Bolonha GatsbyJS Theme it's the theme for GatsbyJS.
 
 It's also a platform web creators choose to build professional
 GatsbyJS HTML customized structures.

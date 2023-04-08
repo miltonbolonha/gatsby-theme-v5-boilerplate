@@ -96,7 +96,7 @@ const Header = ({
         ) : null}
         {/* desktop menu */}
         {/* available locales menu */}
-        {/* <ul className='locales-menu'>
+        <ul className='locales-menu'>
           {flags?.map((e, i) => {
             const x = i === 0;
             const plus = x ? <span className='plus-locales'>+</span> : null;
@@ -115,7 +115,7 @@ const Header = ({
               </>
             );
           })}
-        </ul> */}
+        </ul>
       </Row>
     </header>
   );

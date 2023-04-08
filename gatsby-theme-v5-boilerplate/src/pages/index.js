@@ -4,10 +4,25 @@ import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Row } from "@Components/InsertRow";
 import HeadingBlock from "@Slices/HeadingBlock";
 import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
-
-import ThemeContext from "@Context/ThemeContext";
+import { useSiteMetadatas } from "../tools/useSiteMetadatas";
 
 const IndexPage = ({ pageContext, location }) => {
+  const {
+    schemasJSON,
+    brandImages,
+    generalImages,
+    pressImages,
+    darkLogo,
+    whiteLogoMark,
+    boilerplateLogo,
+    boilerplateLogoSmall,
+    profileOficial,
+    imgHolder,
+    treatmentImages,
+    heroImages,
+    partnerImages,
+  } = useSiteMetadatas();
+
   const regex = /\/(\w{2})\//;
   const locationUrl = location.pathname.match(regex);
   const logoLocationUrl = locationUrl ? locationUrl[1] : "";
@@ -49,170 +64,130 @@ const IndexPage = ({ pageContext, location }) => {
       slug: "/jp/",
     },
   ];
-  console.log(flags);
-  const data = useStaticQuery(graphql`
-    {
-      treatmentImages: allFile(
-        filter: { sourceInstanceName: { eq: "treatmentImages" } }
-      ) {
-        nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 890, height: 790, quality: 90)
-          }
-        }
-      }
-      heroImages: allFile(
-        filter: { sourceInstanceName: { eq: "heroImages" } }
-      ) {
-        nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(
-              width: 1240
-              height: 430
-              quality: 100
-              layout: FULL_WIDTH
-            )
-          }
-        }
-      }
+  const i =
+    logoLocationUrl && logoLocationUrl !== undefined && logoLocationUrl !== ""
+      ? locationUrl[1]
+      : "pt-BR";
+  const y = schemasJSON.nodes.filter(sch =>
+    sch.schema[0].card[0].cardLocale.includes(i)
+  );
+  const cardY = y[0].schema[0].card[0];
+  const indexSubs = cardY?.pagesHelper?.index;
+  console.log("indexSubs");
+  console.log(y[0].schema[0].card[0]);
+  const globalSubs = y?.pagesHelper?.globals;
+  const whipala = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "whipala.png"
+  );
+  const bgWhipala = whipala
+    ? whipala[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    : null;
 
-      partnerImages: allFile(
-        filter: { sourceInstanceName: { eq: "partnerImages" } }
-      ) {
-        nodes {
-          relativePath
-          publicURL
-          childImageSharp {
-            gatsbyImageData(width: 100, quality: 80)
-          }
-        }
-      }
-    }
-  `);
-  const indexSubs = pageContext?.schemaJSON?.pagesHelper?.index;
-  const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
+  const pattern = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
+  );
+  const bgPattern = pattern
+    ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    : null;
+  const patternDark = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "PATTERN-bg-dark.png"
+  );
+  const bgPatternDark = patternDark
+    ? patternDark[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    : null;
+
+  const patternFooterGrafism = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
+  );
+  const patternFooterGrafismImg = patternFooterGrafism
+    ? patternFooterGrafism[0]?.childImageSharp?.gatsbyImageData?.images
+        ?.fallback?.src
+    : null;
+
+  const patternFooterGrafismDark = brandImages?.nodes?.filter(
+    brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
+  );
+  const patternFooterGrafismImgDark = patternFooterGrafismDark
+    ? patternFooterGrafismDark[0]?.childImageSharp?.gatsbyImageData
+    : null;
+  const toproof = generalImages?.nodes?.filter(
+    generalImgs => generalImgs?.relativePath === "mb-left-mic-guitar.jpg"
+  );
+  const treatmentNodes = treatmentImages?.nodes;
+  const partnersNodes = partnerImages?.nodes;
+  const getSectionOneImg = toproof
+    ? toproof[0]?.childImageSharp?.gatsbyImageData
+    : null;
   return (
-    <ThemeContext.Consumer>
-      {theme => {
-        const whipala = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs.relativePath === "whipala.png"
-        );
-        const bgWhipala = whipala
-          ? whipala[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
-          : null;
+    <>
+      <MainTemplateWrapper
+        logo={"darkLogo.publicURL"}
+        backgroundImage={{
+          src: bgPattern,
+        }}
+        opt={{
+          titleSeo: `Milton Bolonha`,
+          pageQuestions: "defaultQuestions",
+          classes: "blog-list",
+          schemaType: "blog",
+          topology: "index",
+          blogListing: "posts?.slice(0, 9)",
+          articleUrl: "props.location.href",
+          mainLogo: "imgHolder",
+          cardImage:
+            "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
+          serverUrl: "props.location.href",
+          badgesWhats: "badgeWhats",
+          badgesQuestion: "badgeQuestion",
+          globalSubs: globalSubs,
+          topRibbonImg: bgWhipala,
+          flags: flags,
+          urlLocale: logoLocationUrl,
+        }}
+      >
+        <main className='main-container' id='site-content' role='list'>
+          <Row
+            opt={{
+              classes: "section-row",
+              isBoxed: false,
+            }}
+          >
+            <section className='section-wrapper'>
+              <div className='section-row section-columns section-div img-wrapper'>
+                <div className='section-image'>
+                  <GatsbyImage
+                    image={getSectionOneImg}
+                    alt={"Logo"}
+                    placeholder={"NONE"}
+                    critical='true'
+                    className={"first-section-img"}
+                    width={890}
+                  />
+                </div>
 
-        const pattern = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg.png"
-        );
-        const bgPattern = pattern
-          ? pattern[0]?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
-          : null;
-        const patternDark = theme?.bigQuery?.brandImages?.nodes?.filter(
-          brandImgs => brandImgs.relativePath === "PATTERN-bg-dark.png"
-        );
-        const bgPatternDark = patternDark
-          ? patternDark[0]?.childImageSharp?.gatsbyImageData?.images?.fallback
-              ?.src
-          : null;
-
-        const patternFooterGrafism =
-          theme?.bigQuery?.brandImages?.nodes?.filter(
-            brandImgs => brandImgs.relativePath === "PATTERN-bg-2.png"
-          );
-        const patternFooterGrafismImg = patternFooterGrafism
-          ? patternFooterGrafism[0]?.childImageSharp?.gatsbyImageData?.images
-              ?.fallback?.src
-          : null;
-
-        const patternFooterGrafismDark =
-          theme?.bigQuery?.brandImages?.nodes?.filter(
-            brandImgs => brandImgs.relativePath === "PATTERN-bg-2-dark.png"
-          );
-        const patternFooterGrafismImgDark = patternFooterGrafismDark
-          ? patternFooterGrafismDark[0]?.childImageSharp?.gatsbyImageData
-          : null;
-        const toproof = theme?.bigQuery?.generalImages?.nodes?.filter(
-          generalImgs => generalImgs?.relativePath === "mb-left-mic-guitar.jpg"
-        );
-        const treatmentNodes = data?.treatmentImages?.nodes;
-        const partnersNodes = data?.partnerImages?.nodes;
-        const getSectionOneImg = toproof
-          ? toproof[0]?.childImageSharp?.gatsbyImageData
-          : null;
-        return (
-          <>
-            <MainTemplateWrapper
-              logo={"darkLogo.publicURL"}
-              backgroundImage={{
-                src: bgPattern,
-              }}
-              opt={{
-                titleSeo: `Farming Revolution`,
-                pageQuestions: "defaultQuestions",
-                classes: "blog-list",
-                schemaType: "blog",
-                topology: "index",
-                blogListing: "posts?.slice(0, 9)",
-                articleUrl: "props.location.href",
-                mainLogo: "imgHolder",
-                cardImage:
-                  "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
-                serverUrl: "props.location.href",
-                badgesWhats: "badgeWhats",
-                badgesQuestion: "badgeQuestion",
-                globalSubs: globalSubs,
-                topRibbonImg: bgWhipala,
-                flags: flags,
-                urlLocale: logoLocationUrl,
-              }}
-            >
-              <main className='main-container' id='site-content' role='list'>
-                <Row
-                  opt={{
-                    classes: "section-row",
-                    isBoxed: false,
-                  }}
-                >
-                  <section className='section-wrapper'>
-                    <div className='section-row section-columns section-div img-wrapper'>
-                      <div className='section-image'>
-                        <GatsbyImage
-                          image={getSectionOneImg}
-                          alt={"Logo"}
-                          placeholder={"NONE"}
-                          critical='true'
-                          className={"first-section-img"}
-                          width={890}
-                        />
-                      </div>
-
-                      <div className='section-infos'>
-                        <HeadingBlock
-                          classes='m30auto hack'
-                          importance={10}
-                          width={350}
-                          ribbon={false}
-                        >
-                          {indexSubs?.sectionOneMainTitle}
-                        </HeadingBlock>
-                        <div className='inner-infos'>
-                          <h2>22/abr</h2>
-                          <h3>{indexSubs?.sectionOneTrackLegend}</h3>
-                          <p>{indexSubs?.sectionOneTrackParagraph}</p>
-                        </div>
-                        {/* <Link to='datasheet' className='main-btn'>
+                <div className='section-infos'>
+                  <HeadingBlock
+                    classes='m30auto hack'
+                    importance={10}
+                    width={350}
+                    ribbon={false}
+                  >
+                    {indexSubs?.sectionOneMainTitle}
+                  </HeadingBlock>
+                  <div className='inner-infos'>
+                    <h2>22/abr</h2>
+                    <h3>{indexSubs?.sectionOneTrackLegend}</h3>
+                    <p>{indexSubs?.sectionOneTrackParagraph}</p>
+                  </div>
+                  {/* <Link to='datasheet' className='main-btn'>
                           {globalSubs.datasheet}
                         </Link> */}
-                        <br />
-                      </div>
-                    </div>
-                  </section>
-                </Row>
-                {/* <Row
+                  <br />
+                </div>
+              </div>
+            </section>
+          </Row>
+          {/* <Row
                   opt={{
                     classes: "section-row",
                     isBoxed: false,
@@ -231,7 +206,7 @@ const IndexPage = ({ pageContext, location }) => {
                               return (
                                 <GatsbyImage
                                   image={getImage(hero)}
-                                  alt={"Farming Revolutions Image"}
+                                  alt={"Milton Bolonhas Image"}
                                   placeholder={"NONE"}
                                   critical='true'
                                   objectFit='cover'
@@ -265,7 +240,7 @@ const IndexPage = ({ pageContext, location }) => {
                   </section>
                 </Row> */}
 
-                {/* <Row
+          {/* <Row
                   opt={{
                     classes: "section-row dark",
                     isBoxed: false,
@@ -304,7 +279,7 @@ const IndexPage = ({ pageContext, location }) => {
                     </div>
                   </section>
                 </Row> */}
-                {/* 
+          {/* 
                 <Row
                   opt={{
                     classes: "section-row section-padding",
@@ -334,7 +309,7 @@ const IndexPage = ({ pageContext, location }) => {
                           <div className='partners-img-wrapper' key={i}>
                             <GatsbyImage
                               image={getImage(hero)}
-                              alt={"Farming Revolutions Partners Logo"}
+                              alt={"Milton Bolonhas Partners Logo"}
                               placeholder={"NONE"}
                               critical='true'
                               objectFit='fixed'
@@ -349,46 +324,42 @@ const IndexPage = ({ pageContext, location }) => {
                   </section>
                 </Row> */}
 
-                <Row
-                  opt={{
-                    classes: "section-row bg-primary-light ",
-                    isBoxed: false,
-                  }}
+          <Row
+            opt={{
+              classes: "section-row bg-primary-light ",
+              isBoxed: false,
+            }}
+          >
+            <section className='section-wrapper'>
+              <Row
+                opt={{
+                  classes:
+                    "section-row section-columns bg-primary-gray dark bio-section",
+                  isBoxed: false,
+                  numColumns: 1,
+                  bgImg: patternFooterGrafismImgDark?.images?.fallback?.src,
+                }}
+              >
+                <HeadingBlock
+                  classes='m30auto hack'
+                  importance={10}
+                  ribbon={false}
+                  width={350}
                 >
-                  <section className='section-wrapper'>
-                    <Row
-                      opt={{
-                        classes:
-                          "section-row section-columns bg-primary-gray dark bio-section",
-                        isBoxed: false,
-                        numColumns: 1,
-                        bgImg:
-                          patternFooterGrafismImgDark?.images?.fallback?.src,
-                      }}
-                    >
-                      <HeadingBlock
-                        classes='m30auto hack'
-                        importance={10}
-                        ribbon={false}
-                        width={350}
-                      >
-                        {indexSubs?.joinTeam}
-                      </HeadingBlock>
-                      <p>{indexSubs?.foundedHistory}</p>
-                      <Link to={`decolonialidade`} className='main-btn'>
-                        {indexSubs?.openPosition}
-                      </Link>
-                      <h2>{indexSubs?.notAvailableLocale}</h2>
-                      <h3>{indexSubs?.openGerman}</h3>
-                    </Row>
-                  </section>
-                </Row>
-              </main>
-            </MainTemplateWrapper>
-          </>
-        );
-      }}
-    </ThemeContext.Consumer>
+                  {indexSubs?.joinTeam}
+                </HeadingBlock>
+                <p>{indexSubs?.foundedHistory}</p>
+                <Link to={`decolonialidade`} className='main-btn'>
+                  {indexSubs?.openPosition}
+                </Link>
+                <h2>{indexSubs?.notAvailableLocale}</h2>
+                <h3>{indexSubs?.openGerman}</h3>
+              </Row>
+            </section>
+          </Row>
+        </main>
+      </MainTemplateWrapper>
+    </>
   );
 };
 

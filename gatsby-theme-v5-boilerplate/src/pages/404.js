@@ -4,54 +4,47 @@ import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Row } from "@Components/InsertRow";
 import HeadingBlock from "@Slices/HeadingBlock";
 import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
-
-import ThemeContext from "@Context/ThemeContext";
+import { useSiteMetadatas } from "../tools/useSiteMetadatas";
 
 const NotFoundPage = ({ pageContext }) => {
+  const { schemasJSON } = useSiteMetadatas();
+  const globalSubs = schemasJSON?.pagesHelper?.globals;
   return (
-    <ThemeContext.Consumer>
-      {theme => {
-        const globalSubs = pageContext?.schemaJSON?.pagesHelper?.globals;
-        return (
-          <MainTemplateWrapper
-            logo={"darkLogo.publicURL"}
-            opt={{
-              titleSeo: `Farming Revolution`,
-              pageQuestions: "defaultQuestions",
-              classes: "blog-list",
-              schemaType: "blog",
-              topology: "index",
-              blogListing: "posts?.slice(0, 9)",
-              articleUrl: "props.location.href",
-              mainLogo: "imgHolder",
-              cardImage:
-                "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
-              serverUrl: "props.location.href",
-              badgesWhats: "badgeWhats",
-              badgesQuestion: "badgeQuestion",
-              globalSubs: globalSubs,
-            }}
-          >
-            <main>
-              <h1>Page not found</h1>
-              <p>
-                Sorry 😔, we couldn’t find what you were looking for.
-                <br />
-                {process.env.NODE_ENV === "development" ? (
-                  <>
-                    <br />
-                    Try creating a page in <code>src/pages/</code>.
-                    <br />
-                  </>
-                ) : null}
-                <br />
-                <Link to='/'>Go home</Link>.
-              </p>
-            </main>
-          </MainTemplateWrapper>
-        );
+    <MainTemplateWrapper
+      logo={"darkLogo.publicURL"}
+      opt={{
+        titleSeo: `Milton Bolonha`,
+        pageQuestions: "defaultQuestions",
+        classes: "blog-list",
+        schemaType: "blog",
+        topology: "index",
+        blogListing: "posts?.slice(0, 9)",
+        articleUrl: "props.location.href",
+        mainLogo: "imgHolder",
+        cardImage: "cardImage ? getSrc(cardImage.childrenImageSharp[0]) : null",
+        serverUrl: "props.location.href",
+        badgesWhats: "badgeWhats",
+        badgesQuestion: "badgeQuestion",
+        globalSubs: globalSubs,
       }}
-    </ThemeContext.Consumer>
+    >
+      <main>
+        <h1>Page not found</h1>
+        <p>
+          Sorry 😔, we couldn’t find what you were looking for.
+          <br />
+          {process.env.NODE_ENV === "development" ? (
+            <>
+              <br />
+              Try creating a page in <code>src/pages/</code>.
+              <br />
+            </>
+          ) : null}
+          <br />
+          <Link to='/'>Go home</Link>.
+        </p>
+      </main>
+    </MainTemplateWrapper>
   );
 };
 

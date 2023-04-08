@@ -12,7 +12,7 @@ helperI18n: ["pt-BR:/politica-privacidade/", "nl-NL:/nl/privacyverklaring/"]
 
 ## Wie zijn wij?
 
-Wij zijn farming revolution, een GmbH uit Ludwigsburg, Duitsland.
+Wij zijn Milton Bolonha, een GmbH uit Ludwigsburg, Duitsland.
 Onze website is: http://farming-revolution.com
 
 ## Welke gegevens verzamelen wij van u?
@@ -43,7 +43,7 @@ Uw data wordt door onze werknemers of contractanten bekeken om uw aanvraag te ve
 
 We vragen u voor een aanvullende authorisatie (double opt-in) voordat we u voor speciale aanbiedingen contacteren.
 
-Na anonimisatie van uw data zal het grootste deel van de gegevens worden geanalyseerd door farming revolution medewerkers of derden, bijvoorbeeld om de interesse per regio of gewas te evalueren.
+Na anonimisatie van uw data zal het grootste deel van de gegevens worden geanalyseerd door Milton Bolonha medewerkers of derden, bijvoorbeeld om de interesse per regio of gewas te evalueren.
 
 ### Cookies
 

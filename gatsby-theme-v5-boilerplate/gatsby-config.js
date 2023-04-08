@@ -53,6 +53,9 @@ module.exports = {
     title: `My Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     `gatsby-transformer-json`,
     {
@@ -215,7 +218,7 @@ module.exports = {
           "@Conteudo": path.resolve(rootDir, contentPath),
           "@Posts": path.resolve(rootDir, contentPath + "/posts"),
           "@I18n": path.resolve(rootDir, contentPath + "/i18n"),
-          "@Content": path.resolve(rootDir, "content"),
+          "@Content": path.resolve(rootDir, contentPath),
           "@Context": path.resolve(__dirname, "src/context"),
         },
         extensions: ["js", "scss"],

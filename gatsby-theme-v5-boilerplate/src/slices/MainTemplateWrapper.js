@@ -20,7 +20,15 @@ const MainTemplateWrapper = ({
         options: opt,
       }}
     >
-      <HeaderBlock logotipoSvg={logo} opt={opt} />
+      <HeaderBlock
+        logotipoSvg={logo}
+        opt={{
+          classes: classes + " MainTemplateWrapper",
+          bgImg: backgroundImage?.src || null,
+          topRibbonImg: opt?.topRibbonImg || null,
+          options: opt,
+        }}
+      />
       {children}
       <FooterBlock logo={logo} globalSubs={opt?.globalSubs || null} />
     </BodyBlock>
