@@ -1103,8 +1103,17 @@ header {
 	padding: 30px 0;
 }
 @media (max-width: 768px) {
-	.section-div.img-wrapper .section-infos {
-		padding-top: 200px;
+	.section-div.img-wrapper {
+		.section-image {
+			max-width: 100%;
+			width: 100%;
+		}
+		.section-infos {
+			text-align: center;
+			padding-top: 270px;
+			padding-bottom: 40px;
+			max-width: 100%;
+		}
 	}
 	.main-container .full-width-row-child.section-row .section-row.img-wrapper {
 		flex-direction: column-reverse;
@@ -1145,7 +1154,10 @@ header {
 		left: 0;
 		right: 0;
 	}
-	.one-column main {
-		padding: 0 46px 30px;
+	.full-width-row.one-column {
+		margin-top: 310px;
+		main {
+			padding: 0 46px 30px;
+		}
 	}
 }

@@ -47,7 +47,7 @@ const Header = ({
         opt={{
           isBoxed: false,
           bgColor: bgOne,
-          classes: "main-header",
+          classes: "main-header header-logo",
           numColumns: 2,
         }}
       >
