@@ -5,6 +5,7 @@ import { Row } from "@Components/InsertRow";
 import HeadingBlock from "@Slices/HeadingBlock";
 import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
 import { useSiteMetadatas } from "../tools/useSiteMetadatas";
+import Seo from "@Slices/Seo";
 
 const OneColumn = ({ location, pageContext }) => {
   const { schemasJSON, brandImages, generalImages } = useSiteMetadatas();
@@ -79,3 +80,18 @@ const OneColumn = ({ location, pageContext }) => {
 };
 
 export default OneColumn;
+
+export const Head = ({ pageContext }) => {
+  console.log("pageContext");
+  console.log(pageContext);
+  return (
+    <>
+      <Seo
+        data={pageContext.SEO}
+        killSeo={false}
+        className={`one-column-body page-body`}
+      />
+    </>
+  );
+  // return <Slice alias={`seo-${pageContext.slug}`} killSeo={false} />;
+};

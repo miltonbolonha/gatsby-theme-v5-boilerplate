@@ -90,27 +90,27 @@ msgstr "Milton Bolonha - Gatsby Theme"
 
 #. schema.0.card.0.brandSlugName
 #: schema.0.card.0.brandSlugName
-#| farming-revolution
+#| milton-bolonha
 msgid "schema.0.card.0.brandSlugName"
-msgstr "farming-revolution"
+msgstr "milton-bolonha"
 
 #. schema.0.card.0.brandShortName
 #: schema.0.card.0.brandShortName
-#| Farming GT
+#| Milton Bolonha
 msgid "schema.0.card.0.brandShortName"
-msgstr "Farming GT"
+msgstr "Milton Bolonha"
 
 #. schema.0.card.0.brandPascalName
 #: schema.0.card.0.brandPascalName
-#| FarmingRevolution
+#| MiltonBolonha
 msgid "schema.0.card.0.brandPascalName"
-msgstr "FarmingRevolution"
+msgstr "MiltonBolonha"
 
 #. schema.0.card.0.brandDescription
 #: schema.0.card.0.brandDescription
-#| Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. 
+#| Nativo (indígena), filho de espanhóis sefarditas, descendente de nigerianos e outras misturas étnicas, Milton Bolonha se apresenta como homem indígena. Um rosto comum. Sua voz doce é rasgada pelo seu drive único.
 msgid "schema.0.card.0.brandDescription"
-msgstr "Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. "
+msgstr "Nativo (indígena), filho de espanhóis sefarditas, descendente de nigerianos e outras misturas étnicas, Milton Bolonha se apresenta como homem indígena. Um rosto comum. Sua voz doce é rasgada pelo seu drive único."
 
 #. schema.0.card.0.brandUrl
 #: schema.0.card.0.brandUrl
@@ -162,15 +162,15 @@ msgstr "#373737"
 
 #. schema.0.card.0.brandEmail
 #: schema.0.card.0.brandEmail
-#| info@farming-revolution.com
+#| info@milton-bolonha.com
 msgid "schema.0.card.0.brandEmail"
-msgstr "info@farming-revolution.com"
+msgstr "info@milton-bolonha.com"
 
 #. schema.0.card.0.brandPromoEmail
 #: schema.0.card.0.brandPromoEmail
-#| info@farming-revolution.com
+#| info@milton-bolonha.com
 msgid "schema.0.card.0.brandPromoEmail"
-msgstr "info@farming-revolution.com"
+msgstr "info@milton-bolonha.com"
 
 #. schema.0.card.0.brandGithub
 #: schema.0.card.0.brandGithub
@@ -448,9 +448,9 @@ msgstr "View Openings"
 
 #. schema.0.card.0.pagesHelper.jobs.privacyPolicy
 #: schema.0.card.0.pagesHelper.jobs.privacyPolicy
-#| farming-revolution.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.
+#| milton-bolonha.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.
 msgid "schema.0.card.0.pagesHelper.jobs.privacyPolicy"
-msgstr "farming-revolution.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>."
+msgstr "milton-bolonha.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>."
 
 #. schema.0.card.0.pagesHelper.jobs.applyButton
 #: schema.0.card.0.pagesHelper.jobs.applyButton
@@ -478,9 +478,9 @@ msgstr "Send application"
 
 #. schema.0.card.0.pagesHelper.jobs.applyPrintText
 #: schema.0.card.0.pagesHelper.jobs.applyPrintText
-#| Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.
+#| Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>milton-bolonha.com/en/careers</a>.
 msgid "schema.0.card.0.pagesHelper.jobs.applyPrintText"
-msgstr "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>."
+msgstr "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>milton-bolonha.com/en/careers</a>."
 
 #. schema.0.card.0.pagesHelper.jobs.inOtherLanguages
 #: schema.0.card.0.pagesHelper.jobs.inOtherLanguages
@@ -504,9 +504,9 @@ msgstr "m/f/d"
 
 #. schema.0.card.0.pagesHelper.datasheet.title
 #: schema.0.card.0.pagesHelper.datasheet.title
-#| Datasheet - Farming GT
+#| Datasheet - Milton Bolonha
 msgid "schema.0.card.0.pagesHelper.datasheet.title"
-msgstr "Datasheet - Farming GT"
+msgstr "Datasheet - Milton Bolonha"
 
 
 #. schema.0.card.0.pagesHelper.index.sectionOneMainTitle

@@ -19,44 +19,50 @@
           "brandPerson": "Milton Bolonha",
           "brandName": "Milton Bolonha",
           "brandAppName": "Milton Bolonha - Gatsby Theme",
-          "brandSlugName": "farming-revolution",
-          "brandShortName": "Farming GT",
-          "brandPascalName": "FarmingRevolution",
-          "brandDescription": "Milton Bolonha is a company from Ludwigsburg in Germany. The goal is to provide farmers with a sustainable and economical alternative to current weed control solutions. The core competence of the young company is a robust AI-based plant detection and efficient electromechanical hoeing units. The Farming GT is Milton Bolonha's first product: an all-electric, four-wheel drive hoeing robot that safely and autonomously keeps farmers' fields free of weeds. ",
+          "brandSlugName": "milton-bolonha",
+          "brandShortName": "Milton Bolonha",
+          "brandPascalName": "MiltonBolonha",
+          "brandDescription": "Nativo (indígena), filho de espanhóis sefarditas, descendente de nigerianos e outras misturas étnicas, Milton Bolonha se apresenta como homem indígena. Um rosto comum. Sua voz doce é rasgada pelo seu drive único.",
           "brandUrl": "https://miltonbolonha.com.br",
           "brandLogo": "rectangular-logo.png",
           "brandCardImage": "boilerplate-banner.jpg",
           "brandLogoTransparent": "logo-fundo-transparent-900-w.png",
-          "brandPhone": "+49 714114152301",
+          "brandPhone": "(12) 98106-2959",
+          "brandPhoneI18n": "+55 12 981062959",
           "brandSeoDivisor": "-",
           "brandHexMainColor": "#058b8c",
           "brandHexHelperColor": "#373737",
-          "brandEmail": "info@farming-revolution.com",
-          "brandPromoEmail": "info@farming-revolution.com",
+          "brandEmail": "info@milton-bolonha.com",
+          "brandPromoEmail": "info@milton-bolonha.com",
           "brandGithub": "https://github.com/miltonbolonha/",
           "brandAppRepo": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/",
           "brandKeywords": [
-            {
-              "key": "Milton Bolonha"
-            },
-            {
-              "key": "farm"
-            },
-            {
-              "key": "wedding"
-            },
-            {
-              "key": "robots"
-            },
-            {
-              "key": "service"
-            }
+            "Milton Bolonha",
+            "Indígena",
+            "Povos Originários",
+            "Vocalista",
+            "Compositor"
           ],
           "brandLinkTree": {
             "website": "https://miltonbolonha.com.br/",
             "github": "https://github.com/miltonbolonha/gatsby-theme-v5-boilerplate/"
           },
+          "sameAs": {
+            "website": "https://miltonbolonha.com.br/",
+            "instagram": "https://www.instagram.com/miltonbolonha_",
+            "facebook": "https://www.facebook.com/BolonhaMilton",
+            "youtube": "https://youtube.com/@MiltonBolonha",
+            "github": "https://github.com/miltonbolonha",
+            "deezer": "https://www.deezer.com/br/artist/181009237",
+            "spotify": "https://open.spotify.com/artist/0Px5QB0ZWuk4UdCDjD2MdK",
+            "itunes": "https://music.apple.com/br/album/decolonize-j%C3%A1-uma-hist%C3%B3ria-de-amor-ac%C3%BAstico-single/1681155149",
+            "twitter": "https://twitter.com/MiltonBolonha"
+          },
           "brandHighlights": "null",
+          "fbAppID": "null",
+          "questions": [
+            "Você conhece Milton Bolonha?:Ele é um compositor e músico, seu estilo é rock nacional e se indentifica como homem nativo (indígena)."
+          ],
           "brandPersonFamilyBio": "null",
           "brandPersonBusinessHistory": "null",
           "brandPersonBusinessBio": "null",
@@ -97,19 +103,19 @@
               "email": "Email",
               "phoneNumber": "Phone number",
               "button": "View Openings",
-              "privacyPolicy": "farming-revolution.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.",
+              "privacyPolicy": "milton-bolonha.com is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. For information on how to unsubscribe, our privacy practices, and how we are committed to protecting and respecting your privacy, please review our <a href='/en/privacy-policy'>privacy policy</a>.",
               "applyButton": "Apply",
               "acceptMission": "I adhere to the mission of Milton Bolonha to simplify ,sustainable agriculture and make it available for every farmer",
               "acceptPrivacyPolicy": "I accept the privacy policy",
               "sendApplicationButton": "Send application",
-              "applyPrintText": "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>farming-revolution.com/en/careers</a>.",
+              "applyPrintText": "Please apply online at <a href='https://miltonbolonha.com.br/en/careers'>milton-bolonha.com/en/careers</a>.",
               "inOtherLanguages": "In other languages",
               "formThankYou": "Thank you for submitting the form!",
               "genders": "m/f/d"
             },
             "datasheet": {
               "status": true,
-              "title": "Datasheet - Farming GT"
+              "title": "Datasheet - Milton Bolonha"
             },
             "index": {
               "sectionOneMainTitle": "Events",

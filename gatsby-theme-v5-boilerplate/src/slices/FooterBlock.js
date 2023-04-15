@@ -43,7 +43,7 @@ const FooterBlock = ({ logo, globalSubs }) => {
               <h1>Milton Bolonha</h1>
               <p>DECOLONIZE JÁ!</p>
               <p>@DECOLONIZEJA</p>
-              <a href='mailto:info@farming-revolution.com'>
+              <a href='mailto:info@milton-bolonha.com'>
                 contato@miltonbolonha.com.br
               </a>
               <a href='tel:+12 98106-2959'>+12 98106-2959</a>

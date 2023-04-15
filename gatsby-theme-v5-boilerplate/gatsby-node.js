@@ -246,12 +246,48 @@ exports.onCreatePage = async ({ page, actions }) => {
       const defaultLanguage = reqSchemaDefault.locales[0].split("-")[0];
       const isDefaultLanguage = defaultLanguage === cardLocale;
       const isDefaultSchema = schemaFile === "default.json";
-
+      console.log("");
+      console.log("newPage.frontmatter");
+      console.log(page);
+      console.log(page.frontmatter);
+      console.log("");
+      console.log(newPage.frontmatter);
+      console.log(newPage);
+      console.log("");
       newPage.context = {
         ...newPage.context,
         schemaJSON: pathLocaleHasI18n ? cardElement : cardElementDefault,
         prefixI18n: cardLocale,
+        SEO: {
+          i18n: cardElement.cardLocale,
+          topology: "pages",
+          dateCreated: cardElement.datePublished,
+          datePublished: cardElement.datePublished,
+          slug: newPage.path,
+          siteUrl: cardElement.brandUrl,
+          articleUrl: cardElement.brandUrl + "/" + newPage.path,
+          title: cardElement.brandName,
+          description: cardElement.brandDescription,
+          keywords: cardElement.brandKeywords,
+          author: cardElement.brandName,
+          social: cardElement.sameAs,
+          articleBody: "page.html",
+          questions: cardElement.questions,
+          brandLogo: cardElement.brandLogo,
+          brandCardImage: cardElement.brandCardImage,
+          featuredImage: cardElement.brandCardImage,
+          fbAppID: cardElement.fbAppID,
+          themeColor: cardElement.brandHexMainColor,
+          brandName: cardElement.brandName,
+          brandDescription: cardElement.brandDescription,
+          brandKeywords: cardElement.brandKeywords,
+          brandEmail: cardElement.brandEmail,
+          brandPhone: cardElement.brandPhone,
+        },
       };
+      // console.log(newPage.context);
+      // console.log("newPage.context");
+      // console.log("");
 
       if (
         newPage.path === "/" ||
@@ -414,7 +450,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             topology
             description
             date
+            questions
             helperI18n
+            featuredImage
           }
           fields {
             slug
@@ -460,7 +498,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
       const { fileAbsolutePath } = page;
       const { slug, availableI18n, i18n } = page.fields;
-      const { title, date, description, helperI18n } = page.frontmatter;
+      const { title, date, description, helperI18n, questions, featuredImage } =
+        page.frontmatter;
       // Use the fields created in exports.onCreatepage
       const regex = /\/([^/]+)\.md$/;
       const localesSlugs = [];
@@ -607,6 +646,90 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         });
       }
 
+      // h.brandName
+      // h.brandDescription
+      // h.brandPhone
+      // h.brandPhoneI18n
+      // h.brandHexMainColor
+      // h.brandEmail
+      // h.brandKeywords
+      // h.datePublished
+      // h.technicalOfficer
+      // h.sameAs
+      // h.brandLinkTree
+      // h.brandUrl
+      // h.brandLogo
+      // h.brandCardImage
+      // h.brandLogoTransparent
+      // reqSchemaDefault
+      // const card = reqSchemaDefault.schema[0].card[0];
+
+      // console.log("");
+      const h = await require(`${schemasPath}/${
+        i18n === locales[0] ? "default" : i18n
+      }.json`).schema[0].card[0];
+      // console.log("");
+      // console.log("slice aqui aquiii");
+      // console.log({
+      //   i18n: i18n,
+      //   topology: "pages",
+      //   dateCreated: date,
+      //   datePublished: date,
+      //   slug: slug,
+      //   siteUrl: h.brandUrl,
+      //   articleUrl: h.brandUrl + slug,
+      //   title: title,
+      //   description: description,
+      //   keywords: h.brandKeywords,
+      //   author: h.brandName,
+      //   social: h.sameAs,
+      //   articleBody: page.html,
+      //   questions: questions,
+      //   brandLogo: h.brandLogo,
+      //   brandCardImage: h.brandCardImage,
+      //   featuredImage: featuredImage,
+      //   fbAppID: h.fbAppID,
+      //   themeColor: h.brandHexMainColor,
+      //   brandName: h.brandName,
+      //   brandDescription: h.brandDescription,
+      //   brandKeywords: h.brandKeywords,
+      //   brandEmail: h.brandEmail,
+      //   brandPhone: h.brandPhone,
+      // });
+      console.log(`seo-slug`);
+      console.log(`seo-${slug}`);
+      actions.createSlice({
+        id: `seo-${slug}`,
+        context: {
+          i18n: i18n,
+          topology: "pages",
+          dateCreated: date,
+          datePublished: date,
+          slug: slug,
+          siteUrl: h.brandUrl,
+          articleUrl: h.brandUrl + "/" + slug,
+          title: title,
+          description: description,
+          keywords: h.brandKeywords,
+          author: h.brandName,
+          social: h.sameAs,
+          articleBody: page.html,
+          questions: questions,
+          brandLogo: h.brandLogo,
+          brandCardImage: h.brandCardImage,
+          featuredImage: featuredImage,
+          fbAppID: h.fbAppID,
+          themeColor: h.brandHexMainColor,
+          brandName: h.brandName,
+          brandDescription: h.brandDescription,
+          brandKeywords: h.brandKeywords,
+          brandEmail: h.brandEmail,
+          brandPhone: h.brandPhone,
+        },
+        component: require.resolve(`./src/slices/Seo.js`),
+      });
+      console.log("");
+
       createPage({
         path: slug,
         component: path.resolve(
@@ -622,6 +745,39 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           i18n,
           theLocales: localesSlugs,
           helperI18n,
+          slug,
+          SEO: {
+            i18n: i18n,
+            topology: "pages",
+            dateCreated: date,
+            datePublished: date,
+            slug: slug,
+            siteUrl: h.brandUrl,
+            articleUrl: h.brandUrl + "/" + slug,
+            title: title,
+            description: description,
+            keywords: h.brandKeywords,
+            author: h.brandName,
+            social: h.sameAs,
+            articleBody: page.html,
+            questions: questions,
+            brandLogo: h.brandLogo,
+            brandCardImage: h.brandCardImage,
+            featuredImage: featuredImage,
+            fbAppID: h.fbAppID,
+            themeColor: h.brandHexMainColor,
+            brandName: h.brandName,
+            brandDescription: h.brandDescription,
+            brandKeywords: h.brandKeywords,
+            brandEmail: h.brandEmail,
+            brandPhone: h.brandPhone,
+          },
+        },
+
+        slices: {
+          // Any time `<Slice alias="seo">` is seen on this page,
+          // use the `seo-${language}` id
+          seo: `seo-${slug}`,
         },
       });
     });

@@ -97,7 +97,7 @@ const Header = ({
         {/* desktop menu */}
         {/* available locales menu */}
         <ul className='locales-menu'>
-          {flags?.map((e, i) => {
+          {flags?.forEach((e, i) => {
             const x = i === 0;
             const plus = x ? <span className='plus-locales'>+</span> : null;
             return (

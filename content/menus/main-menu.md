@@ -4,7 +4,7 @@ status: true,
 name: "MAIN_MENU",
 items: [
   item: [
-    label: "Farming GT",
+    label: "Milton Bolonha",
     to: "/#farming-gt"
     ],
   item: [
@@ -13,7 +13,7 @@ items: [
     ],
   item: [
     label: "Login",
-    href: "https://app.farming-revolution.com/"
+    href: "https://app.milton-bolonha.com/"
     ]
 ]
 ---

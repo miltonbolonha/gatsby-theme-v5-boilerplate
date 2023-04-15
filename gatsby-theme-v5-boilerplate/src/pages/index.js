@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery, Slice } from "gatsby";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import { Row } from "@Components/InsertRow";
 import HeadingBlock from "@Slices/HeadingBlock";
 import MainTemplateWrapper from "@Slices/MainTemplateWrapper";
+import Seo from "@Slices/Seo";
 import { useSiteMetadatas } from "../tools/useSiteMetadatas";
 
 const IndexPage = ({ pageContext, location }) => {
@@ -73,8 +74,6 @@ const IndexPage = ({ pageContext, location }) => {
   );
   const cardY = y[0].schema[0].card[0];
   const indexSubs = cardY?.pagesHelper?.index;
-  console.log("indexSubs");
-  console.log(y[0].schema[0].card[0]);
   const globalSubs = y?.pagesHelper?.globals;
   const whipala = brandImages?.nodes?.filter(
     brandImgs => brandImgs.relativePath === "whipala.png"
@@ -365,6 +364,13 @@ const IndexPage = ({ pageContext, location }) => {
 
 export default IndexPage;
 
-export const Head = () => (
-  <title>Decolonize Já! - Milton Bolonha - Compositor e Vocalista</title>
-);
+export const Head = ({ pageContext }) => {
+  console.log("pageContext");
+  console.log(pageContext);
+  return (
+    <>
+      <Seo data={pageContext.SEO} killSeo={false} />
+    </>
+  );
+  // return <Slice alias={`seo-${pageContext.slug}`} killSeo={false} />;
+};

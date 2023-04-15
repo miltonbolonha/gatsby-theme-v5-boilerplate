@@ -7,13 +7,14 @@ description: GatsbyJS realizam assessoria e cerimonal de compiler, eventos corpo
 slug: politica-privacidade
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
+questions: ["Question?:Answer!"]
 helperI18n: ["pt-BR:/politica-privacidade/", "nl-NL:/nl/privacyverklaring/"]
 ---
 
 ## Que nós somos?
 
 We are Milton Bolonha, a GmbH from Ludwigsburg, Germany.
-Our website address is: http://farming-revolution.com
+Our website address is: http://milton-bolonha.com
 
 ## Which data do we collect about you?
 
@@ -35,7 +36,7 @@ In addition to the form fields, we capture the IP address for spam detection.
 
 ##### How long do we retain your data?
 
-The information submitted in the form will be retained as long as we consider it to be useful. You can request the deletion of the information at info@farming-revolution.com.
+The information submitted in the form will be retained as long as we consider it to be useful. You can request the deletion of the information at info@milton-bolonha.com.
 
 ##### Where we send your data?
 
@@ -71,7 +72,7 @@ The right to object to processing – You have the right to object to Our Compan
 
 The right to data portability – You have the right to request that Our Company transfer the data that we have collected to another organization, or directly to you, under certain conditions.
 
-If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: info@farming-revolution.com
+If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: info@milton-bolonha.com
 
 Call us at: +49 1520 777 2850
 

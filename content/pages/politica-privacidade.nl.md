@@ -7,13 +7,14 @@ description: GatsbyJSal.
 slug: privacyverklaring
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
+questions: ["Question?:Answer!"]
 helperI18n: ["pt-BR:/politica-privacidade/", "nl-NL:/nl/privacyverklaring/"]
 ---
 
 ## Wie zijn wij?
 
 Wij zijn Milton Bolonha, een GmbH uit Ludwigsburg, Duitsland.
-Onze website is: http://farming-revolution.com
+Onze website is: http://milton-bolonha.com
 
 ## Welke gegevens verzamelen wij van u?
 
@@ -35,7 +36,7 @@ Behalve de formulieren op onze website, tracken wij ook het IP adres voor detect
 
 ##### Hoe lang bewaren we uw data?
 
-De informatie die u via formulieren aan ons heeft gestuurd, wordt door ons zo lang bewaard zolang het voor ons zinvol is. U kunt een verzoek voor verwijdering uw data sturen aan info@farming-revolution.com.
+De informatie die u via formulieren aan ons heeft gestuurd, wordt door ons zo lang bewaard zolang het voor ons zinvol is. U kunt een verzoek voor verwijdering uw data sturen aan info@milton-bolonha.com.
 
 ##### Waar wordt er met mijn data gedaan?
 
@@ -71,7 +72,7 @@ Het recht om bezwaar te maken tegen de gegevensverwerking - u hebt, onder bepaal
 
 Het recht op gegevensoverdraagbaarheid - u hebt, onder bepaalde voorwaarden, het recht te verzoeken dat ons bedrijf de door ons verzamelde gegevens overdraagt aan een andere organisatie, of rechtstreeks aan u.
 
-Indien u een aanvraag of dergelijk verzoek indiend, hebben wij een maand om u te antwoorden. Indien u een van deze rechten wilt uitoefenen, gelieve ons dan te contacteren via mail: info@farming-revolution.com
+Indien u een aanvraag of dergelijk verzoek indiend, hebben wij een maand om u te antwoorden. Indien u een van deze rechten wilt uitoefenen, gelieve ons dan te contacteren via mail: info@milton-bolonha.com
 
 Bel ons via: +49 1520 777 2850
 

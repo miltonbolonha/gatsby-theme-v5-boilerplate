@@ -7,6 +7,7 @@ description: Imprint page.
 slug: impressum
 featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
 date: 2022-12-14T08:30:00+00:00
+questions: ["Question?:Answer!"]
 helperI18n:
   [
     "pt-BR:/responsavel-tecnico/",
@@ -17,7 +18,7 @@ helperI18n:
 
 Milton Bolonha
 Groenerstr. 9 | 71636 Ludwigsburg | Duitsland
-info@farming-revolution.com | Telefoon +49 1520 777 2850
+info@milton-bolonha.com | Telefoon +49 1520 777 2850
 Wettelijk verantwoordelijk voor de redactionele inhoud van de website
 Dr. Roland Leidenfrost, Maurice Gohlke
 Rechtbank van registratie: Rechtbank Stuttgart HRB 771830
