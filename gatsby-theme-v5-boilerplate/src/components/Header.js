@@ -97,11 +97,11 @@ const Header = ({
         {/* desktop menu */}
         {/* available locales menu */}
         <ul className='locales-menu'>
-          {flags?.forEach((e, i) => {
+          {flags?.map((e, i) => {
             const x = i === 0;
             const plus = x ? <span className='plus-locales'>+</span> : null;
             return (
-              <>
+              <React.Fragment key={i}>
                 <li>
                   <Link
                     to={e.slug}
@@ -112,7 +112,7 @@ const Header = ({
                   </Link>
                 </li>
                 {plus}
-              </>
+              </React.Fragment>
             );
           })}
         </ul>
