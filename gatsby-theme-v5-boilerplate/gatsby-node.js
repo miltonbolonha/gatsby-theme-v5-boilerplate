@@ -229,7 +229,6 @@ exports.onCreatePage = async ({ page, actions }) => {
   const newPage = Object.assign({}, page);
   deletePage(page);
   const i18nContextPageSite = async (page, file, schemasLoaded) => {
-    console.log("começouuu");
     for (const schemaFile of schemasLoaded) {
       const schema = require(path.resolve(
         rootDir,
@@ -259,7 +258,8 @@ exports.onCreatePage = async ({ page, actions }) => {
           slug: newPage.path,
           siteUrl: cardElement.brandUrl,
           articleUrl: cardElement.brandUrl + "/" + newPage.path,
-          title: cardElement.brandName,
+          title:
+            cardElement.pagesHelper.index.SEO.title || cardElement.brandName,
           description: cardElement.brandDescription,
           keywords: cardElement.brandKeywords,
           author: cardElement.brandName,
@@ -278,9 +278,10 @@ exports.onCreatePage = async ({ page, actions }) => {
           brandPhone: cardElement.brandPhone,
         },
       };
-      // console.log(newPage.context);
-      // console.log("newPage.context");
-      // console.log("");
+      console.log("");
+      console.log("cardElement.pagesHelper.index.SEO.title");
+      console.log(cardElement.pagesHelper.index.SEO.title);
+      console.log("");
 
       if (
         newPage.path === "/" ||
@@ -689,8 +690,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       //   brandEmail: h.brandEmail,
       //   brandPhone: h.brandPhone,
       // });
-      console.log(`seo-slug`);
-      console.log(`seo-${slug}`);
+      // console.log(`seo-slug`);
+      // console.log(`seo-${slug}`);
       actions.createSlice({
         id: `seo-${slug}`,
         context: {
@@ -721,7 +722,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
         component: require.resolve(`./src/slices/Seo.js`),
       });
-      console.log("");
 
       createPage({
         path: slug,
