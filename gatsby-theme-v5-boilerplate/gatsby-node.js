@@ -246,14 +246,7 @@ exports.onCreatePage = async ({ page, actions }) => {
       const defaultLanguage = reqSchemaDefault.locales[0].split("-")[0];
       const isDefaultLanguage = defaultLanguage === cardLocale;
       const isDefaultSchema = schemaFile === "default.json";
-      console.log("");
-      console.log("newPage.frontmatter");
-      console.log(page);
-      console.log(page.frontmatter);
-      console.log("");
-      console.log(newPage.frontmatter);
-      console.log(newPage);
-      console.log("");
+
       newPage.context = {
         ...newPage.context,
         schemaJSON: pathLocaleHasI18n ? cardElement : cardElementDefault,

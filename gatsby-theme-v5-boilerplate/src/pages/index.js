@@ -364,13 +364,6 @@ const IndexPage = ({ pageContext, location }) => {
 
 export default IndexPage;
 
-export const Head = ({ pageContext }) => {
-  console.log("pageContext");
-  console.log(pageContext);
-  return (
-    <>
-      <Seo data={pageContext.SEO} killSeo={false} />
-    </>
-  );
-  // return <Slice alias={`seo-${pageContext.slug}`} killSeo={false} />;
-};
+export const Head = ({ pageContext }) => (
+  <Seo data={pageContext.SEO} killSeo={false} />
+);

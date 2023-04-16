@@ -10,10 +10,20 @@ const Seo = ({ data, killSeo, className }) => {
       </>
     );
   }
-
+  if (!data) {
+    return (
+      <>
+        <title>NO SEO DATA</title>
+      </>
+    );
+  }
+  const isBrowser = () => typeof window !== "undefined";
+  if (!isBrowser) {
+    return null;
+  }
   const dateNow = Date.now();
   const authorType =
-    data.author === "Milton Bolonha" ? "Organization" : "Person";
+    data.author === "Equipe Milton Bolonha" ? "Organization" : "Person";
   let socialValues = [];
   Object.values(data.social).forEach(social => socialValues.push(social));
   const orgSchema = [
