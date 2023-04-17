@@ -921,11 +921,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           ${allPages.map(item => {
             return `<url>
-            <loc>${card.siteUrl}${
+            <loc>${
+              card?.siteUrl === undefined
+                ? "https://miltonbolonha.com.br"
+                : card.siteUrl
+            }${item.slug.charAt(0) === "/" ? "" : "/"}${
               item.slug.slice(0, -1).includes("/")
                 ? item.slug.slice(0, -1).replace("/", "-")
                 : item.slug.slice(0, -1) + `.stories.amp.html`
             }</loc>
+            ${item.slug.charAt(0) === "/" ? item.slug : "/" + item.slug}
             <lastmod>${item.date}</lastmod>
             <image:image>
               <image:loc>${item.imageSrc}</image:loc>
