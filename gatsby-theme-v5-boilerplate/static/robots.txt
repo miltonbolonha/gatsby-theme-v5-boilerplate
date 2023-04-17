@@ -6,7 +6,5 @@ User-agent: *
 Allow: /
 
 Disallow: /example-disallow/
-
-Sitemap: https://miltonbolonha.com.br/post-sitemap.xml
 Sitemap: https://miltonbolonha.com.br/page-sitemap.xml
 Sitemap: https://miltonbolonha.com.br/sitemaps.xml

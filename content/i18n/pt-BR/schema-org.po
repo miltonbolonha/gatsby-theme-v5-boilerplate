@@ -126,15 +126,15 @@ msgstr "#fc4303"
 
 #. schema.0.card.0.brandEmail
 #: schema.0.card.0.brandEmail
-#| cerimonial@ascasamenteiras.com.br
+#| cerimonial@miltonbolonha.com.br
 msgid "schema.0.card.0.brandEmail"
-msgstr "cerimonial@ascasamenteiras.com.br"
+msgstr "cerimonial@miltonbolonha.com.br"
 
 #. schema.0.card.0.brandPromoEmail
 #: schema.0.card.0.brandPromoEmail
-#| pri@ascasamenteiras.com.br
+#| pri@miltonbolonha.com.br
 msgid "schema.0.card.0.brandPromoEmail"
-msgstr "pri@ascasamenteiras.com.br"
+msgstr "pri@miltonbolonha.com.br"
 
 #. schema.0.card.0.brandGithub
 #: schema.0.card.0.brandGithub

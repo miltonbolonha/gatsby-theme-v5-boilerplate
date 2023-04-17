@@ -58,6 +58,47 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-json`,
+
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: card.imageFormats,
+          quality: card.imageQuality,
+          breakpoints: card.imageBreakPoints,
+        },
+      },
+    },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              name: `images`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: card.imageMaxWidth,
+              linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow",
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-image`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -69,14 +110,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.resolve(rootDir, contentPath + "/pages/images"),
+        path: path.resolve(rootDir, "content/pages/images/"),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `schemaJSON`,
-        path: path.resolve(rootDir, contentPath + "/schemas"),
+        path: path.resolve(rootDir, "content/schemas"),
       },
     },
     {
@@ -132,7 +173,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: path.resolve(rootDir, contentPath + "/pages/"),
+        path: path.resolve(rootDir, contentPath + "/pages"),
         ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
       },
     },
@@ -157,44 +198,6 @@ module.exports = {
       },
     },
 
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: card.imageFormats,
-          quality: card.imageQuality,
-          breakpoints: card.imageBreakPoints,
-        },
-      },
-    },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-            options: {
-              name: `images`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: card.imageMaxWidth,
-              linkImagesToOriginal: false,
-            },
-          },
-          {
-            resolve: "gatsby-remark-external-links",
-            options: {
-              target: "_blank",
-              rel: "nofollow",
-            },
-          },
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -236,7 +239,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-image`,
     `gatsby-plugin-netlify`,
   ],
 };

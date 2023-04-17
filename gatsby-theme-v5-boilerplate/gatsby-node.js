@@ -12,6 +12,7 @@
 const path = require("path");
 const rootDir = path.join(__dirname, "../");
 const fs = require("fs").promises;
+const writeFileSync = require("fs").writeFileSync;
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
@@ -446,7 +447,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             date
             questions
             helperI18n
-            featuredImage
+            featuredImage {
+              childrenImageSharp {
+                gatsbyImageData(
+                  width: 1200
+                  height: 627
+                  placeholder: NONE
+                  quality: 80
+                )
+              }
+            }
           }
           fields {
             slug
@@ -454,7 +464,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             availableI18n
           }
           html
+          htmlAst
+          excerpt(pruneLength: 200)
           fileAbsolutePath
+        }
+      }
+
+      storiesA: file(relativePath: { eq: "stories-ante-final.png" }) {
+        childrenImageSharp {
+          gatsbyImageData(width: 900, height: 675, quality: 80)
+        }
+      }
+      storiesZ: file(relativePath: { eq: "stories-final.png" }) {
+        childrenImageSharp {
+          gatsbyImageData(width: 900, height: 675, quality: 80)
         }
       }
     }
@@ -482,12 +505,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: translations,
       });
     });
-
+    let imgsPageObj = [];
+    let allPages = [];
     await pages.forEach(async page => {
       if (!page) {
         return console.log("page: deu erro muito");
       }
-      if (page.node?.frontmatter === null) {
+      if (page.frontmatter === null) {
         return console.log("page: deu erro");
       }
       const { fileAbsolutePath } = page;
@@ -773,6 +797,374 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           seo: `seo-${slug}`,
         },
       });
+
+      // post create pages xml builder
+
+      console.log("featuredImage");
+      console.log(featuredImage);
+      const imagePageSrc =
+        h.brandUrl +
+        featuredImage?.childrenImageSharp[0]?.gatsbyImageData?.images.fallback
+          .src;
+
+      page?.htmlAst?.children?.map(child => {
+        if (child.children && child.children[0]) {
+          if (child.children[0].tagName === "img") {
+            imgsPageObj.push(child.children[0].properties.src);
+          }
+        }
+      });
+      allPages.push({
+        slug: slug,
+        date: date,
+        title: title,
+        imageSrc: imagePageSrc,
+        excerpt: page.excerpt,
+        insideImgs: imgsPageObj || [],
+      });
+    });
+
+    // TEMPLATES
+    // xml pages
+    const theXMLpages = `<?xml version="1.0" encoding="UTF-8"?>
+      <?xml-stylesheet type="text/xsl" href="/template.xsl"?>
+        <urlset
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"
+          xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+          <url>
+          <loc>https://miltonbolonha.com.br</loc>
+          <lastmod>2023-04-05T08:30:00.000Z</lastmod>
+          <image:image>
+            <image:loc>https://miltonbolonha.com.br/static/a0dd69c92bab97911931006e14f102b6/5531e/52015494369_659ac9d5bb_o.webp</image:loc>
+          </image:image>
+        </url>,
+  
+        <url>
+          <loc>https://miltonbolonha.com.br/contato/</loc>
+          <lastmod>2023-04-05T12:24:43+00:00</lastmod>
+          <image:image>
+            <image:loc>https://miltonbolonha.com.br/static/a0dd69c92bab97911931006e14f102b6/5531e/52015494369_659ac9d5bb_o.webp</image:loc>
+          </image:image>
+        </url>,
+  
+  
+  
+          ${allPages.map(item => {
+            return `<url>
+            <loc>${
+              card?.siteUrl === undefined
+                ? "https://miltonbolonha.com.br"
+                : card.siteUrl
+            }${item.slug.charAt(0) === "/" ? item.slug : "/" + item.slug}</loc>
+            <lastmod>${item.date}</lastmod>
+            <image:image>
+              <image:loc>${item.imageSrc}</image:loc>
+            </image:image>
+              ${
+                item.insideImgs.length > 0
+                  ? item.insideImgs.map(img => {
+                      return `<image:image>
+                        <image:loc>${
+                          img.substring(0, 4) === "http"
+                            ? img
+                            : card.siteUrl + img[0]
+                        }</image:loc>
+                      </image:image>`;
+                    })
+                  : ""
+              }
+          </url>`;
+          })}
+  
+      </urlset>
+      `;
+
+    // const theXML = `<?xml version="1.0" encoding="UTF-8"?>
+    //   <?xml-stylesheet type="text/xsl" href="/template.xsl"?>
+    //     <urlset
+    //       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    //       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"
+    //       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    //       ${allFeed.map(item => {
+    //         return `<url>
+    //         <loc>${card.brandUrl}${item.slug}</loc>
+    //         <lastmod>${item.date}</lastmod>
+    //         <image:image>
+    //           <image:loc>${item.imageSrc}</image:loc>
+    //         </image:image>
+
+    //         ${
+    //           item.insideImgs
+    //             ? item.insideImgs.map(img => {
+    //                 return `<image:image>
+    //         <image:loc>${
+    //           img[0].substring(0, 4) === "http"
+    //             ? img[0]
+    //             : card.brandUrl + img[0]
+    //         }</image:loc>
+    //       </image:image>`;
+    //               })
+    //             : ""
+    //         }
+    //       </url>`;
+    //       })}
+    //   </urlset>
+    //   `;
+
+    const theStoriesXML = `<?xml version="1.0" encoding="UTF-8"?>
+      <?xml-stylesheet type="text/xsl" href="/template.xsl"?>
+        <urlset
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"
+          xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          ${allPages.map(item => {
+            return `<url>
+            <loc>${card.siteUrl}${
+              item.slug.slice(0, -1).includes("/")
+                ? item.slug.slice(0, -1).replace("/", "-")
+                : item.slug.slice(0, -1) + `.stories.amp.html`
+            }</loc>
+            <lastmod>${item.date}</lastmod>
+            <image:image>
+              <image:loc>${item.imageSrc}</image:loc>
+            </image:image>
+  
+            ${
+              item.insideImgs
+                ? item.insideImgs.map(img => {
+                    return `<image:image>
+            <image:loc>${
+              img[0].substring(0, 4) === "http" ? img[0] : card.siteUrl + img[0]
+            }</image:loc>
+          </image:image>`;
+                  })
+                : ""
+            }
+  
+  
+  
+          </url>`;
+          })}
+      </urlset>
+      `;
+
+    const ampStoryPage = (
+      srcImg,
+      title,
+      index
+    ) => `<amp-story-page id="page-${index}" auto-advance-after="7s" >
+    <amp-story-grid-layer template="vertical" >
+      <amp-img src="${srcImg}" alt="${title}" width="900" height="675"
+      layout="responsive">
+      </amp-img>
+    </amp-story-grid-layer>
+      <amp-story-grid-layer class="story-page" template="vertical" >
+        <div class="inner-page-wrapper">
+          <h1>Milton Bolonha</h1>
+          <h2>${title}</h2>
+          <p>@miltonbolonha_</p>
+        </div>
+      </amp-story-grid-layer>
+    </amp-story-page>`;
+
+    const theAmpStories = (title, srcImg, mainText, postImages, canonical) => {
+      return `<!DOCTYPE html>
+        <html amp lang="pt-BR">
+        
+          <head>
+            <meta charset="utf-8" />
+            
+            <title>${title}</title>
+            <style amp-boilerplate>
+              body {
+                -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                animation: -amp-start 8s steps(1, end) 0s 1 normal both
+              }
+        
+              @-webkit-keyframes -amp-start {
+                from {
+                  visibility: hidden
+                }
+        
+                to {
+                  visibility: visible
+                }
+              }
+        
+              @-moz-keyframes -amp-start {
+                from {
+                  visibility: hidden
+                }
+        
+                to {
+                  visibility: visible
+                }
+              }
+        
+              @-ms-keyframes -amp-start {
+                from {
+                  visibility: hidden
+                }
+        
+                to {
+                  visibility: visible
+                }
+              }
+        
+              @-o-keyframes -amp-start {
+                from {
+                  visibility: hidden
+                }
+        
+                to {
+                  visibility: visible
+                }
+              }
+        
+              @keyframes -amp-start {
+                from {
+                  visibility: hidden
+                }
+        
+                to {
+                  visibility: visible
+                }
+              }
+            </style>
+            <noscript>
+              <style amp-boilerplate>
+                body {
+                  -webkit-animation: none;
+                  -moz-animation: none;
+                  -ms-animation: none;
+                  animation: none
+                }
+              </style>
+            </noscript>
+           
+            <script async src="https://cdn.ampproject.org/v0.js"></script>
+            <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+            <link rel="canonical" type="text/html" href="${canonical}" />
+        
+            <link rel="modulepreload" href="https://cdn.ampproject.org/v0.mjs" as="script" crossorigin="anonymous">
+            <link rel="preconnect" href="https://cdn.ampproject.org">
+            <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-story-1.0.js">
+              
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="amp-story-generator-name" content="Web Stories for GatsbyJS">
+            <meta name="amp-story-generator-version" content="1.0.0">
+            <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+            <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  
+        <style amp-custom>
+  .story-page{position:relative}
+  .inner-page-wrapper{position:absolute; width: 100%; height: 50%;  
+    background: rgb(0,0,0);
+    background: linear-gradient(1deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 100%);
+    display: block;
+    bottom: 0;}
+  .inner-page-wrapper h1, .inner-page-wrapper h2, .inner-page-wrapper p{color: #fff; width: 90%; margin-left: auto; margin-right: auto}
+  .inner-page-wrapper h1{font-size:32px;font-weight:900;}
+  .inner-page-wrapper h2{
+    font-size: 22px;
+      font-weight: 600;
+      background: white;
+      display: block;
+      color: black;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+          width: 85%;
+          text-align: center;
+      }
+      .inner-page-wrapper p{text-align:center; font-size:16px;font-weight:400; width: 90%; margin-top: 20px; text-shadow: 1px 2px black;}
+      .inner-page-wrapper h1{ margin-top: 50px;
+        background: white;
+        display: block;
+        color: black;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        width: 85%;
+        text-align: center;}
+      /*# sourceURL=amp-custom.css */</style>
+          </head>
+          <body>
+            <amp-story id="amp-story-id" standalone live-story title="${title}" publisher="Milton Bolonha"
+              publisher-logo-src="logo.png"
+              poster-portrait-src="logo3x4.png"
+              poster-square-src="logoSquare.png"
+              poster-landscape-src="logo4x3.png"
+              >
+              <amp-analytics type="gtag" data-credentials="include">
+              <script type="application/json">
+              {
+                "vars" : {
+                  "gtag_id": "G-D2B5PVZ7TY",
+                  "config" : {
+                    "G-D2B5PVZ7TY": { "groups": "default" }
+                  }
+                }
+              }
+              </script>
+              </amp-analytics>
+                ${ampStoryPage(srcImg, title, 1)}
+                
+                ${postImages.map((img, indx) => {
+                  return ampStoryPage(img[0], img[1], indx + 2);
+                })}
+  
+                ${ampStoryPage(
+                  card.brandUrl +
+                    results.data.storiesA.childrenImageSharp[0].gatsbyImageData
+                      .images.fallback.src,
+                  "Fale com Milton Bolonha!",
+                  99
+                )}
+                ${ampStoryPage(
+                  card.brandUrl +
+                    results.data.storiesZ.childrenImageSharp[0].gatsbyImageData
+                      .images.fallback.src,
+                  "Todo Amor Importa!",
+                  100
+                )}
+  
+            </amp-story>
+          </body>
+        </html>`;
+    };
+
+    writeFileSync(`./public/page-sitemap.xml`, theXMLpages);
+
+    // writeFileSync(`./public/post-sitemap.xml`, theXML);
+
+    writeFileSync(`./public/webstories-sitemap.xml`, theStoriesXML);
+
+    allPages.map(item => {
+      const itemSlug = card.brandUrl + item.slug;
+
+      fs.writeFile(
+        `./public/${
+          item.slug.slice(1, -1).includes("/")
+            ? item.slug.slice(1, -1).replace("/", "-")
+            : item.slug.slice(1, -1)
+        }.stories.amp.html`,
+        theAmpStories(
+          item.title,
+          item.imageSrc,
+          "txt",
+          item.insideImgs,
+          itemSlug
+        ),
+        function (err) {
+          if (err) throw err;
+          console.log("File is created successfully.");
+        }
+      );
     });
   });
 };

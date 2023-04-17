@@ -82,8 +82,6 @@ const OneColumn = ({ location, pageContext }) => {
 export default OneColumn;
 
 export const Head = ({ pageContext }) => {
-  console.log("pageContext");
-  console.log(pageContext);
   return (
     <>
       <Seo

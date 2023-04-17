@@ -1,7 +1,7 @@
 # MAIN TRANSLATION FILE.
 # Copyright (C) 2023 - GatsbyJS
 # This file is distributed under the same license as the PACKAGE package.
-# GatsbyJS <i18n@ascasamenteiras.com.br>, 2023.
+# GatsbyJS <i18n@miltonbolonha.com.br>, 2023.
 #
 #, fuzzy
 msgid ""
@@ -11,8 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gatsby Boilerplate Blog Intl 0.1 beta\n"
 "Project-Id-Version: AsCasamenteiras i18n 0.1.0\n"
-"Report-Msgid-Bugs-To: i18n@ascasamenteiras.com.br \n"
-"Last-Translator: GatsbyJS <i18n@ascasamenteiras.com.br>\n"
+"Report-Msgid-Bugs-To: i18n@miltonbolonha.com.br \n"
+"Last-Translator: GatsbyJS <i18n@miltonbolonha.com.br>\n"
 "POT-Creation-Date: 2023-01-16 10:46+0000\n"
 "PO-Revision-Date: 2023-01-16 10:47+0000\n"
 "Language: pt-BR\n"

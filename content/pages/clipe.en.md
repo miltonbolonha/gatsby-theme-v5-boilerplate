@@ -5,8 +5,8 @@ status: true
 title: Decolonize Já! Music Video - INDIGENOUS APRIL - Call for Video Recording
 description: Music Video - INDIGENOUS APRIL - Call for Video Recording
 slug: decolonize-music-video
-featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
-date: 2022-12-14T08:30:00+00:00
+featuredImage: ../pages/images/singles.png
+date: 2023-04-06T08:30:00+00:00
 questions: ["Question?:Answer!"]
 helperI18n:
   [

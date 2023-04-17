@@ -5,8 +5,8 @@ status: true
 title: Apoio e Agradecimentos
 description: Agradecimento pelo apoio recebido na produção do espetáculo "Milton Bolonha - Decolonize Já! - Uma História de Amor".
 slug: discografia
-featuredImage: ../posts/images/52015494369_659ac9d5bb_o.jpg
-date: 2022-12-14T08:30:00+00:00
+featuredImage: ../pages/images/singles.png
+date: 2023-04-06T08:30:00+00:00
 questions: ["Question?:Answer!"]
 helperI18n: ["pt-BR:/discografia/"]
 ---
@@ -17,7 +17,7 @@ Todo o meu agradecimento pelo apoio recebido na produção do espetáculo "Milto
 
 O espetáculo **Milton Bolonha - Decolonize Já! - Uma História de Amor** é uma produção plural e independente, realizada por mim mesmo, o artista Milton Bolonha e meus amigos. Contei com o apoio de gente do bem e de empresas parceiras.
 
-Sem o apoio da minha namorada, Priscilla Barbosa, organizadora de eventos e empresária, esse projeto não teria saído do papel. Pri ([As Casamenteiras](https://ascasamenteiras.com.br)) é consultora na área de eventos. Formada em **Gestão de Negócios** pela **USP-ESALQ** com título de MBA.
+Sem o apoio da minha namorada, Priscilla Barbosa, organizadora de eventos e empresária, esse projeto não teria saído do papel. Pri ([As Casamenteiras](https://miltonbolonha.com.br)) é consultora na área de eventos. Formada em **Gestão de Negócios** pela **USP-ESALQ** com título de MBA.
 
 Obrigado Pri Barb, por estar ao meu lado durante todo o processo.
 
