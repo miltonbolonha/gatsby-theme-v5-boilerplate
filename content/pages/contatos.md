@@ -14,14 +14,14 @@ helperI18n: ["pt-BR:/contatos/"]
 ---
 
   <main>
-                <p class='contact-info'>
+                <p>
                   Entre em contato por um de seus canais favoritos abaixo ou
                   pelo nosso número de telefone:
                 </p>
                 <h2>
                   <strong>(16) 99245-2437</strong>
                 </h2>
-                <ul class='contact-link-tree-wrapper'>
+                <ul>
                   <li>
                     <a
                       href='https://miltonbolonha.com.br/'
