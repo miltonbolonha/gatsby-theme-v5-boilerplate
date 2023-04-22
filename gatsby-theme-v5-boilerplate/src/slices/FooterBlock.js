@@ -5,14 +5,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useSiteMetadatas } from "../tools/useSiteMetadatas";
 
 const FooterBlock = ({ logo, globalSubs }) => {
-  const { brandImages } = useSiteMetadatas();
-  const brandNodes = brandImages?.nodes;
-  const whiteFooterLogo = brandNodes?.filter(
-    el => el?.relativePath === "F_Logo_White.png"
-  )[0]?.childImageSharp;
-  const whiteFooterMark = brandNodes?.filter(
-    el => el?.relativePath === "flag-deco.png"
-  )[0]?.childImageSharp;
+  const { whiteLogoMark, flagDeco } = useSiteMetadatas();
+  console.log(whiteLogoMark);
+  const whiteFooterLogo = whiteLogoMark.nodes[0]?.childImageSharp;
+  const whiteFooterMark = flagDeco.nodes[0]?.childImageSharp;
   return (
     <>
       <Row
@@ -68,7 +64,7 @@ const FooterBlock = ({ logo, globalSubs }) => {
                 <Link to='/nl/'>Nederlands</Link>
               </li>
               <li>
-                <Link to='/pt/'>Português</Link>
+                <Link to='/'>Português</Link>
               </li>
               <li>
                 <Link to='/ru/'>Русский</Link>

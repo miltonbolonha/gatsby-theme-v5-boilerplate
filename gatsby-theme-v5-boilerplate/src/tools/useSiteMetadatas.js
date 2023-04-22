@@ -169,11 +169,20 @@ export const useSiteMetadatas = () =>
             relativePath
             publicURL
             childImageSharp {
-              gatsbyImageData(width: 90, height: 90, quality: 100)
+              gatsbyImageData(width: 290, height: 125, quality: 100)
             }
           }
         }
 
+        flagDeco: allFile(filter: { relativePath: { eq: "flag-deco.png" } }) {
+          nodes {
+            relativePath
+            publicURL
+            childImageSharp {
+              gatsbyImageData(width: 80, height: 82, quality: 100)
+            }
+          }
+        }
         boilerplateLogo: file(
           relativePath: { eq: "logo-fundo-transparent-900-w.png" }
         ) {
