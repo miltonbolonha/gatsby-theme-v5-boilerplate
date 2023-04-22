@@ -58,6 +58,11 @@
             "itunes": "https://music.apple.com/br/album/decolonize-j%C3%A1-uma-hist%C3%B3ria-de-amor-ac%C3%BAstico-single/1681155149",
             "twitter": "https://twitter.com/MiltonBolonha"
           },
+          "musicGroup": {
+            "name": "Milton Bolonha",
+            "url": "https://miltonbolonha.com.br",
+            "image": "https://miltonbolonha.com.br/perfil.jpg"
+          },
           "brandHighlights": "null",
           "fbAppID": "null",
           "questions": [

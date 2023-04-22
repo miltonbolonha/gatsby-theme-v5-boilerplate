@@ -440,6 +440,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nodes {
           frontmatter {
             title
+            agent
+            schema
             status
             slug
             topology
@@ -467,6 +469,66 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           htmlAst
           excerpt(pruneLength: 200)
           fileAbsolutePath
+        }
+      }
+
+      allMusics: allMarkdownRemark(
+        filter: { frontmatter: { topology: { eq: "trackPage" } } }
+      ) {
+        nodes {
+          frontmatter {
+            featuredImage {
+              childrenImageSharp {
+                gatsbyImageData(
+                  width: 1200
+                  height: 627
+                  placeholder: NONE
+                  quality: 80
+                )
+              }
+            }
+            title
+            date
+            description
+            helperI18n
+            questions
+            schema
+            slug
+            template
+            status
+            albumCitation
+            albumCopyrightNotice
+            albumCopyrightYear
+            albumCreditText
+            albumDateCreated
+            albumDatePublished
+            albumDescription
+            albumGenre
+            albumImage
+            albumInLanguage
+            albumIsAccessibleForFree
+            albumIsFamilyFriendly
+            albumKeywords
+            albumName
+            albumNumTracks
+            albumSameAs
+            albumThumbnailUrl
+            albumTypicalAgeRange
+            inAlbum
+            musicDescription
+            musicDuration
+            musicGenre
+            musicImage
+            musicName
+            musicUrl
+          }
+          fields {
+            slug
+            i18n
+            availableI18n
+          }
+          html
+          htmlAst
         }
       }
 
@@ -505,72 +567,90 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: translations,
       });
     });
+
+    const musics = results.data?.allMusics?.nodes
+      ? results.data.allMusics.nodes
+      : console.log("Page Error");
+
     let imgsPageObj = [];
     let allPages = [];
-    await pages.forEach(async page => {
-      if (!page) {
-        return console.log("page: deu erro muito");
+    await musics.forEach(async music => {
+      if (!music) {
+        return console.log("music: deu erro muito");
       }
-      if (page.frontmatter === null) {
-        return console.log("page: deu erro");
+      if (music.frontmatter === null) {
+        return console.log("music: deu erro");
       }
-      const { fileAbsolutePath } = page;
-      const { slug, availableI18n, i18n } = page.fields;
-      const { title, date, description, helperI18n, questions, featuredImage } =
-        page.frontmatter;
+
+      const { slug, availableI18n, i18n } = music.fields;
+      const {
+        title,
+        date,
+        description,
+        helperI18n,
+        questions,
+        featuredImage,
+        agent,
+        schema,
+        albumCitation,
+        albumCopyrightNotice,
+        albumCopyrightYear,
+        albumCreditText,
+        albumDateCreated,
+        albumDatePublished,
+        albumDescription,
+        albumGenre,
+        albumImage,
+        albumInLanguage,
+        albumIsAccessibleForFree,
+        albumIsFamilyFriendly,
+        albumKeywords,
+        albumName,
+        albumNumTracks,
+        albumSameAs,
+        albumThumbnailUrl,
+        albumTypicalAgeRange,
+        inAlbum,
+        musicDescription,
+        musicDuration,
+        musicGenre,
+        musicImage,
+        musicName,
+        musicUrl,
+        musicIsAccessibleForFree,
+        musicIsFamilyFriendly,
+      } = music.frontmatter;
       // Use the fields created in exports.onCreatepage
       const regex = /\/([^/]+)\.md$/;
       const localesSlugs = [];
 
       if (availableI18n && availableI18n.length > 1) {
-        // console.log("");
-        // console.log("INÍCIO");
-        // console.log(
-        //   `Estamos na página: ${title} que está escrito na linguagem ${i18n} e com o slug ${slug}`
-        // );
-        // console.log(`A página acima têm as seguintes traduções:`);
-        const arrayObjForEachPage = availableI18n.forEach(async lang => {
-          // if (e === lang) {
-          //   return null;
-          // }
-          // achar default
-          // achar translations certos
-          // achar e montar current
-          const loc = lang === locales[0] ? "" : lang.split("-")[0];
-          // return console.log({
-          //   current: { i18n: lang, slug: slug },
-          //   default: { i18n: locales[0], slug: `${loc}/slugxxxx/` },
-          //   translations: [{ i18n: lang, slug: `${loc}/slugxxxx/` }],
-          // });
-        });
         pages.filter(async currPage => {
           const slugTitleTwo = currPage.fileAbsolutePath
             .match(regex)[1]
             .includes(".")
             ? currPage.fileAbsolutePath.match(regex)[1].split(".")[0]
             : currPage.fileAbsolutePath.match(regex)[1];
-          const frontmatterSlug = currPage?.frontmatter?.slug
-            ? currPage.frontmatter.slug
-            : slugTitleTwo;
           const slugLocale = currPage.fileAbsolutePath
             .match(regex)[1]
             .split(".")[1];
-          const isI18n = currPage.fileAbsolutePath
-            .match(regex)[1]
-            .includes(".");
-          const isLocale = isI18n && slugLocale !== "";
-          const finalSlug = isLocale
-            ? "/" + slugLocale + "/" + frontmatterSlug + "/"
-            : currPage.fileAbsolutePath.match(regex)[1];
+          // const frontmatterSlug = currPage?.frontmatter?.slug
+          //   ? currPage.frontmatter.slug
+          //   : slugTitleTwo;
+          // const isI18n = currPage.fileAbsolutePath
+          //   .match(regex)[1]
+          //   .includes(".");
+          // const isLocale = isI18n && slugLocale !== "";
+          // const finalSlug = isLocale
+          //   ? "/" + slugLocale + "/" + frontmatterSlug + "/"
+          //   : currPage.fileAbsolutePath.match(regex)[1];
           const schemasFiles = await fs.readdir(schemasPath);
-
           const localesWithouDefault = [];
           for (const element of schemasFiles) {
             if (element !== "default.json") {
               localesWithouDefault.push(element);
             }
           }
-
           const MDPagesFolder = path.resolve(rootDir, `content/pages`);
           const MDFiles = await fs.readdir(MDPagesFolder);
           const regexTranslation = /\.([a-z0-9-]{2})\.md$/i;
@@ -605,17 +685,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     e.split(".")[0] === slugTitleTwo
                 );
                 const arrayI18n = [];
-                mdLocale.forEach(async el =>
-                  arrayI18n.push(
-                    // locales.filter(
-                    //   d => d.split("-")[0] === el.split(".")[1]
-                    // )[0]
-                    el
-                  )
-                );
-                // arrayI18n.push(locales[0]);
-                // availableI18n
-                // console.log(arrayI18n);
+                mdLocale.forEach(async el => arrayI18n.push(el));
               }
             });
           }
@@ -634,8 +704,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 );
                 const arrayI18n = [];
                 mdLocale.forEach(async el => arrayI18n.push(el));
-                // availableI18n
-                // console.log(arrayI18n);
               }
             });
           }
@@ -653,99 +721,246 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             i18nFounded && Array.isArray(i18nFounded) && i18nFounded[0]
               ? i18nFounded[0].split(".")[0]
               : locales[0];
-
-          // i18n
-          // console.log(finalI18n || reqSchemaDefault.locales[0]);
-
-          // console.log({
-          //   name: "slug",
-          //   value: finalSlug,
-          // });
         });
       }
 
-      // h.brandName
-      // h.brandDescription
-      // h.brandPhone
-      // h.brandPhoneI18n
-      // h.brandHexMainColor
-      // h.brandEmail
-      // h.brandKeywords
-      // h.datePublished
-      // h.technicalOfficer
-      // h.sameAs
-      // h.brandLinkTree
-      // h.brandUrl
-      // h.brandLogo
-      // h.brandCardImage
-      // h.brandLogoTransparent
-      // reqSchemaDefault
-      // const card = reqSchemaDefault.schema[0].card[0];
-
-      // console.log("");
       const h = await require(`${schemasPath}/${
         i18n === locales[0] ? "default" : i18n
       }.json`).schema[0].card[0];
-      // console.log("");
-      // console.log("slice aqui aquiii");
-      // console.log({
-      //   i18n: i18n,
-      //   topology: "pages",
-      //   dateCreated: date,
-      //   datePublished: date,
-      //   slug: slug,
-      //   siteUrl: h.brandUrl,
-      //   articleUrl: h.brandUrl + slug,
-      //   title: title,
-      //   description: description,
-      //   keywords: h.brandKeywords,
-      //   author: h.brandName,
-      //   social: h.sameAs,
-      //   articleBody: page.html,
-      //   questions: questions,
-      //   brandLogo: h.brandLogo,
-      //   brandCardImage: h.brandCardImage,
-      //   featuredImage: featuredImage,
-      //   fbAppID: h.fbAppID,
-      //   themeColor: h.brandHexMainColor,
-      //   brandName: h.brandName,
-      //   brandDescription: h.brandDescription,
-      //   brandKeywords: h.brandKeywords,
-      //   brandEmail: h.brandEmail,
-      //   brandPhone: h.brandPhone,
-      // });
-      // console.log(`seo-slug`);
-      // console.log(`seo-${slug}`);
-      actions.createSlice({
-        id: `seo-${slug}`,
+
+      createPage({
+        path: slug,
+        component: path.resolve(
+          rootDir,
+          `gatsby-theme-v5-boilerplate/src/templates/one-column.js`
+        ),
         context: {
-          i18n: i18n,
-          topology: "pages",
-          dateCreated: date,
-          datePublished: date,
-          slug: slug,
-          siteUrl: h.brandUrl,
-          articleUrl: h.brandUrl + "/" + slug,
-          title: title,
-          description: description,
-          keywords: h.brandKeywords,
-          author: h.brandName,
-          social: h.sameAs,
-          articleBody: page.html,
-          questions: questions,
-          brandLogo: h.brandLogo,
-          brandCardImage: h.brandCardImage,
-          featuredImage: featuredImage,
-          fbAppID: h.fbAppID,
-          themeColor: h.brandHexMainColor,
-          brandName: h.brandName,
-          brandDescription: h.brandDescription,
-          brandKeywords: h.brandKeywords,
-          brandEmail: h.brandEmail,
-          brandPhone: h.brandPhone,
+          ...music.pageContext,
+          title,
+          content: music.html,
+          description,
+          availableI18n,
+          i18n,
+          theLocales: localesSlugs,
+          helperI18n,
+          slug,
+          SEO: {
+            i18n: i18n,
+            agent: agent,
+            schema: schema,
+            topology: "pages",
+            dateCreated: date,
+            datePublished: date,
+            slug: slug,
+            siteUrl: h.brandUrl,
+            articleUrl: h.brandUrl + "/" + slug,
+            title: title,
+            description: description,
+            keywords: h.brandKeywords,
+            author: h.brandName,
+            social: h.sameAs,
+            articleBody: music.html,
+            questions: questions,
+            brandLogo: h.brandLogo,
+            brandCardImage: h.brandCardImage,
+            featuredImage: featuredImage,
+            fbAppID: h.fbAppID,
+            themeColor: h.brandHexMainColor,
+            brandName: h.brandName,
+            brandDescription: h.brandDescription,
+            brandKeywords: h.brandKeywords,
+            brandEmail: h.brandEmail,
+            brandPhone: h.brandPhone,
+            album: {
+              id: title,
+              citation: albumCitation,
+              copyrightNotice: albumCopyrightNotice,
+              copyrightYear: albumCopyrightYear,
+              creditText: albumCreditText,
+              dateCreated: albumDatePublished,
+              datePublished: albumDatePublished,
+              description: albumDescription,
+              genre: albumGenre,
+              image: albumImage,
+              inLanguage: albumInLanguage,
+              keyword: albumKeywords,
+              name: title,
+              numTracks: albumNumTracks,
+              sameAs: albumSameAs,
+              thumbnailUrl: albumThumbnailUrl,
+              typicalAgeRange: albumTypicalAgeRange,
+            },
+            track: {
+              name: musicName,
+              url: musicUrl,
+              image: musicImage,
+              inAlbum: inAlbum,
+              duration: musicDuration,
+              description: musicDescription,
+              genre: musicGenre,
+              isAccessibleForFree: musicIsAccessibleForFree,
+              isFamilyFriendly: musicIsFamilyFriendly,
+            },
+          },
         },
-        component: require.resolve(`./src/slices/Seo.js`),
+
+        slices: {
+          // Any time `<Slice alias="seo">` is seen on this page,
+          // use the `seo-${language}` id
+          seo: `seo-${slug}`,
+        },
       });
+
+      // post create pages xml builder
+
+      const imagePageSrc =
+        h.brandUrl +
+        featuredImage?.childrenImageSharp[0]?.gatsbyImageData?.images.fallback
+          .src;
+
+      music?.htmlAst?.children?.map(child => {
+        if (child.children && child.children[0]) {
+          if (child.children[0].tagName === "img") {
+            imgsPageObj.push(child.children[0].properties.src);
+          }
+        }
+      });
+      allPages.push({
+        slug: slug,
+        date: date,
+        title: title,
+        imageSrc: imagePageSrc,
+        excerpt: music.excerpt,
+        insideImgs: imgsPageObj || [],
+      });
+    });
+
+    await pages.forEach(async page => {
+      if (!page) {
+        return console.log("page: deu erro muito");
+      }
+      if (page.frontmatter === null) {
+        return console.log("page: deu erro");
+      }
+      const { fileAbsolutePath } = page;
+      const { slug, availableI18n, i18n } = page.fields;
+      const {
+        title,
+        date,
+        description,
+        helperI18n,
+        questions,
+        featuredImage,
+        agent,
+        schema,
+      } = page.frontmatter;
+      // Use the fields created in exports.onCreatepage
+      const regex = /\/([^/]+)\.md$/;
+      const localesSlugs = [];
+
+      if (availableI18n && availableI18n.length > 1) {
+        pages.filter(async currPage => {
+          const slugTitleTwo = currPage.fileAbsolutePath
+            .match(regex)[1]
+            .includes(".")
+            ? currPage.fileAbsolutePath.match(regex)[1].split(".")[0]
+            : currPage.fileAbsolutePath.match(regex)[1];
+          const slugLocale = currPage.fileAbsolutePath
+            .match(regex)[1]
+            .split(".")[1];
+          // const frontmatterSlug = currPage?.frontmatter?.slug
+          //   ? currPage.frontmatter.slug
+          //   : slugTitleTwo;
+          // const isI18n = currPage.fileAbsolutePath
+          //   .match(regex)[1]
+          //   .includes(".");
+          // const isLocale = isI18n && slugLocale !== "";
+          // const finalSlug = isLocale
+          //   ? "/" + slugLocale + "/" + frontmatterSlug + "/"
+          //   : currPage.fileAbsolutePath.match(regex)[1];
+          const schemasFiles = await fs.readdir(schemasPath);
+          const localesWithouDefault = [];
+          for (const element of schemasFiles) {
+            if (element !== "default.json") {
+              localesWithouDefault.push(element);
+            }
+          }
+          const MDPagesFolder = path.resolve(rootDir, `content/pages`);
+          const MDFiles = await fs.readdir(MDPagesFolder);
+          const regexTranslation = /\.([a-z0-9-]{2})\.md$/i;
+
+          const translations = MDFiles.filter(
+            md =>
+              md.match(regexTranslation) &&
+              md.split(".").length > 1 &&
+              md.split(".")[0] === slugTitleTwo
+          );
+
+          const defaultsMds = MDFiles.filter(
+            md =>
+              !md.match(regexTranslation) &&
+              md.split(".").length > 1 &&
+              md.split(".")[0] === slugTitleTwo
+          );
+
+          if (
+            !currPage.fileAbsolutePath.match(regex)[1].includes(".") &&
+            translations.length > 0
+          ) {
+            defaultsMds.forEach(async md => {
+              if (
+                md.split(".").length > 1 &&
+                md.split(".")[0] === slugTitleTwo
+              ) {
+                const mdLocale = MDFiles.filter(
+                  e =>
+                    e.match(regexTranslation) &&
+                    e.split(".").length > 1 &&
+                    e.split(".")[0] === slugTitleTwo
+                );
+                const arrayI18n = [];
+                mdLocale.forEach(async el => arrayI18n.push(el));
+              }
+            });
+          }
+
+          if (translations.length > 0) {
+            translations.forEach(async md => {
+              if (
+                md.split(".").length > 1 &&
+                md.split(".")[0] === slugTitleTwo
+              ) {
+                const mdLocale = MDFiles.filter(
+                  e =>
+                    e.match(regexTranslation) &&
+                    e.split(".").length > 1 &&
+                    e.split(".")[0] === slugTitleTwo
+                );
+                const arrayI18n = [];
+                mdLocale.forEach(async el => arrayI18n.push(el));
+              }
+            });
+          }
+
+          let foundedLocale = localesWithouDefault.filter(e =>
+            e.includes(slugLocale)
+          );
+          if (!foundedLocale || foundedLocale === "") {
+            foundedLocale === locales[0];
+          } else {
+            foundedLocale == null;
+          }
+          const i18nFounded = foundedLocale ? foundedLocale : locales[0];
+          const finalI18n =
+            i18nFounded && Array.isArray(i18nFounded) && i18nFounded[0]
+              ? i18nFounded[0].split(".")[0]
+              : locales[0];
+        });
+      }
+
+      const h = await require(`${schemasPath}/${
+        i18n === locales[0] ? "default" : i18n
+      }.json`).schema[0].card[0];
 
       createPage({
         path: slug,
@@ -765,6 +980,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           slug,
           SEO: {
             i18n: i18n,
+            agent: agent,
+            schema: schema,
             topology: "pages",
             dateCreated: date,
             datePublished: date,
@@ -788,6 +1005,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             brandKeywords: h.brandKeywords,
             brandEmail: h.brandEmail,
             brandPhone: h.brandPhone,
+            track: null,
+            album: null,
           },
         },
 
@@ -800,8 +1019,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       // post create pages xml builder
 
-      console.log("featuredImage");
-      console.log(featuredImage);
       const imagePageSrc =
         h.brandUrl +
         featuredImage?.childrenImageSharp[0]?.gatsbyImageData?.images.fallback
@@ -925,12 +1142,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               card?.siteUrl === undefined
                 ? "https://miltonbolonha.com.br"
                 : card.siteUrl
-            }${item.slug.charAt(0) === "/" ? "" : "/"}${
-              item.slug.slice(0, -1).includes("/")
-                ? item.slug.slice(0, -1).replace("/", "-")
-                : item.slug.slice(0, -1) + `.stories.amp.html`
+            }/${
+              item.slug.charAt(0) === "/"
+                ? item.slug.substring(1).replace("/", "-").slice(0, -1) +
+                  `.stories.amp.html`
+                : item.slug.replace("/", "-").slice(0, -1) + `.stories.amp.html`
             }</loc>
-            ${item.slug.charAt(0) === "/" ? item.slug : "/" + item.slug}
             <lastmod>${item.date}</lastmod>
             <image:image>
               <image:loc>${item.imageSrc}</image:loc>
@@ -1151,13 +1368,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     allPages.map(item => {
       const itemSlug = card.brandUrl + item.slug;
-
       fs.writeFile(
-        `./public/${
-          item.slug.slice(1, -1).includes("/")
-            ? item.slug.slice(1, -1).replace("/", "-")
-            : item.slug.slice(1, -1)
-        }.stories.amp.html`,
+        `./public/${item.slug
+          .substring(1)
+          .replace("/", "-")
+          .slice(0, -1)}.stories.amp.html`,
         theAmpStories(
           item.title,
           item.imageSrc,

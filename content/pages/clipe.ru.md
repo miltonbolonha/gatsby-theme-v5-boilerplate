@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Музыкальное видео Decolonize Já! - ИНДИГЕННЫЙ АПРЕЛЬ - Призыв к записи видео

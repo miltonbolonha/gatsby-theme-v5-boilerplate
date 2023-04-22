@@ -63,7 +63,7 @@ const Header = ({
                   onClick={handleRefState}
                   aria-haspopup='true'
                   aria-controls='mainmenu'
-                  aria-expanded={refState ? "opened" : false}
+                  aria-expanded={refState}
                   aria-label='Alternar visibilidade do menu'
                   className={`menu-wrapper menu-bar-icon  ${
                     !refState ? "active opened" : "not-active"

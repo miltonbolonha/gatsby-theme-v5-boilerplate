@@ -172,6 +172,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: path.resolve(rootDir, "content/musics/images/"),
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: path.resolve(rootDir, "content/musics"),
+        ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `pages`,
         path: path.resolve(rootDir, contentPath + "/pages"),
         ignore: [`**/\.jpg`, `**/\.png`], // ignore files starting with a dot

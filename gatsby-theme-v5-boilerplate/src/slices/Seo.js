@@ -1,7 +1,7 @@
 import React from "react";
 const Seo = ({ data, killSeo, className }) => {
-  console.log("data");
-  console.log(data ? data : "nada");
+  // console.log("data");
+  // console.log(data ? data : "nada");
   if (killSeo) {
     return (
       <>
@@ -30,7 +30,7 @@ const Seo = ({ data, killSeo, className }) => {
     {
       "@type": ["Organization"],
       "@context": "https://schema.org",
-      name: "As Casamenteiras",
+      name: "Milton Bolonha",
       url: data.siteUrl,
       email: data.brandEmail,
       description: data.brandDescription,
@@ -118,6 +118,72 @@ const Seo = ({ data, killSeo, className }) => {
       },
     });
   });
+  const musicGroupSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      genre: ["rock", "brazilian rock", "rock nacional"],
+      "@id": "Milton Bolonha",
+      name: "Milton Bolonha",
+      foundingDate: "2023-04-06",
+      slogan: "Decolonize Já!",
+      telephone: "+5512981062959",
+      email: "contato@miltonbolonha.com.br",
+      url: data.siteUrl,
+      sameAs: socialValues,
+    },
+  ];
+  const musicAlbumSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicAlbum",
+      "@id": data.album?.id || "",
+      citation: data.album?.citation || "",
+      copyrightNotice: data.album?.copyrightNotice || "",
+      copyrightYear: data.album?.copyrightYear || "",
+      creditText: data.album?.creditText || "",
+      dateCreated: data.album?.dateCreated || "",
+      datePublished: data.album?.datePublished || "",
+      description: data.album?.description || "",
+      genre: data.album?.genre || "",
+      image: data.album?.image || "",
+      inLanguage: data.album?.inLanguage || "",
+      isAccessibleForFree: true,
+      isFamilyFriendly: true,
+      keywords: data.album?.keyword || "",
+      name: data.album?.name || "",
+      numTracks: data.album?.numTracks || "",
+      sameAs: data.album?.sameAs || "",
+      thumbnailUrl: data.album?.thumbnailUrl || "",
+      typicalAgeRange: data.album?.typicalAgeRange || "",
+      track: {
+        "@type": "MusicRecording",
+        name: "Decolonize Já! - Uma História de Amor",
+        url: "https://miltonbolonha.com.br/decolonize-ja/",
+      },
+    },
+  ];
+  const musicTrackSchema = [
+    {
+      "@context": "http://schema.org",
+      "@type": "MusicRecording",
+      name: data.track?.name || "",
+      url: data.track?.url || "",
+      image: data.track?.image || "",
+      inAlbum: data.track?.inAlbum || "",
+      duration: data.track?.duration || "",
+      description: data.track?.description || "",
+      byArtist: {
+        "@type": "MusicGroup",
+        name: data.title,
+        audio: {
+          "@type": "AudioObject",
+          embedUrl: data.siteUrl,
+        },
+      },
+      genre: data.track?.genre || "",
+    },
+  ];
 
   const questionSchema = [
     {
@@ -129,6 +195,7 @@ const Seo = ({ data, killSeo, className }) => {
 
   return (
     <>
+      <html lang={data.i18n} />
       <body className={className} />
 
       <title>{data.title}</title>
@@ -219,6 +286,23 @@ const Seo = ({ data, killSeo, className }) => {
       <script type='application/ld+json'>
         {JSON.stringify(questionSchema)}
       </script>
+      <script type='application/ld+json'>
+        {JSON.stringify(musicGroupSchema)}
+      </script>
+      {data.album ? (
+        <script type='application/ld+json'>
+          {JSON.stringify(musicAlbumSchema)}
+        </script>
+      ) : (
+        ""
+      )}
+      {data.track ? (
+        <script type='application/ld+json'>
+          {JSON.stringify(musicTrackSchema)}
+        </script>
+      ) : (
+        ""
+      )}
     </>
   );
 };

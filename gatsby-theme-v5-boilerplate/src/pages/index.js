@@ -144,7 +144,7 @@ const IndexPage = ({ pageContext, location }) => {
           urlLocale: logoLocationUrl,
         }}
       >
-        <main className='main-container' id='site-content' role='list'>
+        <main className='main-container' id='site-content'>
           <Row
             opt={{
               classes: "section-row",

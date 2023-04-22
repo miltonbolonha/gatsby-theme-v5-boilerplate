@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Decolonize Já! Music Video - INDIGENOUS APRIL - Call for Video Recording

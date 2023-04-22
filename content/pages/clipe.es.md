@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Videoclip Decolonize Já! - ABRIL INDÍGENA - Convocatoria para la Grabación del Video

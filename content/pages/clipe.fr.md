@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Clip musical Decolonize Já! - AVRIL INDIGÈNE - Appel à l'enregistrement vidéo

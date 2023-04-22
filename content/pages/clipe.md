@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Clipe Decolonize Já! - ABRIL INDÍGENA - Chamada para a Gravação do Clipe

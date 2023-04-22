@@ -1,5 +1,7 @@
 ---
 topology: pages
+agent: singlePage
+schema: ["pages"]
 template: one-column.js
 status: true
 title: Decolonize Já!ミュージックビデオ - インディジナスエイプリル - ビデオ録画のための呼びかけ
