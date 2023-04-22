@@ -41,7 +41,7 @@ Você pode pedir ajuda, ou fazer você mesma(x). Chame as suas amigas e gravem j
 
 ## Até Quando Posso Enviar?
 
-A data prevista para o lançamento do clipe é 22/04/2023. Então, não perca tempo e participe!
+A data prevista para o lançamento do clipe está indefinido. Então, não perca tempo e participe!
 
 Junte-se a nós nessa história de amor pela valorização e respeito aos povos originários.
 
