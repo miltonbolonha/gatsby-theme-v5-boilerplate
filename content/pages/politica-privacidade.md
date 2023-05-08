@@ -76,6 +76,3 @@ The right to data portability – You have the right to request that Our Company
 
 If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: info@milton-bolonha.com
 
-Call us at: +49 1520 777 2850
-
-Or write to us: Grönerstrasse 9 | 71636 Ludwigsburg | Germany
