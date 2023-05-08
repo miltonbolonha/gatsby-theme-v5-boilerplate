@@ -19,9 +19,4 @@ helperI18n:
 ---
 
 Milton Bolonha  
-Groenerstr. 9 | 71636 Ludwigsburg | Germany  
-info@milton-bolonha.com | Phone +49 1520 777 2850  
-Legally responsible for the editorial content of the website
-Dr. Roland Leidenfrost, Maurice Gohlke  
-Registration Court: District Court Suttgart HRB 771830  
-VAT-ID: DE328116817
+
