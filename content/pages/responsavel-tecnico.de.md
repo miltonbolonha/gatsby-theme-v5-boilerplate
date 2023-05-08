@@ -19,8 +19,3 @@ helperI18n:
 ---
 
 Milton Bolonha  
-Grönerstr. 9 | 71636 Ludwigsburg  
-info@milton-bolonha.com | Telefon +49 1520 777 2850  
-Geschäftsführer: Maurice Gohlke, Dr. Roland Leidenfrost  
-Handelsregister: Amtsgericht Suttgart HRB 771830  
-Umsatzsteuer-ID: DE328116817
