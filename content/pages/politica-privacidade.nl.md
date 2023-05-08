@@ -14,6 +14,3 @@ helperI18n: ["pt-BR:/politica-privacidade/", "nl-NL:/nl/privacyverklaring/"]
 ---
 
 ## Wie zijn wij?
-
-Wij zijn Milton Bolonha, een GmbH uit Ludwigsburg, Duitsland.
-Onze website is: http://milton-bolonha.com
