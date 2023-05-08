@@ -19,9 +19,3 @@ helperI18n:
 ---
 
 Milton Bolonha
-Groenerstr. 9 | 71636 Ludwigsburg | Duitsland
-info@milton-bolonha.com | Telefoon +49 1520 777 2850
-Wettelijk verantwoordelijk voor de redactionele inhoud van de website
-Dr. Roland Leidenfrost, Maurice Gohlke
-Rechtbank van registratie: Rechtbank Stuttgart HRB 771830
-BTW-ID: DE328116817
